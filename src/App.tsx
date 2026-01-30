@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useParams } from "react-router-dom";
 import Index from "./pages/Index";
 import Contact from "./pages/Contact";
 import WhyTBS from "./pages/WhyTBS";
@@ -11,10 +11,19 @@ import OurProcess from "./pages/OurProcess";
 import NearshoreVsOffshore from "./pages/NearshoreVsOffshore";
 import AboutTBS from "./pages/AboutTBS";
 import Careers from "./pages/Careers";
-import StaffingPage from "./pages/staffing/StaffingPage";
+import ManagedStaffingPage from "./pages/solutions/ManagedStaffingPage";
+import RecruitingDirectHirePage from "./pages/solutions/RecruitingDirectHirePage";
+import RolePage from "./pages/roles/RolePage";
+import RolesIndexPage from "./pages/roles/RolesIndexPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
+
+// Legacy redirect component for old staffing URLs
+const StaffingRedirect = () => {
+  const { category } = useParams<{ category: string }>();
+  return <Navigate to={`/roles/${category}`} replace />;
+};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -31,7 +40,14 @@ const App = () => (
           <Route path="/nearshore-vs-offshore" element={<NearshoreVsOffshore />} />
           <Route path="/about-tbs" element={<AboutTBS />} />
           <Route path="/careers" element={<Careers />} />
-          <Route path="/staffing/:category" element={<StaffingPage />} />
+          {/* Solutions */}
+          <Route path="/solutions/managed-staffing" element={<ManagedStaffingPage />} />
+          <Route path="/solutions/recruiting-direct-hire" element={<RecruitingDirectHirePage />} />
+          {/* Roles */}
+          <Route path="/roles" element={<RolesIndexPage />} />
+          <Route path="/roles/:category" element={<RolePage />} />
+          {/* Legacy redirect from old staffing URLs */}
+          <Route path="/staffing/:category" element={<StaffingRedirect />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

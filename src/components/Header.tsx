@@ -19,58 +19,68 @@ interface NavItem {
   href: string;
   dropdown?: NestedDropdownItem[];
   nestedDropdown?: DropdownCategory[];
+  solutionsDropdown?: {
+    primaryLinks: NestedDropdownItem[];
+    roleCategories: DropdownCategory[];
+  };
 }
 
 const navItems: NavItem[] = [
   { 
-    label: "Staffing Solutions", 
+    label: "Solutions", 
     href: "#services",
-    nestedDropdown: [
-      {
-        label: "Accounting & Finance",
-        items: [
-          { label: "Accounting", href: "/staffing/accounting" },
-          { label: "Invoicing & Billing", href: "/staffing/invoicing-billing" },
-        ]
-      },
-      {
-        label: "Technology & IT",
-        items: [
-          { label: "Software Developers", href: "/staffing/software-developers" },
-          { label: "Tech Support", href: "/staffing/tech-support" },
-          { label: "Cybersecurity", href: "/staffing/cybersecurity" },
-          { label: "Business Intelligence", href: "/staffing/business-intelligence" },
-        ]
-      },
-      {
-        label: "Creative & Design",
-        items: [
-          { label: "Designers", href: "/staffing/designers" },
-        ]
-      },
-      {
-        label: "Operations & Admin",
-        items: [
-          { label: "Executive Assistants", href: "/staffing/executive-assistants" },
-          { label: "Legal Assistants", href: "/staffing/legal-assistants" },
-          { label: "Project Management", href: "/staffing/project-management" },
-          { label: "Data Processing", href: "/staffing/data-processing" },
-        ]
-      },
-      {
-        label: "Customer Facing",
-        items: [
-          { label: "Customer Care", href: "/staffing/customer-care" },
-          { label: "Sales", href: "/staffing/sales" },
-        ]
-      },
-      {
-        label: "Healthcare",
-        items: [
-          { label: "Medical Processing", href: "/staffing/medical-processing" },
-        ]
-      },
-    ]
+    solutionsDropdown: {
+      primaryLinks: [
+        { label: "Managed Staffing", href: "/solutions/managed-staffing" },
+        { label: "Recruiting & Direct Hire", href: "/solutions/recruiting-direct-hire" },
+      ],
+      roleCategories: [
+        {
+          label: "Accounting & Finance",
+          items: [
+            { label: "Accounting", href: "/roles/accounting" },
+            { label: "Invoicing & Billing", href: "/roles/invoicing-billing" },
+          ]
+        },
+        {
+          label: "Technology & IT",
+          items: [
+            { label: "Software Developers", href: "/roles/software-developers" },
+            { label: "Tech Support", href: "/roles/tech-support" },
+            { label: "Cybersecurity", href: "/roles/cybersecurity" },
+            { label: "Business Intelligence", href: "/roles/business-intelligence" },
+          ]
+        },
+        {
+          label: "Creative & Design",
+          items: [
+            { label: "Designers", href: "/roles/designers" },
+          ]
+        },
+        {
+          label: "Operations & Admin",
+          items: [
+            { label: "Executive Assistants", href: "/roles/executive-assistants" },
+            { label: "Legal Assistants", href: "/roles/legal-assistants" },
+            { label: "Project Management", href: "/roles/project-management" },
+            { label: "Data Processing", href: "/roles/data-processing" },
+          ]
+        },
+        {
+          label: "Customer Facing",
+          items: [
+            { label: "Customer Care", href: "/roles/customer-care" },
+            { label: "Sales", href: "/roles/sales" },
+          ]
+        },
+        {
+          label: "Healthcare",
+          items: [
+            { label: "Medical Processing", href: "/roles/medical-processing" },
+          ]
+        },
+      ]
+    }
   },
   { 
     label: "Why Partner With Us", 
@@ -104,6 +114,7 @@ export const Header = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [openNestedCategory, setOpenNestedCategory] = useState<string | null>(null);
   const [expandedMobileCategories, setExpandedMobileCategories] = useState<string[]>([]);
+  const [showBrowseByRole, setShowBrowseByRole] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -149,14 +160,15 @@ export const Header = () => {
             <div 
               key={item.label} 
               className="relative"
-              onMouseEnter={() => (item.dropdown || item.nestedDropdown) && setOpenDropdown(item.label)}
+              onMouseEnter={() => (item.dropdown || item.solutionsDropdown) && setOpenDropdown(item.label)}
               onMouseLeave={() => {
                 setOpenDropdown(null);
                 setOpenNestedCategory(null);
+                setShowBrowseByRole(false);
               }}
             >
-              {/* Nested Dropdown (Staffing Solutions style) */}
-              {item.nestedDropdown ? (
+              {/* Solutions Dropdown with primary links + browse by role */}
+              {item.solutionsDropdown ? (
                 <>
                   <button
                     className="flex items-center gap-1 text-muted-foreground hover:text-primary transition-colors duration-200 font-medium text-sm"
@@ -174,46 +186,95 @@ export const Header = () => {
                         transition={{ duration: 0.2 }}
                         className="absolute top-full left-0 pt-2 z-50"
                       >
-                        <div className="bg-card border border-border rounded-lg shadow-lg py-2 min-w-[220px]">
-                          {item.nestedDropdown.map((category) => (
-                            <div 
-                              key={category.label}
-                              className="relative"
-                              onMouseEnter={() => setOpenNestedCategory(category.label)}
+                        <div className="bg-card border border-border rounded-lg shadow-lg py-2 min-w-[260px]">
+                          {/* Primary service links */}
+                          {item.solutionsDropdown.primaryLinks.map((link) => (
+                            <Link
+                              key={link.label}
+                              to={link.href}
+                              className="block px-4 py-2.5 text-sm font-medium text-foreground hover:text-primary hover:bg-muted/50 transition-colors"
                             >
-                              <button
-                                className="w-full flex items-center justify-between px-4 py-2.5 text-sm text-muted-foreground hover:text-primary hover:bg-muted/50 transition-colors"
-                              >
-                                {category.label}
-                                <ChevronRight className="w-4 h-4" />
-                              </button>
-                              
-                              {/* Nested submenu */}
-                              <AnimatePresence>
-                                {openNestedCategory === category.label && (
-                                  <motion.div
-                                    initial={{ opacity: 0, x: -10 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    exit={{ opacity: 0, x: -10 }}
-                                    transition={{ duration: 0.15 }}
-                                    className="absolute left-full top-0 ml-1 z-50"
-                                  >
-                                    <div className="bg-card border border-border rounded-lg shadow-lg py-2 min-w-[200px]">
-                                      {category.items.map((subItem) => (
-                                        <Link
-                                          key={subItem.label}
-                                          to={subItem.href}
-                                          className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-primary hover:bg-muted/50 transition-colors"
-                                        >
-                                          {subItem.label}
-                                        </Link>
-                                      ))}
-                                    </div>
-                                  </motion.div>
-                                )}
-                              </AnimatePresence>
-                            </div>
+                              {link.label}
+                            </Link>
                           ))}
+                          
+                          <div className="border-t border-border my-2" />
+                          
+                          {/* Browse by Role section */}
+                          <div 
+                            className="relative"
+                            onMouseEnter={() => setShowBrowseByRole(true)}
+                          >
+                            <button
+                              className="w-full flex items-center justify-between px-4 py-2.5 text-sm text-muted-foreground hover:text-primary hover:bg-muted/50 transition-colors"
+                            >
+                              Browse by Role
+                              <ChevronRight className="w-4 h-4" />
+                            </button>
+                            
+                            {/* Role categories submenu */}
+                            <AnimatePresence>
+                              {showBrowseByRole && (
+                                <motion.div
+                                  initial={{ opacity: 0, x: -10 }}
+                                  animate={{ opacity: 1, x: 0 }}
+                                  exit={{ opacity: 0, x: -10 }}
+                                  transition={{ duration: 0.15 }}
+                                  className="absolute left-full top-0 ml-1 z-50"
+                                >
+                                  <div className="bg-card border border-border rounded-lg shadow-lg py-2 min-w-[220px]">
+                                    {item.solutionsDropdown.roleCategories.map((category) => (
+                                      <div 
+                                        key={category.label}
+                                        className="relative"
+                                        onMouseEnter={() => setOpenNestedCategory(category.label)}
+                                      >
+                                        <button
+                                          className="w-full flex items-center justify-between px-4 py-2.5 text-sm text-muted-foreground hover:text-primary hover:bg-muted/50 transition-colors"
+                                        >
+                                          {category.label}
+                                          <ChevronRight className="w-4 h-4" />
+                                        </button>
+                                        
+                                        {/* Nested submenu */}
+                                        <AnimatePresence>
+                                          {openNestedCategory === category.label && (
+                                            <motion.div
+                                              initial={{ opacity: 0, x: -10 }}
+                                              animate={{ opacity: 1, x: 0 }}
+                                              exit={{ opacity: 0, x: -10 }}
+                                              transition={{ duration: 0.15 }}
+                                              className="absolute left-full top-0 ml-1 z-50"
+                                            >
+                                              <div className="bg-card border border-border rounded-lg shadow-lg py-2 min-w-[200px]">
+                                                {category.items.map((subItem) => (
+                                                  <Link
+                                                    key={subItem.label}
+                                                    to={subItem.href}
+                                                    className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-primary hover:bg-muted/50 transition-colors"
+                                                  >
+                                                    {subItem.label}
+                                                  </Link>
+                                                ))}
+                                              </div>
+                                            </motion.div>
+                                          )}
+                                        </AnimatePresence>
+                                      </div>
+                                    ))}
+                                    
+                                    <div className="border-t border-border my-2" />
+                                    <Link
+                                      to="/roles"
+                                      className="block px-4 py-2.5 text-sm font-medium text-primary hover:bg-muted/50 transition-colors"
+                                    >
+                                      View All Roles
+                                    </Link>
+                                  </div>
+                                </motion.div>
+                              )}
+                            </AnimatePresence>
+                          </div>
                         </div>
                       </motion.div>
                     )}
@@ -291,53 +352,102 @@ export const Header = () => {
           <nav className="container mx-auto px-6 py-6 flex flex-col gap-4">
             {navItems.map((item) => (
               <div key={item.label}>
-                {/* Nested Dropdown Mobile */}
-                {item.nestedDropdown ? (
+                {/* Solutions Mobile Dropdown */}
+                {item.solutionsDropdown ? (
                   <div className="space-y-2">
                     <span className="text-foreground font-medium py-2 block">
                       {item.label}
                     </span>
-                    <div className="pl-4 space-y-1 border-l-2 border-primary/20">
-                      {item.nestedDropdown.map((category) => (
-                        <div key={category.label}>
-                          <button
-                            onClick={() => toggleMobileCategory(category.label)}
-                            className="w-full flex items-center justify-between py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                          >
-                            {category.label}
-                            <ChevronDown 
-                              className={`w-4 h-4 transition-transform duration-200 ${
-                                expandedMobileCategories.includes(category.label) ? 'rotate-180' : ''
-                              }`} 
-                            />
-                          </button>
-                          
-                          <AnimatePresence>
-                            {expandedMobileCategories.includes(category.label) && (
-                              <motion.div
-                                initial={{ opacity: 0, height: 0 }}
-                                animate={{ opacity: 1, height: 'auto' }}
-                                exit={{ opacity: 0, height: 0 }}
-                                transition={{ duration: 0.2 }}
-                                className="overflow-hidden"
-                              >
-                                <div className="pl-4 space-y-1 border-l border-border/50">
-                                  {category.items.map((subItem) => (
-                                    <Link
-                                      key={subItem.label}
-                                      to={subItem.href}
-                                      className="block py-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
-                                      onClick={() => setIsMobileMenuOpen(false)}
-                                    >
-                                      {subItem.label}
-                                    </Link>
-                                  ))}
-                                </div>
-                              </motion.div>
-                            )}
-                          </AnimatePresence>
-                        </div>
+                    <div className="pl-4 space-y-2 border-l-2 border-primary/20">
+                      {/* Primary service links */}
+                      {item.solutionsDropdown.primaryLinks.map((link) => (
+                        <Link
+                          key={link.label}
+                          to={link.href}
+                          className="text-foreground font-medium hover:text-primary transition-colors py-1 block text-sm"
+                          onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                          {link.label}
+                        </Link>
                       ))}
+                      
+                      <div className="border-t border-border/50 my-2" />
+                      
+                      {/* Browse by Role toggle */}
+                      <button
+                        onClick={() => toggleMobileCategory("browse-by-role")}
+                        className="w-full flex items-center justify-between py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        Browse by Role
+                        <ChevronDown 
+                          className={`w-4 h-4 transition-transform duration-200 ${
+                            expandedMobileCategories.includes("browse-by-role") ? 'rotate-180' : ''
+                          }`} 
+                        />
+                      </button>
+                      
+                      <AnimatePresence>
+                        {expandedMobileCategories.includes("browse-by-role") && (
+                          <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: 1, height: 'auto' }}
+                            exit={{ opacity: 0, height: 0 }}
+                            transition={{ duration: 0.2 }}
+                            className="overflow-hidden"
+                          >
+                            <div className="pl-4 space-y-1 border-l border-border/50">
+                              {item.solutionsDropdown.roleCategories.map((category) => (
+                                <div key={category.label}>
+                                  <button
+                                    onClick={() => toggleMobileCategory(category.label)}
+                                    className="w-full flex items-center justify-between py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                                  >
+                                    {category.label}
+                                    <ChevronDown 
+                                      className={`w-4 h-4 transition-transform duration-200 ${
+                                        expandedMobileCategories.includes(category.label) ? 'rotate-180' : ''
+                                      }`} 
+                                    />
+                                  </button>
+                                  
+                                  <AnimatePresence>
+                                    {expandedMobileCategories.includes(category.label) && (
+                                      <motion.div
+                                        initial={{ opacity: 0, height: 0 }}
+                                        animate={{ opacity: 1, height: 'auto' }}
+                                        exit={{ opacity: 0, height: 0 }}
+                                        transition={{ duration: 0.2 }}
+                                        className="overflow-hidden"
+                                      >
+                                        <div className="pl-4 space-y-1 border-l border-border/50">
+                                          {category.items.map((subItem) => (
+                                            <Link
+                                              key={subItem.label}
+                                              to={subItem.href}
+                                              className="block py-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
+                                              onClick={() => setIsMobileMenuOpen(false)}
+                                            >
+                                              {subItem.label}
+                                            </Link>
+                                          ))}
+                                        </div>
+                                      </motion.div>
+                                    )}
+                                  </AnimatePresence>
+                                </div>
+                              ))}
+                              
+                              <Link
+                                to="/roles"
+                                className="block py-2 text-sm font-medium text-primary hover:underline"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                              >
+                                View All Roles
+                              </Link>
+                            </div>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
                     </div>
                   </div>
                 ) : item.dropdown ? (

@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { CTA } from "@/components/CTA";
 import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Link, useParams } from "react-router-dom";
 import { 
   Calculator, 
@@ -23,19 +23,22 @@ import {
   Users,
   Clock,
   DollarSign,
-  ArrowRight
+  ArrowRight,
+  Info
 } from "lucide-react";
 
-const staffingData: Record<string, {
+interface RoleData {
   title: string;
   subtitle: string;
   description: string;
   icon: React.ComponentType<{ className?: string }>;
   roles: string[];
   benefits: { title: string; description: string }[];
-}> = {
+}
+
+const roleData: Record<string, RoleData> = {
   "accounting": {
-    title: "Accounting Staffing",
+    title: "Accounting",
     subtitle: "Expert Financial Professionals",
     description: "Access skilled accounting professionals who understand U.S. financial standards. From bookkeeping to financial analysis, our vetted talent delivers accuracy and insight.",
     icon: Calculator,
@@ -204,19 +207,52 @@ const staffingData: Record<string, {
   },
 };
 
-export const StaffingPage = () => {
+const managedStaffingContent = {
+  description: "Ongoing team support after hire. We manage your team so you can focus on your business.",
+  whatWeManage: [
+    "Payroll administration",
+    "HR operations",
+    "Compliance support",
+    "Onboarding support",
+    "Performance support",
+    "Replacement guarantee",
+  ],
+  bestFor: [
+    "Companies scaling remote teams",
+    "Businesses that want hands-off HR and payroll",
+    "Teams needing ongoing support and accountability",
+  ],
+};
+
+const recruitingContent = {
+  description: "One-time hiring. We find the talent, you hire them directly.",
+  whatWeDeliver: [
+    "Candidate sourcing",
+    "Rigorous vetting",
+    "Curated shortlist",
+    "Interview coordination",
+    "Reference checks",
+  ],
+  bestFor: [
+    "Companies with internal HR capacity",
+    "One-time or project-based hiring needs",
+    "Businesses that prefer direct employment relationships",
+  ],
+};
+
+export const RolePage = () => {
   const { category } = useParams<{ category: string }>();
-  const data = category ? staffingData[category] : null;
+  const data = category ? roleData[category] : null;
 
   if (!data) {
     return (
       <div className="min-h-screen bg-background">
         <Header />
         <div className="pt-32 pb-20 text-center">
-          <h1 className="text-3xl font-bold text-foreground">Staffing Category Not Found</h1>
-          <p className="text-muted-foreground mt-4">Please select a valid staffing category from the menu.</p>
+          <h1 className="text-3xl font-bold text-foreground">Role Not Found</h1>
+          <p className="text-muted-foreground mt-4">Please select a valid role from the menu.</p>
           <Button variant="hero" className="mt-8" asChild>
-            <Link to="/">Return Home</Link>
+            <Link to="/roles">Browse All Roles</Link>
           </Button>
         </div>
         <Footer />
@@ -231,7 +267,7 @@ export const StaffingPage = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-primary/5 to-background">
+      <section className="pt-32 pb-12 bg-gradient-to-b from-primary/5 to-background">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -250,15 +286,140 @@ export const StaffingPage = () => {
             <p className="text-xl text-muted-foreground mt-6 max-w-2xl mx-auto">
               {data.description}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-              <Button variant="hero" size="lg" asChild>
-                <Link to="/contact">Request Talent</Link>
-              </Button>
-              <Button variant="outline" size="lg" asChild>
-                <Link to="/our-process">See Our Process</Link>
-              </Button>
-            </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Clarity Line */}
+      <section className="py-4 bg-muted/50 border-y border-border">
+        <div className="container mx-auto px-6">
+          <div className="flex items-center justify-center gap-3 text-center">
+            <Info className="w-5 h-5 text-primary flex-shrink-0" />
+            <p className="text-sm text-muted-foreground">
+              <span className="font-medium text-foreground">Choose Managed Staffing</span> if you want us to run the team. 
+              <span className="font-medium text-foreground"> Choose Recruiting & Direct Hire</span> if you only need the hire.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Selector */}
+      <section className="py-12 bg-background">
+        <div className="container mx-auto px-6">
+          <Tabs defaultValue="managed" className="max-w-4xl mx-auto">
+            <TabsList className="grid w-full grid-cols-2 mb-8">
+              <TabsTrigger value="managed" className="text-sm md:text-base">
+                Managed Staffing
+              </TabsTrigger>
+              <TabsTrigger value="recruiting" className="text-sm md:text-base">
+                Recruiting & Direct Hire
+              </TabsTrigger>
+            </TabsList>
+            
+            <TabsContent value="managed">
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="space-y-8"
+              >
+                <div className="text-center">
+                  <p className="text-lg text-muted-foreground">{managedStaffingContent.description}</p>
+                </div>
+                
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="bg-card p-6 rounded-xl border border-border">
+                    <h3 className="text-lg font-semibold text-foreground mb-4">What We Manage After Hire</h3>
+                    <ul className="space-y-3">
+                      {managedStaffingContent.whatWeManage.map((item) => (
+                        <li key={item} className="flex items-center gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
+                          <span className="text-muted-foreground">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-card p-6 rounded-xl border border-border">
+                    <h3 className="text-lg font-semibold text-foreground mb-4">Best For</h3>
+                    <ul className="space-y-3">
+                      {managedStaffingContent.bestFor.map((item) => (
+                        <li key={item} className="flex items-center gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
+                          <span className="text-muted-foreground">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="text-center pt-4">
+                  <Button variant="hero" size="lg" asChild>
+                    <Link to="/contact">
+                      Get Started with Managed Staffing
+                      <ArrowRight className="w-5 h-5 ml-2" />
+                    </Link>
+                  </Button>
+                  <p className="text-sm text-muted-foreground mt-4">
+                    <Link to="/solutions/managed-staffing" className="text-primary hover:underline">
+                      Learn more about Managed Staffing →
+                    </Link>
+                  </p>
+                </div>
+              </motion.div>
+            </TabsContent>
+            
+            <TabsContent value="recruiting">
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="space-y-8"
+              >
+                <div className="text-center">
+                  <p className="text-lg text-muted-foreground">{recruitingContent.description}</p>
+                </div>
+                
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="bg-card p-6 rounded-xl border border-border">
+                    <h3 className="text-lg font-semibold text-foreground mb-4">What We Deliver</h3>
+                    <ul className="space-y-3">
+                      {recruitingContent.whatWeDeliver.map((item) => (
+                        <li key={item} className="flex items-center gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
+                          <span className="text-muted-foreground">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-card p-6 rounded-xl border border-border">
+                    <h3 className="text-lg font-semibold text-foreground mb-4">Best For</h3>
+                    <ul className="space-y-3">
+                      {recruitingContent.bestFor.map((item) => (
+                        <li key={item} className="flex items-center gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
+                          <span className="text-muted-foreground">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="text-center pt-4">
+                  <Button variant="hero" size="lg" asChild>
+                    <Link to="/contact">
+                      Get Started with Direct Hire
+                      <ArrowRight className="w-5 h-5 ml-2" />
+                    </Link>
+                  </Button>
+                  <p className="text-sm text-muted-foreground mt-4">
+                    <Link to="/solutions/recruiting-direct-hire" className="text-primary hover:underline">
+                      Learn more about Recruiting & Direct Hire →
+                    </Link>
+                  </p>
+                </div>
+              </motion.div>
+            </TabsContent>
+          </Tabs>
         </div>
       </section>
 
@@ -365,7 +526,7 @@ export const StaffingPage = () => {
               Ready to Build Your Team?
             </h2>
             <p className="text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Get started with a free consultation. We'll help you find the perfect {data.title.toLowerCase().replace(' staffing', '')} professionals for your team.
+              Get started with a free consultation. We'll help you find the perfect {data.title.toLowerCase()} professionals for your team.
             </p>
             <Button variant="hero" size="lg" className="mt-8" asChild>
               <Link to="/contact">
@@ -382,4 +543,4 @@ export const StaffingPage = () => {
   );
 };
 
-export default StaffingPage;
+export default RolePage;

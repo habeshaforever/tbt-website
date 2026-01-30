@@ -1,25 +1,22 @@
-import { motion } from "framer-motion";
 import { Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const footerLinks = {
   solutions: [
-    { label: "Accounting", href: "#" },
-    { label: "Customer Care", href: "#" },
-    { label: "Engineering", href: "#" },
-    { label: "Executive Assistants", href: "#" },
-    { label: "Sales", href: "#" },
+    { label: "Managed Staffing", href: "/solutions/managed-staffing" },
+    { label: "Recruiting & Direct Hire", href: "/solutions/recruiting-direct-hire" },
+    { label: "Browse All Roles", href: "/roles" },
   ],
   company: [
-    { label: "About Us", href: "#about" },
-    { label: "How It Works", href: "#how-it-works" },
-    { label: "Careers", href: "#" },
-    { label: "Contact", href: "#" },
+    { label: "About Us", href: "/about-tbs" },
+    { label: "How It Works", href: "/our-process" },
+    { label: "Careers", href: "/careers" },
+    { label: "Contact", href: "/contact" },
   ],
   resources: [
-    { label: "Blog", href: "#" },
-    { label: "Case Studies", href: "#" },
-    { label: "FAQs", href: "#" },
-    { label: "Privacy Policy", href: "#" },
+    { label: "Why Nearshore", href: "/why-nearshore" },
+    { label: "Nearshore vs Offshore", href: "/nearshore-vs-offshore" },
+    { label: "Why TBS", href: "/why-tbs" },
   ],
 };
 
@@ -37,14 +34,14 @@ export const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-1">
-            <a href="#" className="flex items-center gap-2 mb-6">
+            <Link to="/" className="flex items-center gap-2 mb-6">
               <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-xl">TB</span>
               </div>
               <span className="font-bold text-xl">
                 Tandem<span className="text-accent">Bridge</span> Talent
               </span>
-            </a>
+            </Link>
             <p className="text-primary-foreground/60 mb-6">
               U.S. operated. Nearshore teams that perform.
               South American talent, American standards.
@@ -69,9 +66,9 @@ export const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.solutions.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+                  <Link to={link.href} className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -83,9 +80,9 @@ export const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+                  <Link to={link.href} className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -97,9 +94,9 @@ export const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+                  <Link to={link.href} className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

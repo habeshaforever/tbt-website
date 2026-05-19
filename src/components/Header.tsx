@@ -102,7 +102,7 @@ const navItems: NavItem[] = [
     label: "About Us", 
     href: "#about",
     dropdown: [
-      { label: "About TBS", href: "/about-tbs" },
+      { label: "About TBT", href: "/about-tbs" },
       { label: "Careers", href: "/careers" },
     ]
   },

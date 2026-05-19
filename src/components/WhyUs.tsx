@@ -74,7 +74,7 @@ export const WhyUs = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">5-Day Work Week</p>
-                  <p className="text-sm text-muted-foreground">All TBS team members work a standard 5-day U.S. schedule</p>
+                  <p className="text-sm text-muted-foreground">All TBT team members work a standard 5-day U.S. schedule</p>
                 </div>
               </div>
 

@@ -15,7 +15,7 @@ const features = [
   {
     icon: Globe,
     title: "Near-Native English",
-    description: "Our talent pool consists of professionals with excellent English communication skills, ensuring seamless integration with your team.",
+    description: "Our talent pool consists of professionals with excellent English communication skills, so they fit right into your team.",
   },
   {
     icon: Users,
@@ -25,7 +25,7 @@ const features = [
   {
     icon: Building2,
     title: "Modern Facilities",
-    description: "We offer both flexible remote placements and dedicated office-based teams. Whether your hire works from home or from one of our South American offices, they'll have everything they need to perform at the highest level.",
+    description: "We offer both flexible remote placements and in-office teams. Whether your hire works from home or from one of our South American offices, they'll have everything they need to perform at the highest level.",
   },
   {
     icon: Award,

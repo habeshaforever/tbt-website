@@ -10,7 +10,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    quote: "The seamless time zone alignment and communication skills of our TBT team members make them indistinguishable from our US staff.",
+    quote: "The time zone alignment and communication skills of our TBT team members make them indistinguishable from our US staff.",
     author: "Michael Chen",
     role: "CEO",
     company: "E-commerce Brand",

@@ -23,7 +23,7 @@ const processSteps = [
     icon: Users,
     number: "02",
     title: "Talent Sourcing & Vetting",
-    description: "Our rigorous 8-step vetting process ensures only the top 1% of candidates reach your interview stage.",
+    description: "Our careful 8-step vetting process means only the top 1% of candidates reach your interview stage.",
     details: [
       "Skills assessment testing",
       "English proficiency verification",
@@ -59,7 +59,7 @@ const processSteps = [
     icon: Shield,
     number: "05",
     title: "Onboarding & Compliance",
-    description: "We manage all employment logistics, contracts, and compliance requirements seamlessly.",
+    description: "We handle all employment logistics, contracts, and compliance requirements for you.",
     details: [
       "Employment contracts",
       "Benefits administration",
@@ -83,7 +83,7 @@ const processSteps = [
     icon: Headphones,
     number: "07",
     title: "Ongoing Support",
-    description: "Our dedicated account managers provide continuous support to ensure long-term success.",
+    description: "Your account manager stays close to the team and provides ongoing support to keep things running long term.",
     details: [
       "Regular check-ins",
       "Performance monitoring",
@@ -120,7 +120,7 @@ const OurProcess = () => {
               From First Call to <span className="text-accent">Fully Integrated</span> Team Member
             </h1>
             <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
-              Our streamlined 7-step process ensures you get exceptional talent 
+              Our simple 7-step process gets you exceptional talent
               without the complexity of traditional hiring.
             </p>
           </motion.div>

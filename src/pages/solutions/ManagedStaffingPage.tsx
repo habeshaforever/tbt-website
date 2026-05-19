@@ -31,17 +31,17 @@ const howItWorks = [
   {
     step: "02",
     title: "Talent Sourcing & Vetting",
-    description: "Our team sources, screens, and rigorously vets candidates from our South American talent pool.",
+    description: "Our team sources, screens, and carefully vets candidates from our South American talent pool.",
   },
   {
     step: "03",
     title: "Onboarding & Integration",
-    description: "We handle onboarding and ensure seamless integration with your existing team.",
+    description: "We handle onboarding and make sure new hires fit right in with your existing team.",
   },
   {
     step: "04",
     title: "Ongoing Management & Support",
-    description: "We manage payroll, HR, compliance, and performance—so you can focus on your business.",
+    description: "We manage payroll, HR, compliance, and performance, so you can focus on your business.",
   },
 ];
 
@@ -75,7 +75,7 @@ export const ManagedStaffingPage = () => {
               Managed Staffing
             </h1>
             <p className="text-xl text-muted-foreground mt-6 max-w-2xl mx-auto">
-              We don't just find your talent—we manage the team so you can focus on your business. 
+              We don't just find your talent. We manage the team so you can focus on your business.
               From payroll to performance, we handle the day-to-day.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
@@ -103,7 +103,7 @@ export const ManagedStaffingPage = () => {
             <p className="text-lg text-muted-foreground">
               Managed Staffing is an ongoing partnership where Tandem Bridge Talent provides and manages 
               your remote team members. We handle payroll, HR operations, compliance, and performance 
-              management—giving you a fully operational team without the administrative burden.
+              management, giving you a fully operational team without the administrative burden.
             </p>
           </motion.div>
         </div>

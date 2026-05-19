@@ -18,7 +18,7 @@ const advantages = [
   {
     icon: Clock,
     title: "Real-Time Collaboration",
-    description: "South American professionals work during U.S. business hours, enabling seamless communication and instant feedback without the delays of offshore teams."
+    description: "South American professionals work during U.S. business hours, so you get real-time communication and quick feedback without the delays of offshore teams."
   },
   {
     icon: DollarSign,

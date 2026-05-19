@@ -31,7 +31,7 @@ const howItWorks = [
   {
     step: "02",
     title: "We Source & Vet Candidates",
-    description: "Our team identifies, screens, and rigorously vets candidates from our South American talent network.",
+    description: "Our team identifies, screens, and carefully vets candidates from our South American talent network.",
   },
   {
     step: "03",
@@ -103,7 +103,7 @@ export const RecruitingDirectHirePage = () => {
             <p className="text-lg text-muted-foreground">
               Recruiting & Direct Hire is a one-time engagement where we source, vet, and deliver 
               top candidates for your open positions. Once you make your hire, they become your employee 
-              directly—you handle onboarding, payroll, and management from there.
+              directly. You handle onboarding, payroll, and management from there.
             </p>
           </motion.div>
         </div>

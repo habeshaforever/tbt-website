@@ -23,7 +23,7 @@ const benefits = [
   {
     icon: Users,
     title: "Industry-Leading 2% Turnover",
-    description: "Our rigorous vetting and employee-first culture means you get stable, long-term team members who grow with your business."
+    description: "Our careful vetting and employee-first culture means you get stable, long-term team members who grow with your business."
   },
   {
     icon: TrendingUp,
@@ -141,7 +141,7 @@ const WhyTBS = () => {
                 A Rigorous Vetting Process
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Every candidate goes through our comprehensive screening process to ensure 
+                Every candidate goes through our thorough screening process to make sure
                 they meet the highest standards of skill, professionalism, and cultural fit.
               </p>
 

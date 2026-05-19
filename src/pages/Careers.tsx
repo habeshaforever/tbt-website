@@ -92,7 +92,7 @@ const Careers = () => {
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Join a team that values talent, rewards excellence, and offers the stability 
-              of working with U.S. clients—all from the comfort of your home.
+              of working with U.S. clients, all from the comfort of your home.
             </p>
           </motion.div>
         </div>

@@ -19,17 +19,17 @@ const values = [
   {
     icon: Globe,
     title: "Bridge Cultures",
-    description: "We specialize in bridging the gap between U.S. business culture and Latin American talent, creating seamless working relationships."
+    description: "We specialize in bridging the gap between U.S. business culture and Latin American talent, so teams actually click."
   },
   {
     icon: Award,
     title: "Quality Over Quantity",
-    description: "We'd rather find you one perfect candidate than ten mediocre ones. Our rigorous vetting process ensures only the top 1% make it through."
+    description: "We'd rather find you one perfect candidate than ten mediocre ones. Our careful vetting process means only the top 1% make it through."
   },
   {
     icon: Heart,
     title: "Long-Term Partnerships",
-    description: "We're not just filling positions—we're building lasting relationships. Our 2% annual turnover rate speaks to our commitment to fit."
+    description: "We're not just filling positions. We're building lasting relationships. Our 2% annual turnover rate speaks to our commitment to fit."
   },
   {
     icon: Handshake,
@@ -60,7 +60,7 @@ const AboutTBS = () => {
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               We're a U.S.-based staffing company that connects American businesses with top-tier 
-              South American talent—without the headaches of traditional offshore hiring.
+              South American talent, without the headaches of traditional offshore hiring.
             </p>
           </motion.div>
         </div>
@@ -87,14 +87,14 @@ const AboutTBS = () => {
                 </p>
                 <p>
                   After years of watching companies struggle with timezone misalignment, 
-                  cultural disconnects, and unreliable offshore vendors, we built something different—
-                  a staffing model that combines the cost advantages of global talent with 
+                  cultural disconnects, and unreliable offshore vendors, we built something different:
+                  a staffing model that combines the cost advantages of global talent with
                   the reliability and accountability of a U.S.-managed operation.
                 </p>
                 <p>
                   Today, we serve growing businesses across the United States, providing 
-                  dedicated professionals in accounting, engineering, customer support, and more. 
-                  Every hire is backed by our rigorous vetting process, U.S.-based management, 
+                  skilled professionals in accounting, engineering, customer support, and more.
+                  Every hire is backed by our careful vetting process, U.S.-based management,
                   and a commitment to long-term success.
                 </p>
               </div>

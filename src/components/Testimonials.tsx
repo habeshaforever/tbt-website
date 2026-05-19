@@ -3,21 +3,21 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "TBS has transformed how we scale our team. The quality of talent and the cost savings have exceeded our expectations.",
+    quote: "TBT has transformed how we scale our team. The quality of talent and the cost savings have exceeded our expectations.",
     author: "Sarah Johnson",
     role: "VP of Operations",
     company: "Tech Startup",
     rating: 5,
   },
   {
-    quote: "The seamless time zone alignment and communication skills of our TBS team members make them indistinguishable from our US staff.",
+    quote: "The seamless time zone alignment and communication skills of our TBT team members make them indistinguishable from our US staff.",
     author: "Michael Chen",
     role: "CEO",
     company: "E-commerce Brand",
     rating: 5,
   },
   {
-    quote: "We've tried offshore before. TBS nearshore model is different - the retention, the culture fit, everything is better.",
+    quote: "We've tried offshore before. TBT nearshore model is different - the retention, the culture fit, everything is better.",
     author: "Amanda Rodriguez",
     role: "Director of HR",
     company: "Financial Services",

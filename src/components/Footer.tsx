@@ -16,7 +16,7 @@ const footerLinks = {
   resources: [
     { label: "Why Nearshore", href: "/why-nearshore" },
     { label: "Nearshore vs Offshore", href: "/nearshore-vs-offshore" },
-    { label: "Why TBS", href: "/why-tbs" },
+    { label: "Why TBT", href: "/why-tbs" },
   ],
 };
 

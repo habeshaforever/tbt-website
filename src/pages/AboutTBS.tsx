@@ -24,7 +24,7 @@ const values = [
   {
     icon: Award,
     title: "Quality Over Quantity",
-    description: "We'd rather find you one perfect candidate than ten mediocre ones. Our rigorous vetting process ensures only the top 3% make it through."
+    description: "We'd rather find you one perfect candidate than ten mediocre ones. Our rigorous vetting process ensures only the top 1% make it through."
   },
   {
     icon: Heart,

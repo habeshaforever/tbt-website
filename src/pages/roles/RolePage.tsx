@@ -46,7 +46,7 @@ const roleData: Record<string, RoleData> = {
     benefits: [
       { title: "U.S. GAAP Expertise", description: "Professionals trained in American accounting standards" },
       { title: "Cost Savings", description: "Up to 70% savings compared to domestic hires" },
-      { title: "Real-Time Collaboration", description: "Same timezone work hours for seamless integration" },
+      { title: "Real-Time Collaboration", description: "Same timezone work hours so they fit right in" },
     ]
   },
   "invoicing-billing": {
@@ -56,7 +56,7 @@ const roleData: Record<string, RoleData> = {
     icon: FileText,
     roles: ["Billing Specialists", "Invoice Processors", "Collections Specialists", "Revenue Cycle Analysts", "Billing Coordinators"],
     benefits: [
-      { title: "Faster Collections", description: "Reduce days sales outstanding with dedicated follow-up" },
+      { title: "Faster Collections", description: "Reduce days sales outstanding with consistent follow-up" },
       { title: "Accuracy First", description: "Minimize billing errors and disputes" },
       { title: "Scalable Teams", description: "Flex capacity based on your billing volume" },
     ]
@@ -106,13 +106,13 @@ const roleData: Record<string, RoleData> = {
     benefits: [
       { title: "Insight Generation", description: "Turn complex data into clear narratives" },
       { title: "Tool Agnostic", description: "Expertise in Tableau, Power BI, Looker, and more" },
-      { title: "Data Pipeline Experts", description: "Build and maintain robust data infrastructure" },
+      { title: "Data Pipeline Experts", description: "Build and maintain reliable data infrastructure" },
     ]
   },
   "designers": {
     title: "Designers",
     subtitle: "Creative Excellence",
-    description: "UI/UX designers, graphic artists, and product designers who create beautiful, user-centered experiences that elevate your brand.",
+    description: "UI/UX designers, graphic artists, and product designers who create beautiful, user-centered experiences that strengthen your brand.",
     icon: Palette,
     roles: ["UI/UX Designers", "Product Designers", "Graphic Designers", "Motion Designers", "Brand Designers", "Design System Specialists"],
     benefits: [

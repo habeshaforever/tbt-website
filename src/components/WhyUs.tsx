@@ -25,7 +25,7 @@ const features = [
   {
     icon: Building2,
     title: "Modern Facilities",
-    description: "State-of-the-art office spaces across South America with enterprise-grade infrastructure, security, and technology.",
+    description: "We offer both flexible remote placements and dedicated office-based teams. Whether your hire works from home or from one of our South American offices, they'll have everything they need to perform at the highest level.",
   },
   {
     icon: Award,

@@ -32,8 +32,8 @@ const benefits = [
   },
   {
     icon: Globe,
-    title: "Remote-First",
-    description: "Work from anywhere in South America with reliable equipment provided."
+    title: "Flexible Work Options",
+    description: "Work remotely from home or from one of our modern South American offices, depending on your role and client needs."
   }
 ];
 

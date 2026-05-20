@@ -14,6 +14,7 @@ import AboutTBS from "./pages/AboutTBS";
 import Careers from "./pages/Careers";
 import ManagedStaffingPage from "./pages/solutions/ManagedStaffingPage";
 import RecruitingDirectHirePage from "./pages/solutions/RecruitingDirectHirePage";
+import BPO from "./pages/BPO";
 import RolePage from "./pages/roles/RolePage";
 import RolesIndexPage from "./pages/roles/RolesIndexPage";
 import NotFound from "./pages/NotFound";
@@ -45,6 +46,7 @@ const App = () => (
           {/* Solutions */}
           <Route path="/solutions/managed-staffing" element={<ManagedStaffingPage />} />
           <Route path="/solutions/recruiting-direct-hire" element={<RecruitingDirectHirePage />} />
+          <Route path="/bpo" element={<BPO />} />
           {/* Roles */}
           <Route path="/roles" element={<RolesIndexPage />} />
           <Route path="/roles/:category" element={<RolePage />} />

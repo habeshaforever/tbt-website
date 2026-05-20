@@ -88,6 +88,7 @@ const navItems: NavItem[] = [
     dropdown: [
       { label: "Why Tandem Bridge Talent", href: "/why-tbs" },
       { label: "Why Nearshore", href: "/why-nearshore" },
+      { label: "Why Colombia", href: "/why-colombia" },
     ]
   },
   { 

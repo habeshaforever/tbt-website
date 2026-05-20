@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Contact from "./pages/Contact";
 import WhyTBS from "./pages/WhyTBS";
 import WhyNearshore from "./pages/WhyNearshore";
+import WhyColombia from "./pages/WhyColombia";
 import OurProcess from "./pages/OurProcess";
 import NearshoreVsOffshore from "./pages/NearshoreVsOffshore";
 import AboutTBS from "./pages/AboutTBS";
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/why-tbs" element={<WhyTBS />} />
           <Route path="/why-nearshore" element={<WhyNearshore />} />
+          <Route path="/why-colombia" element={<WhyColombia />} />
           <Route path="/our-process" element={<OurProcess />} />
           <Route path="/nearshore-vs-offshore" element={<NearshoreVsOffshore />} />
           <Route path="/about-tbs" element={<AboutTBS />} />

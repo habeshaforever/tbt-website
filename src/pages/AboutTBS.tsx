@@ -66,6 +66,65 @@ const AboutTBS = () => {
         </div>
       </section>
 
+      {/* Built From the Ground Up */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-3xl mx-auto text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Built From the Ground Up
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Tandem Bridge Talent was built by two people who experienced the talent gap firsthand.
+              One from the business side, one from the talent side. Together they built something
+              that solves it from both ends.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {[
+              {
+                name: "Alpha Bayan",
+                title: "Co-Founder",
+                story:
+                  "Alpha grew up surrounded by entrepreneurship. Building something from the ground up was simply a way of life. Based between Indianapolis and Chicago, he earned his MHA and MBA from IUPUI and went on to work at IU Health, where he developed a deep understanding of operations and workforce management. As he scaled his own businesses the same problem kept showing up. Demand for reliable talented people was constant but the traditional hiring market kept falling short. He turned his attention to Latin America and saw not just an opportunity but a better way. He built his own remote team from scratch, refined a model built around partnership, quality, and people, and turned that experience into Tandem Bridge Talent."
+              },
+              {
+                name: "Gianna Reina",
+                title: "Co-Founder",
+                story:
+                  "Gianna brings a perspective most staffing leaders simply do not have. She has been on both sides of the equation. With five years in the remote work and staffing space, she built her career working remotely for American and Canadian companies across multiple high level roles. Through that experience she saw the gap clearly. There was an abundance of qualified driven Latin American professionals with no reliable path to the companies that needed them most. As someone who consistently ranked in the top percentile of remote workers herself, she developed a sharp eye for identifying top performers and built an extensive network of exceptional talent along the way. That insight and that network became the foundation she brought to Tandem Bridge Talent."
+              }
+            ].map((founder, index) => (
+              <motion.div
+                key={founder.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="bg-card border border-border rounded-2xl p-8 hover:shadow-lg transition-shadow"
+              >
+                <div className="flex flex-col items-center text-center mb-6">
+                  <div className="w-28 h-28 rounded-full bg-primary/10 border border-border flex items-center justify-center mb-4 overflow-hidden">
+                    <span className="text-3xl font-bold text-primary">
+                      {founder.name.split(" ").map((n) => n[0]).join("")}
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-foreground">{founder.name}</h3>
+                  <p className="text-primary font-medium">{founder.title}</p>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">{founder.story}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Our Story */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">

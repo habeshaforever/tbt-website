@@ -33,6 +33,7 @@ const navItems: NavItem[] = [
       primaryLinks: [
         { label: "Managed Staffing", href: "/solutions/managed-staffing" },
         { label: "Recruiting & Direct Hire", href: "/solutions/recruiting-direct-hire" },
+        { label: "Business Process Outsourcing", href: "/bpo" },
       ],
       roleCategories: [
         {

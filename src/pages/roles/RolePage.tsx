@@ -68,7 +68,7 @@ const roleData: Record<string, RoleData> = {
     icon: Code2,
     roles: ["Full-Stack Developers", "Frontend Engineers", "Backend Engineers", "Mobile Developers", "DevOps Engineers", "QA Engineers"],
     benefits: [
-      { title: "Top 2% Talent", description: "Rigorous technical vetting ensures only the best" },
+      { title: "Top 1% Talent", description: "Careful technical vetting ensures only the best" },
       { title: "Modern Stack", description: "Expertise in React, Node, Python, AWS, and more" },
       { title: "Agile Ready", description: "Developers experienced with Scrum and Kanban" },
     ]

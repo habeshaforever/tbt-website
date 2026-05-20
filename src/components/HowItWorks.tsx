@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Search, Users, CheckCircle, Rocket } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const steps = [
   {
@@ -80,6 +81,15 @@ export const HowItWorks = () => {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <Link
+            to="/our-process"
+            className="text-accent font-semibold hover:underline"
+          >
+            See Our Full Process →
+          </Link>
         </div>
       </div>
     </section>

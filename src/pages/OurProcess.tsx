@@ -94,7 +94,7 @@ const processSteps = [
 ];
 
 const timelineStats = [
-  { value: "48hrs", label: "First candidates presented" },
+  { value: "72hrs", label: "First candidates presented" },
   { value: "2 weeks", label: "Average time to hire" },
   { value: "98%", label: "Client satisfaction rate" },
   { value: "2%", label: "Annual turnover rate" },
@@ -120,7 +120,7 @@ const OurProcess = () => {
               From First Call to <span className="text-accent">Fully Integrated</span> Team Member
             </h1>
             <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
-              Our simple 7-step process gets you exceptional talent
+              Our proven process gets you exceptional talent
               without the complexity of traditional hiring.
             </p>
           </motion.div>

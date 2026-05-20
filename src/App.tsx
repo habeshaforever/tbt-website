@@ -16,6 +16,7 @@ import ManagedStaffingPage from "./pages/solutions/ManagedStaffingPage";
 import RecruitingDirectHirePage from "./pages/solutions/RecruitingDirectHirePage";
 import BPO from "./pages/BPO";
 import CustomerServiceIndustry from "./pages/industries/CustomerServiceIndustry";
+import FinancialServicesIndustry from "./pages/industries/FinancialServicesIndustry";
 import RolePage from "./pages/roles/RolePage";
 import RolesIndexPage from "./pages/roles/RolesIndexPage";
 import NotFound from "./pages/NotFound";
@@ -49,6 +50,7 @@ const App = () => (
           <Route path="/solutions/recruiting-direct-hire" element={<RecruitingDirectHirePage />} />
           <Route path="/bpo" element={<BPO />} />
           <Route path="/industries/customer-service" element={<CustomerServiceIndustry />} />
+          <Route path="/industries/financial-services" element={<FinancialServicesIndustry />} />
           {/* Roles */}
           <Route path="/roles" element={<RolesIndexPage />} />
           <Route path="/roles/:category" element={<RolePage />} />

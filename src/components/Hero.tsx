@@ -15,8 +15,8 @@ export const Hero = () => {
     <section className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden bg-gradient-dark">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-dark" />
-      <div className="absolute top-20 right-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-accent/10 rounded-full blur-3xl" />
+      <div className="absolute top-20 right-0 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-[200px] h-[200px] md:w-[400px] md:h-[400px] bg-accent/10 rounded-full blur-3xl" />
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -100,7 +100,7 @@ export const Hero = () => {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="relative"
+            className="relative mt-8 lg:mt-0"
           >
             <div className="grid grid-cols-2 gap-4">
               {/* Main Stat Card */}
@@ -109,7 +109,7 @@ export const Hero = () => {
                 className="col-span-2 bg-gradient-hero p-8 rounded-2xl text-primary-foreground shadow-glow"
               >
                 <div className="flex items-end gap-2">
-                  <AnimatedCounter end={70} suffix="%" className="text-6xl font-bold" />
+                  <AnimatedCounter end={70} suffix="%" className="text-4xl md:text-6xl font-bold" />
                 </div>
                 <p className="text-lg opacity-90 mt-2">Cost Savings vs. US Hiring</p>
               </motion.div>
@@ -119,7 +119,7 @@ export const Hero = () => {
                 whileHover={{ scale: 1.03 }}
                 className="bg-primary-foreground/5 p-6 rounded-2xl border border-primary-foreground/10"
               >
-                <AnimatedCounter end={2} suffix="%" className="text-4xl font-bold text-primary" />
+                <AnimatedCounter end={2} suffix="%" className="text-3xl md:text-4xl font-bold text-primary" />
                 <p className="text-muted-foreground mt-1">Turnover Rate</p>
               </motion.div>
 
@@ -127,7 +127,7 @@ export const Hero = () => {
                 whileHover={{ scale: 1.03 }}
                 className="bg-primary-foreground/5 p-6 rounded-2xl border border-primary-foreground/10"
               >
-                <AnimatedCounter end={98} suffix="%" className="text-4xl font-bold text-success" />
+                <AnimatedCounter end={98} suffix="%" className="text-3xl md:text-4xl font-bold text-success" />
                 <p className="text-muted-foreground mt-1">Retention Rate</p>
               </motion.div>
 

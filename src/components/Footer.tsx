@@ -51,7 +51,7 @@ export const Footer = () => {
   return (
     <footer id="about" className="bg-foreground text-primary-foreground pt-20 pb-8">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-12 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-8 md:gap-12 mb-16">
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-6">

@@ -72,7 +72,7 @@ const Contact = () => {
 
       {/* Main Content */}
 
-      <section className="pt-6 pb-6">
+      <section className="pt-6 pb-12">
 
         <div className="max-w-screen-xl mx-auto px-6">
 
@@ -248,7 +248,7 @@ const Contact = () => {
 
               <div className="bg-card rounded-2xl overflow-hidden shadow-lg border border-border">
 
-                <div style={{ overflow: 'hidden', height: '660px' }}>
+                <div className="overflow-hidden h-[500px] lg:h-[660px]">
     <InlineWidget
       url="https://calendly.com/tandembridge/tbt-strategy-call"
       styles={{

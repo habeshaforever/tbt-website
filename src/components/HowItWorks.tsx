@@ -31,7 +31,7 @@ const steps = [
 
 export const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="py-24 bg-gradient-dark text-primary-foreground overflow-hidden">
+    <section id="how-it-works" className="py-16 md:py-24 bg-gradient-dark text-primary-foreground overflow-hidden">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -41,9 +41,9 @@ const features = [
 
 export const WhyUs = () => {
   return (
-    <section id="why-us" className="py-24 bg-muted/30">
+    <section id="why-us" className="py-16 md:py-24 bg-muted/30">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left - Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -96,7 +96,7 @@ export const WhyUs = () => {
           </motion.div>
 
           {/* Right - Feature Grid */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4 mt-8 lg:mt-0">
             {features.map((feature, index) => (
               <motion.div
                 key={feature.title}

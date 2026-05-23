@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export const CTA = () => {
   return (
-    <section className="py-24 bg-gradient-hero relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-gradient-hero relative overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
       
@@ -19,7 +19,7 @@ export const CTA = () => {
           <h2 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-6">
             Ready to Scale Your Team with Elite South American Talent?
           </h2>
-          <p className="text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
+          <p className="text-base md:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
             Join hundreds of US companies saving 70% on staffing costs while 
             accessing the top 1% of nearshore talent.
           </p>

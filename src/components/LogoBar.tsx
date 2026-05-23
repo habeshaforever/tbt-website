@@ -11,18 +11,18 @@ const logos = [
 
 export const LogoBar = () => {
   return (
-    <section className="py-16 bg-muted/50 border-y border-border">
-      <div className="container mx-auto px-6">
+    <section className="py-10 sm:py-16 bg-muted/50 border-y border-border">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-10"
+          className="text-center text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-6 sm:mb-10"
         >
           As Featured In
         </motion.p>
-        
-        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+
+        <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 md:gap-12">
           {logos.map((logo, index) => (
             <motion.div
               key={logo.name}

@@ -27,23 +27,23 @@ const testimonials = [
 
 export const Testimonials = () => {
   return (
-    <section className="py-24 bg-background">
-      <div className="container mx-auto px-6">
+    <section className="py-14 sm:py-24 bg-background">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-3xl mx-auto mb-8 sm:mb-16"
         >
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">
             Client Success Stories
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-4 text-foreground">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-4 text-foreground">
             Trusted by Industry Leaders
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-4 sm:gap-8">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.author}
@@ -51,7 +51,7 @@ export const Testimonials = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="relative bg-card rounded-2xl border border-border p-8 hover:shadow-card-hover transition-shadow"
+              className="relative bg-card rounded-2xl border border-border p-5 sm:p-8 hover:shadow-card-hover transition-shadow"
             >
               {/* Quote Icon */}
               <Quote className="w-10 h-10 text-primary/20 absolute top-6 right-6" />

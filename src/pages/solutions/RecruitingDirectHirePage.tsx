@@ -58,8 +58,8 @@ export const RecruitingDirectHirePage = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-primary/5 to-background">
-        <div className="container mx-auto px-6">
+      <section className="pt-24 pb-12 sm:pt-32 sm:pb-20 bg-gradient-to-b from-primary/5 to-background">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -71,10 +71,10 @@ export const RecruitingDirectHirePage = () => {
             <span className="text-primary font-semibold text-sm uppercase tracking-wider">
               One-Time Hiring
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold mt-4 text-foreground">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mt-4 text-foreground">
               Recruiting & Direct Hire
             </h1>
-            <p className="text-xl text-muted-foreground mt-6 max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-muted-foreground mt-6 max-w-2xl mx-auto">
               We find the talent, you hire them directly. Get access to pre-vetted South American 
               professionals without ongoing management fees.
             </p>
@@ -91,15 +91,15 @@ export const RecruitingDirectHirePage = () => {
       </section>
 
       {/* What Is Recruiting & Direct Hire */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-3xl font-bold text-foreground mb-6">What Is Recruiting & Direct Hire?</h2>
+            <h2 className="text-xl sm:text-3xl font-bold text-foreground mb-6">What Is Recruiting & Direct Hire?</h2>
             <p className="text-lg text-muted-foreground">
               Recruiting & Direct Hire is a one-time engagement where we source, vet, and deliver 
               top candidates for your open positions. Once you make your hire, they become your employee 
@@ -110,15 +110,15 @@ export const RecruitingDirectHirePage = () => {
       </section>
 
       {/* What We Deliver */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-6 sm:mb-12"
           >
-            <h2 className="text-3xl font-bold text-foreground">What We Deliver</h2>
+            <h2 className="text-xl sm:text-3xl font-bold text-foreground">What We Deliver</h2>
             <p className="text-muted-foreground mt-4">A complete recruiting process from start to hire</p>
           </motion.div>
           
@@ -141,19 +141,19 @@ export const RecruitingDirectHirePage = () => {
       </section>
 
       {/* How It Works */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-6 sm:mb-12"
           >
-            <h2 className="text-3xl font-bold text-foreground">How It Works</h2>
+            <h2 className="text-xl sm:text-3xl font-bold text-foreground">How It Works</h2>
             <p className="text-muted-foreground mt-4">Four steps to your next great hire</p>
           </motion.div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 max-w-6xl mx-auto">
             {howItWorks.map((step, index) => (
               <motion.div
                 key={step.step}
@@ -173,19 +173,19 @@ export const RecruitingDirectHirePage = () => {
       </section>
 
       {/* Roles We Recruit */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-6 sm:mb-12"
           >
-            <h2 className="text-3xl font-bold text-foreground">Roles We Recruit</h2>
+            <h2 className="text-xl sm:text-3xl font-bold text-foreground">Roles We Recruit</h2>
             <p className="text-muted-foreground mt-4">Browse roles we commonly recruit for direct hire</p>
           </motion.div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto">
             {rolesWeRecruit.map((role, index) => (
               <motion.div
                 key={role.title}
@@ -196,7 +196,7 @@ export const RecruitingDirectHirePage = () => {
               >
                 <Link
                   to={role.href}
-                  className="group block bg-card rounded-xl border border-border p-6 hover:shadow-card-hover hover:border-primary/20 transition-all duration-300"
+                  className="group block bg-card rounded-xl border border-border p-4 sm:p-6 hover:shadow-card-hover hover:border-primary/20 transition-all duration-300"
                 >
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                     <role.icon className="w-6 h-6 text-primary" />
@@ -220,17 +220,17 @@ export const RecruitingDirectHirePage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-b from-background to-primary/5">
-        <div className="container mx-auto px-6 text-center">
+      <section className="py-12 sm:py-20 bg-gradient-to-b from-background to-primary/5">
+        <div className="container mx-auto px-4 sm:px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
               Ready to Find Your Next Hire?
             </h2>
-            <p className="text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
               Book a strategy call to discuss your hiring needs. We'll deliver a shortlist 
               of pre-vetted candidates ready to join your team.
             </p>

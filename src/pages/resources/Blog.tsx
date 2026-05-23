@@ -83,18 +83,18 @@ const Blog = () => {
       <Header />
 
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
-        <div className="container mx-auto px-6">
+      <section className="pt-24 pb-12 sm:pt-32 sm:pb-20 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
               <span className="text-primary">Blog</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto">
               Practical content on remote hiring, team building, and working with Latin American
               talent.
             </p>
@@ -103,10 +103,10 @@ const Blog = () => {
       </section>
 
       {/* Articles Grid */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6">
           {loading ? (
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
               {Array.from({ length: 6 }).map((_, i) => (
                 <div key={i} className="bg-card border border-border rounded-xl overflow-hidden animate-pulse">
                   <div className="h-44 bg-muted/50" />
@@ -119,7 +119,7 @@ const Blog = () => {
               ))}
             </div>
           ) : hasPosts ? (
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
               {posts.map((post, index) => (
                 <motion.div
                   key={post._id}
@@ -167,7 +167,7 @@ const Blog = () => {
               ))}
             </div>
           ) : (
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
               {placeholders.map((article, index) => (
                 <motion.div
                   key={article.headline}

@@ -368,7 +368,7 @@ export const Header = () => {
           exit={{ opacity: 0, y: -20 }}
           className="md:hidden fixed top-[57px] left-0 right-0 bg-background shadow-xl border-t border-border max-h-[85vh] overflow-y-auto z-50"
         >
-          <nav className="container mx-auto px-6 py-6 flex flex-col gap-4">
+          <nav className="container mx-auto px-4 sm:px-6 py-4 sm:py-6 flex flex-col gap-4">
             {navItems.map((item) => (
               <div key={item.label}>
                 {/* Solutions Mobile Dropdown */}
@@ -538,7 +538,7 @@ export const Header = () => {
                 )}
               </div>
             ))}
-            <Button variant="hero" className="mt-4" asChild>
+            <Button variant="hero" className="mt-4 w-full" asChild>
               <Link to="/book" onClick={() => setIsMobileMenuOpen(false)}>
                 Book a Strategy Call
               </Link>

@@ -75,8 +75,8 @@ export const RolesIndexPage = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-b from-primary/5 to-background">
-        <div className="container mx-auto px-6">
+      <section className="pt-24 pb-10 sm:pt-32 sm:pb-16 bg-gradient-to-b from-primary/5 to-background">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -85,10 +85,10 @@ export const RolesIndexPage = () => {
             <span className="text-primary font-semibold text-sm uppercase tracking-wider">
               Browse by Role
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold mt-4 text-foreground">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mt-4 text-foreground">
               All Roles
             </h1>
-            <p className="text-xl text-muted-foreground mt-6 max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-muted-foreground mt-6 max-w-2xl mx-auto">
               Explore our full range of staffing and recruiting services. Each role is available 
               through Managed Staffing or Recruiting & Direct Hire.
             </p>
@@ -98,7 +98,7 @@ export const RolesIndexPage = () => {
 
       {/* Clarity Line */}
       <section className="py-6 bg-muted/50 border-y border-border">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-center gap-3 text-center">
             <Info className="w-5 h-5 text-primary flex-shrink-0" />
             <p className="text-muted-foreground">
@@ -110,8 +110,8 @@ export const RolesIndexPage = () => {
       </section>
 
       {/* Roles Grid */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="space-y-16">
             {roleCategories.map((category, categoryIndex) => (
               <motion.div
@@ -133,7 +133,7 @@ export const RolesIndexPage = () => {
                     >
                       <Link
                         to={role.href}
-                        className="group block bg-card rounded-xl border border-border p-6 hover:shadow-card-hover hover:border-primary/20 transition-all duration-300"
+                        className="group block bg-card rounded-xl border border-border p-4 sm:p-6 hover:shadow-card-hover hover:border-primary/20 transition-all duration-300"
                       >
                         <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                           <role.icon className="w-6 h-6 text-primary" />
@@ -154,17 +154,17 @@ export const RolesIndexPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-b from-background to-primary/5">
-        <div className="container mx-auto px-6 text-center">
+      <section className="py-12 sm:py-20 bg-gradient-to-b from-background to-primary/5">
+        <div className="container mx-auto px-4 sm:px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
               Not Sure Which Service Is Right for You?
             </h2>
-            <p className="text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
               Book a strategy call and we'll help you determine the best approach for your hiring needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">

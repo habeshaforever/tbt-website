@@ -73,11 +73,11 @@ type Block = Record<string, any> & { _type: string; _key: string }
 function HeroSectionBlock({ block }: { block: Block }) {
   const isLeft = block.layout === "split-right" || block.layout === "left";
   return (
-    <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
-      <div className={`container mx-auto px-6 ${isLeft ? "flex flex-col md:flex-row items-center gap-12" : "text-center max-w-3xl mx-auto"}`}>
+    <section className="py-12 sm:py-20 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+      <div className={`container mx-auto px-4 sm:px-6 ${isLeft ? "flex flex-col md:flex-row items-center gap-6 sm:gap-12" : "text-center max-w-3xl mx-auto"}`}>
         <div className="flex-1">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 leading-tight">{block.headline}</h1>
-          {block.subheadline && <p className="text-xl text-muted-foreground mb-8">{block.subheadline}</p>}
+          <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 leading-tight">{block.headline}</h1>
+          {block.subheadline && <p className="text-base sm:text-xl text-muted-foreground mb-8">{block.subheadline}</p>}
           <div className="flex flex-wrap gap-3 justify-center md:justify-start">
             {block.buttonText && block.buttonLink && (
               <Button variant="hero" size="lg" asChild>
@@ -105,7 +105,7 @@ function RichTextSectionBlock({ block }: { block: Block }) {
   const widthClass = block.width === "full" ? "max-w-5xl" : block.width === "medium" ? "max-w-3xl" : "max-w-2xl";
   return (
     <section className="py-16 bg-background">
-      <div className={`container mx-auto px-6 ${widthClass}`}>
+      <div className={`container mx-auto px-4 sm:px-6 ${widthClass}`}>
         {block.sectionTitle && <h2 className="text-2xl font-bold text-foreground mb-6">{block.sectionTitle}</h2>}
         {block.body && <PortableText value={block.body} components={ptComponents} />}
       </div>
@@ -118,7 +118,7 @@ function ImageGallerySectionBlock({ block }: { block: Block }) {
   const gridClass = cols === 2 ? "grid-cols-1 sm:grid-cols-2" : cols === 4 ? "grid-cols-2 sm:grid-cols-4" : "grid-cols-1 sm:grid-cols-3";
   return (
     <section className="py-16 bg-background">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         {block.sectionTitle && <h2 className="text-2xl font-bold text-foreground mb-6 text-center">{block.sectionTitle}</h2>}
         <div className={`grid ${gridClass} gap-4`}>
           {block.images?.map((img: Block, i: number) => (
@@ -136,7 +136,7 @@ function ImageGallerySectionBlock({ block }: { block: Block }) {
 function FullWidthImageBlock({ block }: { block: Block }) {
   return (
     <section className="py-8">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <figure>
           <img
             src={urlFor(block.image).width(1200).fit("max").url()}
@@ -159,9 +159,9 @@ function CTABannerBlock({ block }: { block: Block }) {
   const subColor = isDark ? "text-background/70" : isLight ? "text-muted-foreground" : "text-white/80";
   return (
     <section className="py-16">
-      <div className="container mx-auto px-6">
-        <div className={`${bg} rounded-2xl p-12 text-center`}>
-          <h2 className={`text-3xl font-bold mb-3 ${textColor}`}>{block.headline}</h2>
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className={`${bg} rounded-2xl p-6 sm:p-12 text-center`}>
+          <h2 className={`text-xl sm:text-3xl font-bold mb-3 ${textColor}`}>{block.headline}</h2>
           {block.body && <p className={`mb-8 max-w-xl mx-auto ${subColor}`}>{block.body}</p>}
           <div className="flex flex-wrap gap-3 justify-center">
             {block.buttonText && block.buttonLink && (
@@ -184,9 +184,9 @@ function CTABannerBlock({ block }: { block: Block }) {
 function TestimonialSectionBlock({ block }: { block: Block }) {
   return (
     <section className="py-16 bg-background">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         {block.sectionTitle && <h2 className="text-2xl font-bold text-foreground mb-8 text-center">{block.sectionTitle}</h2>}
-        <div className={`grid gap-6 ${block.layout === "featured" ? "max-w-2xl mx-auto" : "md:grid-cols-2 lg:grid-cols-3"}`}>
+        <div className={`grid gap-4 sm:gap-6 ${block.layout === "featured" ? "max-w-2xl mx-auto" : "md:grid-cols-2 lg:grid-cols-3"}`}>
           {block.testimonials?.map((t: Block, i: number) => (
             <blockquote key={i} className="bg-card border border-border rounded-xl p-6">
               {t.rating && <div className="text-yellow-400 mb-3">{"★".repeat(t.rating)}</div>}
@@ -213,13 +213,13 @@ function TestimonialSectionBlock({ block }: { block: Block }) {
 function StatsSectionBlock({ block }: { block: Block }) {
   return (
     <section className="py-16 bg-background">
-      <div className="container mx-auto px-6 text-center">
+      <div className="container mx-auto px-4 sm:px-6 text-center">
         {block.sectionTitle && <h2 className="text-2xl font-bold text-foreground mb-2">{block.sectionTitle}</h2>}
         {block.sectionSubtitle && <p className="text-muted-foreground mb-10">{block.sectionSubtitle}</p>}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 max-w-4xl mx-auto">
           {block.stats?.map((s: Block, i: number) => (
-            <div key={i} className="bg-card border border-border rounded-xl p-6">
-              <div className="text-3xl font-bold text-primary mb-1">{s.value}</div>
+            <div key={i} className="bg-card border border-border rounded-xl p-4 sm:p-6">
+              <div className="text-2xl sm:text-3xl font-bold text-primary mb-1">{s.value}</div>
               <div className="text-sm font-semibold text-foreground">{s.label}</div>
               {s.description && <div className="text-xs text-muted-foreground mt-1">{s.description}</div>}
             </div>
@@ -234,7 +234,7 @@ function FAQSectionBlock({ block }: { block: Block }) {
   const [open, setOpen] = useState<number | null>(null);
   return (
     <section className="py-16 bg-background">
-      <div className="container mx-auto px-6 max-w-3xl">
+      <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
         {block.sectionTitle && <h2 className="text-2xl font-bold text-foreground mb-8 text-center">{block.sectionTitle}</h2>}
         <div className="space-y-3">
           {block.faqs?.map((faq: Block, i: number) => (
@@ -261,7 +261,7 @@ function QuoteBlock({ block }: { block: Block }) {
   const isLarge = block.size !== "standard";
   return (
     <section className="py-12">
-      <div className="container mx-auto px-6 max-w-3xl">
+      <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
         <blockquote className={`border-l-4 border-primary pl-6 ${isLarge ? "py-4" : ""}`}>
           <p className={`font-medium text-foreground italic leading-relaxed ${isLarge ? "text-2xl" : "text-lg"}`}>
             "{block.quote}"
@@ -278,7 +278,7 @@ function QuoteBlock({ block }: { block: Block }) {
 function TimelineSectionBlock({ block }: { block: Block }) {
   return (
     <section className="py-16 bg-background">
-      <div className="container mx-auto px-6 max-w-3xl">
+      <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
         {block.sectionTitle && <h2 className="text-2xl font-bold text-foreground mb-8">{block.sectionTitle}</h2>}
         <div className="space-y-6">
           {block.items?.map((item: Block, i: number) => (
@@ -303,12 +303,12 @@ function TimelineSectionBlock({ block }: { block: Block }) {
 function TeamSectionBlock({ block }: { block: Block }) {
   return (
     <section className="py-16 bg-background">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         {block.sectionTitle && <h2 className="text-2xl font-bold text-foreground mb-2 text-center">{block.sectionTitle}</h2>}
         {block.sectionSubtitle && <p className="text-muted-foreground mb-10 text-center">{block.sectionSubtitle}</p>}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
           {block.members?.map((m: Block, i: number) => (
-            <div key={i} className="bg-card border border-border rounded-xl p-6 text-center">
+            <div key={i} className="bg-card border border-border rounded-xl p-4 sm:p-6 text-center">
               {m.photo?.asset && (
                 <img src={urlFor(m.photo).width(120).height(120).fit("crop").url()} alt={m.name ?? ""} className="w-16 h-16 rounded-full object-cover mx-auto mb-3" />
               )}
@@ -326,7 +326,7 @@ function TeamSectionBlock({ block }: { block: Block }) {
 function ComparisonTableBlock({ block }: { block: Block }) {
   return (
     <section className="py-16 bg-background">
-      <div className="container mx-auto px-6 max-w-3xl">
+      <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
         {block.sectionTitle && <h2 className="text-2xl font-bold text-foreground mb-8 text-center">{block.sectionTitle}</h2>}
         <div className="border border-border rounded-xl overflow-hidden">
           <div className="grid grid-cols-3 bg-muted px-4 py-3 font-semibold text-sm text-foreground">
@@ -356,7 +356,7 @@ function VideoEmbedBlock({ block }: { block: Block }) {
 
   return (
     <section className="py-16 bg-background">
-      <div className="container mx-auto px-6 max-w-3xl">
+      <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
         {block.sectionTitle && <h2 className="text-2xl font-bold text-foreground mb-6 text-center">{block.sectionTitle}</h2>}
         <div className="relative rounded-2xl overflow-hidden bg-black aspect-video">
           {!playing && block.thumbnail?.asset ? (
@@ -382,7 +382,7 @@ function SplitImageTextBlock({ block }: { block: Block }) {
   const imageLeft = block.imagePosition !== "right";
   return (
     <section className="py-16 bg-background">
-      <div className={`container mx-auto px-6 flex flex-col ${imageLeft ? "md:flex-row" : "md:flex-row-reverse"} items-center gap-12`}>
+      <div className={`container mx-auto px-4 sm:px-6 flex flex-col ${imageLeft ? "md:flex-row" : "md:flex-row-reverse"} items-center gap-6 sm:gap-12`}>
         {block.image?.asset && (
           <div className="flex-1">
             <img src={urlFor(block.image).width(600).fit("max").url()} alt={block.image.alt ?? ""} className="rounded-2xl w-full" />
@@ -405,7 +405,7 @@ function SplitImageTextBlock({ block }: { block: Block }) {
 function LogoCloudBlock({ block }: { block: Block }) {
   return (
     <section className="py-12 bg-background">
-      <div className="container mx-auto px-6 text-center">
+      <div className="container mx-auto px-4 sm:px-6 text-center">
         {block.sectionTitle && <p className="text-sm text-muted-foreground mb-8 uppercase tracking-widest">{block.sectionTitle}</p>}
         <div className="flex flex-wrap justify-center items-center gap-8">
           {block.logos?.map((l: Block, i: number) => (
@@ -428,8 +428,8 @@ function LogoCloudBlock({ block }: { block: Block }) {
 function DownloadableResourceBlock({ block }: { block: Block }) {
   return (
     <section className="py-16 bg-background">
-      <div className="container mx-auto px-6 max-w-2xl">
-        <div className="bg-card border border-border rounded-2xl p-8 flex gap-6 items-start">
+      <div className="container mx-auto px-4 sm:px-6 max-w-2xl">
+        <div className="bg-card border border-border rounded-2xl p-5 sm:p-8 flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
           {block.thumbnail?.asset && (
             <img src={urlFor(block.thumbnail).width(80).height(100).fit("crop").url()} alt={block.title ?? ""} className="rounded-lg w-16 shrink-0" />
           )}

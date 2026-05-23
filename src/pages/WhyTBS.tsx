@@ -62,20 +62,20 @@ const WhyTBS = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-hero relative overflow-hidden">
+      <section className="pt-24 pb-10 sm:pt-32 sm:pb-16 bg-gradient-hero relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
-        
-        <div className="container mx-auto px-6 relative z-10">
+
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6">
               Why Tandem Bridge Talent?
             </h1>
-            <p className="text-xl text-primary-foreground/80">
+            <p className="text-base sm:text-xl text-primary-foreground/80">
               U.S. operated. Nearshore teams that perform. We deliver the talent, 
               infrastructure, and support you need to scale efficiently.
             </p>
@@ -84,25 +84,25 @@ const WhyTBS = () => {
       </section>
 
       {/* Benefits Grid */}
-      <section className="py-20">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="text-center mb-8 sm:mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
               The Tandem Bridge Talent Advantage
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
               We combine the cost efficiency of nearshore staffing with the reliability 
               and accountability of a U.S.-based operation.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
             {benefits.map((benefit, index) => (
               <motion.div
                 key={benefit.title}
@@ -110,7 +110,7 @@ const WhyTBS = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-card rounded-2xl p-8 border border-border hover:shadow-lg transition-shadow"
+                className="bg-card rounded-2xl p-5 sm:p-8 border border-border hover:shadow-lg transition-shadow"
               >
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
                   <benefit.icon className="w-7 h-7 text-primary" />
@@ -128,19 +128,19 @@ const WhyTBS = () => {
       </section>
 
       {/* Our Process Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <section className="py-12 sm:py-20 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
                 A Rigorous Vetting Process
               </h2>
-              <p className="text-lg text-muted-foreground mb-8">
+              <p className="text-base sm:text-lg text-muted-foreground mb-8">
                 Every candidate goes through our thorough screening process to make sure
                 they meet the highest standards of skill, professionalism, and cultural fit.
               </p>
@@ -167,7 +167,7 @@ const WhyTBS = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-card rounded-2xl p-10 border border-border shadow-lg"
+              className="bg-card rounded-2xl p-6 sm:p-10 border border-border shadow-lg"
             >
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center">
@@ -197,19 +197,19 @@ const WhyTBS = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-gradient-hero rounded-3xl p-12 md:p-16 text-center"
+            className="bg-gradient-hero rounded-3xl p-6 sm:p-12 md:p-16 text-center"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
               Ready to Build Your Dream Team?
             </h2>
-            <p className="text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
               Let's discuss how Tandem Bridge Talent can help you scale with top-tier 
               nearshore talent.
             </p>

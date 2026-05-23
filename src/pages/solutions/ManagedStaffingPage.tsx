@@ -58,8 +58,8 @@ export const ManagedStaffingPage = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-primary/5 to-background">
-        <div className="container mx-auto px-6">
+      <section className="pt-24 pb-12 sm:pt-32 sm:pb-20 bg-gradient-to-b from-primary/5 to-background">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -71,10 +71,10 @@ export const ManagedStaffingPage = () => {
             <span className="text-primary font-semibold text-sm uppercase tracking-wider">
               Ongoing Team Management
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold mt-4 text-foreground">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mt-4 text-foreground">
               Managed Staffing
             </h1>
-            <p className="text-xl text-muted-foreground mt-6 max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-muted-foreground mt-6 max-w-2xl mx-auto">
               We don't just find your talent. We manage the team so you can focus on your business.
               From payroll to performance, we handle the day-to-day.
             </p>
@@ -91,15 +91,15 @@ export const ManagedStaffingPage = () => {
       </section>
 
       {/* What Is Managed Staffing */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-3xl font-bold text-foreground mb-6">What Is Managed Staffing?</h2>
+            <h2 className="text-xl sm:text-3xl font-bold text-foreground mb-6">What Is Managed Staffing?</h2>
             <p className="text-lg text-muted-foreground">
               Managed Staffing is an ongoing partnership where Tandem Bridge Talent provides and manages 
               your remote team members. We handle payroll, HR operations, compliance, and performance 
@@ -110,15 +110,15 @@ export const ManagedStaffingPage = () => {
       </section>
 
       {/* What Is Included */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-6 sm:mb-12"
           >
-            <h2 className="text-3xl font-bold text-foreground">What's Included</h2>
+            <h2 className="text-xl sm:text-3xl font-bold text-foreground">What's Included</h2>
             <p className="text-muted-foreground mt-4">Everything you need for a hands-off team experience</p>
           </motion.div>
           
@@ -141,19 +141,19 @@ export const ManagedStaffingPage = () => {
       </section>
 
       {/* How It Works */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-6 sm:mb-12"
           >
-            <h2 className="text-3xl font-bold text-foreground">How It Works</h2>
+            <h2 className="text-xl sm:text-3xl font-bold text-foreground">How It Works</h2>
             <p className="text-muted-foreground mt-4">Four simple steps to your managed team</p>
           </motion.div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 max-w-6xl mx-auto">
             {howItWorks.map((step, index) => (
               <motion.div
                 key={step.step}
@@ -173,19 +173,19 @@ export const ManagedStaffingPage = () => {
       </section>
 
       {/* Popular Roles */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-6 sm:mb-12"
           >
-            <h2 className="text-3xl font-bold text-foreground">Popular Roles</h2>
+            <h2 className="text-xl sm:text-3xl font-bold text-foreground">Popular Roles</h2>
             <p className="text-muted-foreground mt-4">Browse roles commonly filled through Managed Staffing</p>
           </motion.div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto">
             {popularRoles.map((role, index) => (
               <motion.div
                 key={role.title}
@@ -196,7 +196,7 @@ export const ManagedStaffingPage = () => {
               >
                 <Link
                   to={role.href}
-                  className="group block bg-card rounded-xl border border-border p-6 hover:shadow-card-hover hover:border-primary/20 transition-all duration-300"
+                  className="group block bg-card rounded-xl border border-border p-4 sm:p-6 hover:shadow-card-hover hover:border-primary/20 transition-all duration-300"
                 >
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                     <role.icon className="w-6 h-6 text-primary" />
@@ -220,17 +220,17 @@ export const ManagedStaffingPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-b from-background to-primary/5">
-        <div className="container mx-auto px-6 text-center">
+      <section className="py-12 sm:py-20 bg-gradient-to-b from-background to-primary/5">
+        <div className="container mx-auto px-4 sm:px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
               Ready to Build Your Managed Team?
             </h2>
-            <p className="text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
               Book a strategy call to discuss your needs. We'll show you how Managed Staffing 
               can transform your operations.
             </p>

@@ -61,20 +61,20 @@ const WhyNearshore = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-hero relative overflow-hidden">
+      <section className="pt-24 pb-10 sm:pt-32 sm:pb-16 bg-gradient-hero relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
-        
-        <div className="container mx-auto px-6 relative z-10">
+
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6">
               Why Nearshore?
             </h1>
-            <p className="text-xl text-primary-foreground/80">
+            <p className="text-base sm:text-xl text-primary-foreground/80">
               The strategic advantage of South American talent: cost savings, time zone 
               alignment, and world-class professionals who work when you work.
             </p>
@@ -83,25 +83,25 @@ const WhyNearshore = () => {
       </section>
 
       {/* Advantages Grid */}
-      <section className="py-20">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="text-center mb-8 sm:mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
               The Nearshore Advantage
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
               South America offers a unique combination of talent, cost efficiency, and 
               operational alignment that offshore destinations simply can't match.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
             {advantages.map((advantage, index) => (
               <motion.div
                 key={advantage.title}
@@ -109,7 +109,7 @@ const WhyNearshore = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-card rounded-2xl p-8 border border-border hover:shadow-lg transition-shadow"
+                className="bg-card rounded-2xl p-5 sm:p-8 border border-border hover:shadow-lg transition-shadow"
               >
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
                   <advantage.icon className="w-7 h-7 text-primary" />
@@ -127,19 +127,19 @@ const WhyNearshore = () => {
       </section>
 
       {/* Comparison Table */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-12"
+            className="text-center mb-6 sm:mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
               Nearshore vs. Offshore vs. Domestic
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
               See how nearshore staffing compares to other talent sourcing strategies.
             </p>
           </motion.div>
@@ -155,10 +155,10 @@ const WhyNearshore = () => {
               <table className="w-full">
                 <thead>
                   <tr className="bg-primary text-primary-foreground">
-                    <th className="px-6 py-4 text-left font-semibold">Factor</th>
-                    <th className="px-6 py-4 text-left font-semibold">Nearshore (South America)</th>
-                    <th className="px-6 py-4 text-left font-semibold">Offshore (Asia)</th>
-                    <th className="px-6 py-4 text-left font-semibold">Domestic (U.S.)</th>
+                    <th className="px-3 sm:px-6 py-3 sm:py-4 text-left text-xs sm:text-sm font-semibold">Factor</th>
+                    <th className="px-3 sm:px-6 py-3 sm:py-4 text-left text-xs sm:text-sm font-semibold">Nearshore</th>
+                    <th className="px-3 sm:px-6 py-3 sm:py-4 text-left text-xs sm:text-sm font-semibold">Offshore</th>
+                    <th className="px-3 sm:px-6 py-3 sm:py-4 text-left text-xs sm:text-sm font-semibold">Domestic</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -167,10 +167,10 @@ const WhyNearshore = () => {
                       key={row.factor} 
                       className={index % 2 === 0 ? 'bg-background' : 'bg-muted/30'}
                     >
-                      <td className="px-6 py-4 font-medium text-foreground">{row.factor}</td>
-                      <td className="px-6 py-4 text-primary font-medium">{row.nearshore}</td>
-                      <td className="px-6 py-4 text-muted-foreground">{row.offshore}</td>
-                      <td className="px-6 py-4 text-muted-foreground">{row.domestic}</td>
+                      <td className="px-3 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm font-medium text-foreground">{row.factor}</td>
+                      <td className="px-3 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm text-primary font-medium">{row.nearshore}</td>
+                      <td className="px-3 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm text-muted-foreground">{row.offshore}</td>
+                      <td className="px-3 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm text-muted-foreground">{row.domestic}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -181,20 +181,20 @@ const WhyNearshore = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-8">
+      <section className="py-12 sm:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center p-8"
+              className="text-center p-5 sm:p-8"
             >
               <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                 <TrendingUp className="w-8 h-8 text-primary" />
               </div>
-              <div className="text-4xl font-bold text-primary mb-2">500K+</div>
+              <div className="text-2xl sm:text-4xl font-bold text-primary mb-2">500K+</div>
               <p className="text-muted-foreground">
                 Engineering graduates annually in South America
               </p>
@@ -205,12 +205,12 @@ const WhyNearshore = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-center p-8"
+              className="text-center p-5 sm:p-8"
             >
               <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-primary" />
               </div>
-              <div className="text-4xl font-bold text-primary mb-2">1-3 hrs</div>
+              <div className="text-2xl sm:text-4xl font-bold text-primary mb-2">1-3 hrs</div>
               <p className="text-muted-foreground">
                 Time difference from major U.S. cities
               </p>
@@ -221,12 +221,12 @@ const WhyNearshore = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-center p-8"
+              className="text-center p-5 sm:p-8"
             >
               <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                 <DollarSign className="w-8 h-8 text-primary" />
               </div>
-              <div className="text-4xl font-bold text-primary mb-2">70%</div>
+              <div className="text-2xl sm:text-4xl font-bold text-primary mb-2">70%</div>
               <p className="text-muted-foreground">
                 Average cost savings vs. U.S. hiring
               </p>
@@ -236,19 +236,19 @@ const WhyNearshore = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-gradient-hero rounded-3xl p-12 md:p-16 text-center"
+            className="bg-gradient-hero rounded-3xl p-6 sm:p-12 md:p-16 text-center"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
               Experience the Nearshore Difference
             </h2>
-            <p className="text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
               Book a strategy call to learn how nearshore staffing can transform 
               your operations and accelerate your growth.
             </p>

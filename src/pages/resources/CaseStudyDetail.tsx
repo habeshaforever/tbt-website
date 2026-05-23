@@ -141,8 +141,8 @@ const CaseStudyDetail = () => {
     <div className="min-h-screen bg-background">
       <Header />
 
-      <section className="pt-32 pb-20">
-        <div className="container mx-auto px-6 max-w-3xl">
+      <section className="pt-24 pb-12 sm:pt-32 sm:pb-20">
+        <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
 
           {loading && (
             <div className="animate-pulse space-y-6">

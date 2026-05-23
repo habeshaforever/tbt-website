@@ -106,8 +106,8 @@ const OurProcess = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-dark text-primary-foreground">
-        <div className="container mx-auto px-6">
+      <section className="pt-24 pb-12 sm:pt-32 sm:pb-20 bg-gradient-dark text-primary-foreground">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -116,10 +116,10 @@ const OurProcess = () => {
             <span className="text-accent font-semibold text-sm uppercase tracking-wider">
               Our Process
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-6">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-4 sm:mb-6">
               From First Call to <span className="text-accent">Fully Integrated</span> Team Member
             </h1>
-            <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-primary-foreground/80 max-w-2xl mx-auto">
               Our proven process gets you exceptional talent
               without the complexity of traditional hiring.
             </p>
@@ -130,11 +130,11 @@ const OurProcess = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-4xl mx-auto"
+            className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 mt-8 sm:mt-16 max-w-4xl mx-auto"
           >
             {timelineStats.map((stat, index) => (
-              <div key={index} className="text-center p-6 bg-primary-foreground/5 rounded-xl border border-primary-foreground/10">
-                <div className="text-3xl font-bold text-accent mb-2">{stat.value}</div>
+              <div key={index} className="text-center p-4 sm:p-6 bg-primary-foreground/5 rounded-xl border border-primary-foreground/10">
+                <div className="text-xl sm:text-3xl font-bold text-accent mb-2">{stat.value}</div>
                 <div className="text-sm text-primary-foreground/70">{stat.label}</div>
               </div>
             ))}
@@ -143,8 +143,8 @@ const OurProcess = () => {
       </section>
 
       {/* Process Steps */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-6">
+      <section className="py-14 sm:py-24 bg-background">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-5xl mx-auto">
             {processSteps.map((step, index) => (
               <motion.div
@@ -153,7 +153,7 @@ const OurProcess = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className={`flex flex-col md:flex-row items-start gap-8 mb-16 ${
+                className={`flex flex-col md:flex-row items-start gap-4 sm:gap-8 mb-8 sm:mb-16 ${
                   index % 2 === 1 ? "md:flex-row-reverse" : ""
                 }`}
               >
@@ -172,8 +172,8 @@ const OurProcess = () => {
                 </div>
 
                 {/* Content */}
-                <div className="flex-1 bg-card border border-border rounded-2xl p-8">
-                  <h3 className="text-2xl font-bold text-foreground mb-3">{step.title}</h3>
+                <div className="flex-1 bg-card border border-border rounded-2xl p-4 sm:p-8">
+                  <h3 className="text-lg sm:text-2xl font-bold text-foreground mb-3">{step.title}</h3>
                   <p className="text-muted-foreground mb-6">{step.description}</p>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {step.details.map((detail, i) => (
@@ -191,19 +191,19 @@ const OurProcess = () => {
       </section>
 
       {/* Guarantee Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="max-w-4xl mx-auto text-center"
           >
-            <Shield className="w-16 h-16 text-accent mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <Shield className="w-12 h-12 sm:w-16 sm:h-16 text-accent mx-auto mb-4 sm:mb-6" />
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
               Our Risk-Free Guarantee
             </h2>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
               If your new hire doesn't work out within the first 90 days, 
               we'll find you a replacement at no additional cost. That's our commitment 
               to your success.

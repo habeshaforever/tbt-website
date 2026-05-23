@@ -24,7 +24,7 @@ const Contact = () => {
 
         
 
-        <div className="container mx-auto px-6 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
 
           <motion.div initial={{
 
@@ -50,7 +50,7 @@ const Contact = () => {
               </span>
             </div>
 
-            <h1 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-foreground mb-4 sm:mb-6">
               Book Your <span className="text-accent">Strategy Call</span>
             </h1>
 
@@ -73,7 +73,7 @@ const Contact = () => {
 
       <section className="pt-6 pb-12">
 
-        <div className="max-w-screen-xl mx-auto px-6">
+        <div className="max-w-screen-xl mx-auto px-4 sm:px-6">
 
           <div className="grid grid-cols-1 lg:grid-cols-7 gap-6">
 
@@ -99,7 +99,7 @@ const Contact = () => {
 
           }} className="lg:col-span-2 flex items-center w-full">
 
-              <div className="bg-card rounded-2xl p-6 shadow-lg border border-border">
+              <div className="bg-card rounded-2xl p-4 sm:p-6 shadow-lg border border-border">
 
                 <h2 className="text-xl font-bold text-primary mb-4">
 

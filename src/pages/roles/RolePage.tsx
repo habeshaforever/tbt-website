@@ -267,23 +267,23 @@ export const RolePage = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-12 bg-gradient-to-b from-primary/5 to-background">
-        <div className="container mx-auto px-6">
+      <section className="pt-24 pb-8 sm:pt-32 sm:pb-12 bg-gradient-to-b from-primary/5 to-background">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <div className="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
-              <IconComponent className="w-10 h-10 text-primary" />
+            <div className="w-16 h-16 sm:w-20 sm:h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <IconComponent className="w-8 h-8 sm:w-10 sm:h-10 text-primary" />
             </div>
             <span className="text-primary font-semibold text-sm uppercase tracking-wider">
               {data.subtitle}
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold mt-4 text-foreground">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mt-4 text-foreground">
               {data.title}
             </h1>
-            <p className="text-xl text-muted-foreground mt-6 max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-muted-foreground mt-6 max-w-2xl mx-auto">
               {data.description}
             </p>
           </motion.div>
@@ -292,7 +292,7 @@ export const RolePage = () => {
 
       {/* Clarity Line */}
       <section className="py-4 bg-muted/50 border-y border-border">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-center gap-3 text-center">
             <Info className="w-5 h-5 text-primary flex-shrink-0" />
             <p className="text-sm text-muted-foreground">
@@ -304,10 +304,10 @@ export const RolePage = () => {
       </section>
 
       {/* Service Selector */}
-      <section className="py-12 bg-background">
-        <div className="container mx-auto px-6">
+      <section className="py-8 sm:py-12 bg-background">
+        <div className="container mx-auto px-4 sm:px-6">
           <Tabs defaultValue="managed" className="max-w-4xl mx-auto">
-            <TabsList className="grid w-full grid-cols-2 mb-8">
+            <TabsList className="grid w-full grid-cols-2 mb-6 sm:mb-8">
               <TabsTrigger value="managed" className="text-sm md:text-base">
                 Managed Staffing
               </TabsTrigger>
@@ -326,8 +326,8 @@ export const RolePage = () => {
                   <p className="text-lg text-muted-foreground">{managedStaffingContent.description}</p>
                 </div>
                 
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div className="bg-card p-6 rounded-xl border border-border">
+                <div className="grid md:grid-cols-2 gap-4 sm:gap-8">
+                  <div className="bg-card p-4 sm:p-6 rounded-xl border border-border">
                     <h3 className="text-lg font-semibold text-foreground mb-4">What We Manage After Hire</h3>
                     <ul className="space-y-3">
                       {managedStaffingContent.whatWeManage.map((item) => (
@@ -378,8 +378,8 @@ export const RolePage = () => {
                   <p className="text-lg text-muted-foreground">{recruitingContent.description}</p>
                 </div>
                 
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div className="bg-card p-6 rounded-xl border border-border">
+                <div className="grid md:grid-cols-2 gap-4 sm:gap-8">
+                  <div className="bg-card p-4 sm:p-6 rounded-xl border border-border">
                     <h3 className="text-lg font-semibold text-foreground mb-4">What We Deliver</h3>
                     <ul className="space-y-3">
                       {recruitingContent.whatWeDeliver.map((item) => (
@@ -424,27 +424,27 @@ export const RolePage = () => {
       </section>
 
       {/* Stats Bar */}
-      <section className="py-12 bg-card border-y border-border">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <section className="py-8 sm:py-12 bg-card border-y border-border">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8 text-center">
             <div>
               <div className="flex items-center justify-center gap-2 text-primary mb-2">
                 <DollarSign className="w-6 h-6" />
-                <span className="text-3xl font-bold">70%</span>
+                <span className="text-xl sm:text-3xl font-bold">70%</span>
               </div>
               <p className="text-muted-foreground">Cost Savings vs. U.S. Hires</p>
             </div>
             <div>
               <div className="flex items-center justify-center gap-2 text-primary mb-2">
                 <Clock className="w-6 h-6" />
-                <span className="text-3xl font-bold">2-3 Weeks</span>
+                <span className="text-xl sm:text-3xl font-bold">2-3 Weeks</span>
               </div>
               <p className="text-muted-foreground">Average Time to Hire</p>
             </div>
             <div>
               <div className="flex items-center justify-center gap-2 text-primary mb-2">
                 <Users className="w-6 h-6" />
-                <span className="text-3xl font-bold">2%</span>
+                <span className="text-xl sm:text-3xl font-bold">2%</span>
               </div>
               <p className="text-muted-foreground">Annualized Turnover Rate</p>
             </div>
@@ -453,15 +453,15 @@ export const RolePage = () => {
       </section>
 
       {/* Roles We Fill */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-6 sm:mb-12"
           >
-            <h2 className="text-3xl font-bold text-foreground">Roles We Fill</h2>
+            <h2 className="text-xl sm:text-3xl font-bold text-foreground">Roles We Fill</h2>
             <p className="text-muted-foreground mt-4">Pre-vetted professionals ready to join your team</p>
           </motion.div>
           
@@ -484,19 +484,19 @@ export const RolePage = () => {
       </section>
 
       {/* Benefits */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-6 sm:mb-12"
           >
-            <h2 className="text-3xl font-bold text-foreground">Why Choose Tandem Bridge Talent</h2>
+            <h2 className="text-xl sm:text-3xl font-bold text-foreground">Why Choose Tandem Bridge Talent</h2>
             <p className="text-muted-foreground mt-4">The nearshore advantage for {data.title.toLowerCase()}</p>
           </motion.div>
           
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-8 max-w-5xl mx-auto">
             {data.benefits.map((benefit, index) => (
               <motion.div
                 key={benefit.title}
@@ -504,7 +504,7 @@ export const RolePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-card p-6 rounded-xl border border-border"
+                className="bg-card p-4 sm:p-6 rounded-xl border border-border"
               >
                 <h3 className="text-lg font-semibold text-foreground mb-2">{benefit.title}</h3>
                 <p className="text-muted-foreground">{benefit.description}</p>
@@ -515,17 +515,17 @@ export const RolePage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-b from-background to-primary/5">
-        <div className="container mx-auto px-6 text-center">
+      <section className="py-12 sm:py-20 bg-gradient-to-b from-background to-primary/5">
+        <div className="container mx-auto px-4 sm:px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
               Ready to Build Your Team?
             </h2>
-            <p className="text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
               Book a Strategy Call. We'll help you find the perfect {data.title.toLowerCase()} professionals for your team.
             </p>
             <Button variant="hero" size="lg" className="mt-8" asChild>

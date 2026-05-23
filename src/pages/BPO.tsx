@@ -112,18 +112,18 @@ const BPO = () => {
       <Header />
 
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
-        <div className="container mx-auto px-6">
+      <section className="pt-24 pb-12 sm:pt-32 sm:pb-20 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
               Business Process <span className="text-primary">Outsourcing</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+            <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
               Hand off the work that slows your business down. Keep your focus on what moves it forward.
             </p>
             <Button size="lg" variant="hero" asChild>
@@ -134,16 +134,16 @@ const BPO = () => {
       </section>
 
       {/* What is BPO */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">What Is BPO</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">What Is BPO</h2>
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
               Business Process Outsourcing is the practice of delegating specific business functions to
               an outside team. Rather than hiring internally for every role, companies use BPO to build
               dedicated teams that handle defined processes at a fraction of the cost. At Tandem Bridge
@@ -155,17 +155,17 @@ const BPO = () => {
       </section>
 
       {/* What We Handle */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-8 sm:mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">What We Handle</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">What We Handle</h2>
           </motion.div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
             {services.map((service, index) => (
               <motion.div
                 key={service.title}
@@ -173,7 +173,7 @@ const BPO = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-shadow"
+                className="bg-card border border-border rounded-xl p-4 sm:p-6 hover:shadow-lg transition-shadow"
               >
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <service.icon className="w-6 h-6 text-primary" />
@@ -187,17 +187,17 @@ const BPO = () => {
       </section>
 
       {/* Why Outsource With TBT */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-8 sm:mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">Why Outsource With TBT</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">Why Outsource With TBT</h2>
           </motion.div>
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto">
             {whyCards.map((card, index) => (
               <motion.div
                 key={card.title}
@@ -205,7 +205,7 @@ const BPO = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-shadow"
+                className="bg-card border border-border rounded-xl p-4 sm:p-6 hover:shadow-lg transition-shadow"
               >
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <card.icon className="w-6 h-6 text-primary" />
@@ -219,17 +219,17 @@ const BPO = () => {
       </section>
 
       {/* How It Works */}
-      <section className="py-24 bg-gradient-dark text-primary-foreground overflow-hidden">
-        <div className="container mx-auto px-6">
+      <section className="py-14 sm:py-24 bg-gradient-dark text-primary-foreground overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center max-w-3xl mx-auto mb-16"
+            className="text-center max-w-3xl mx-auto mb-8 sm:mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold">How It Works</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">How It Works</h2>
           </motion.div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
             {steps.map((step, index) => (
               <motion.div
                 key={step.title}
@@ -242,7 +242,7 @@ const BPO = () => {
                 {index < steps.length - 1 && (
                   <div className="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-accent/50 to-transparent -translate-x-4" />
                 )}
-                <div className="relative bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10 rounded-2xl p-6 hover:bg-primary-foreground/10 transition-colors">
+                <div className="relative bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10 rounded-2xl p-4 sm:p-6 hover:bg-primary-foreground/10 transition-colors">
                   <span className="absolute -top-3 -right-3 w-10 h-10 bg-accent rounded-full flex items-center justify-center text-sm font-bold text-accent-foreground">
                     {step.number}
                   </span>

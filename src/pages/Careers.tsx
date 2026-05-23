@@ -307,18 +307,18 @@ export default function Careers() {
       <Header />
 
       {/* Hero */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
-        <div className="container mx-auto px-6">
+      <section className="pt-24 pb-10 sm:pt-32 sm:pb-16 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
               Connect With <span className="text-primary">US and Canadian</span> Companies
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+            <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
               Tandem Bridge Talent helps top Latin American professionals connect with leading
               companies in the United States and Canada. Join our talent pool and access
               high-quality remote opportunities.
@@ -328,19 +328,19 @@ export default function Careers() {
       </section>
 
       {/* Process Section */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-6">
+      <section className="py-10 sm:py-16 bg-background">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="max-w-5xl mx-auto"
           >
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
                 How It Works for Candidates
               </h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-base sm:text-lg text-muted-foreground">
                 From application to placement, here is what to expect.
               </p>
             </div>
@@ -381,7 +381,7 @@ export default function Careers() {
                 ].map((item) => (
                   <div key={item.step} className="relative flex md:flex-col items-start md:items-center gap-4 md:gap-6">
                     {/* Step number circle */}
-                    <div className="relative z-10 w-16 h-16 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-xl flex-shrink-0">
+                    <div className="relative z-10 w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-base sm:text-xl flex-shrink-0">
                       {item.step}
                     </div>
                     {/* Content */}
@@ -398,15 +398,15 @@ export default function Careers() {
       </section>
 
       {/* Application Form */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="max-w-5xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 text-center">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6 sm:mb-8 text-center">
               Candidate Application
             </h2>
 

@@ -105,8 +105,8 @@ const NearshoreVsOffshore = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-dark text-primary-foreground">
-        <div className="container mx-auto px-6">
+      <section className="pt-24 pb-12 sm:pt-32 sm:pb-20 bg-gradient-dark text-primary-foreground">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -115,10 +115,10 @@ const NearshoreVsOffshore = () => {
             <span className="text-accent font-semibold text-sm uppercase tracking-wider">
               Staffing Comparison
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-6">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-4 sm:mb-6">
               Nearshore vs Offshore: <span className="text-accent">The Clear Winner</span>
             </h1>
-            <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-primary-foreground/80 max-w-2xl mx-auto">
               Understanding the real differences between nearshore and offshore staffing 
               helps you make the right choice for your business.
             </p>
@@ -127,28 +127,28 @@ const NearshoreVsOffshore = () => {
       </section>
 
       {/* Quick Summary */}
-      <section className="py-16 bg-accent/10">
-        <div className="container mx-auto px-6">
+      <section className="py-10 sm:py-16 bg-accent/10">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <div className="grid md:grid-cols-3 gap-6 text-center">
-              <div className="bg-card border border-border rounded-xl p-6">
+            <div className="grid md:grid-cols-3 gap-4 sm:gap-6 text-center">
+              <div className="bg-card border border-border rounded-xl p-4 sm:p-6">
                 <h3 className="text-lg font-semibold text-foreground mb-2">Nearshore</h3>
-                <p className="text-3xl font-bold text-accent mb-2">South America</p>
+                <p className="text-xl sm:text-3xl font-bold text-accent mb-2">South America</p>
                 <p className="text-sm text-muted-foreground">1-3 hours from U.S. time zones</p>
               </div>
-              <div className="bg-card border border-border rounded-xl p-6">
+              <div className="bg-card border border-border rounded-xl p-4 sm:p-6">
                 <h3 className="text-lg font-semibold text-foreground mb-2">Offshore</h3>
-                <p className="text-3xl font-bold text-muted-foreground mb-2">Asia/India</p>
+                <p className="text-xl sm:text-3xl font-bold text-muted-foreground mb-2">Asia/India</p>
                 <p className="text-sm text-muted-foreground">8-12 hours from U.S. time zones</p>
               </div>
-              <div className="bg-card border border-border rounded-xl p-6">
+              <div className="bg-card border border-border rounded-xl p-4 sm:p-6">
                 <h3 className="text-lg font-semibold text-foreground mb-2">Domestic</h3>
-                <p className="text-3xl font-bold text-muted-foreground mb-2">United States</p>
+                <p className="text-xl sm:text-3xl font-bold text-muted-foreground mb-2">United States</p>
                 <p className="text-sm text-muted-foreground">Same time zone, highest cost</p>
               </div>
             </div>
@@ -157,15 +157,15 @@ const NearshoreVsOffshore = () => {
       </section>
 
       {/* Detailed Comparison Table */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-6">
+      <section className="py-14 sm:py-24 bg-background">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-8 sm:mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
               Side-by-Side Comparison
             </h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
@@ -182,48 +182,48 @@ const NearshoreVsOffshore = () => {
             <table className="w-full border-collapse">
               <thead>
                 <tr className="bg-muted/50">
-                  <th className="text-left p-4 font-semibold text-foreground border-b border-border">Category</th>
-                  <th className="text-center p-4 font-semibold text-accent border-b border-border">Nearshore (LatAm)</th>
-                  <th className="text-center p-4 font-semibold text-muted-foreground border-b border-border">Offshore (Asia)</th>
-                  <th className="text-center p-4 font-semibold text-muted-foreground border-b border-border">Domestic (U.S.)</th>
+                  <th className="text-left p-2 sm:p-4 text-xs sm:text-sm font-semibold text-foreground border-b border-border">Category</th>
+                  <th className="text-center p-2 sm:p-4 text-xs sm:text-sm font-semibold text-accent border-b border-border">Nearshore</th>
+                  <th className="text-center p-2 sm:p-4 text-xs sm:text-sm font-semibold text-muted-foreground border-b border-border">Offshore</th>
+                  <th className="text-center p-2 sm:p-4 text-xs sm:text-sm font-semibold text-muted-foreground border-b border-border">Domestic</th>
                 </tr>
               </thead>
               <tbody>
                 {comparisonData.map((row, index) => (
                   <tr key={row.category} className={index % 2 === 0 ? "bg-background" : "bg-muted/20"}>
-                    <td className="p-4 font-medium text-foreground border-b border-border">{row.category}</td>
-                    <td className="p-4 text-center border-b border-border">
-                      <div className="flex items-center justify-center gap-2">
+                    <td className="p-2 sm:p-4 text-xs sm:text-sm font-medium text-foreground border-b border-border">{row.category}</td>
+                    <td className="p-2 sm:p-4 text-center border-b border-border">
+                      <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2">
                         {row.nearshore.positive ? (
-                          <Check className="w-5 h-5 text-green-500" />
+                          <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
                         ) : (
-                          <X className="w-5 h-5 text-red-500" />
+                          <X className="w-4 h-4 text-red-500 flex-shrink-0" />
                         )}
-                        <span className={row.nearshore.positive ? "text-foreground" : "text-muted-foreground"}>
+                        <span className={`text-xs sm:text-sm ${row.nearshore.positive ? "text-foreground" : "text-muted-foreground"}`}>
                           {row.nearshore.value}
                         </span>
                       </div>
                     </td>
-                    <td className="p-4 text-center border-b border-border">
-                      <div className="flex items-center justify-center gap-2">
+                    <td className="p-2 sm:p-4 text-center border-b border-border">
+                      <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2">
                         {row.offshore.positive ? (
-                          <Check className="w-5 h-5 text-green-500" />
+                          <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
                         ) : (
-                          <X className="w-5 h-5 text-red-500" />
+                          <X className="w-4 h-4 text-red-500 flex-shrink-0" />
                         )}
-                        <span className={row.offshore.positive ? "text-foreground" : "text-muted-foreground"}>
+                        <span className={`text-xs sm:text-sm ${row.offshore.positive ? "text-foreground" : "text-muted-foreground"}`}>
                           {row.offshore.value}
                         </span>
                       </div>
                     </td>
-                    <td className="p-4 text-center border-b border-border">
-                      <div className="flex items-center justify-center gap-2">
+                    <td className="p-2 sm:p-4 text-center border-b border-border">
+                      <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2">
                         {row.domestic.positive ? (
-                          <Check className="w-5 h-5 text-green-500" />
+                          <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
                         ) : (
-                          <X className="w-5 h-5 text-red-500" />
+                          <X className="w-4 h-4 text-red-500 flex-shrink-0" />
                         )}
-                        <span className={row.domestic.positive ? "text-foreground" : "text-muted-foreground"}>
+                        <span className={`text-xs sm:text-sm ${row.domestic.positive ? "text-foreground" : "text-muted-foreground"}`}>
                           {row.domestic.value}
                         </span>
                       </div>
@@ -237,15 +237,15 @@ const NearshoreVsOffshore = () => {
       </section>
 
       {/* Nearshore Advantages */}
-      <section className="py-24 bg-muted/30">
-        <div className="container mx-auto px-6">
+      <section className="py-14 sm:py-24 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-8 sm:mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
               Why Nearshore Wins
             </h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
@@ -253,7 +253,7 @@ const NearshoreVsOffshore = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 max-w-6xl mx-auto">
             {nearshoreAdvantages.map((advantage, index) => (
               <motion.div
                 key={advantage.title}
@@ -261,7 +261,7 @@ const NearshoreVsOffshore = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-card border border-border rounded-2xl p-6 hover:shadow-glow transition-all duration-300"
+                className="bg-card border border-border rounded-2xl p-4 sm:p-6 hover:shadow-glow transition-all duration-300"
               >
                 <div className="w-12 h-12 bg-gradient-hero rounded-xl flex items-center justify-center mb-4">
                   <advantage.icon className="w-6 h-6 text-primary-foreground" />
@@ -275,16 +275,16 @@ const NearshoreVsOffshore = () => {
       </section>
 
       {/* Offshore Risks */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-6">
+      <section className="py-14 sm:py-24 bg-background">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-center mb-12"
+              className="text-center mb-8 sm:mb-12"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
                 The Hidden Costs of Offshore
               </h2>
               <p className="text-muted-foreground mt-4">
@@ -296,7 +296,7 @@ const NearshoreVsOffshore = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-red-500/5 border border-red-500/20 rounded-2xl p-8"
+              className="bg-red-500/5 border border-red-500/20 rounded-2xl p-5 sm:p-8"
             >
               <ul className="grid md:grid-cols-2 gap-4">
                 {offshoreRisks.map((risk, index) => (
@@ -312,18 +312,18 @@ const NearshoreVsOffshore = () => {
       </section>
 
       {/* Bottom Line */}
-      <section className="py-20 bg-gradient-dark text-primary-foreground">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-gradient-dark text-primary-foreground">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
               The Bottom Line
             </h2>
-            <p className="text-xl text-primary-foreground/80 mb-8 max-w-3xl mx-auto">
+            <p className="text-base sm:text-xl text-primary-foreground/80 mb-8 max-w-3xl mx-auto">
               Nearshore staffing with Tandem Bridge Talent gives you the best of both worlds: 
               <strong className="text-accent"> 50-70% cost savings</strong> with the 
               <strong className="text-accent"> real-time collaboration</strong> your business needs to thrive.

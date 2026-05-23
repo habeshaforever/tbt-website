@@ -65,18 +65,18 @@ const CaseStudies = () => {
       <Header />
 
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
-        <div className="container mx-auto px-6">
+      <section className="pt-24 pb-12 sm:pt-32 sm:pb-20 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
               Case <span className="text-primary">Studies</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto">
               See how US and Canadian companies have built high performing remote teams through
               Tandem Bridge Talent.
             </p>
@@ -85,10 +85,10 @@ const CaseStudies = () => {
       </section>
 
       {/* Case Study Cards */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6">
           {loading ? (
-            <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
               {Array.from({ length: 3 }).map((_, i) => (
                 <div key={i} className="bg-card border border-border rounded-xl overflow-hidden animate-pulse">
                   <div className="h-44 bg-muted/50" />
@@ -101,7 +101,7 @@ const CaseStudies = () => {
               ))}
             </div>
           ) : hasStudies ? (
-            <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
               {studies.map((study, index) => (
                 <motion.div
                   key={study._id}
@@ -154,7 +154,7 @@ const CaseStudies = () => {
               ))}
             </div>
           ) : (
-            <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
               {placeholders.map((study, index) => (
                 <motion.div
                   key={study.headline}
@@ -162,7 +162,7 @@ const CaseStudies = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-shadow flex flex-col"
+                  className="bg-card border border-border rounded-xl p-4 sm:p-6 hover:shadow-lg transition-shadow flex flex-col"
                 >
                   <span className="inline-block text-xs font-semibold text-primary bg-primary/10 rounded-full px-3 py-1 mb-4 self-start">
                     {study.companyType}
@@ -184,7 +184,7 @@ const CaseStudies = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mt-16 bg-card border border-border rounded-xl p-10 text-center max-w-3xl mx-auto"
+            className="mt-16 bg-card border border-border rounded-xl p-5 sm:p-10 text-center max-w-3xl mx-auto"
           >
             <p className="text-lg text-muted-foreground mb-6">
               More case studies coming soon. In the meantime book a strategy call to hear

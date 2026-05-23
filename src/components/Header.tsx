@@ -144,19 +144,19 @@ export const Header = () => {
       transition={{ duration: 0.5 }}
       className="fixed top-0 left-0 right-0 z-50 bg-background shadow-md py-3"
     >
-      <div className="container mx-auto px-6 flex items-center justify-between">
+      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
             <span className="text-primary-foreground font-bold text-xl">TB</span>
           </div>
-          <span className="font-bold text-xl text-foreground">
+          <span className="font-bold text-lg md:text-xl text-foreground truncate max-w-[160px] md:max-w-none">
             Tandem<span className="text-primary">Bridge</span> Talent
           </span>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-3 lg:gap-6">
+        <nav className="hidden md:flex items-center gap-2 lg:gap-6">
           {navItems.map((item) => (
             <div 
               key={item.label} 
@@ -198,11 +198,11 @@ export const Header = () => {
                               {link.label}
                             </Link>
                           ))}
-                          
+
                           <div className="border-t border-border my-2" />
-                          
+
                           {/* Browse by Role section */}
-                          <div 
+                          <div
                             className="relative"
                             onMouseEnter={() => setShowBrowseByRole(true)}
                           >
@@ -212,7 +212,7 @@ export const Header = () => {
                               Browse by Role
                               <ChevronRight className="w-4 h-4" />
                             </button>
-                            
+
                             {/* Role categories submenu */}
                             <AnimatePresence>
                               {showBrowseByRole && (
@@ -221,11 +221,11 @@ export const Header = () => {
                                   animate={{ opacity: 1, x: 0 }}
                                   exit={{ opacity: 0, x: -10 }}
                                   transition={{ duration: 0.15 }}
-                                  className="absolute left-full top-0 ml-1 z-50"
+                                  className="absolute left-full top-0 ml-1 z-50 max-h-[70vh] overflow-y-auto"
                                 >
                                   <div className="bg-card border border-border rounded-lg shadow-lg py-2 min-w-[220px]">
                                     {item.solutionsDropdown.roleCategories.map((category) => (
-                                      <div 
+                                      <div
                                         key={category.label}
                                         className="relative"
                                         onMouseEnter={() => setOpenNestedCategory(category.label)}
@@ -236,7 +236,7 @@ export const Header = () => {
                                           {category.label}
                                           <ChevronRight className="w-4 h-4" />
                                         </button>
-                                        
+
                                         {/* Nested submenu */}
                                         <AnimatePresence>
                                           {openNestedCategory === category.label && (
@@ -245,7 +245,7 @@ export const Header = () => {
                                               animate={{ opacity: 1, x: 0 }}
                                               exit={{ opacity: 0, x: -10 }}
                                               transition={{ duration: 0.15 }}
-                                              className="absolute left-full top-0 ml-1 z-50"
+                                              className="absolute right-full top-0 mr-1 z-50"
                                             >
                                               <div className="bg-card border border-border rounded-lg shadow-lg py-2 min-w-[200px]">
                                                 {category.items.map((subItem) => (
@@ -263,7 +263,7 @@ export const Header = () => {
                                         </AnimatePresence>
                                       </div>
                                     ))}
-                                    
+
                                     <div className="border-t border-border my-2" />
                                     <Link
                                       to="/roles"
@@ -287,7 +287,9 @@ export const Header = () => {
                     className="flex items-center gap-1 text-muted-foreground hover:text-primary transition-colors duration-200 font-medium text-xs lg:text-sm"
                   >
                     {item.label === "Why Partner With Us" ? (
-                      <><span className="hidden lg:inline">Why Partner With </span>Us</>
+                      <><span className="hidden lg:inline">Why Partner With Us</span><span className="lg:hidden">Why Us</span></>
+                    ) : item.label === "How It Works" ? (
+                      <><span className="hidden lg:inline">How It Works</span><span className="lg:hidden">Process</span></>
                     ) : (
                       item.label
                     )}
@@ -325,7 +327,11 @@ export const Header = () => {
                   className="text-muted-foreground hover:text-primary transition-colors duration-200 font-medium text-xs lg:text-sm"
                 >
                   {item.label === "Why Partner With Us" ? (
-                    <><span className="hidden lg:inline">Why Partner With </span>Us</>
+                    <><span className="hidden lg:inline">Why Partner With Us</span><span className="lg:hidden">Why Us</span></>
+                  ) : item.label === "How It Works" ? (
+                    <><span className="hidden lg:inline">How It Works</span><span className="lg:hidden">Process</span></>
+                  ) : item.label === "Our Story" ? (
+                    <><span className="hidden lg:inline">Our Story</span><span className="lg:hidden">About</span></>
                   ) : (
                     item.label
                   )}
@@ -337,18 +343,12 @@ export const Header = () => {
 
         {/* CTA Button */}
         <div className="hidden md:flex items-center gap-4">
-          {/* Tablet size button */}
-          <div className="hidden md:block lg:hidden">
-            <Button variant="hero" size="sm" asChild>
-              <Link to="/book">Book a Call</Link>
-            </Button>
-          </div>
-          {/* Desktop size button */}
-          <div className="hidden lg:block">
-            <Button variant="hero" size="lg" asChild>
-              <Link to="/book">Book a Strategy Call</Link>
-            </Button>
-          </div>
+          <Button variant="hero" size="sm" className="md:flex lg:hidden" asChild>
+            <Link to="/book">Book a Call</Link>
+          </Button>
+          <Button variant="hero" size="lg" className="hidden lg:flex" asChild>
+            <Link to="/book">Book a Strategy Call</Link>
+          </Button>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -366,114 +366,134 @@ export const Header = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="md:hidden absolute top-full left-0 right-0 bg-background/98 backdrop-blur-md shadow-lg border-t border-border max-h-[80vh] overflow-y-auto"
+          className="md:hidden absolute top-full left-0 right-0 bg-background/98 backdrop-blur-md shadow-lg border-t border-border max-h-[85vh] overflow-y-auto"
         >
           <nav className="container mx-auto px-6 py-6 flex flex-col gap-4">
             {navItems.map((item) => (
               <div key={item.label}>
                 {/* Solutions Mobile Dropdown */}
                 {item.solutionsDropdown ? (
-                  <div className="space-y-2">
-                    <span className="text-foreground font-medium py-2 block">
+                  <div>
+                    <button
+                      onClick={() => toggleMobileCategory("Solutions")}
+                      className="w-full flex items-center justify-between py-2 text-foreground font-medium hover:text-primary transition-colors"
+                    >
                       {item.label}
-                    </span>
-                    <div className="pl-4 space-y-2 border-l-2 border-primary/20">
-                      {/* Primary service links */}
-                      {item.solutionsDropdown.primaryLinks.map((link) => (
-                        <Link
-                          key={link.label}
-                          to={link.href}
-                          className="text-foreground font-medium hover:text-primary transition-colors py-1 block text-sm"
-                          onClick={() => setIsMobileMenuOpen(false)}
+                      <ChevronDown
+                        className={`w-4 h-4 transition-transform duration-200 ${
+                          expandedMobileCategories.includes("Solutions") ? 'rotate-180' : ''
+                        }`}
+                      />
+                    </button>
+                    <AnimatePresence>
+                      {expandedMobileCategories.includes("Solutions") && (
+                        <motion.div
+                          initial={{ opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: 'auto' }}
+                          exit={{ opacity: 0, height: 0 }}
+                          transition={{ duration: 0.2 }}
+                          className="overflow-hidden"
                         >
-                          {link.label}
-                        </Link>
-                      ))}
-                      
-                      <div className="border-t border-border/50 my-2" />
-                      
-                      {/* Browse by Role toggle */}
-                      <button
-                        onClick={() => toggleMobileCategory("browse-by-role")}
-                        className="w-full flex items-center justify-between py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                      >
-                        Browse by Role
-                        <ChevronDown 
-                          className={`w-4 h-4 transition-transform duration-200 ${
-                            expandedMobileCategories.includes("browse-by-role") ? 'rotate-180' : ''
-                          }`} 
-                        />
-                      </button>
-                      
-                      <AnimatePresence>
-                        {expandedMobileCategories.includes("browse-by-role") && (
-                          <motion.div
-                            initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: 'auto' }}
-                            exit={{ opacity: 0, height: 0 }}
-                            transition={{ duration: 0.2 }}
-                            className="overflow-hidden"
-                          >
-                            <div className="pl-4 space-y-1 border-l border-border/50">
-                              {item.solutionsDropdown.roleCategories.map((category) => (
-                                <div key={category.label}>
-                                  <button
-                                    onClick={() => toggleMobileCategory(category.label)}
-                                    className="w-full flex items-center justify-between py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                                  >
-                                    {category.label}
-                                    <ChevronDown 
-                                      className={`w-4 h-4 transition-transform duration-200 ${
-                                        expandedMobileCategories.includes(category.label) ? 'rotate-180' : ''
-                                      }`} 
-                                    />
-                                  </button>
-                                  
-                                  <AnimatePresence>
-                                    {expandedMobileCategories.includes(category.label) && (
-                                      <motion.div
-                                        initial={{ opacity: 0, height: 0 }}
-                                        animate={{ opacity: 1, height: 'auto' }}
-                                        exit={{ opacity: 0, height: 0 }}
-                                        transition={{ duration: 0.2 }}
-                                        className="overflow-hidden"
-                                      >
-                                        <div className="pl-4 space-y-1 border-l border-border/50">
-                                          {category.items.map((subItem) => (
-                                            <Link
-                                              key={subItem.label}
-                                              to={subItem.href}
-                                              className="block py-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
-                                              onClick={() => setIsMobileMenuOpen(false)}
-                                            >
-                                              {subItem.label}
-                                            </Link>
-                                          ))}
-                                        </div>
-                                      </motion.div>
-                                    )}
-                                  </AnimatePresence>
-                                </div>
-                              ))}
-                              
+                          <div className="pl-4 space-y-2 border-l-2 border-primary/20 mt-1">
+                            {/* Primary service links */}
+                            {item.solutionsDropdown.primaryLinks.map((link) => (
                               <Link
-                                to="/roles"
-                                className="block py-2 text-sm font-medium text-primary hover:underline"
+                                key={link.label}
+                                to={link.href}
+                                className="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                                 onClick={() => setIsMobileMenuOpen(false)}
                               >
-                                View All Roles
+                                {link.label}
                               </Link>
-                            </div>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
-                    </div>
+                            ))}
+
+                            <div className="border-t border-border/50 my-2" />
+
+                            {/* Browse by Role toggle */}
+                            <button
+                              onClick={() => toggleMobileCategory("browse-by-role")}
+                              className="w-full flex items-center justify-between py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                            >
+                              Browse by Role
+                              <ChevronDown
+                                className={`w-4 h-4 transition-transform duration-200 ${
+                                  expandedMobileCategories.includes("browse-by-role") ? 'rotate-180' : ''
+                                }`}
+                              />
+                            </button>
+
+                            <AnimatePresence>
+                              {expandedMobileCategories.includes("browse-by-role") && (
+                                <motion.div
+                                  initial={{ opacity: 0, height: 0 }}
+                                  animate={{ opacity: 1, height: 'auto' }}
+                                  exit={{ opacity: 0, height: 0 }}
+                                  transition={{ duration: 0.2 }}
+                                  className="overflow-hidden"
+                                >
+                                  <div className="pl-4 space-y-1 border-l border-border/50">
+                                    {item.solutionsDropdown.roleCategories.map((category) => (
+                                      <div key={category.label}>
+                                        <button
+                                          onClick={() => toggleMobileCategory(category.label)}
+                                          className="w-full flex items-center justify-between py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                                        >
+                                          {category.label}
+                                          <ChevronDown
+                                            className={`w-4 h-4 transition-transform duration-200 ${
+                                              expandedMobileCategories.includes(category.label) ? 'rotate-180' : ''
+                                            }`}
+                                          />
+                                        </button>
+
+                                        <AnimatePresence>
+                                          {expandedMobileCategories.includes(category.label) && (
+                                            <motion.div
+                                              initial={{ opacity: 0, height: 0 }}
+                                              animate={{ opacity: 1, height: 'auto' }}
+                                              exit={{ opacity: 0, height: 0 }}
+                                              transition={{ duration: 0.2 }}
+                                              className="overflow-hidden"
+                                            >
+                                              <div className="pl-4 space-y-1 border-l border-border/50">
+                                                {category.items.map((subItem) => (
+                                                  <Link
+                                                    key={subItem.label}
+                                                    to={subItem.href}
+                                                    className="block py-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
+                                                    onClick={() => setIsMobileMenuOpen(false)}
+                                                  >
+                                                    {subItem.label}
+                                                  </Link>
+                                                ))}
+                                              </div>
+                                            </motion.div>
+                                          )}
+                                        </AnimatePresence>
+                                      </div>
+                                    ))}
+
+                                    <Link
+                                      to="/roles"
+                                      className="block py-2 text-sm font-medium text-primary hover:underline"
+                                      onClick={() => setIsMobileMenuOpen(false)}
+                                    >
+                                      View All Roles
+                                    </Link>
+                                  </div>
+                                </motion.div>
+                              )}
+                            </AnimatePresence>
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                   </div>
                 ) : item.dropdown ? (
-                  <div className="space-y-2">
+                  <div>
                     <button
                       onClick={() => toggleMobileCategory(item.label)}
-                      className="w-full flex items-center justify-between py-2 text-foreground font-medium"
+                      className="w-full flex items-center justify-between py-2 text-foreground font-medium hover:text-primary transition-colors"
                     >
                       {item.label}
                       <ChevronDown
@@ -491,12 +511,12 @@ export const Header = () => {
                           transition={{ duration: 0.2 }}
                           className="overflow-hidden"
                         >
-                          <div className="pl-4 space-y-2 border-l-2 border-primary/20">
+                          <div className="pl-4 space-y-1 border-l-2 border-primary/20 mt-1">
                             {item.dropdown.map((subItem) => (
                               <Link
                                 key={subItem.label}
                                 to={subItem.href}
-                                className="text-muted-foreground hover:text-primary transition-colors py-1 block text-sm"
+                                className="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                                 onClick={() => setIsMobileMenuOpen(false)}
                               >
                                 {subItem.label}

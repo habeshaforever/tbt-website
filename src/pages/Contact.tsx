@@ -66,7 +66,7 @@ const Contact = () => {
 
       {/* Main Content */}
 
-      <section className="py-10">
+      <section className="pt-28 py-6">
 
         <div className="container mx-auto px-6">
 
@@ -94,7 +94,7 @@ const Contact = () => {
 
           }} className="lg:col-span-2">
 
-              <div className="bg-card rounded-2xl p-6 shadow-lg border border-border sticky top-28">
+              <div className="bg-card rounded-2xl p-6 shadow-lg border border-border">
 
                 <h2 className="text-xl font-bold text-primary mb-4">
 
@@ -242,27 +242,19 @@ const Contact = () => {
 
               <div className="bg-card rounded-2xl overflow-hidden shadow-lg border border-border">
 
-                <div className="p-6 border-b border-border">
-
-                  <h2 className="text-2xl font-bold text-foreground">
-
-                    Pick a Time That Works for You
-
-                  </h2>
-
-                  <p className="text-muted-foreground mt-2">
-
-                    This is a 30-minute strategy call with a senior TBT partner. Slots are limited and fill fast.
-
-                  </p>
-
+                <div className="p-4">
+                <h2 className="text-2xl font-bold text-foreground mb-2">
+                  Pick a Time That Works for You
+                </h2>
+                <p className="text-muted-foreground mb-4">
+                  This is a 30-minute strategy call with a senior TBT partner. Slots are limited and fill fast.
+                </p>
                 </div>
-
                 <div className="calendly-wrapper">
 
                   <InlineWidget url="https://calendly.com/tandembridge/tbt-strategy-call" styles={{
 
-                  height: '900px',
+                  height: '500px',
 
                   width: '100%'
 

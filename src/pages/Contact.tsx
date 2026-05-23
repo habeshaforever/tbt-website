@@ -6,7 +6,6 @@ import { Header } from "@/components/Header";
 
 import { Footer } from "@/components/Footer";
 
-import { Mail } from "lucide-react";
 
 const Contact = () => {
 
@@ -76,7 +75,7 @@ const Contact = () => {
 
         <div className="max-w-screen-xl mx-auto px-6">
 
-          <div className="grid lg:grid-cols-7 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-7 gap-6">
 
             {/* Contact Info Sidebar */}
 
@@ -98,7 +97,7 @@ const Contact = () => {
 
             delay: 0.2
 
-          }} className="lg:col-span-2 flex items-center">
+          }} className="lg:col-span-2 flex items-center w-full">
 
               <div className="bg-card rounded-2xl p-6 shadow-lg border border-border">
 
@@ -192,32 +191,6 @@ const Contact = () => {
 
 
 
-                <div className="mt-8 pt-8 border-t border-border">
-
-                  <div className="flex items-start gap-4">
-
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-
-                      <Mail className="w-6 h-6 text-primary" />
-
-                    </div>
-
-                    <div>
-
-                      <h3 className="font-semibold text-foreground mb-1">Email Us</h3>
-
-                      <a href="mailto:info@tandembridge.com" className="text-muted-foreground text-sm hover:text-primary transition-colors">
-
-                        info@tandembridge.com
-
-                      </a>
-
-                    </div>
-
-                  </div>
-
-                </div>
-
               </div>
 
             </motion.div>
@@ -244,11 +217,11 @@ const Contact = () => {
 
             delay: 0.3
 
-          }} className="lg:col-span-5">
+          }} className="lg:col-span-5 w-full">
 
               <div className="bg-card rounded-2xl overflow-hidden shadow-lg border border-border">
 
-                <div className="overflow-hidden h-[500px] lg:h-[660px]">
+                <div className="overflow-hidden h-[580px] lg:h-[660px]">
     <InlineWidget
       url="https://calendly.com/tandembridge/tbt-strategy-call"
       styles={{

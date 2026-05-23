@@ -42,7 +42,7 @@ const features = [
 export const WhyUs = () => {
   return (
     <section id="why-us" className="py-16 md:py-24 bg-muted/30">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left - Content */}
           <motion.div
@@ -53,17 +53,17 @@ export const WhyUs = () => {
             <span className="text-primary font-semibold text-sm uppercase tracking-wider">
               Why Partner With Us
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-4 text-foreground">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-3 sm:mt-4 text-foreground">
               ROI Maximized, Quality Guaranteed
             </h2>
-            <p className="text-muted-foreground mt-4 text-base md:text-lg">
+            <p className="text-muted-foreground mt-3 sm:mt-4 text-sm sm:text-base md:text-lg">
               While offshore staffing might offer lower hourly wages, it often falls short on 
               long-term return on investment. Our nearshore model emphasizes quality talent 
               retention, enabling employees to develop company-specific expertise.
             </p>
 
-            <div className="mt-8 space-y-4">
-              <div className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border">
+            <div className="mt-5 sm:mt-8 space-y-3 sm:space-y-4">
+              <div className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 bg-card rounded-xl border border-border">
                 <div className="w-10 h-10 bg-success/10 rounded-lg flex items-center justify-center flex-shrink-0">
                   <BadgeDollarSign className="w-5 h-5 text-success" />
                 </div>
@@ -73,7 +73,7 @@ export const WhyUs = () => {
                 </div>
               </div>
               
-              <div className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border">
+              <div className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 bg-card rounded-xl border border-border">
                 <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                   <CalendarDays className="w-5 h-5 text-primary" />
                 </div>
@@ -83,7 +83,7 @@ export const WhyUs = () => {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border">
+              <div className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 bg-card rounded-xl border border-border">
                 <div className="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Heart className="w-5 h-5 text-accent" />
                 </div>
@@ -96,7 +96,7 @@ export const WhyUs = () => {
           </motion.div>
 
           {/* Right - Feature Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 lg:mt-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mt-5 sm:mt-8 lg:mt-0">
             {features.map((feature, index) => (
               <motion.div
                 key={feature.title}
@@ -105,8 +105,8 @@ export const WhyUs = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ scale: 1.03 }}
-                className={`bg-card p-4 md:p-5 rounded-2xl border border-border shadow-card hover:shadow-card-hover transition-all ${
-                  index === 0 ? "col-span-2" : ""
+                className={`bg-card p-3 sm:p-4 md:p-5 rounded-2xl border border-border shadow-card hover:shadow-card-hover transition-all ${
+                  index === 0 ? "sm:col-span-2" : ""
                 }`}
               >
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">

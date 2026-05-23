@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { ArrowRight, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -9,23 +9,23 @@ export const CTA = () => {
       {/* Decorative Elements */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
       
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center max-w-4xl mx-auto"
         >
-          <h2 className="text-2xl md:text-5xl font-bold text-primary-foreground mb-6">
+          <h2 className="text-xl sm:text-2xl md:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6">
             Ready to Scale Your Team with Elite South American Talent?
           </h2>
-          <p className="text-base md:text-xl text-primary-foreground/80 mb-6 md:mb-10 max-w-2xl mx-auto">
-            Join hundreds of US companies saving 70% on staffing costs while 
+          <p className="text-sm sm:text-base md:text-xl text-primary-foreground/80 mb-4 sm:mb-6 md:mb-10 max-w-2xl mx-auto">
+            Join hundreds of US companies saving 70% on staffing costs while
             accessing the top 1% of nearshore talent.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-4 mb-6 md:mb-12">
-            <Button variant="secondary" size="xl" asChild>
+          <div className="flex flex-wrap justify-center gap-4 mb-4 sm:mb-6 md:mb-12">
+            <Button variant="secondary" size="xl" className="w-full sm:w-auto" asChild>
               <Link to="/book">
                 Book a Strategy Call
                 <ArrowRight className="w-5 h-5 ml-2" />
@@ -33,7 +33,7 @@ export const CTA = () => {
             </Button>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-8 text-primary-foreground/80">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-8 text-primary-foreground/80">
             <a href="mailto:info@tandembridge.com" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
               <Mail className="w-5 h-5" />
               <span>info@tandembridge.com</span>
@@ -44,3 +44,4 @@ export const CTA = () => {
     </section>
   );
 };
+

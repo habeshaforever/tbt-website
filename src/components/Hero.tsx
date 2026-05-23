@@ -18,14 +18,14 @@ export const Hero = () => {
       <div className="absolute top-20 right-0 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-[200px] h-[200px] md:w-[400px] md:h-[400px] bg-accent/10 rounded-full blur-3xl" />
       
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="space-y-5 md:space-y-8"
+            className="space-y-4 md:space-y-8"
           >
             {/* Label */}
             <motion.div
@@ -51,7 +51,7 @@ export const Hero = () => {
             </motion.div>
 
             {/* Headline */}
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-primary-foreground">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-primary-foreground">
               Build Your <span className="text-accent">Elite Remote Team</span> for 70% Less
             </h1>
 
@@ -61,7 +61,7 @@ export const Hero = () => {
             </p>
 
             {/* Trust Points */}
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-2 sm:gap-4">
               {trustPoints.map((point, index) => (
                 <motion.div
                   key={point}
@@ -81,7 +81,7 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="flex flex-wrap gap-4 pt-4"
+              className="flex flex-wrap gap-3 sm:gap-4 pt-2 sm:pt-4"
             >
               <Button variant="hero" size="lg" className="w-full sm:w-auto" asChild>
                 <Link to="/book">

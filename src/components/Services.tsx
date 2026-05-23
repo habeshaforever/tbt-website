@@ -46,7 +46,7 @@ const roles = [
 export const Services = () => {
   return (
     <section id="services" className="py-16 md:py-24 bg-background">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -56,7 +56,7 @@ export const Services = () => {
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">
             Solutions
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-4 text-foreground">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-4 text-foreground">
             Two Ways to Build Your Team
           </h2>
           <p className="text-muted-foreground mt-4 text-lg">
@@ -66,7 +66,7 @@ export const Services = () => {
         </motion.div>
 
         {/* Primary Services */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8 mb-8 sm:mb-12">
           {primaryServices.map((service, index) => (
             <motion.div
               key={service.title}
@@ -100,7 +100,7 @@ export const Services = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="flex items-center justify-center gap-3 text-center mb-8 md:mb-16 p-4 bg-muted/50 rounded-lg border border-border"
+          className="flex items-start sm:items-center justify-center gap-3 text-left sm:text-center mb-6 sm:mb-8 md:mb-16 p-3 sm:p-4 bg-muted/50 rounded-lg border border-border"
         >
           <Info className="w-5 h-5 text-primary flex-shrink-0" />
           <p className="text-muted-foreground">
@@ -122,7 +122,7 @@ export const Services = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
           {roles.map((role, index) => (
             <motion.div
               key={role.title}

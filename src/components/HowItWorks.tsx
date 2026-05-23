@@ -32,7 +32,7 @@ const steps = [
 export const HowItWorks = () => {
   return (
     <section id="how-it-works" className="py-16 md:py-24 bg-gradient-dark text-primary-foreground overflow-hidden">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -42,7 +42,7 @@ export const HowItWorks = () => {
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">
             How It Works
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-4">
             Simple Process, Exceptional Results
           </h2>
           <p className="text-primary-foreground/70 mt-4 text-base md:text-lg">
@@ -51,7 +51,7 @@ export const HowItWorks = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
           {steps.map((step, index) => (
             <motion.div
               key={step.title}

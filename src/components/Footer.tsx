@@ -50,13 +50,13 @@ const socialLinks = [
 export const Footer = () => {
   return (
     <footer id="about" className="bg-foreground text-primary-foreground pt-12 md:pt-20 pb-8">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
 
         {/* Desktop: 6-col grid | Mobile: stacked */}
-        <div className="mb-12 md:mb-16">
+        <div className="mb-8 sm:mb-12 md:mb-16">
 
           {/* Brand Row - full width on mobile, fits in grid on desktop */}
-          <div className="mb-10 md:mb-0 md:hidden">
+          <div className="mb-8 md:mb-0 md:hidden">
             <Link to="/" className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-xl">TB</span>
@@ -161,7 +161,7 @@ export const Footer = () => {
           </div>
 
           {/* Mobile grid - 2 columns, stacked sections */}
-          <div className="md:hidden grid grid-cols-2 gap-x-6 gap-y-8">
+          <div className="md:hidden grid grid-cols-2 gap-x-4 sm:gap-x-6 gap-y-6 sm:gap-y-8">
             <div>
               <h4 className="font-semibold mb-3 text-xs uppercase tracking-wider text-primary-foreground/40">Solutions</h4>
               <ul className="space-y-2">

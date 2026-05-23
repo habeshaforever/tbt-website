@@ -18,7 +18,7 @@ const Contact = () => {
 
       {/* Hero Section */}
 
-      <section className="pt-32 pb-16 bg-gradient-hero relative overflow-hidden">
+      <section className="pt-28 pb-8 bg-gradient-hero relative overflow-hidden">
 
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
 
@@ -44,7 +44,7 @@ const Contact = () => {
 
         }} className="text-center max-w-3xl mx-auto">
 
-            <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
 
               Book Your Strategy Call
 
@@ -66,11 +66,11 @@ const Contact = () => {
 
       {/* Main Content */}
 
-      <section className="py-20">
+      <section className="py-10">
 
         <div className="container mx-auto px-6">
 
-          <div className="grid lg:grid-cols-3 gap-12">
+          <div className="grid lg:grid-cols-5 gap-8">
 
             {/* Contact Info Sidebar */}
 
@@ -92,11 +92,11 @@ const Contact = () => {
 
             delay: 0.2
 
-          }} className="lg:col-span-1">
+          }} className="lg:col-span-2">
 
-              <div className="bg-card rounded-2xl p-8 shadow-lg border border-border sticky top-28">
+              <div className="bg-card rounded-2xl p-6 shadow-lg border border-border sticky top-28">
 
-                <h2 className="text-2xl font-bold text-primary mb-4">
+                <h2 className="text-xl font-bold text-primary mb-4">
 
                   Let's Talk About Your Needs
 
@@ -104,7 +104,7 @@ const Contact = () => {
 
                 
 
-                <p className="text-muted-foreground mb-8">
+                <p className="text-sm text-muted-foreground mb-5">
 
                   Supercharge your growth with a smarter staffing model. Tandem Bridge Talent 
 
@@ -118,13 +118,13 @@ const Contact = () => {
 
 
 
-                <div className="space-y-5">
+                <div className="space-y-3">
 
                   <div className="flex items-start gap-3">
 
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
 
-                    <p className="text-foreground">
+                    <p className="text-foreground text-sm">
 
                       <span className="font-semibold">Cut staffing costs by up to 70%</span>
 
@@ -140,7 +140,7 @@ const Contact = () => {
 
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
 
-                    <p className="text-foreground">
+                    <p className="text-foreground text-sm">
 
                       <span className="font-semibold">Build stable, long-term teams</span>
 
@@ -156,7 +156,7 @@ const Contact = () => {
 
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
 
-                    <p className="text-foreground">
+                    <p className="text-foreground text-sm">
 
                       <span className="font-semibold">All-inclusive, flat-fee model</span>
 
@@ -172,7 +172,7 @@ const Contact = () => {
 
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
 
-                    <p className="text-foreground">
+                    <p className="text-foreground text-sm">
 
                       <span className="font-semibold">You choose the talent, we handle the rest</span>
 
@@ -238,7 +238,7 @@ const Contact = () => {
 
             delay: 0.3
 
-          }} className="lg:col-span-2">
+          }} className="lg:col-span-3">
 
               <div className="bg-card rounded-2xl overflow-hidden shadow-lg border border-border">
 
@@ -262,7 +262,7 @@ const Contact = () => {
 
                   <InlineWidget url="https://calendly.com/tandembridge/tbt-strategy-call" styles={{
 
-                  height: '700px',
+                  height: '620px',
 
                   width: '100%'
 

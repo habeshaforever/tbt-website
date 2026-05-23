@@ -262,7 +262,7 @@ const Contact = () => {
 
                   <InlineWidget url="https://calendly.com/tandembridge/tbt-strategy-call" styles={{
 
-                  height: '620px',
+                  height: '580px',
 
                   width: '100%'
 
@@ -270,9 +270,9 @@ const Contact = () => {
 
                   backgroundColor: 'ffffff',
 
-                  hideEventTypeDetails: false,
+                  hideEventTypeDetails: true,
 
-                  hideLandingPageDetails: false,
+                  hideLandingPageDetails: true,
 
                   primaryColor: '2563eb',
 

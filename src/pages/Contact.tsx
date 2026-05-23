@@ -248,8 +248,8 @@ const Contact = () => {
     position: 'absolute',
     top: '0',
     right: '0',
-    width: '200px',
-    height: '110px',
+    width: '220px',
+    height: '120px',
     background: '#ffffff',
     zIndex: 10,
     borderRadius: '0 16px 0 0'

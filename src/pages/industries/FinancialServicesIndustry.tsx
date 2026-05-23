@@ -76,7 +76,7 @@ const FinancialServicesIndustry = () => {
               Accurate, reliable financial talent without the domestic price tag.
             </p>
             <Button size="lg" variant="hero" asChild>
-              <Link to="/contact">Build My Finance Team</Link>
+              <Link to="/book">Build My Finance Team</Link>
             </Button>
           </motion.div>
         </div>

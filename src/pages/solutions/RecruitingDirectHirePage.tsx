@@ -80,7 +80,7 @@ export const RecruitingDirectHirePage = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
               <Button variant="hero" size="lg" asChild>
-                <Link to="/contact">Schedule a Consultation</Link>
+                <Link to="/book">Book a Strategy Call</Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
                 <Link to="/solutions/managed-staffing">Compare to Managed Staffing</Link>
@@ -231,12 +231,12 @@ export const RecruitingDirectHirePage = () => {
               Ready to Find Your Next Hire?
             </h2>
             <p className="text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Schedule a consultation to discuss your hiring needs. We'll deliver a shortlist 
+              Book a strategy call to discuss your hiring needs. We'll deliver a shortlist 
               of pre-vetted candidates ready to join your team.
             </p>
             <Button variant="hero" size="lg" className="mt-8" asChild>
-              <Link to="/contact">
-                Schedule Your Consultation
+              <Link to="/book">
+                Book a Strategy Call
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>

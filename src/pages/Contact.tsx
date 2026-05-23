@@ -1,153 +1,303 @@
 import { motion } from "framer-motion";
+
 import { InlineWidget } from "react-calendly";
+
 import { Header } from "@/components/Header";
+
 import { Footer } from "@/components/Footer";
+
 import { Mail } from "lucide-react";
+
 const Contact = () => {
+
   return <div className="min-h-screen bg-background">
+
       <Header />
+
       
+
       {/* Hero Section */}
+
       <section className="pt-32 pb-16 bg-gradient-hero relative overflow-hidden">
+
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
+
         
+
         <div className="container mx-auto px-6 relative z-10">
+
           <motion.div initial={{
+
           opacity: 0,
+
           y: 20
+
         }} animate={{
+
           opacity: 1,
+
           y: 0
+
         }} transition={{
+
           duration: 0.6
+
         }} className="text-center max-w-3xl mx-auto">
+
             <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
-              Schedule a Consultation
+
+              Book Your Strategy Call
+
             </h1>
+
             <p className="text-xl text-primary-foreground/80">
-              Ready to build your dream team? Book a free consultation with our 
-              staffing experts and discover how we can help you scale efficiently.
+
+              Limited slots available each week. Reserve yours below.
+
             </p>
+
           </motion.div>
+
         </div>
+
       </section>
+
+
 
       {/* Main Content */}
+
       <section className="py-20">
+
         <div className="container mx-auto px-6">
+
           <div className="grid lg:grid-cols-3 gap-12">
+
             {/* Contact Info Sidebar */}
+
             <motion.div initial={{
+
             opacity: 0,
+
             x: -20
+
           }} animate={{
+
             opacity: 1,
+
             x: 0
+
           }} transition={{
+
             duration: 0.6,
+
             delay: 0.2
+
           }} className="lg:col-span-1">
+
               <div className="bg-card rounded-2xl p-8 shadow-lg border border-border sticky top-28">
+
                 <h2 className="text-2xl font-bold text-primary mb-4">
+
                   Let's Talk About Your Needs
+
                 </h2>
+
                 
+
                 <p className="text-muted-foreground mb-8">
+
                   Supercharge your growth with a smarter staffing model. Tandem Bridge Talent 
+
                   connects you with top-tier, bilingual talent across South America, giving you
+
                   cost savings, stability, and a simple process that lets you focus
+
                   on scaling your business.
+
                 </p>
 
+
+
                 <div className="space-y-5">
+
                   <div className="flex items-start gap-3">
+
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+
                     <p className="text-foreground">
+
                       <span className="font-semibold">Cut staffing costs by up to 70%</span>
+
                       <span className="text-muted-foreground"> while accessing highly skilled, bilingual professionals.</span>
+
                     </p>
+
                   </div>
 
+
+
                   <div className="flex items-start gap-3">
+
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+
                     <p className="text-foreground">
+
                       <span className="font-semibold">Build stable, long-term teams</span>
+
                       <span className="text-muted-foreground"> with an industry-leading 2% turnover rate.</span>
+
                     </p>
+
                   </div>
 
+
+
                   <div className="flex items-start gap-3">
+
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+
                     <p className="text-foreground">
+
                       <span className="font-semibold">All-inclusive, flat-fee model</span>
+
                       <span className="text-muted-foreground">  no hidden fees, benefits costs, or contracts.</span>
+
                     </p>
+
                   </div>
 
+
+
                   <div className="flex items-start gap-3">
+
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+
                     <p className="text-foreground">
+
                       <span className="font-semibold">You choose the talent, we handle the rest</span>
+
                       <span className="text-muted-foreground"> including compliance, payroll, and office space for your remote employees.</span>
+
                     </p>
+
                   </div>
+
                 </div>
+
+
 
                 <div className="mt-8 pt-8 border-t border-border">
+
                   <div className="flex items-start gap-4">
+
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+
                       <Mail className="w-6 h-6 text-primary" />
+
                     </div>
+
                     <div>
+
                       <h3 className="font-semibold text-foreground mb-1">Email Us</h3>
+
                       <a href="mailto:info@tandembridge.com" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+
                         info@tandembridge.com
+
                       </a>
+
                     </div>
+
                   </div>
+
                 </div>
+
               </div>
+
             </motion.div>
+
+
 
             {/* Calendly Widget */}
+
             <motion.div initial={{
+
             opacity: 0,
+
             x: 20
+
           }} animate={{
+
             opacity: 1,
+
             x: 0
+
           }} transition={{
+
             duration: 0.6,
+
             delay: 0.3
+
           }} className="lg:col-span-2">
+
               <div className="bg-card rounded-2xl overflow-hidden shadow-lg border border-border">
+
                 <div className="p-6 border-b border-border">
+
                   <h2 className="text-2xl font-bold text-foreground">
+
                     Pick a Time That Works for You
+
                   </h2>
+
                   <p className="text-muted-foreground mt-2">
-                    Select an available slot below to book your free 30-minute consultation.
+
+                    This is a 30-minute strategy call with a senior TBT partner. Slots are limited and fill fast.
+
                   </p>
+
                 </div>
+
                 <div className="calendly-wrapper">
-                  <InlineWidget url="https://calendly.com/tandembridgecol/1-1-strategy-session" styles={{
+
+                  <InlineWidget url="https://calendly.com/tandembridge/tbt-strategy-call" styles={{
+
                   height: '700px',
+
                   width: '100%'
+
                 }} pageSettings={{
+
                   backgroundColor: 'ffffff',
+
                   hideEventTypeDetails: false,
+
                   hideLandingPageDetails: false,
+
                   primaryColor: '2563eb',
+
                   textColor: '1a1a2e'
+
                 }} />
+
                 </div>
+
               </div>
+
             </motion.div>
+
           </div>
+
         </div>
+
       </section>
 
+
+
       <Footer />
+
     </div>;
+
 };
+
 export default Contact;

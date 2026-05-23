@@ -354,7 +354,7 @@ export const RolePage = () => {
 
                 <div className="text-center pt-4">
                   <Button variant="hero" size="lg" asChild>
-                    <Link to="/contact">
+                    <Link to="/book">
                       Get Started with Managed Staffing
                       <ArrowRight className="w-5 h-5 ml-2" />
                     </Link>
@@ -406,7 +406,7 @@ export const RolePage = () => {
 
                 <div className="text-center pt-4">
                   <Button variant="hero" size="lg" asChild>
-                    <Link to="/contact">
+                    <Link to="/book">
                       Get Started with Direct Hire
                       <ArrowRight className="w-5 h-5 ml-2" />
                     </Link>
@@ -526,11 +526,11 @@ export const RolePage = () => {
               Ready to Build Your Team?
             </h2>
             <p className="text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Get started with a free consultation. We'll help you find the perfect {data.title.toLowerCase()} professionals for your team.
+              Book a Strategy Call. We'll help you find the perfect {data.title.toLowerCase()} professionals for your team.
             </p>
             <Button variant="hero" size="lg" className="mt-8" asChild>
-              <Link to="/contact">
-                Schedule Your Consultation
+              <Link to="/book">
+                Book a Strategy Call
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>

@@ -54,7 +54,7 @@ const WhyColombia = () => {
               The smartest nearshore decision for your business.
             </p>
             <Button size="lg" variant="hero" asChild>
-              <Link to="/contact">Build Your Team in Colombia</Link>
+              <Link to="/book">Build Your Team in Colombia</Link>
             </Button>
           </motion.div>
         </div>
@@ -151,7 +151,7 @@ const WhyColombia = () => {
               get the most out of it.
             </p>
             <Button size="lg" variant="hero" asChild>
-              <Link to="/contact">Plan Your Visit</Link>
+              <Link to="/book">Book a Strategy Call</Link>
             </Button>
           </motion.div>
         </div>

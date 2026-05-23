@@ -165,12 +165,12 @@ export const RolesIndexPage = () => {
               Not Sure Which Service Is Right for You?
             </h2>
             <p className="text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Schedule a consultation and we'll help you determine the best approach for your hiring needs.
+              Book a strategy call and we'll help you determine the best approach for your hiring needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
               <Button variant="hero" size="lg" asChild>
-                <Link to="/contact">
-                  Schedule a Consultation
+                <Link to="/book">
+                  Book a Strategy Call
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>

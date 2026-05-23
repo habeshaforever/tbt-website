@@ -2,21 +2,41 @@ import { Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const footerLinks = {
+  industries: [
+    { label: "Customer Service", href: "/industries/customer-service" },
+    { label: "Financial Services", href: "/industries/financial-services" },
+    { label: "Healthcare", href: "/industries/healthcare" },
+    { label: "Legal Services", href: "/industries/legal" },
+    { label: "IT and Software", href: "/industries/it-software" },
+    { label: "Marketing and Creative", href: "/industries/marketing" },
+    { label: "Logistics", href: "/industries/logistics" },
+    { label: "Manufacturing", href: "/industries/manufacturing" },
+    { label: "Professional Services", href: "/industries/professional-services" },
+    { label: "SaaS and Tech", href: "/industries/saas" },
+    { label: "E-commerce", href: "/industries/ecommerce" },
+    { label: "Real Estate", href: "/industries/real-estate" },
+  ],
   solutions: [
     { label: "Managed Staffing", href: "/solutions/managed-staffing" },
     { label: "Recruiting & Direct Hire", href: "/solutions/recruiting-direct-hire" },
     { label: "Browse All Roles", href: "/roles" },
   ],
   company: [
-    { label: "About Us", href: "/about-tbs" },
+    { label: "Our Story", href: "/our-story" },
     { label: "How It Works", href: "/our-process" },
     { label: "Careers", href: "/careers" },
-    { label: "Contact", href: "/contact" },
+    { label: "Book a Call", href: "/book" },
   ],
-  resources: [
+  learn: [
     { label: "Why Nearshore", href: "/why-nearshore" },
     { label: "Nearshore vs Offshore", href: "/nearshore-vs-offshore" },
-    { label: "Why TBT", href: "/why-tbs" },
+    { label: "Why TBT", href: "/why-tbt" },
+  ],
+  resources: [
+    { label: "Blog", href: "/resources/blog" },
+    { label: "Case Studies", href: "/resources/case-studies" },
+    { label: "Hiring Guides", href: "/resources/hiring-guides" },
+    { label: "Insights", href: "/resources/insights" },
   ],
 };
 
@@ -31,7 +51,7 @@ export const Footer = () => {
   return (
     <footer id="about" className="bg-foreground text-primary-foreground pt-20 pb-8">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-12 mb-16">
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-6">
@@ -74,11 +94,39 @@ export const Footer = () => {
             </ul>
           </div>
 
+          {/* Industries */}
+          <div>
+            <h4 className="font-semibold mb-4">Industries</h4>
+            <ul className="space-y-3">
+              {footerLinks.industries.map((link) => (
+                <li key={link.label}>
+                  <Link to={link.href} className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Company */}
           <div>
             <h4 className="font-semibold mb-4">Company</h4>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
+                <li key={link.label}>
+                  <Link to={link.href} className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Learn */}
+          <div>
+            <h4 className="font-semibold mb-4">Learn</h4>
+            <ul className="space-y-3">
+              {footerLinks.learn.map((link) => (
                 <li key={link.label}>
                   <Link to={link.href} className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
                     {link.label}

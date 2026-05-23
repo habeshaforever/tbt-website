@@ -1,0 +1,272 @@
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import {
+  Settings,
+  Repeat,
+  CheckSquare,
+  PenTool,
+  CalendarClock,
+  Package,
+  Truck,
+  FileText,
+  ShieldCheck,
+  BarChart2,
+  TrendingUp,
+  Briefcase,
+  Clock,
+  DollarSign,
+} from "lucide-react";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+
+const roles = [
+  { icon: Settings, title: "Manufacturing Engineers" },
+  { icon: Repeat, title: "Process Engineers" },
+  { icon: CheckSquare, title: "Quality Control Analysts" },
+  { icon: PenTool, title: "CAD Designers" },
+  { icon: CalendarClock, title: "Production Planners" },
+  { icon: Package, title: "Materials Coordinators" },
+  { icon: Truck, title: "Supply Chain Coordinators" },
+  { icon: FileText, title: "Technical Writers" },
+  { icon: ShieldCheck, title: "Safety and Compliance Analysts" },
+  { icon: BarChart2, title: "Industrial Engineers" },
+  { icon: TrendingUp, title: "Operations Analysts" },
+  { icon: Briefcase, title: "Project Coordinators" },
+];
+
+const whyCards = [
+  {
+    icon: Settings,
+    title: "US Manufacturing Standards",
+    description:
+      "Our engineering and manufacturing professionals understand American production systems, quality standards, and the technical documentation your operation requires.",
+  },
+  {
+    icon: Clock,
+    title: "Same Time Zone",
+    description:
+      "Your engineering support team collaborates with your production staff in real time, attends your planning meetings, and responds when issues come up.",
+  },
+  {
+    icon: DollarSign,
+    title: "70% Cost Savings",
+    description:
+      "Build a full engineering and operations support team at a fraction of domestic cost without compromising on technical skill or output quality.",
+  },
+];
+
+const serviceModels = [
+  {
+    title: "Managed Staffing",
+    description:
+      "We build and manage your engineering support team from our Colombia offices. HR, payroll, infrastructure, and performance all handled by us.",
+    href: "/solutions/managed-staffing",
+    cta: "Learn More",
+  },
+  {
+    title: "Recruiting and Direct Hire",
+    description:
+      "We source and vet your engineering and manufacturing professionals and you hire them directly as remote team members.",
+    href: "/solutions/recruiting-direct-hire",
+    cta: "Learn More",
+  },
+];
+
+const stats = [
+  { value: "70%", label: "Cost Savings vs US Hires" },
+  { value: "2 to 3 Weeks", label: "Average Time to Hire" },
+  { value: "2%", label: "Annualized Turnover Rate" },
+  { value: "Top 1%", label: "Talent Only" },
+];
+
+const ManufacturingIndustry = () => {
+  return (
+    <div className="min-h-screen bg-background">
+      <Header />
+
+      {/* Hero */}
+      <section className="pt-32 pb-20 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+        <div className="container mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="max-w-4xl mx-auto text-center"
+          >
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+              Manufacturing and <span className="text-primary">Engineering</span>
+            </h1>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+              Skilled Latin American engineering and operations professionals who support your
+              production, documentation, and technical teams.
+            </p>
+            <Button size="lg" variant="hero" asChild>
+              <Link to="/book">Build My Engineering Team</Link>
+            </Button>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Intro */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-3xl mx-auto text-center"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Manufacturing Needs More Than the Factory Floor
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Behind every production operation is a team of engineers, analysts, coordinators, and
+              administrators keeping everything on track. Finding and retaining that talent
+              domestically is expensive and competitive. TBT places top 1% Latin American
+              manufacturing and engineering professionals who understand US production standards,
+              communicate fluently in English, and integrate into your operation without disrupting
+              your workflow.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Stats Bar */}
+      <section className="py-12 bg-card border-y border-border">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            {stats.map((stat, index) => (
+              <motion.div
+                key={stat.label}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+              >
+                <div className="text-3xl font-bold text-primary mb-2">{stat.value}</div>
+                <p className="text-muted-foreground text-sm">{stat.label}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Roles We Fill */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">Roles We Fill</h2>
+          </motion.div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {roles.map((role, index) => (
+              <motion.div
+                key={role.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+                className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-shadow"
+              >
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <role.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-base font-semibold text-foreground">{role.title}</h3>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why It Works */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">Why It Works</h2>
+          </motion.div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {whyCards.map((card, index) => (
+              <motion.div
+                key={card.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-shadow"
+              >
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <card.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold text-foreground mb-2">{card.title}</h3>
+                <p className="text-muted-foreground">{card.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Service Models */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {serviceModels.map((model, index) => (
+              <motion.div
+                key={model.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="bg-card border border-border rounded-xl p-8 hover:shadow-lg transition-shadow flex flex-col"
+              >
+                <h3 className="text-xl font-semibold text-foreground mb-3">{model.title}</h3>
+                <p className="text-muted-foreground mb-6 flex-1">{model.description}</p>
+                <Link
+                  to={model.href}
+                  className="inline-flex items-center gap-2 text-primary font-semibold hover:underline"
+                >
+                  {model.cta}
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-20 bg-gradient-to-b from-background to-primary/5">
+        <div className="container mx-auto px-6 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              Ready to Build Your Engineering Team
+            </h2>
+            <p className="text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
+              Book a strategy call and we will show you exactly how TBT can support your
+              manufacturing and engineering operations.
+            </p>
+            <Button variant="hero" size="lg" className="mt-8" asChild>
+              <Link to="/book">Book a Strategy Call</Link>
+            </Button>
+          </motion.div>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default ManufacturingIndustry;

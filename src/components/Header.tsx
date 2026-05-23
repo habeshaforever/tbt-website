@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -83,11 +83,29 @@ const navItems: NavItem[] = [
       ]
     }
   },
+  {
+    label: "Industries",
+    href: "#industries",
+    dropdown: [
+      { label: "Customer Service", href: "/industries/customer-service" },
+      { label: "Financial Services", href: "/industries/financial-services" },
+      { label: "Healthcare", href: "/industries/healthcare" },
+      { label: "Legal Services", href: "/industries/legal" },
+      { label: "IT and Software", href: "/industries/it-software" },
+      { label: "Marketing and Creative", href: "/industries/marketing" },
+      { label: "Logistics", href: "/industries/logistics" },
+      { label: "Manufacturing", href: "/industries/manufacturing" },
+      { label: "Professional Services", href: "/industries/professional-services" },
+      { label: "SaaS and Tech", href: "/industries/saas" },
+      { label: "E-commerce", href: "/industries/ecommerce" },
+      { label: "Real Estate", href: "/industries/real-estate" },
+    ]
+  },
   { 
     label: "Why Partner With Us", 
     href: "#why-us",
     dropdown: [
-      { label: "Why Tandem Bridge Talent", href: "/why-tbs" },
+      { label: "Why Tandem Bridge Talent", href: "/why-tbt" },
       { label: "Why Nearshore", href: "/why-nearshore" },
       { label: "Why Colombia", href: "/why-colombia" },
     ]
@@ -100,31 +118,16 @@ const navItems: NavItem[] = [
       { label: "Nearshore vs Offshore", href: "/nearshore-vs-offshore" },
     ]
   },
-  { 
-    label: "About Us", 
-    href: "#about",
-    dropdown: [
-      { label: "About TBT", href: "/about-tbs" },
-      { label: "Careers", href: "/careers" },
-    ]
-  },
+  { label: "Our Story", href: "/our-story" },
+  { label: "Careers", href: "/careers" },
 ];
 
 export const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [openNestedCategory, setOpenNestedCategory] = useState<string | null>(null);
   const [expandedMobileCategories, setExpandedMobileCategories] = useState<string[]>([]);
   const [showBrowseByRole, setShowBrowseByRole] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const toggleMobileCategory = (category: string) => {
     setExpandedMobileCategories(prev => 
@@ -139,11 +142,7 @@ export const Header = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-md py-3"
-          : "bg-transparent py-5"
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 bg-background shadow-md py-3"
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
@@ -330,7 +329,7 @@ export const Header = () => {
         {/* CTA Button */}
         <div className="hidden lg:flex items-center gap-4">
           <Button variant="hero" size="lg" asChild>
-            <Link to="/contact">Schedule a Consultation</Link>
+            <Link to="/book">Book a Strategy Call</Link>
           </Button>
         </div>
 
@@ -482,8 +481,8 @@ export const Header = () => {
               </div>
             ))}
             <Button variant="hero" className="mt-4" asChild>
-              <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                Schedule a Consultation
+              <Link to="/book" onClick={() => setIsMobileMenuOpen(false)}>
+                Book a Strategy Call
               </Link>
             </Button>
           </nav>

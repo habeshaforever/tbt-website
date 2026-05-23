@@ -74,8 +74,8 @@ export const Hero = () => {
               className="flex flex-wrap gap-4 pt-4"
             >
               <Button variant="hero" size="xl" asChild>
-                <Link to="/contact">
-                  Schedule a Consultation
+                <Link to="/book">
+                  Book a Strategy Call
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>

@@ -4,6 +4,15 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Users, Target, Globe, Award, Heart, Handshake } from "lucide-react";
+import alphaBayanImg from "@/assets/alpha-bayan.png";
+import giannaReinaImg from "@/assets/gianna-reina.jpg";
+
+const identity = [
+  { icon: Globe, label: "U.S. Operated" },
+  { icon: Users, label: "Latin American Talent" },
+  { icon: Handshake, label: "Partnership Driven" },
+  { icon: Heart, label: "People First" },
+];
 
 const values = [
   {
@@ -42,7 +51,7 @@ const AboutTBS = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
         <div className="container mx-auto px-6">
@@ -52,22 +61,42 @@ const AboutTBS = () => {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
-              About Tandem Bridge Talent
-            </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              U.S. Operated. <span className="text-primary">Nearshore Excellence.</span>
+              Built by People Who Lived the <span className="text-primary">Problem</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              We're a U.S.-based staffing company that connects American businesses with top-tier 
-              South American talent, without the headaches of traditional offshore hiring.
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+              Tandem Bridge Talent was not built in a boardroom. It was built by two founders who experienced the talent gap firsthand and decided to close it.
             </p>
+            <Button size="lg" variant="hero" asChild>
+              <Link to="/book">Book a Strategy Call</Link>
+            </Button>
           </motion.div>
         </div>
       </section>
 
-      {/* Built From the Ground Up */}
-      <section className="py-20 bg-background">
+      {/* Identity Bar */}
+      <section className="py-12 bg-card border-y border-border">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            {identity.map((item, index) => (
+              <motion.div
+                key={item.label}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+                className="flex flex-col items-center"
+              >
+                <item.icon className="w-8 h-8 text-primary mb-3" />
+                <p className="text-muted-foreground text-sm">{item.label}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Built From the Ground Up - Founders */}
+      <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -86,128 +115,109 @@ const AboutTBS = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {[
-              {
-                name: "Alpha Bayan",
-                title: "Co-Founder",
-                story:
-                  "Alpha grew up surrounded by entrepreneurship. Building something from the ground up was simply a way of life. Based between Indianapolis and Chicago, he earned his MHA and MBA from IUPUI and went on to work at IU Health, where he developed a deep understanding of operations and workforce management. As he scaled his own businesses the same problem kept showing up. Demand for reliable talented people was constant but the traditional hiring market kept falling short. He turned his attention to Latin America and saw not just an opportunity but a better way. He built his own remote team from scratch, refined a model built around partnership, quality, and people, and turned that experience into Tandem Bridge Talent."
-              },
-              {
-                name: "Gianna Reina",
-                title: "Co-Founder",
-                story:
-                  "Gianna brings a perspective most staffing leaders simply do not have. She has been on both sides of the equation. With five years in the remote work and staffing space, she built her career working remotely for American and Canadian companies across multiple high level roles. Through that experience she saw the gap clearly. There was an abundance of qualified driven Latin American professionals with no reliable path to the companies that needed them most. As someone who consistently ranked in the top percentile of remote workers herself, she developed a sharp eye for identifying top performers and built an extensive network of exceptional talent along the way. That insight and that network became the foundation she brought to Tandem Bridge Talent."
-              }
-            ].map((founder, index) => (
-              <motion.div
-                key={founder.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-card border border-border rounded-2xl p-8 hover:shadow-lg transition-shadow"
-              >
-                <div className="flex flex-col items-center text-center mb-6">
-                  <div className="w-28 h-28 rounded-full bg-primary/10 border border-border flex items-center justify-center mb-4 overflow-hidden">
-                    <span className="text-3xl font-bold text-primary">
-                      {founder.name.split(" ").map((n) => n[0]).join("")}
-                    </span>
-                  </div>
-                  <h3 className="text-2xl font-bold text-foreground">{founder.name}</h3>
-                  <p className="text-primary font-medium">{founder.title}</p>
+          <div className="max-w-6xl mx-auto space-y-0">
+            {/* Alpha Bayan - Photo Left, Text Right */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="grid lg:grid-cols-2 gap-12 items-center py-12 border-b border-border"
+            >
+              {/* Photo */}
+              <div className="flex justify-center">
+                <div className="w-64 h-64 rounded-full overflow-hidden">
+                  <img
+                    src={alphaBayanImg}
+                    alt="Alpha Bayan"
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
-                <p className="text-muted-foreground leading-relaxed">{founder.story}</p>
-              </motion.div>
-            ))}
+              </div>
+              {/* Text */}
+              <div className="space-y-4">
+                <h3 className="text-3xl md:text-4xl font-bold text-foreground">Alpha Bayan</h3>
+                <p className="text-xl text-primary font-medium">Co-Founder</p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Alpha grew up surrounded by entrepreneurship. Building something from the ground up was simply a way of life. Based between Indianapolis and Chicago, he earned his MHA and MBA from IUPUI and went on to work at IU Health, where he developed a deep understanding of operations and workforce management. As he scaled his own businesses the same problem kept showing up. Demand for reliable talented people was constant but the traditional hiring market kept falling short. He turned his attention to Latin America and saw not just an opportunity but a better way. He built his own remote team from scratch, refined a model built around partnership, quality, and people, and turned that experience into Tandem Bridge Talent.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Gianna Reina - Text Left, Photo Right */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="grid lg:grid-cols-2 gap-12 items-center py-12"
+            >
+              {/* Text */}
+              <div className="space-y-4 lg:order-1 order-2">
+                <h3 className="text-3xl md:text-4xl font-bold text-foreground">Gianna Reina</h3>
+                <p className="text-xl text-primary font-medium">Co-Founder</p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Gianna brings a perspective most staffing leaders simply do not have. She has been on both sides of the equation. With five years in the remote work and staffing space, she built her career working remotely for American and Canadian companies across multiple high level roles. Through that experience she saw the gap clearly. There was an abundance of qualified driven Latin American professionals with no reliable path to the companies that needed them most. As someone who consistently ranked in the top percentile of remote workers herself, she developed a sharp eye for identifying top performers and built an extensive network of exceptional talent along the way. That insight and that network became the foundation she brought to Tandem Bridge Talent.
+                </p>
+              </div>
+              {/* Photo */}
+              <div className="flex justify-center lg:order-2 order-1">
+                <div className="w-64 h-64 rounded-full overflow-hidden">
+                  <img
+                    src={giannaReinaImg}
+                    alt="Gianna Reina"
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Our Story */}
+      {/* Why We Built This */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Our Story
-              </h2>
-              <div className="space-y-4 text-muted-foreground">
-                <p>
-                  Tandem Bridge Talent was founded with a simple belief: American businesses 
-                  deserve access to world-class talent without the complexity and risk of 
-                  traditional offshore staffing.
-                </p>
-                <p>
-                  After years of watching companies struggle with timezone misalignment, 
-                  cultural disconnects, and unreliable offshore vendors, we built something different:
-                  a staffing model that combines the cost advantages of global talent with
-                  the reliability and accountability of a U.S.-managed operation.
-                </p>
-                <p>
-                  Today, we serve growing businesses across the United States, providing 
-                  skilled professionals in accounting, engineering, customer support, and more.
-                  Every hire is backed by our careful vetting process, U.S.-based management,
-                  and a commitment to long-term success.
-                </p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="bg-card border border-border rounded-2xl p-8"
-            >
-              <h3 className="text-2xl font-bold text-foreground mb-6">By the Numbers</h3>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center p-4 bg-primary/5 rounded-xl">
-                  <div className="text-4xl font-bold text-primary mb-2">500+</div>
-                  <div className="text-sm text-muted-foreground">Successful Placements</div>
-                </div>
-                <div className="text-center p-4 bg-primary/5 rounded-xl">
-                  <div className="text-4xl font-bold text-primary mb-2">2%</div>
-                  <div className="text-sm text-muted-foreground">Annual Turnover</div>
-                </div>
-                <div className="text-center p-4 bg-primary/5 rounded-xl">
-                  <div className="text-4xl font-bold text-primary mb-2">70%</div>
-                  <div className="text-sm text-muted-foreground">Cost Savings</div>
-                </div>
-                <div className="text-center p-4 bg-primary/5 rounded-xl">
-                  <div className="text-4xl font-bold text-primary mb-2">98%</div>
-                  <div className="text-sm text-muted-foreground">Client Satisfaction</div>
-                </div>
-              </div>
-            </motion.div>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-3xl mx-auto text-center"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Why We Built This
+            </h2>
+            <div className="space-y-4 text-lg text-muted-foreground">
+              <p>
+                American businesses struggle to find reliable talent while Latin America has an abundance of qualified, English-fluent professionals in the same time zones.
+              </p>
+              <p>
+                TBT bridges that gap. We connect U.S. and Canadian companies with top-tier Latin American professionals who bring the skills, communication ability, and work ethic needed to drive real results—at a fraction of the cost of domestic hires.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* Our Values */}
+      {/* What We Stand For */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Our Values
+              What We Stand For
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               The principles that guide everything we do
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {values.map((value, index) => (
               <motion.div
                 key={value.title}
@@ -220,7 +230,7 @@ const AboutTBS = () => {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <value.icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-3">{value.title}</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">{value.title}</h3>
                 <p className="text-muted-foreground">{value.description}</p>
               </motion.div>
             ))}
@@ -229,22 +239,22 @@ const AboutTBS = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary to-primary/80">
+      <section className="py-20 bg-gradient-to-b from-background to-primary/5">
         <div className="container mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Ready to Build Your Team?
             </h2>
-            <p className="text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Let's discuss how Tandem Bridge Talent can help you access top-tier talent 
+            <p className="text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
+              Let's discuss how Tandem Bridge Talent can help you access top-tier talent
               at a fraction of the cost.
             </p>
-            <Button size="lg" variant="secondary" asChild>
-              <Link to="/contact">Schedule a Consultation</Link>
+            <Button variant="hero" size="lg" className="mt-8" asChild>
+              <Link to="/book">Book a Strategy Call</Link>
             </Button>
           </motion.div>
         </div>

@@ -72,7 +72,7 @@ const CustomerServiceIndustry = () => {
               Build the support team your customers actually deserve.
             </p>
             <Button size="lg" variant="hero" asChild>
-              <Link to="/contact">Build My Support Team</Link>
+              <Link to="/book">Build My Support Team</Link>
             </Button>
           </motion.div>
         </div>

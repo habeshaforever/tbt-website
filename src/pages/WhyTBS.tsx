@@ -189,7 +189,7 @@ const WhyTBS = () => {
               </p>
 
               <Button variant="hero" size="lg" className="w-full" asChild>
-                <Link to="/contact">Schedule a Consultation</Link>
+                <Link to="/book">Book a Strategy Call</Link>
               </Button>
             </motion.div>
           </div>
@@ -219,7 +219,7 @@ const WhyTBS = () => {
               className="bg-white text-primary hover:bg-white/90 border-white"
               asChild
             >
-              <Link to="/contact">Get Started Today</Link>
+              <Link to="/book">See If We're a Fit</Link>
             </Button>
           </motion.div>
         </div>

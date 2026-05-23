@@ -209,7 +209,7 @@ const OurProcess = () => {
               to your success.
             </p>
             <Button variant="hero" size="lg" asChild>
-              <Link to="/contact">Start Your Risk-Free Search</Link>
+              <Link to="/book">Start Your Risk-Free Search</Link>
             </Button>
           </motion.div>
         </div>

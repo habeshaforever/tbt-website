@@ -127,7 +127,7 @@ const BPO = () => {
               Hand off the work that slows your business down. Keep your focus on what moves it forward.
             </p>
             <Button size="lg" variant="hero" asChild>
-              <Link to="/contact">Talk to Us About BPO</Link>
+              <Link to="/book">Talk to Us About BPO</Link>
             </Button>
           </motion.div>
         </div>

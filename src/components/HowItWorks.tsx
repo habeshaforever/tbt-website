@@ -13,7 +13,7 @@ const steps = [
     icon: Users,
     number: "02",
     title: "Candidate Selection",
-    description: "We present pre-vetted candidates from our top 1% talent pool who match your requirements.",
+    description: "We present pre-vetted candidates from our top 1% talent pool within 72 hours of finalizing your requirements.",
   },
   {
     icon: CheckCircle,

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Globe, Clock, Users, DollarSign, Award, Building2 } from "lucide-react";
+import { Globe, Clock, Users, DollarSign, Award, Building2, TrendingUp } from "lucide-react";
 
 const features = [
   {
@@ -20,7 +20,12 @@ const features = [
   {
     icon: Users,
     title: "2% Turnover Rate",
-    description: "Industry-leading retention thanks to competitive wages, work-life balance, and a family-first culture that values every team member.",
+    description: "Our placements stay. Industry average turnover is 15 to 20 percent. Ours is 2.",
+  },
+  {
+    icon: TrendingUp,
+    title: "98% Retention",
+    description: "Clients who place with us come back. Our retention rate reflects the quality of every match we make.",
   },
   {
     icon: Building2,

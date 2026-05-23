@@ -249,7 +249,7 @@ const WhyNearshore = () => {
               Experience the Nearshore Difference
             </h2>
             <p className="text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Schedule a consultation to learn how nearshore staffing can transform 
+              Book a strategy call to learn how nearshore staffing can transform 
               your operations and accelerate your growth.
             </p>
             <Button 
@@ -258,7 +258,7 @@ const WhyNearshore = () => {
               className="bg-white text-primary hover:bg-white/90 border-white"
               asChild
             >
-              <Link to="/contact">Schedule a Consultation</Link>
+              <Link to="/book">Book a Strategy Call</Link>
             </Button>
           </motion.div>
         </div>

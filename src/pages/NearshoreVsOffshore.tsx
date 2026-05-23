@@ -329,7 +329,7 @@ const NearshoreVsOffshore = () => {
               <strong className="text-accent"> real-time collaboration</strong> your business needs to thrive.
             </p>
             <Button variant="hero" size="lg" asChild>
-              <Link to="/contact">See How Much You Can Save</Link>
+              <Link to="/book">See How Much You Can Save</Link>
             </Button>
           </motion.div>
         </div>

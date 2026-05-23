@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Phone, Mail } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -26,21 +26,14 @@ export const CTA = () => {
 
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             <Button variant="secondary" size="xl" asChild>
-              <Link to="/contact">
-                Schedule a Free Consultation
+              <Link to="/book">
+                Book a Strategy Call
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
-            </Button>
-            <Button variant="outline" size="xl" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
-              Download Case Studies
             </Button>
           </div>
 
           <div className="flex flex-wrap justify-center gap-8 text-primary-foreground/80">
-            <a href="tel:+1234567890" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
-              <Phone className="w-5 h-5" />
-              <span>+1 (555) 123-4567</span>
-            </a>
             <a href="mailto:info@tandembridge.com" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
               <Mail className="w-5 h-5" />
               <span>info@tandembridge.com</span>

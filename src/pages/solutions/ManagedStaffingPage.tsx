@@ -80,7 +80,7 @@ export const ManagedStaffingPage = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
               <Button variant="hero" size="lg" asChild>
-                <Link to="/contact">Schedule a Consultation</Link>
+                <Link to="/book">Book a Strategy Call</Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
                 <Link to="/solutions/recruiting-direct-hire">Compare to Direct Hire</Link>
@@ -231,12 +231,12 @@ export const ManagedStaffingPage = () => {
               Ready to Build Your Managed Team?
             </h2>
             <p className="text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Schedule a consultation to discuss your needs. We'll show you how Managed Staffing 
+              Book a strategy call to discuss your needs. We'll show you how Managed Staffing 
               can transform your operations.
             </p>
             <Button variant="hero" size="lg" className="mt-8" asChild>
-              <Link to="/contact">
-                Schedule Your Consultation
+              <Link to="/book">
+                Book a Strategy Call
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>

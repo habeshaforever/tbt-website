@@ -156,7 +156,7 @@ export const Header = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-3 lg:gap-6">
           {navItems.map((item) => (
             <div 
               key={item.label} 
@@ -172,12 +172,12 @@ export const Header = () => {
               {item.solutionsDropdown ? (
                 <>
                   <button
-                    className="flex items-center gap-1 text-muted-foreground hover:text-primary transition-colors duration-200 font-medium text-sm"
+                    className="flex items-center gap-1 text-muted-foreground hover:text-primary transition-colors duration-200 font-medium text-xs lg:text-sm"
                   >
                     {item.label}
                     <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${openDropdown === item.label ? 'rotate-180' : ''}`} />
                   </button>
-                  
+
                   <AnimatePresence>
                     {openDropdown === item.label && (
                       <motion.div
@@ -284,12 +284,16 @@ export const Header = () => {
               ) : item.dropdown ? (
                 <>
                   <button
-                    className="flex items-center gap-1 text-muted-foreground hover:text-primary transition-colors duration-200 font-medium text-sm"
+                    className="flex items-center gap-1 text-muted-foreground hover:text-primary transition-colors duration-200 font-medium text-xs lg:text-sm"
                   >
-                    {item.label}
+                    {item.label === "Why Partner With Us" ? (
+                      <><span className="hidden lg:inline">Why Partner With </span>Us</>
+                    ) : (
+                      item.label
+                    )}
                     <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${openDropdown === item.label ? 'rotate-180' : ''}`} />
                   </button>
-                  
+
                   <AnimatePresence>
                     {openDropdown === item.label && (
                       <motion.div
@@ -305,6 +309,7 @@ export const Header = () => {
                               key={subItem.label}
                               to={subItem.href}
                               className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-primary hover:bg-muted/50 transition-colors"
+                              onClick={() => setOpenDropdown(null)}
                             >
                               {subItem.label}
                             </Link>
@@ -317,9 +322,13 @@ export const Header = () => {
               ) : (
                 <a
                   href={item.href}
-                  className="text-muted-foreground hover:text-primary transition-colors duration-200 font-medium text-sm"
+                  className="text-muted-foreground hover:text-primary transition-colors duration-200 font-medium text-xs lg:text-sm"
                 >
-                  {item.label}
+                  {item.label === "Why Partner With Us" ? (
+                    <><span className="hidden lg:inline">Why Partner With </span>Us</>
+                  ) : (
+                    item.label
+                  )}
                 </a>
               )}
             </div>
@@ -327,15 +336,24 @@ export const Header = () => {
         </nav>
 
         {/* CTA Button */}
-        <div className="hidden lg:flex items-center gap-4">
-          <Button variant="hero" size="lg" asChild>
-            <Link to="/book">Book a Strategy Call</Link>
-          </Button>
+        <div className="hidden md:flex items-center gap-4">
+          {/* Tablet size button */}
+          <div className="hidden md:block lg:hidden">
+            <Button variant="hero" size="sm" asChild>
+              <Link to="/book">Book a Call</Link>
+            </Button>
+          </div>
+          {/* Desktop size button */}
+          <div className="hidden lg:block">
+            <Button variant="hero" size="lg" asChild>
+              <Link to="/book">Book a Strategy Call</Link>
+            </Button>
+          </div>
         </div>
 
         {/* Mobile Menu Toggle */}
         <button
-          className="lg:hidden p-2 text-foreground"
+          className="md:hidden p-2 text-foreground"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -348,7 +366,7 @@ export const Header = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="lg:hidden absolute top-full left-0 right-0 bg-background/98 backdrop-blur-md shadow-lg border-t border-border max-h-[80vh] overflow-y-auto"
+          className="md:hidden absolute top-full left-0 right-0 bg-background/98 backdrop-blur-md shadow-lg border-t border-border max-h-[80vh] overflow-y-auto"
         >
           <nav className="container mx-auto px-6 py-6 flex flex-col gap-4">
             {navItems.map((item) => (
@@ -453,21 +471,41 @@ export const Header = () => {
                   </div>
                 ) : item.dropdown ? (
                   <div className="space-y-2">
-                    <span className="text-foreground font-medium py-2 block">
+                    <button
+                      onClick={() => toggleMobileCategory(item.label)}
+                      className="w-full flex items-center justify-between py-2 text-foreground font-medium"
+                    >
                       {item.label}
-                    </span>
-                    <div className="pl-4 space-y-2 border-l-2 border-primary/20">
-                      {item.dropdown.map((subItem) => (
-                        <Link
-                          key={subItem.label}
-                          to={subItem.href}
-                          className="text-muted-foreground hover:text-primary transition-colors py-1 block text-sm"
-                          onClick={() => setIsMobileMenuOpen(false)}
+                      <ChevronDown
+                        className={`w-4 h-4 transition-transform duration-200 ${
+                          expandedMobileCategories.includes(item.label) ? 'rotate-180' : ''
+                        }`}
+                      />
+                    </button>
+                    <AnimatePresence>
+                      {expandedMobileCategories.includes(item.label) && (
+                        <motion.div
+                          initial={{ opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: 'auto' }}
+                          exit={{ opacity: 0, height: 0 }}
+                          transition={{ duration: 0.2 }}
+                          className="overflow-hidden"
                         >
-                          {subItem.label}
-                        </Link>
-                      ))}
-                    </div>
+                          <div className="pl-4 space-y-2 border-l-2 border-primary/20">
+                            {item.dropdown.map((subItem) => (
+                              <Link
+                                key={subItem.label}
+                                to={subItem.href}
+                                className="text-muted-foreground hover:text-primary transition-colors py-1 block text-sm"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                              >
+                                {subItem.label}
+                              </Link>
+                            ))}
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                   </div>
                 ) : (
                   <a

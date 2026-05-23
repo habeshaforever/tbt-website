@@ -53,7 +53,7 @@ const Contact = () => {
             <p className="text-lg text-primary-foreground/80 mb-2">
               Limited slots available each week. Reserve yours below.
             </p>
-            <p className="text-base text-primary-foreground/70">
+            <p className="text-base text-primary-foreground/80">
               This is a 30-minute strategy call with a senior TBT partner. Slots are limited and fill fast.
             </p>
 
@@ -97,7 +97,7 @@ const Contact = () => {
 
               <div className="bg-card rounded-2xl p-6 shadow-lg border border-border">
 
-                <h2 className="text-base font-bold text-primary mb-3">
+                <h2 className="text-xl font-bold text-primary mb-4">
 
                   Let's Talk About Your Needs
 
@@ -105,7 +105,7 @@ const Contact = () => {
 
                 
 
-                <p className="text-xs text-muted-foreground mb-3">
+                <p className="text-sm text-muted-foreground mb-5">
 
                   Supercharge your growth with a smarter staffing model. Tandem Bridge Talent 
 
@@ -119,13 +119,13 @@ const Contact = () => {
 
 
 
-                <div className="space-y-2">
+                <div className="space-y-3">
 
                   <div className="flex items-start gap-3">
 
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
 
-                    <p className="text-foreground text-xs">
+                    <p className="text-foreground text-sm">
 
                       <span className="font-semibold">Cut staffing costs by up to 70%</span>
 
@@ -141,7 +141,7 @@ const Contact = () => {
 
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
 
-                    <p className="text-foreground text-xs">
+                    <p className="text-foreground text-sm">
 
                       <span className="font-semibold">Build stable, long-term teams</span>
 
@@ -157,7 +157,7 @@ const Contact = () => {
 
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
 
-                    <p className="text-foreground text-xs">
+                    <p className="text-foreground text-sm">
 
                       <span className="font-semibold">All-inclusive, flat-fee model</span>
 
@@ -173,7 +173,7 @@ const Contact = () => {
 
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
 
-                    <p className="text-foreground text-xs">
+                    <p className="text-foreground text-sm">
 
                       <span className="font-semibold">You choose the talent, we handle the rest</span>
 
@@ -187,7 +187,7 @@ const Contact = () => {
 
 
 
-                <div className="mt-4 pt-4 border-t border-border">
+                <div className="mt-8 pt-8 border-t border-border">
 
                   <div className="flex items-start gap-4">
 

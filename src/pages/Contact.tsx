@@ -50,10 +50,11 @@ const Contact = () => {
 
             </h1>
 
-            <p className="text-xl text-primary-foreground/80">
-
+            <p className="text-lg text-primary-foreground/80 mb-2">
               Limited slots available each week. Reserve yours below.
-
+            </p>
+            <p className="text-base text-primary-foreground/70">
+              This is a 30-minute strategy call with a senior TBT partner. Slots are limited and fill fast.
             </p>
 
           </motion.div>
@@ -92,7 +93,7 @@ const Contact = () => {
 
             delay: 0.2
 
-          }} className="lg:col-span-2">
+          }} className="lg:col-span-2 flex items-center">
 
               <div className="bg-card rounded-2xl p-6 shadow-lg border border-border">
 
@@ -242,19 +243,11 @@ const Contact = () => {
 
               <div className="bg-card rounded-2xl overflow-hidden shadow-lg border border-border">
 
-                <div className="p-4">
-                <h2 className="text-2xl font-bold text-foreground mb-2">
-                  Pick a Time That Works for You
-                </h2>
-                <p className="text-muted-foreground mb-4">
-                  This is a 30-minute strategy call with a senior TBT partner. Slots are limited and fill fast.
-                </p>
-                </div>
-                <div style={{ overflow: 'hidden', height: '660px' }}>
+                <div style={{ overflow: 'hidden', height: '700px' }}>
   <InlineWidget
     url="https://calendly.com/tandembridge/tbt-strategy-call"
     styles={{
-      height: '720px',
+      height: '760px',
       width: '100%',
       marginTop: '-60px'
     }}

@@ -250,8 +250,9 @@ const Contact = () => {
     right: '0',
     width: '200px',
     height: '110px',
-    background: 'white',
-    zIndex: 10
+    background: 'var(--card)',
+    zIndex: 10,
+    borderRadius: '0 16px 0 0'
   }} />
   <div style={{ overflow: 'hidden', height: '660px' }}>
     <InlineWidget

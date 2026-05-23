@@ -243,7 +243,18 @@ const Contact = () => {
 
               <div className="bg-card rounded-2xl overflow-hidden shadow-lg border border-border">
 
-                <div style={{ overflow: 'hidden', height: '660px' }}>
+                <div style={{ position: 'relative' }}>
+  <div style={{
+    position: 'absolute',
+    top: '0',
+    right: '0',
+    width: '220px',
+    height: '120px',
+    background: '#ffffff',
+    zIndex: 10,
+    borderRadius: '0 16px 0 0'
+  }} />
+  <div style={{ overflow: 'hidden', height: '660px' }}>
     <InlineWidget
       url="https://calendly.com/tandembridge/tbt-strategy-call"
       styles={{
@@ -260,6 +271,7 @@ const Contact = () => {
       }}
     />
   </div>
+</div>
 
               </div>
 

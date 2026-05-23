@@ -68,9 +68,9 @@ const Contact = () => {
 
       <section className="pt-6 pb-6">
 
-        <div className="container mx-auto px-6">
+        <div className="max-w-screen-xl mx-auto px-6">
 
-          <div className="grid lg:grid-cols-5 gap-8">
+          <div className="grid lg:grid-cols-7 gap-6">
 
             {/* Contact Info Sidebar */}
 
@@ -238,7 +238,7 @@ const Contact = () => {
 
             delay: 0.3
 
-          }} className="lg:col-span-3">
+          }} className="lg:col-span-5">
 
               <div className="bg-card rounded-2xl overflow-hidden shadow-lg border border-border">
 

@@ -49,11 +49,11 @@ const socialLinks = [
 
 export const Footer = () => {
   return (
-    <footer id="about" className="bg-foreground text-primary-foreground pt-20 pb-8">
+    <footer id="about" className="bg-foreground text-primary-foreground pt-12 md:pt-20 pb-8">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-8 md:gap-12 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-6 md:gap-8 lg:gap-12 mb-12 md:mb-16">
           {/* Brand Column */}
-          <div className="col-span-2 md:col-span-1">
+          <div className="col-span-2">
             <Link to="/" className="flex items-center gap-2 mb-6">
               <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-xl">TB</span>
@@ -86,7 +86,7 @@ export const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.solutions.map((link) => (
                 <li key={link.label}>
-                  <Link to={link.href} className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+                  <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -97,10 +97,10 @@ export const Footer = () => {
           {/* Industries */}
           <div>
             <h4 className="font-semibold mb-4">Industries</h4>
-            <ul className="space-y-3">
+            <ul className="grid grid-cols-2 md:grid-cols-1 gap-x-4 gap-y-2 md:gap-y-3">
               {footerLinks.industries.map((link) => (
                 <li key={link.label}>
-                  <Link to={link.href} className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+                  <Link to={link.href} className="text-sm md:text-base text-primary-foreground/60 hover:text-primary-foreground transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -114,7 +114,7 @@ export const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
-                  <Link to={link.href} className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+                  <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -128,7 +128,7 @@ export const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.learn.map((link) => (
                 <li key={link.label}>
-                  <Link to={link.href} className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+                  <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -142,7 +142,7 @@ export const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
                 <li key={link.label}>
-                  <Link to={link.href} className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+                  <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -156,7 +156,7 @@ export const Footer = () => {
           <p className="text-primary-foreground/50 text-sm">
             © {new Date().getFullYear()} Tandem Bridge Talent. All rights reserved.
           </p>
-          <div className="flex gap-6 text-sm text-primary-foreground/50">
+          <div className="flex flex-wrap gap-4 justify-center md:justify-end text-sm text-primary-foreground/50">
             <a href="#" className="hover:text-primary-foreground transition-colors">Terms of Service</a>
             <a href="#" className="hover:text-primary-foreground transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-primary-foreground transition-colors">Cookie Policy</a>

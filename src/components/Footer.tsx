@@ -51,10 +51,13 @@ export const Footer = () => {
   return (
     <footer id="about" className="bg-foreground text-primary-foreground pt-12 md:pt-20 pb-8">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-6 md:gap-8 lg:gap-12 mb-12 md:mb-16">
-          {/* Brand Column */}
-          <div className="col-span-2">
-            <Link to="/" className="flex items-center gap-2 mb-6">
+
+        {/* Desktop: 6-col grid | Mobile: stacked */}
+        <div className="mb-12 md:mb-16">
+
+          {/* Brand Row - full width on mobile, fits in grid on desktop */}
+          <div className="mb-10 md:mb-0 md:hidden">
+            <Link to="/" className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-xl">TB</span>
               </div>
@@ -62,97 +65,159 @@ export const Footer = () => {
                 Tandem<span className="text-accent">Bridge</span> Talent
               </span>
             </Link>
-            <p className="text-primary-foreground/60 mb-6">
-              U.S. operated. Nearshore teams that perform.
-              South American talent, American standards.
+            <p className="text-primary-foreground/60 mb-4 text-sm">
+              U.S. operated. Nearshore teams that perform. South American talent, American standards.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-3">
               {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  aria-label={social.label}
-                  className="w-10 h-10 bg-primary-foreground/10 rounded-lg flex items-center justify-center hover:bg-primary/30 transition-colors"
-                >
-                  <social.icon className="w-5 h-5" />
+                <a key={social.label} href={social.href} aria-label={social.label}
+                  className="w-9 h-9 bg-primary-foreground/10 rounded-lg flex items-center justify-center hover:bg-primary/30 transition-colors">
+                  <social.icon className="w-4 h-4" />
                 </a>
               ))}
             </div>
           </div>
 
-          {/* Solutions */}
-          <div>
-            <h4 className="font-semibold mb-4">Solutions</h4>
-            <ul className="space-y-3">
-              {footerLinks.solutions.map((link) => (
-                <li key={link.label}>
-                  <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          {/* Desktop grid */}
+          <div className="hidden md:grid md:grid-cols-6 gap-8 lg:gap-12">
+            {/* Brand */}
+            <div className="md:col-span-2">
+              <Link to="/" className="flex items-center gap-2 mb-6">
+                <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
+                  <span className="text-primary-foreground font-bold text-xl">TB</span>
+                </div>
+                <span className="font-bold text-xl">
+                  Tandem<span className="text-accent">Bridge</span> Talent
+                </span>
+              </Link>
+              <p className="text-primary-foreground/60 mb-6 text-sm">
+                U.S. operated. Nearshore teams that perform. South American talent, American standards.
+              </p>
+              <div className="flex gap-4">
+                {socialLinks.map((social) => (
+                  <a key={social.label} href={social.href} aria-label={social.label}
+                    className="w-10 h-10 bg-primary-foreground/10 rounded-lg flex items-center justify-center hover:bg-primary/30 transition-colors">
+                    <social.icon className="w-5 h-5" />
+                  </a>
+                ))}
+              </div>
+            </div>
+            {/* Solutions */}
+            <div>
+              <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">Solutions</h4>
+              <ul className="space-y-2">
+                {footerLinks.solutions.map((link) => (
+                  <li key={link.label}>
+                    <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">{link.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {/* Industries */}
+            <div>
+              <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">Industries</h4>
+              <ul className="space-y-2">
+                {footerLinks.industries.map((link) => (
+                  <li key={link.label}>
+                    <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">{link.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {/* Company */}
+            <div>
+              <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">Company</h4>
+              <ul className="space-y-2">
+                {footerLinks.company.map((link) => (
+                  <li key={link.label}>
+                    <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">{link.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {/* Learn + Resources stacked */}
+            <div className="space-y-8">
+              <div>
+                <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">Learn</h4>
+                <ul className="space-y-2">
+                  {footerLinks.learn.map((link) => (
+                    <li key={link.label}>
+                      <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">{link.label}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">Resources</h4>
+                <ul className="space-y-2">
+                  {footerLinks.resources.map((link) => (
+                    <li key={link.label}>
+                      <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">{link.label}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
 
-          {/* Industries */}
-          <div>
-            <h4 className="font-semibold mb-4">Industries</h4>
-            <ul className="grid grid-cols-2 md:grid-cols-1 gap-x-4 gap-y-2 md:gap-y-3">
-              {footerLinks.industries.map((link) => (
-                <li key={link.label}>
-                  <Link to={link.href} className="text-sm md:text-base text-primary-foreground/60 hover:text-primary-foreground transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div>
-            <h4 className="font-semibold mb-4">Company</h4>
-            <ul className="space-y-3">
-              {footerLinks.company.map((link) => (
-                <li key={link.label}>
-                  <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Learn */}
-          <div>
-            <h4 className="font-semibold mb-4">Learn</h4>
-            <ul className="space-y-3">
-              {footerLinks.learn.map((link) => (
-                <li key={link.label}>
-                  <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Resources */}
-          <div>
-            <h4 className="font-semibold mb-4">Resources</h4>
-            <ul className="space-y-3">
-              {footerLinks.resources.map((link) => (
-                <li key={link.label}>
-                  <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          {/* Mobile grid - 2 columns, stacked sections */}
+          <div className="md:hidden grid grid-cols-2 gap-x-6 gap-y-8">
+            <div>
+              <h4 className="font-semibold mb-3 text-xs uppercase tracking-wider text-primary-foreground/40">Solutions</h4>
+              <ul className="space-y-2">
+                {footerLinks.solutions.map((link) => (
+                  <li key={link.label}>
+                    <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">{link.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-3 text-xs uppercase tracking-wider text-primary-foreground/40">Company</h4>
+              <ul className="space-y-2">
+                {footerLinks.company.map((link) => (
+                  <li key={link.label}>
+                    <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">{link.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-3 text-xs uppercase tracking-wider text-primary-foreground/40">Learn</h4>
+              <ul className="space-y-2">
+                {footerLinks.learn.map((link) => (
+                  <li key={link.label}>
+                    <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">{link.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-3 text-xs uppercase tracking-wider text-primary-foreground/40">Resources</h4>
+              <ul className="space-y-2">
+                {footerLinks.resources.map((link) => (
+                  <li key={link.label}>
+                    <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">{link.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {/* Industries takes full width on mobile with 2-col sub-grid */}
+            <div className="col-span-2">
+              <h4 className="font-semibold mb-3 text-xs uppercase tracking-wider text-primary-foreground/40">Industries</h4>
+              <ul className="grid grid-cols-2 gap-x-6 gap-y-2">
+                {footerLinks.industries.map((link) => (
+                  <li key={link.label}>
+                    <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">{link.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-primary-foreground/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/50 text-sm">
             © {new Date().getFullYear()} Tandem Bridge Talent. All rights reserved.
           </p>
@@ -162,6 +227,7 @@ export const Footer = () => {
             <a href="#" className="hover:text-primary-foreground transition-colors">Cookie Policy</a>
           </div>
         </div>
+
       </div>
     </footer>
   );

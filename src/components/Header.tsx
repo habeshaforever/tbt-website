@@ -150,7 +150,7 @@ export const Header = () => {
           <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
             <span className="text-primary-foreground font-bold text-xl">TB</span>
           </div>
-          <span className="font-bold text-lg md:text-xl text-foreground truncate max-w-[160px] md:max-w-none">
+          <span className="font-bold text-base md:text-xl text-foreground whitespace-nowrap">
             Tandem<span className="text-primary">Bridge</span> Talent
           </span>
         </Link>

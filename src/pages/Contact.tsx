@@ -52,9 +52,7 @@ const Contact = () => {
             </div>
 
             <h1 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
-
-              Book Your Strategy Call
-
+              Book Your <span className="text-accent">Strategy Call</span>
             </h1>
 
             <p className="text-lg text-primary-foreground/80 mb-2">

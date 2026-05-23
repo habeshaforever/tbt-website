@@ -262,7 +262,7 @@ const Contact = () => {
 
                   <InlineWidget url="https://calendly.com/tandembridge/tbt-strategy-call" styles={{
 
-                  height: '580px',
+                  height: '900px',
 
                   width: '100%'
 

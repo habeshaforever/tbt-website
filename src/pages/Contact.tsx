@@ -250,13 +250,13 @@ const Contact = () => {
                   This is a 30-minute strategy call with a senior TBT partner. Slots are limited and fill fast.
                 </p>
                 </div>
-                <div style={{ overflow: 'hidden', height: '550px' }}>
+                <div style={{ overflow: 'hidden', height: '620px' }}>
   <InlineWidget
     url="https://calendly.com/tandembridge/tbt-strategy-call"
     styles={{
       height: '650px',
       width: '100%',
-      marginTop: '-60px'
+      marginTop: '-55px'
     }}
     pageSettings={{
       backgroundColor: 'ffffff',

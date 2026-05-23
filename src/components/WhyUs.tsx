@@ -56,7 +56,7 @@ export const WhyUs = () => {
             <h2 className="text-3xl md:text-4xl font-bold mt-4 text-foreground">
               ROI Maximized, Quality Guaranteed
             </h2>
-            <p className="text-muted-foreground mt-4 text-lg">
+            <p className="text-muted-foreground mt-4 text-base md:text-lg">
               While offshore staffing might offer lower hourly wages, it often falls short on 
               long-term return on investment. Our nearshore model emphasizes quality talent 
               retention, enabling employees to develop company-specific expertise.
@@ -96,7 +96,7 @@ export const WhyUs = () => {
           </motion.div>
 
           {/* Right - Feature Grid */}
-          <div className="grid grid-cols-2 gap-4 mt-8 lg:mt-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 lg:mt-0">
             {features.map((feature, index) => (
               <motion.div
                 key={feature.title}
@@ -105,7 +105,7 @@ export const WhyUs = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ scale: 1.03 }}
-                className={`bg-card p-5 rounded-2xl border border-border shadow-card hover:shadow-card-hover transition-all ${
+                className={`bg-card p-4 md:p-5 rounded-2xl border border-border shadow-card hover:shadow-card-hover transition-all ${
                   index === 0 ? "col-span-2" : ""
                 }`}
               >

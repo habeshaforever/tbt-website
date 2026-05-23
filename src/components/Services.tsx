@@ -51,7 +51,7 @@ export const Services = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-3xl mx-auto mb-8 md:mb-16"
         >
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">
             Solutions
@@ -77,12 +77,12 @@ export const Services = () => {
             >
               <Link
                 to={service.href}
-                className="group block bg-card rounded-2xl border border-border p-8 hover:shadow-card-hover hover:border-primary/20 transition-all duration-300 h-full"
+                className="group block bg-card rounded-2xl border border-border p-5 md:p-8 hover:shadow-card-hover hover:border-primary/20 transition-all duration-300 h-full"
               >
                 <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
                   <service.icon className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-2xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
+                <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-muted-foreground mb-4">{service.description}</p>
@@ -100,7 +100,7 @@ export const Services = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="flex items-center justify-center gap-3 text-center mb-16 p-4 bg-muted/50 rounded-lg border border-border"
+          className="flex items-center justify-center gap-3 text-center mb-8 md:mb-16 p-4 bg-muted/50 rounded-lg border border-border"
         >
           <Info className="w-5 h-5 text-primary flex-shrink-0" />
           <p className="text-muted-foreground">
@@ -122,7 +122,7 @@ export const Services = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {roles.map((role, index) => (
             <motion.div
               key={role.title}
@@ -133,12 +133,12 @@ export const Services = () => {
             >
               <Link
                 to={role.href}
-                className="group relative bg-card rounded-2xl border border-border p-6 hover:shadow-card-hover hover:border-primary/20 transition-all duration-300 block"
+                className="group relative bg-card rounded-2xl border border-border p-4 md:p-6 hover:shadow-card-hover hover:border-primary/20 transition-all duration-300 block"
               >
-                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <role.icon className="w-7 h-7 text-primary" />
+                <div className="w-10 h-10 md:w-14 md:h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <role.icon className="w-5 h-5 md:w-7 md:h-7 text-primary" />
                 </div>
-                <h4 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                <h4 className="text-base md:text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
                   {role.title}
                 </h4>
                 <div className="flex items-center gap-1 text-sm text-muted-foreground group-hover:text-primary transition-colors">

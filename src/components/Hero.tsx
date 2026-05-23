@@ -12,7 +12,7 @@ const trustPoints = [
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden bg-gradient-dark">
+    <section className="relative min-h-screen flex items-center pt-20 pb-10 md:pb-16 overflow-hidden bg-gradient-dark">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-dark" />
       <div className="absolute top-20 right-0 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-primary/10 rounded-full blur-3xl" />
@@ -25,7 +25,7 @@ export const Hero = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="space-y-8"
+            className="space-y-5 md:space-y-8"
           >
             {/* Label */}
             <motion.div
@@ -51,11 +51,11 @@ export const Hero = () => {
             </motion.div>
 
             {/* Headline */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-primary-foreground">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-primary-foreground">
               Build Your <span className="text-accent">Elite Remote Team</span> for 70% Less
             </h1>
 
-            <p className="text-lg md:text-xl text-primary-foreground/70 max-w-xl">
+            <p className="text-base md:text-xl text-primary-foreground/70 max-w-xl">
               U.S. led staffing. South American talent. Built for scale. Access the top 1% of 
               nearshore professionals with fluent English, real-time collaboration, and 70% cost savings.
             </p>
@@ -83,13 +83,13 @@ export const Hero = () => {
               transition={{ delay: 0.6 }}
               className="flex flex-wrap gap-4 pt-4"
             >
-              <Button variant="hero" size="xl" asChild>
+              <Button variant="hero" size="lg" className="w-full sm:w-auto" asChild>
                 <Link to="/book">
                   Book a Strategy Call
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>
-              <Button variant="secondary" size="xl" asChild>
+              <Button variant="secondary" size="lg" className="w-full sm:w-auto" asChild>
                 <a href="#how-it-works">Learn How It Works</a>
               </Button>
             </motion.div>
@@ -100,7 +100,7 @@ export const Hero = () => {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="relative mt-8 lg:mt-0"
+            className="relative mt-8 lg:mt-0 hidden lg:block"
           >
             <div className="grid grid-cols-2 gap-4">
               {/* Main Stat Card */}

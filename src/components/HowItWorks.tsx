@@ -37,7 +37,7 @@ export const HowItWorks = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-3xl mx-auto mb-8 md:mb-16"
         >
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">
             How It Works
@@ -45,13 +45,13 @@ export const HowItWorks = () => {
           <h2 className="text-3xl md:text-4xl font-bold mt-4">
             Simple Process, Exceptional Results
           </h2>
-          <p className="text-primary-foreground/70 mt-4 text-lg">
+          <p className="text-primary-foreground/70 mt-4 text-base md:text-lg">
             From initial consultation to fully integrated team member, 
             we make nearshore staffing effortless.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
             <motion.div
               key={step.title}
@@ -66,7 +66,7 @@ export const HowItWorks = () => {
                 <div className="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-accent/50 to-transparent -translate-x-4" />
               )}
 
-              <div className="relative bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10 rounded-2xl p-6 hover:bg-primary-foreground/10 transition-colors">
+              <div className="relative bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10 rounded-2xl p-4 md:p-6 hover:bg-primary-foreground/10 transition-colors">
                 {/* Step Number */}
                 <span className="absolute -top-3 -right-3 w-10 h-10 bg-accent rounded-full flex items-center justify-center text-sm font-bold text-accent-foreground">
                   {step.number}

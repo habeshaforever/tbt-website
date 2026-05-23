@@ -16,15 +16,15 @@ export const CTA = () => {
           viewport={{ once: true }}
           className="text-center max-w-4xl mx-auto"
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-6">
+          <h2 className="text-2xl md:text-5xl font-bold text-primary-foreground mb-6">
             Ready to Scale Your Team with Elite South American Talent?
           </h2>
-          <p className="text-base md:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
+          <p className="text-base md:text-xl text-primary-foreground/80 mb-6 md:mb-10 max-w-2xl mx-auto">
             Join hundreds of US companies saving 70% on staffing costs while 
             accessing the top 1% of nearshore talent.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
+          <div className="flex flex-wrap justify-center gap-4 mb-6 md:mb-12">
             <Button variant="secondary" size="xl" asChild>
               <Link to="/book">
                 Book a Strategy Call

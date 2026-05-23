@@ -366,7 +366,7 @@ export const Header = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="md:hidden absolute top-full left-0 right-0 bg-background/98 backdrop-blur-md shadow-lg border-t border-border max-h-[85vh] overflow-y-auto"
+          className="md:hidden fixed top-[57px] left-0 right-0 bg-background shadow-xl border-t border-border max-h-[85vh] overflow-y-auto z-50"
         >
           <nav className="container mx-auto px-6 py-6 flex flex-col gap-4">
             {navItems.map((item) => (
@@ -412,7 +412,7 @@ export const Header = () => {
                             {/* Browse by Role toggle */}
                             <button
                               onClick={() => toggleMobileCategory("browse-by-role")}
-                              className="w-full flex items-center justify-between py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                              className="w-full flex items-center justify-between py-2 text-sm text-foreground hover:text-primary transition-colors"
                             >
                               Browse by Role
                               <ChevronDown
@@ -436,7 +436,7 @@ export const Header = () => {
                                       <div key={category.label}>
                                         <button
                                           onClick={() => toggleMobileCategory(category.label)}
-                                          className="w-full flex items-center justify-between py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                                          className="w-full flex items-center justify-between py-2 text-sm text-foreground hover:text-primary transition-colors"
                                         >
                                           {category.label}
                                           <ChevronDown

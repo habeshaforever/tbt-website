@@ -243,22 +243,33 @@ const Contact = () => {
 
               <div className="bg-card rounded-2xl overflow-hidden shadow-lg border border-border">
 
-                <div style={{ overflow: 'hidden', height: '700px' }}>
-  <InlineWidget
-    url="https://calendly.com/tandembridge/tbt-strategy-call"
-    styles={{
-      height: '760px',
-      width: '100%',
-      marginTop: '-60px'
-    }}
-    pageSettings={{
-      backgroundColor: 'ffffff',
-      hideEventTypeDetails: true,
-      hideLandingPageDetails: true,
-      primaryColor: '2563eb',
-      textColor: '1a1a2e'
-    }}
-  />
+                <div style={{ position: 'relative' }}>
+  <div style={{
+    position: 'absolute',
+    top: '0',
+    right: '0',
+    width: '200px',
+    height: '110px',
+    background: 'white',
+    zIndex: 10
+  }} />
+  <div style={{ overflow: 'hidden', height: '660px' }}>
+    <InlineWidget
+      url="https://calendly.com/tandembridge/tbt-strategy-call"
+      styles={{
+        height: '760px',
+        width: '100%',
+        marginTop: '-60px'
+      }}
+      pageSettings={{
+        backgroundColor: 'ffffff',
+        hideEventTypeDetails: true,
+        hideLandingPageDetails: true,
+        primaryColor: '2563eb',
+        textColor: '1a1a2e'
+      }}
+    />
+  </div>
 </div>
 
               </div>

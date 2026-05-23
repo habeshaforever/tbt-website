@@ -18,9 +18,10 @@ const Contact = () => {
 
       {/* Hero Section */}
 
-      <section className="pt-24 pb-6 bg-gradient-hero relative overflow-hidden">
+      <section className="pt-24 pb-6 bg-gradient-dark relative overflow-hidden">
 
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
+        <div className="absolute inset-0 bg-gradient-dark" />
+        <div className="absolute top-0 right-0 w-[500px] h-[300px] bg-primary/10 rounded-full blur-3xl" />
 
         
 
@@ -43,6 +44,12 @@ const Contact = () => {
           duration: 0.6
 
         }} className="text-center max-w-3xl mx-auto">
+
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/20 rounded-full border border-primary/30 mb-4">
+              <span className="text-sm font-semibold text-accent uppercase tracking-wider">
+                Limited Availability
+              </span>
+            </div>
 
             <h1 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
 

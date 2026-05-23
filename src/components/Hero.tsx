@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
@@ -138,7 +138,7 @@ export const Hero = () => {
               >
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                    <span className="text-2xl">🕐</span>
+                    <Clock className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <p className="font-semibold text-primary-foreground">U.S. Aligned Time Zones</p>

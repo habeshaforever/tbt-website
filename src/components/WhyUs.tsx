@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Globe, Clock, Users, DollarSign, Award, Building2, TrendingUp } from "lucide-react";
+import { Globe, Clock, Users, DollarSign, Award, Building2, TrendingUp, BadgeDollarSign, CalendarDays, Heart } from "lucide-react";
 
 const features = [
   {
@@ -65,7 +65,7 @@ export const WhyUs = () => {
             <div className="mt-8 space-y-4">
               <div className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border">
                 <div className="w-10 h-10 bg-success/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-success text-lg">💰</span>
+                  <BadgeDollarSign className="w-5 h-5 text-success" />
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">Higher Wages Than Competitors</p>
@@ -75,7 +75,7 @@ export const WhyUs = () => {
               
               <div className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border">
                 <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-primary text-lg">📅</span>
+                  <CalendarDays className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">5-Day Work Week</p>
@@ -85,7 +85,7 @@ export const WhyUs = () => {
 
               <div className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border">
                 <div className="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-accent text-lg">👨‍👩‍👧‍👦</span>
+                  <Heart className="w-5 h-5 text-accent" />
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">Family-First Culture</p>

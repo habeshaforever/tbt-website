@@ -250,7 +250,7 @@ const Contact = () => {
     right: '0',
     width: '200px',
     height: '110px',
-    background: 'var(--card)',
+    background: '#ffffff',
     zIndex: 10,
     borderRadius: '0 16px 0 0'
   }} />

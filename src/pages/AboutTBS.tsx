@@ -17,33 +17,33 @@ const identity = [
 const values = [
   {
     icon: Users,
-    title: "People First",
-    description: "We believe that the right people are the foundation of every successful business. Our mission is to connect exceptional talent with companies that value their contributions."
+    title: "The Right Person, Not the First Available",
+    description: "Most agencies send you whoever is available. We send you whoever is right. Every candidate passes our 8-step vetting process. Only the top 1% get placed."
   },
   {
     icon: Target,
-    title: "Results-Driven",
-    description: "We measure our success by your success. Every hire we make is focused on delivering measurable impact to your bottom line."
+    title: "Your Numbers Are Our Report Card",
+    description: "We track our performance by what it actually costs you, how long the person stays, and whether they deliver. Our 98% client retention rate says what our words cannot."
   },
   {
     icon: Globe,
-    title: "Bridge Cultures",
-    description: "We specialize in bridging the gap between U.S. business culture and Latin American talent, so teams actually click."
+    title: "The Cultural Fit Is Part of the Vetting",
+    description: "Colombian professionals already understand U.S. work culture, communication norms, and business expectations. We vet for that too — not just skills on a resume."
   },
   {
     icon: Award,
-    title: "Quality Over Quantity",
-    description: "We'd rather find you one perfect candidate than ten mediocre ones. Our careful vetting process means only the top 1% make it through."
+    title: "Top 1% Is Not a Slogan",
+    description: "We run an 8-step process before anyone gets placed. Language, skills, culture, technical ability. Most applicants do not make it through. The ones who do are ready on day one."
   },
   {
     icon: Heart,
-    title: "Long-Term Partnerships",
-    description: "We're not just filling positions. We're building lasting relationships. Our 2% annual turnover rate speaks to our commitment to fit."
+    title: "2% Turnover. Industry Average Is 18%.",
+    description: "When people are placed right, they stay. Our 2% annualized turnover rate is not luck — it is the result of matching carefully and supporting consistently after the hire."
   },
   {
     icon: Handshake,
-    title: "Transparency",
-    description: "No hidden fees, no surprises. Our flat-rate model means you always know exactly what you're paying for."
+    title: "Flat Rate. No Hidden Fees.",
+    description: "You know what you are paying before we start. No surprises at invoice time, no add-on charges buried in the fine print. That is how it should be."
   }
 ];
 
@@ -65,7 +65,7 @@ const AboutTBS = () => {
               Built by People Who Lived the <span className="text-primary">Problem</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Tandem Bridge Talent was not built in a boardroom. It was built by two founders who experienced the talent gap firsthand and decided to close it.
+              One founder could not find reliable talent at a price that made sense. The other was the talent — a top Colombian professional with no direct path to U.S. companies. They built TBT to fix both problems at once.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Book a Strategy Call</Link>
@@ -106,12 +106,10 @@ const AboutTBS = () => {
             className="max-w-3xl mx-auto text-center mb-8 sm:mb-16"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
-              Built From the Ground Up
+              Two Founders. Two Sides of the Same Problem.
             </h2>
             <p className="text-lg text-muted-foreground">
-              Tandem Bridge Talent was built by two people who experienced the talent gap firsthand.
-              One from the business side, one from the talent side. Together they built something
-              that solves it from both ends.
+              Alpha built businesses and kept running into the same wall — great work to be done, no reliable people to do it at a price that made sense. Gianna was on the other side — a top-performing Colombian professional who watched companies struggle to find people like her. TBT is what happens when those two perspectives meet.
             </p>
           </motion.div>
 
@@ -190,10 +188,10 @@ const AboutTBS = () => {
             </h2>
             <div className="space-y-4 text-lg text-muted-foreground">
               <p>
-                American businesses struggle to find reliable talent while Latin America has an abundance of qualified, English-fluent professionals in the same time zones.
+                U.S. businesses are paying too much for talent they can barely keep. Domestic hiring is expensive, slow, and the turnover is brutal — the industry average sits at 18-20% annually. Meanwhile, Colombia has a deep pool of bilingual, highly educated professionals working in Eastern and Central time zones who are never getting the shot they deserve.
               </p>
               <p>
-                TBT bridges that gap. We connect U.S. and Canadian companies with top-tier Latin American professionals who bring the skills, communication ability, and work ethic needed to drive real results—at a fraction of the cost of domestic hires.
+                TBT exists to close that gap. Not with a job board or a recruiting algorithm — with a real vetting process, real people, and a 90-day replacement guarantee that puts our money where our mouth is.
               </p>
             </div>
           </motion.div>
@@ -213,7 +211,7 @@ const AboutTBS = () => {
               What We Stand For
             </h2>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto">
-              The principles that guide everything we do
+              Not slogans. Actual commitments we back up with numbers.
             </p>
           </motion.div>
 
@@ -247,11 +245,10 @@ const AboutTBS = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-              Ready to Build Your Team?
+              See If TBT Is the Right Fit for Your Business
             </h2>
             <p className="text-base sm:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Let's discuss how Tandem Bridge Talent can help you access top-tier talent
-              at a fraction of the cost.
+              Book a 30-minute call. We will show you what roles we can fill, what the cost looks like, and how quickly we can get you your first candidate. No pressure, no pitch deck.
             </p>
             <Button variant="hero" size="lg" className="mt-8" asChild>
               <Link to="/book">Book a Strategy Call</Link>

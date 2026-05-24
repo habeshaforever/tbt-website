@@ -10,8 +10,8 @@ const processSteps = [
   {
     icon: Search,
     number: "01",
-    title: "Discovery & Needs Analysis",
-    description: "We start with a deep-dive consultation to understand your business, culture, and specific role requirements.",
+    title: "We Listen First",
+    description: "We don't send you a generic intake form. We get on a call, learn your business, understand the team dynamics, and map exactly what the right person looks like.",
     details: [
       "Detailed role profiling",
       "Culture fit assessment",
@@ -22,8 +22,8 @@ const processSteps = [
   {
     icon: Users,
     number: "02",
-    title: "Talent Sourcing & Vetting",
-    description: "Our careful 8-step vetting process means only the top 1% of candidates reach your interview stage.",
+    title: "We Find the Top 1%",
+    description: "From hundreds of applicants, our 8-step vetting process filters to the few worth your time. Skills tests, background checks, English fluency, cultural fit — we run it all.",
     details: [
       "Skills assessment testing",
       "English proficiency verification",
@@ -34,8 +34,8 @@ const processSteps = [
   {
     icon: FileCheck,
     number: "03",
-    title: "Candidate Presentation",
-    description: "We present a curated shortlist of pre-vetted candidates with detailed profiles and assessment results.",
+    title: "You Get the Best, Pre-Screened",
+    description: "We deliver a short list of our top picks — each with video introductions, test scores, verified work history, and salary expectations already aligned. No surprises.",
     details: [
       "Video introductions",
       "Skills test results",
@@ -46,8 +46,8 @@ const processSteps = [
   {
     icon: CheckCircle,
     number: "04",
-    title: "Interview & Selection",
-    description: "You conduct interviews with your top picks. We handle all scheduling and coordination.",
+    title: "You Pick. We Handle the Paperwork.",
+    description: "Interview your top picks on your schedule. When you choose, we take it from there — contracts, compliance, onboarding, all of it.",
     details: [
       "Flexible interview scheduling",
       "Technical interview support",
@@ -58,8 +58,8 @@ const processSteps = [
   {
     icon: Shield,
     number: "05",
-    title: "Onboarding & Compliance",
-    description: "We handle all employment logistics, contracts, and compliance requirements for you.",
+    title: "Everything Legal and Sorted",
+    description: "Employment agreements, compliance filings, benefits setup, equipment provisioning — handled before your new hire's first day.",
     details: [
       "Employment contracts",
       "Benefits administration",
@@ -70,8 +70,8 @@ const processSteps = [
   {
     icon: Rocket,
     number: "06",
-    title: "Integration & Launch",
-    description: "Your new team member integrates with your workflows, tools, and team from day one.",
+    title: "Day One Without the Drama",
+    description: "Tool access, team introductions, process documentation — we prep everything so your new team member can contribute from day one.",
     details: [
       "Tool & system access setup",
       "Team introductions",
@@ -82,13 +82,13 @@ const processSteps = [
   {
     icon: Headphones,
     number: "07",
-    title: "Ongoing Support",
-    description: "Your account manager stays close to the team and provides ongoing support to keep things running long term.",
+    title: "We Stay In It",
+    description: "Our job isn't done at hire. Your account manager checks in regularly, monitors performance, and handles anything that comes up — so you don't have to.",
     details: [
       "Regular check-ins",
       "Performance monitoring",
       "Issue resolution",
-      "Replacement guarantee"
+      "90-day replacement guarantee"
     ]
   },
 ];
@@ -120,8 +120,8 @@ const OurProcess = () => {
               From First Call to <span className="text-accent">Fully Integrated</span> Team Member
             </h1>
             <p className="text-base sm:text-xl text-primary-foreground/80 max-w-2xl mx-auto">
-              Our proven process gets you exceptional talent
-              without the complexity of traditional hiring.
+              We've done this thousands of times. You don't have to figure anything out
+              — just follow the steps.
             </p>
           </motion.div>
 
@@ -204,9 +204,8 @@ const OurProcess = () => {
               Our Risk-Free Guarantee
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              If your new hire doesn't work out within the first 90 days, 
-              we'll find you a replacement at no additional cost. That's our commitment 
-              to your success.
+              If a placement doesn't work out in the first 90 days, we replace them at
+              zero additional cost. No arguments. No excuses. Just a new hire.
             </p>
             <Button variant="hero" size="lg" asChild>
               <Link to="/book">Start Your Risk-Free Search</Link>

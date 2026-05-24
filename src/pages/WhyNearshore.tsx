@@ -18,32 +18,32 @@ const advantages = [
   {
     icon: Clock,
     title: "Real-Time Collaboration",
-    description: "South American professionals work during U.S. business hours, so you get real-time communication and quick feedback without the delays of offshore teams."
+    description: "When you send a message at 9 AM, you get an answer by 9:15. No overnight waits. No asynchronous chaos. Your nearshore team works on your schedule."
   },
   {
     icon: DollarSign,
     title: "Significant Cost Savings",
-    description: "Access highly skilled talent at 50-70% lower costs compared to U.S.-based employees, without compromising on quality or expertise."
+    description: "The same caliber of professional you'd hire in the U.S. at $70K costs $20K–$30K through a nearshore model. That's not a rounding error. That's a second team member."
   },
   {
     icon: Languages,
     title: "Bilingual Professionals",
-    description: "Strong English proficiency is standard. Many professionals are natively bilingual, making communication natural and effective."
+    description: "Strong English proficiency is table stakes in Colombia's professional market. Our candidates write reports, run calls, and communicate with your clients without a translator."
   },
   {
     icon: GraduationCap,
     title: "Highly Educated Workforce",
-    description: "South America produces hundreds of thousands of university graduates annually, with strong programs in engineering, finance, and technology."
+    description: "Colombia produces over 250,000 university graduates per year in fields like engineering, finance, and technology. The talent pool is large. Our job is to find the best of it."
   },
   {
     icon: Globe,
     title: "Cultural Alignment",
-    description: "Shared Western business culture means South American teams integrate smoothly with U.S. operations and understand American market expectations."
+    description: "Colombian professionals grew up watching the same shows, working with the same software, and competing in the same global economy. They integrate without friction."
   },
   {
     icon: Building2,
-    title: "Growing Tech Ecosystems",
-    description: "Countries like Colombia, Argentina, and Brazil have thriving tech hubs with world-class talent in software development, design, and digital marketing."
+    title: "World-Class Tech Hubs",
+    description: "Bogotá and Medellín are two of Latin America's fastest-growing tech hubs. Google, Microsoft, and Amazon have offices there. The talent is world-class."
   }
 ];
 
@@ -75,8 +75,8 @@ const WhyNearshore = () => {
               Why Nearshore?
             </h1>
             <p className="text-base sm:text-xl text-primary-foreground/80">
-              The strategic advantage of South American talent: cost savings, time zone 
-              alignment, and world-class professionals who work when you work.
+              Offshore is cheap until it isn't. Domestic is great until you check the price tag.
+              Nearshore is the model that actually works.
             </p>
           </motion.div>
         </div>
@@ -96,8 +96,8 @@ const WhyNearshore = () => {
               The Nearshore Advantage
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-              South America offers a unique combination of talent, cost efficiency, and 
-              operational alignment that offshore destinations simply can't match.
+              Here's what most business owners figure out after trying offshore and domestic:
+              the right answer was right next door the whole time.
             </p>
           </motion.div>
 
@@ -246,11 +246,11 @@ const WhyNearshore = () => {
             className="bg-gradient-hero rounded-3xl p-6 sm:p-12 md:p-16 text-center"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-              Experience the Nearshore Difference
+              The People Who Can't Believe It Works This Way Are the Ones Who Haven't Tried It Yet.
             </h2>
             <p className="text-base sm:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Book a strategy call to learn how nearshore staffing can transform 
-              your operations and accelerate your growth.
+              One call. We'll show you what the role costs, what the talent looks like, and
+              what it takes to get started. No pressure. Just the numbers.
             </p>
             <Button 
               variant="outline" 

@@ -61,21 +61,21 @@ const services = [
 const whyCards = [
   {
     icon: DollarSign,
-    title: "Up to 70% Cost Savings",
+    title: "70% Less Than Hiring Domestically",
     description:
-      "Build a full BPO team at a fraction of what it would cost to hire domestically. No office costs, no benefits overhead, no long term contracts.",
+      "A full BPO team in the U.S. costs a fortune. The same team built through TBT costs 70% less — with the same skill level, the same time zone, and no long-term contracts required.",
   },
   {
     icon: Users,
-    title: "Fully Managed or Direct Hire",
+    title: "We Run It or You Own It",
     description:
-      "Choose whether TBT manages your BPO team entirely or whether you hire them directly. Both options are available depending on your needs.",
+      "Need us to manage everything — payroll, HR, compliance, performance? We do that. Prefer to hire them directly and run them yourself? We do that too. Your call.",
   },
   {
     icon: Award,
-    title: "Top 1% Talent Only",
+    title: "Top 1% Only — No Exceptions",
     description:
-      "Every BPO professional we place has passed our full vetting process. You get people who are ready to perform from day one.",
+      "Every person we place has cleared an 8-step vetting process. Language, skills, work ethic, culture fit. The other 99% do not make it. You only meet the ones who do.",
   },
 ];
 
@@ -83,26 +83,26 @@ const steps = [
   {
     icon: Search,
     number: "01",
-    title: "Discovery Call",
-    description: "We learn about your needs, culture, and the specific roles you're looking to fill.",
+    title: "Tell Us What You Need",
+    description: "One call. We learn your process, your culture, and the exact roles you want to hand off.",
   },
   {
     icon: Users,
     number: "02",
-    title: "Candidate Selection",
-    description: "We present pre-vetted candidates from our top 1% talent pool who match your requirements.",
+    title: "We Find Your People",
+    description: "Within 72 hours, we present pre-vetted candidates from our top 1% talent pool — matched to your requirements.",
   },
   {
     icon: CheckCircle,
     number: "03",
-    title: "Interview and Hire",
-    description: "You interview candidates and select the best fit. We handle all onboarding logistics.",
+    title: "You Choose, We Onboard",
+    description: "You interview and pick. We handle the onboarding paperwork, setup, and first-week logistics.",
   },
   {
     icon: Rocket,
     number: "04",
-    title: "Seamless Integration",
-    description: "Your new team member integrates with your workflows, supported by our ongoing management.",
+    title: "Your Team Starts Delivering",
+    description: "Your new BPO team works your hours, uses your tools, and plugs into your workflows from day one.",
   },
 ];
 
@@ -124,7 +124,7 @@ const BPO = () => {
               Business Process <span className="text-primary">Outsourcing</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Hand off the work that slows your business down. Keep your focus on what moves it forward.
+              You are paying too much for roles that do not require a U.S. price tag. Build a dedicated BPO team in Colombia — same time zone, 70% less cost, 2% turnover.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Talk to Us About BPO</Link>
@@ -142,13 +142,9 @@ const BPO = () => {
             viewport={{ once: true }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">What Is BPO</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">Stop Overpaying for Back-Office Work</h2>
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-              Business Process Outsourcing is the practice of delegating specific business functions to
-              an outside team. Rather than hiring internally for every role, companies use BPO to build
-              dedicated teams that handle defined processes at a fraction of the cost. At Tandem Bridge
-              Talent we build those teams from Latin America, placing top 1% professionals who work as a
-              true extension of your operation.
+              BPO is simple: instead of hiring full-time U.S. employees for every back-office function, you build a dedicated team that handles those processes at a fraction of the cost. The problem with most BPO providers is quality. Offshore teams bring 8-12 hour time differences, language barriers, and turnover rates that never stop. TBT is different. We build your BPO team from Colombia — same time zone as the U.S., bilingual professionals, 2% annualized turnover, and a vetting process that only passes the top 1% of applicants.
             </p>
           </motion.div>
         </div>
@@ -163,7 +159,7 @@ const BPO = () => {
             viewport={{ once: true }}
             className="text-center mb-8 sm:mb-12"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">What We Handle</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">Functions We Staff</h2>
           </motion.div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
             {services.map((service, index) => (
@@ -195,7 +191,7 @@ const BPO = () => {
             viewport={{ once: true }}
             className="text-center mb-8 sm:mb-12"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">Why Outsource With TBT</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">Why TBT Is Different</h2>
           </motion.div>
           <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto">
             {whyCards.map((card, index) => (
@@ -227,7 +223,7 @@ const BPO = () => {
             viewport={{ once: true }}
             className="text-center max-w-3xl mx-auto mb-8 sm:mb-16"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">How It Works</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">From Call to Candidate in 72 Hours</h2>
           </motion.div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
             {steps.map((step, index) => (

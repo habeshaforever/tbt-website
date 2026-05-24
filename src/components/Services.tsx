@@ -17,16 +17,16 @@ import {
 } from "lucide-react";
 
 const primaryServices = [
-  { 
-    icon: Users, 
-    title: "Managed Staffing", 
-    description: "Ongoing team support. We manage payroll, HR, compliance, and performance after hire.",
+  {
+    icon: Users,
+    title: "Managed Staffing",
+    description: "We place your team and run everything after hire — payroll, HR, compliance, office space, and equipment. All-inclusive. You focus on the work. We handle everything else.",
     href: "/solutions/managed-staffing"
   },
-  { 
-    icon: Target, 
-    title: "Recruiting & Direct Hire", 
-    description: "One-time hiring. We source and vet candidates, you hire them directly.",
+  {
+    icon: Target,
+    title: "Recruiting & Direct Hire",
+    description: "We find, vet, and deliver the right candidate. You hire them directly onto your payroll. No ongoing fees — just the best hire you'll make this year.",
     href: "/solutions/recruiting-direct-hire"
   },
 ];
@@ -57,11 +57,10 @@ export const Services = () => {
             Solutions
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-4 text-foreground">
-            Two Ways to Build Your Team
+            Pick How You Want to Work With Us
           </h2>
           <p className="text-muted-foreground mt-4 text-lg">
-            Whether you need ongoing team management or a one-time hire, we have a solution 
-            that fits your business.
+            Some clients want us to run everything. Others just need the hire. Either way, we handle the hard part.
           </p>
         </motion.div>
 
@@ -104,8 +103,8 @@ export const Services = () => {
         >
           <Info className="w-5 h-5 text-primary flex-shrink-0" />
           <p className="text-muted-foreground">
-            <span className="font-medium text-foreground">Choose Managed Staffing</span> if you want us to run the team. 
-            <span className="font-medium text-foreground"> Choose Recruiting & Direct Hire</span> if you only need the hire.
+            Not sure which fits?{" "}
+            <span className="font-medium text-foreground">Managed Staffing</span> is the most popular choice — clients who use it rarely go back to doing it themselves.
           </p>
         </motion.div>
 
@@ -118,7 +117,7 @@ export const Services = () => {
         >
           <h3 className="text-2xl font-bold text-foreground">Browse by Role</h3>
           <p className="text-muted-foreground mt-2">
-            Find pre-vetted professionals across every department
+            Every candidate passes our 8-step vetting process. These aren't job board applicants — they're screened, tested, and ready.
           </p>
         </motion.div>
 

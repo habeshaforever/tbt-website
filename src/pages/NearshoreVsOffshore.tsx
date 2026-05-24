@@ -60,43 +60,43 @@ const comparisonData = [
 const nearshoreAdvantages = [
   {
     icon: Clock,
-    title: "Real-Time Collaboration",
-    description: "Work together during your normal business hours. No midnight calls or delayed responses.",
+    title: "They Work Your Hours",
+    description: "Colombia sits in Eastern and Central time zones. Your team shows up when you do, joins your calls, and responds in real time. No 10 PM Slack messages.",
   },
   {
     icon: DollarSign,
-    title: "Significant Cost Savings",
-    description: "Save 50-70% compared to domestic hiring while maintaining exceptional quality.",
+    title: "70% Less Than Hiring Domestically",
+    description: "Not 20%. Not 40%. Up to 70% savings — enough to hire two or three people for the cost of one U.S. employee.",
   },
   {
     icon: Globe,
-    title: "Cultural Compatibility",
-    description: "South American professionals share Western business practices and work ethics.",
+    title: "Culturally Closer Than You Think",
+    description: "Colombian professionals are trained in U.S. business norms, understand American communication styles, and work in the same business culture you do.",
   },
   {
     icon: Users,
-    title: "Easy Team Integration",
-    description: "Seamlessly integrate remote team members who feel like part of your local team.",
+    title: "2% Turnover vs. 18% Industry Average",
+    description: "When placement is done right, people stay. Our 2% annualized turnover rate means you stop hiring the same role over and over.",
   },
   {
     icon: Zap,
-    title: "Faster Turnaround",
-    description: "Real-time communication means faster iterations and quicker project completion.",
+    title: "First Candidates in 72 Hours",
+    description: "We present pre-vetted candidates within 72 hours of your discovery call. Average hire closes in 2 weeks.",
   },
   {
     icon: Shield,
-    title: "Lower Risk",
-    description: "Easier oversight, better communication, and stronger legal protections than offshore.",
+    title: "90-Day Replacement Guarantee",
+    description: "If a placement does not work out within 90 days, we replace them at no cost. No questions, no arguments.",
   },
 ];
 
 const offshoreRisks = [
-  "Communication delays due to 8-12 hour time differences",
-  "Cultural misunderstandings affecting work quality",
-  "Difficulty scheduling real-time meetings",
-  "Higher turnover rates due to market conditions",
-  "Complex legal and IP protection challenges",
-  "Reduced visibility into day-to-day operations",
+  "8-12 hour time gap means async by default — feedback loops stretch into days",
+  "Cultural differences create miscommunication that compounds over time",
+  "Real-time meetings require someone to work at 6 AM or 11 PM",
+  "Turnover rates of 18-20%+ mean you are constantly re-hiring and re-training",
+  "IP and legal protections are harder to enforce across distant jurisdictions",
+  "Day-to-day oversight is difficult when your team is asleep when you are working",
 ];
 
 const NearshoreVsOffshore = () => {
@@ -113,14 +113,13 @@ const NearshoreVsOffshore = () => {
             className="max-w-4xl mx-auto text-center"
           >
             <span className="text-accent font-semibold text-sm uppercase tracking-wider">
-              Staffing Comparison
+              The Honest Comparison
             </span>
             <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-4 sm:mb-6">
-              Nearshore vs Offshore: <span className="text-accent">The Clear Winner</span>
+              Nearshore vs Offshore: <span className="text-accent">What Nobody Tells You</span>
             </h1>
             <p className="text-base sm:text-xl text-primary-foreground/80 max-w-2xl mx-auto">
-              Understanding the real differences between nearshore and offshore staffing 
-              helps you make the right choice for your business.
+              Offshore looks cheaper on paper. Then you factor in 10-hour time differences, communication breakdowns, and 18-20% annual turnover. The math changes fast.
             </p>
           </motion.div>
         </div>
@@ -138,18 +137,18 @@ const NearshoreVsOffshore = () => {
             <div className="grid md:grid-cols-3 gap-4 sm:gap-6 text-center">
               <div className="bg-card border border-border rounded-xl p-4 sm:p-6">
                 <h3 className="text-lg font-semibold text-foreground mb-2">Nearshore</h3>
-                <p className="text-xl sm:text-3xl font-bold text-accent mb-2">South America</p>
-                <p className="text-sm text-muted-foreground">1-3 hours from U.S. time zones</p>
+                <p className="text-xl sm:text-3xl font-bold text-accent mb-2">Colombia</p>
+                <p className="text-sm text-muted-foreground">0-2 hours from U.S. time zones. Works your hours, speaks your language.</p>
               </div>
               <div className="bg-card border border-border rounded-xl p-4 sm:p-6">
                 <h3 className="text-lg font-semibold text-foreground mb-2">Offshore</h3>
                 <p className="text-xl sm:text-3xl font-bold text-muted-foreground mb-2">Asia/India</p>
-                <p className="text-sm text-muted-foreground">8-12 hours from U.S. time zones</p>
+                <p className="text-sm text-muted-foreground">8-12 hours away. Async by default. You feel it every day.</p>
               </div>
               <div className="bg-card border border-border rounded-xl p-4 sm:p-6">
                 <h3 className="text-lg font-semibold text-foreground mb-2">Domestic</h3>
                 <p className="text-xl sm:text-3xl font-bold text-muted-foreground mb-2">United States</p>
-                <p className="text-sm text-muted-foreground">Same time zone, highest cost</p>
+                <p className="text-sm text-muted-foreground">Same time zone, 3-5x the cost. Hard to hire, harder to keep.</p>
               </div>
             </div>
           </motion.div>
@@ -166,10 +165,10 @@ const NearshoreVsOffshore = () => {
             className="text-center mb-8 sm:mb-16"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-              Side-by-Side Comparison
+              The Honest Side-by-Side
             </h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-              See how nearshore stacks up against offshore and domestic options across key factors.
+              Every category that matters when you are actually managing a team — not just evaluating on paper.
             </p>
           </motion.div>
 
@@ -249,7 +248,7 @@ const NearshoreVsOffshore = () => {
               Why Nearshore Wins
             </h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Get the cost benefits of outsourcing with the collaboration advantages of local teams.
+              The cost savings of outsourcing. The collaboration quality of an in-house team. That is the nearshore advantage.
             </p>
           </motion.div>
 
@@ -285,10 +284,10 @@ const NearshoreVsOffshore = () => {
               className="text-center mb-8 sm:mb-12"
             >
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-                The Hidden Costs of Offshore
+                What Offshore Actually Costs You
               </h2>
               <p className="text-muted-foreground mt-4">
-                While offshore may seem cheaper upfront, these challenges often erode any savings.
+                The hourly rate looks good. Then the real costs show up.
               </p>
             </motion.div>
 

@@ -11,25 +11,25 @@ const stats = [
     icon: Clock,
     title: "Same Time Zone",
     description:
-      "Colombia operates on Central and Eastern time, meaning your team works your hours, attends your meetings, and is available when you need them."
+      "Colombia runs on Eastern and Central time. Your team is online when you open your laptop and available when you pick up the phone. No scheduling around 12-hour differences."
   },
   {
     icon: Languages,
     title: "Bilingual Professionals",
     description:
-      "Our Colombian team members are fluent English speakers who communicate clearly and confidently with US and Canadian clients every day."
+      "Every candidate we place passes an English fluency assessment. They communicate in writing, on calls, and in meetings — no translation needed, no misunderstandings."
   },
   {
     icon: Plane,
     title: "30 Min From the Airport",
     description:
-      "Our office locations are within 30 minutes of an international airport, making client visits straightforward and easy to plan."
+      "Want to meet your team in person? Every one of our offices is within 30 minutes of an international airport. Most clients fly in and out the same day."
   },
   {
     icon: Award,
     title: "Top 1% Talent",
     description:
-      "We only place professionals who have passed our full vetting process. Every person on your team has earned their spot."
+      "Colombia produces hundreds of thousands of university graduates every year. We take fewer than 1%. The rest were good — just not good enough."
   }
 ];
 
@@ -51,7 +51,7 @@ const WhyColombia = () => {
               Why <span className="text-primary">Colombia</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              The smartest nearshore decision for your business.
+              You want great people at a fair price. This is where they are.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Build Your Team in Colombia</Link>
@@ -73,11 +73,11 @@ const WhyColombia = () => {
               The Right Location Changes Everything
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-              Colombia sits in a unique position. It shares time zones with most of the United States,
-              has a rapidly growing pool of highly educated professionals, and has developed one of the
-              strongest cultures of remote work and bilingual communication in all of Latin America. For
-              companies looking to build dedicated office based teams, Colombia is not just a practical
-              choice. It is the right one.
+              Colombia doesn't just offer cheap labor. It offers professionals who went to good
+              universities, learned to work in global businesses, and speak fluent English — at a
+              fraction of what you'd pay in the U.S. For companies looking to build dedicated,
+              office-based teams that actually stay, Colombia isn't a compromise. For our clients,
+              it's an upgrade.
             </p>
           </motion.div>
         </div>
@@ -120,10 +120,11 @@ const WhyColombia = () => {
               Built for Managed Staffing
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-8">
-              Our Colombia operations are purpose built for clients who want a fully managed office
-              based team. We handle the office space, equipment, HR, payroll, and compliance. You show
-              up as the client and focus entirely on the work. This is what makes our Managed Staffing
-              model different from every other option in the market.
+              Most staffing companies drop off a hire and disappear. We don't. We own the office,
+              manage the HR, run payroll, and handle compliance — all included in one flat fee.
+              You get a world-class team member without the management overhead. No hidden costs.
+              No surprises. That's what makes our Managed Staffing model different from every other
+              option in the market.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/solutions/managed-staffing">Learn About Managed Staffing</Link>
@@ -145,10 +146,10 @@ const WhyColombia = () => {
               Visit Your Team
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-8">
-              Many of our clients visit Colombia to meet their teams in person. We encourage it. Seeing
-              the office, meeting the people, and understanding the environment builds a level of trust
-              that no video call can replace. Our team will help coordinate your visit and make sure you
-              get the most out of it.
+              Dozens of our clients fly to Colombia every year to see the offices and meet their teams
+              face to face. They always say the same thing: "I didn't expect it to be like this."
+              Modern offices. Professional people. A culture that takes pride in the work. Come see it
+              for yourself — our team will coordinate everything.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Book a Strategy Call</Link>

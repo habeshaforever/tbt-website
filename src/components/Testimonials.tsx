@@ -3,21 +3,21 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "TBT has transformed how we scale our team. The quality of talent and the cost savings have exceeded our expectations.",
+    quote: "I was skeptical. We had tried offshore before and it was a disaster. Our TBT hire has been with us for two years, shows up every day, and communicates better than half our local team. The cost savings are real.",
     author: "Sarah Johnson",
     role: "VP of Operations",
     company: "Tech Startup",
     rating: 5,
   },
   {
-    quote: "The time zone alignment and communication skills of our TBT team members make them indistinguishable from our US staff.",
+    quote: "Our TBT account manager is on client calls, writes client-facing emails, and runs weekly reports. Nobody on the client side knows she isn't in the office next door.",
     author: "Michael Chen",
     role: "CEO",
     company: "E-commerce Brand",
     rating: 5,
   },
   {
-    quote: "We've tried offshore before. TBT nearshore model is different - the retention, the culture fit, everything is better.",
+    quote: "We had a 40% turnover problem and were spending more on recruiting than actual work. We hired three people through TBT eight months ago. All three are still here. Problem solved.",
     author: "Amanda Rodriguez",
     role: "Director of HR",
     company: "Financial Services",
@@ -39,7 +39,7 @@ export const Testimonials = () => {
             Client Success Stories
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-4 text-foreground">
-            Trusted by Industry Leaders
+            What Happens When You Stop Paying U.S. Rates for U.S. Talent
           </h2>
         </motion.div>
 

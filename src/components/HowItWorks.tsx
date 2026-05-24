@@ -6,26 +6,26 @@ const steps = [
   {
     icon: Search,
     number: "01",
-    title: "Discovery Call",
-    description: "We learn about your needs, culture, and the specific roles you're looking to fill.",
+    title: "We Learn What You Need",
+    description: "Tell us the role, the skills, the culture, and what you've tried before. The more we know, the better the match.",
   },
   {
     icon: Users,
     number: "02",
-    title: "Candidate Selection",
-    description: "We present pre-vetted candidates from our top 1% talent pool within 72 hours of finalizing your requirements.",
+    title: "We Find Your Top Candidates",
+    description: "Within 72 hours, we hand-deliver profiles of pre-vetted, top-1% candidates — screened, tested, and ready to start.",
   },
   {
     icon: CheckCircle,
     number: "03",
-    title: "Interview & Hire",
-    description: "You interview candidates and select the best fit. We handle all onboarding logistics.",
+    title: "You Choose. We Handle the Rest.",
+    description: "Interview your top picks. Pick the one you want. We take care of contracts, compliance, payroll, and everything in between.",
   },
   {
     icon: Rocket,
     number: "04",
-    title: "Seamless Integration",
-    description: "Your new team member integrates with your workflows, supported by our ongoing management.",
+    title: "Day One. Done.",
+    description: "Your new team member joins your tools, meets your team, and gets to work. We stay close to make sure everything runs.",
   },
 ];
 
@@ -43,11 +43,10 @@ export const HowItWorks = () => {
             How It Works
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-4">
-            Simple Process, Exceptional Results
+            You're 4 Steps Away From Your Best Hire
           </h2>
           <p className="text-primary-foreground/70 mt-4 text-base md:text-lg">
-            From initial consultation to fully integrated team member, 
-            we make nearshore staffing effortless.
+            We do the heavy lifting. You show up, pick who you want, and get to work.
           </p>
         </motion.div>
 

@@ -18,42 +18,42 @@ const benefits = [
   {
     icon: Shield,
     title: "U.S. Operated & Managed",
-    description: "We're headquartered in the United States with full operational oversight. Your account managers, quality assurance, and strategic leadership are all U.S.-based."
+    description: "Your account manager is in the U.S. The person who picks up the phone when something goes wrong is in the U.S. You're not navigating a foreign company alone."
   },
   {
     icon: Users,
-    title: "Industry-Leading 2% Turnover",
-    description: "Our careful vetting and employee-first culture means you get stable, long-term team members who grow with your business."
+    title: "They Stay. That's the Whole Point.",
+    description: "The average staffing company loses 18–20% of placements every year. Ours lose 2%. We pay more, treat people well, and put them in roles where they thrive. You hire once. They stay."
   },
   {
     icon: TrendingUp,
     title: "Up to 70% Cost Savings",
-    description: "Access top-tier talent at a fraction of the cost without sacrificing quality. Our flat-fee model means no hidden costs."
+    description: "An accountant through TBT typically runs $2,200–$2,800/month all-inclusive. The same role in the U.S. starts at $60,000/year. The math isn't complicated."
   },
   {
     icon: Clock,
     title: "Same Time Zone Alignment",
-    description: "South American talent works during U.S. business hours, ensuring real-time collaboration and instant communication."
+    description: "No 12-hour delays. No scheduling around time differences. Your team is at their desk when you open your laptop — available for calls, messages, and meetings all day."
   },
   {
     icon: Handshake,
-    title: "All-Inclusive Partnership",
-    description: "We handle payroll, compliance, benefits, office space, and equipment. You focus on growing your business."
+    title: "We Handle Everything. You Focus on Growth.",
+    description: "Payroll, compliance, office space, equipment, HR, benefits, management support — all included in one flat fee. No surprises on the invoice."
   },
   {
     icon: Target,
-    title: "Custom Talent Matching",
-    description: "Our multi-step vetting process ensures you get candidates who match your technical requirements and company culture."
+    title: "No Warm Bodies. Only Right Fits.",
+    description: "We learn your culture, your tools, your workflow, and your standards before we show you a single resume. Every candidate we present is pre-matched — not just qualified on paper."
   }
 ];
 
 const differentiators = [
   "Background checks and verified credentials",
-  "English fluency assessments",
-  "Technical skill evaluations",
-  "Cultural fit interviews",
-  "Ongoing performance management",
-  "Dedicated account management"
+  "English fluency tested to professional standard",
+  "Role-specific technical skills assessments",
+  "Culture and work style interviews",
+  "Active performance monitoring after hire",
+  "U.S.-based dedicated account manager"
 ];
 
 const WhyTBS = () => {
@@ -76,8 +76,9 @@ const WhyTBS = () => {
               Why Tandem Bridge Talent?
             </h1>
             <p className="text-base sm:text-xl text-primary-foreground/80">
-              U.S. operated. Nearshore teams that perform. We deliver the talent, 
-              infrastructure, and support you need to scale efficiently.
+              Managed by Americans who have built teams in Colombia. Built on everything
+              we learned from hiring wrong and fixing it. This is the staffing model we
+              wished had existed.
             </p>
           </motion.div>
         </div>
@@ -97,8 +98,8 @@ const WhyTBS = () => {
               The Tandem Bridge Talent Advantage
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-              We combine the cost efficiency of nearshore staffing with the reliability 
-              and accountability of a U.S.-based operation.
+              Every complaint we've ever heard about nearshore staffing — we built a specific
+              solution for it. That's TBT.
             </p>
           </motion.div>
 
@@ -178,14 +179,15 @@ const WhyTBS = () => {
                     Quality Guaranteed
                   </h3>
                   <p className="text-muted-foreground">
-                    Risk-free talent placement
+                    If it doesn't work, we fix it. No charge.
                   </p>
                 </div>
               </div>
               
               <p className="text-muted-foreground mb-8">
-                We stand behind every placement. If a team member isn't the right fit, 
-                we'll find you a replacement at no additional cost. Your success is our priority.
+                We've never had a client leave without getting the right person. If a placement
+                isn't working within 90 days, we replace them at no cost to you. That's how
+                confident we are in our process.
               </p>
 
               <Button variant="hero" size="lg" className="w-full" asChild>
@@ -207,11 +209,12 @@ const WhyTBS = () => {
             className="bg-gradient-hero rounded-3xl p-6 sm:p-12 md:p-16 text-center"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-              Ready to Build Your Dream Team?
+              Your Competitors Are Already Doing This.
             </h2>
             <p className="text-base sm:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Let's discuss how Tandem Bridge Talent can help you scale with top-tier 
-              nearshore talent.
+              Hundreds of U.S. companies have already cut their staffing costs by 70% without
+              cutting quality. The question isn't whether it works. It's whether you start
+              before or after your competition does.
             </p>
             <Button 
               variant="outline" 

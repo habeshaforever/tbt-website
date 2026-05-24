@@ -76,9 +76,7 @@ const WhyTBS = () => {
               Why Tandem Bridge Talent?
             </h1>
             <p className="text-base sm:text-xl text-primary-foreground/80">
-              Managed by Americans who have built teams in Colombia. Built on everything
-              we learned from hiring wrong and fixing it. This is the staffing model we
-              wished had existed.
+              Built by Americans who hired in Colombia and fixed every mistake themselves. This isn't a staffing agency. It's the model we wished had existed.
             </p>
           </motion.div>
         </div>
@@ -95,11 +93,10 @@ const WhyTBS = () => {
             className="text-center mb-8 sm:mb-16"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
-              The Tandem Bridge Talent Advantage
+              Every Complaint About Staffing Agencies — We Built the Fix
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-              Every complaint we've ever heard about nearshore staffing — we built a specific
-              solution for it. That's TBT.
+              High turnover. Bait-and-switch candidates. Offshore headaches. Hidden fees. We heard it all — then built TBT to solve every one.
             </p>
           </motion.div>
 
@@ -139,11 +136,10 @@ const WhyTBS = () => {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
-                A Rigorous Vetting Process
+                8 Steps Before You See a Single Resume
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground mb-8">
-                Every candidate goes through our thorough screening process to make sure
-                they meet the highest standards of skill, professionalism, and cultural fit.
+                Most agencies send you whoever applied. We send you whoever passed. Every candidate clears all 8 steps before we put their name in front of you.
               </p>
 
               <ul className="space-y-4">
@@ -176,22 +172,20 @@ const WhyTBS = () => {
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-foreground">
-                    Quality Guaranteed
+                    90-Day Replacement Guarantee
                   </h3>
                   <p className="text-muted-foreground">
-                    If it doesn't work, we fix it. No charge.
+                    Doesn't work out? We replace them. No charge.
                   </p>
                 </div>
               </div>
               
               <p className="text-muted-foreground mb-8">
-                We've never had a client leave without getting the right person. If a placement
-                isn't working within 90 days, we replace them at no cost to you. That's how
-                confident we are in our process.
+                If a placement isn't working within 90 days, we replace them at no cost. No arguments. No replacement fee. We've built our process around making sure you get the right person — and we back that up in writing.
               </p>
 
               <Button variant="hero" size="lg" className="w-full" asChild>
-                <Link to="/book">Book a Strategy Call</Link>
+                <Link to="/book">Get Your First Candidates in 72 hrs</Link>
               </Button>
             </motion.div>
           </div>
@@ -212,17 +206,15 @@ const WhyTBS = () => {
               Your Competitors Are Already Doing This.
             </h2>
             <p className="text-base sm:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Hundreds of U.S. companies have already cut their staffing costs by 70% without
-              cutting quality. The question isn't whether it works. It's whether you start
-              before or after your competition does.
+              Hundreds of U.S. and Canadian companies have already cut staffing costs by 70% without cutting quality. The question isn't whether it works. It's whether you start now or after your competition already did.
             </p>
-            <Button 
-              variant="outline" 
-              size="xl" 
+            <Button
+              variant="outline"
+              size="xl"
               className="bg-white text-primary hover:bg-white/90 border-white"
               asChild
             >
-              <Link to="/book">See If We're a Fit</Link>
+              <Link to="/book">Book a Strategy Call</Link>
             </Button>
           </motion.div>
         </div>

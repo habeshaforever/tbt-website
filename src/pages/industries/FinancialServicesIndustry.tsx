@@ -73,7 +73,7 @@ const FinancialServicesIndustry = () => {
               Financial Services and <span className="text-primary">Fintech</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Accurate, reliable financial talent without the domestic price tag.
+              Your finance team should be accurate, reliable, and experienced in U.S. standards. Ours are. At 70% less than a domestic hire.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Build My Finance Team</Link>
@@ -92,14 +92,10 @@ const FinancialServicesIndustry = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Finance Runs on Precision
+              Finance Has No Margin for Error — Neither Do We
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              In financial services there is no room for error. Every number has to be right, every
-              deadline has to be met, and every person on your team has to know what they are doing. TBT
-              places top 1% Latin American finance professionals who are trained in US standards,
-              experienced with American companies, and ready to deliver the level of accuracy your
-              business depends on.
+              One billing error, one missed deadline, one compliance slip — and the cost is real. In financial services, your staff has to know what they are doing. TBT places top 1% Colombian finance professionals who are trained in U.S. GAAP, experienced with American companies, and ready to deliver the accuracy your business depends on — at a fraction of what you'd pay domestically.
             </p>
           </motion.div>
         </div>

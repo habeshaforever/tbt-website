@@ -111,13 +111,9 @@ const Contact = () => {
 
                 <p className="text-sm text-muted-foreground mb-5">
 
-                  Supercharge your growth with a smarter staffing model. Tandem Bridge Talent 
+                  Stop paying U.S. rates for roles you can fill at 70% less. Tandem Bridge Talent
 
-                  connects you with top-tier, bilingual talent across South America, giving you
-
-                  cost savings, stability, and a simple process that lets you focus
-
-                  on scaling your business.
+                  connects you with bilingual Colombian professionals who work your hours, stay long-term, and cost a fraction of what you're paying now.
 
                 </p>
 

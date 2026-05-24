@@ -99,8 +99,7 @@ const EcommerceIndustry = () => {
               E-commerce and <span className="text-primary">Online Retail</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Reliable Latin American operations and customer service teams that keep your store
-              running, your customers happy, and your margins healthy.
+              When your back office breaks down, your reviews tank, your returns spike, and your margins disappear. Build the operations team that keeps your store running — at 70% less than hiring domestically.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Build My E-commerce Team</Link>
@@ -252,14 +251,13 @@ const EcommerceIndustry = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-              Ready to Build Your E-commerce Team
+              Protect Your Margins. Build a Team That Stays.
             </h2>
             <p className="text-base sm:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Book a strategy call and we will show you exactly how TBT can support your
-              online store and protect your margins.
+              One call. We'll show you the role cost, what the talent looks like, and how fast we can get started.
             </p>
             <Button variant="hero" size="lg" className="mt-8" asChild>
-              <Link to="/book">Book a Strategy Call</Link>
+              <Link to="/book">Get Your First Candidates in 72 hrs</Link>
             </Button>
           </motion.div>
         </div>

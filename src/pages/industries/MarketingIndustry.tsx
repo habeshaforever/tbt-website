@@ -99,8 +99,7 @@ const MarketingIndustry = () => {
               Marketing and <span className="text-primary">Creative Services</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Talented Latin American creative and marketing professionals who keep your brand moving
-              and your content pipeline full.
+              Your content pipeline is stalled, your designers are overloaded, and your in-house team is burning out. Build a full creative and marketing team at 70% less — without starting over every 18 months.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Build My Creative Team</Link>
@@ -119,13 +118,10 @@ const MarketingIndustry = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Creative Output Requires Consistent Talent
+              Great Creative Work Requires People Who Show Up and Stay
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Marketing teams are always under pressure to produce more with less. Domestic creative
-              hiring is expensive, slow, and the turnover never stops. TBT places top 1% Latin
-              American marketing and creative professionals who are fluent in English, culturally
-              aligned with US brands, and ready to plug into your team and produce from day one.
+              Marketing agencies and in-house teams face the same problem: domestic creative talent is expensive, slow to hire, and gone in 18 months. The cycle never ends. TBT places top 1% Colombian marketing and creative professionals who are fluent in English, understand U.S. brand standards and consumer culture, and produce quality work without the constant turnover. Your brand stays consistent because your team stays.
             </p>
           </motion.div>
         </div>
@@ -250,14 +246,13 @@ const MarketingIndustry = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-              Ready to Build Your Creative Team
+              Stop Rebuilding Your Creative Team Every Year
             </h2>
             <p className="text-base sm:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Book a strategy call and we will show you exactly how TBT can support your
-              marketing and creative needs.
+              One call. We'll show you the role cost, what the talent looks like, and how fast we can start producing.
             </p>
             <Button variant="hero" size="lg" className="mt-8" asChild>
-              <Link to="/book">Book a Strategy Call</Link>
+              <Link to="/book">Get Your First Candidates in 72 hrs</Link>
             </Button>
           </motion.div>
         </div>

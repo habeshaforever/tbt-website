@@ -98,8 +98,7 @@ const ITSoftwareIndustry = () => {
               IT and <span className="text-primary">Software Development</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Top 1% Latin American tech talent who build, support, and protect your systems without
-              the domestic price tag.
+              U.S. tech salaries keep climbing while your hiring timelines stretch. Top 1% Colombian developers, QA engineers, and IT professionals — same tools, same time zone, 70% less cost.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Build My Tech Team</Link>
@@ -118,14 +117,10 @@ const ITSoftwareIndustry = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6">
-              The Tech Talent Shortage Is Real
+              U.S. Tech Salaries Are Eating Your Budget. We Have a Better Way.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Finding reliable, skilled tech professionals domestically is expensive and slow. The
-              competition is fierce and the salaries keep climbing. TBT connects you with top 1% Latin
-              American tech talent who are fluent in English, trained in US tech standards, and ready
-              to contribute from day one at a fraction of the cost. Whether you need developers,
-              support staff, or security professionals we have the talent pipeline to deliver.
+              A senior developer in the U.S. costs $130K–$160K a year. In Colombia, the same skill level costs a fraction of that — and our professionals already know React, Node, Python, AWS, and the exact frameworks your team uses. TBT places top 1% Colombian tech professionals who attend your standups, ship on your schedule, and stay. No 18-month turnover. No offshore time zone pain. Just output.
             </p>
           </motion.div>
         </div>
@@ -250,14 +245,13 @@ const ITSoftwareIndustry = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-              Ready to Build Your Tech Team
+              Cut Your Tech Payroll. Keep the Output.
             </h2>
             <p className="text-base sm:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Book a strategy call and we will show you exactly how TBT can staff your
-              technology needs.
+              One call. We'll show you the role cost, what the talent looks like, and how fast we can deliver your first candidates.
             </p>
             <Button variant="hero" size="lg" className="mt-8" asChild>
-              <Link to="/book">Book a Strategy Call</Link>
+              <Link to="/book">Get Your First Candidates in 72 hrs</Link>
             </Button>
           </motion.div>
         </div>

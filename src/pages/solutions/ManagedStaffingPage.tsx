@@ -15,33 +15,33 @@ import {
 
 const whatIsIncluded = [
   "Payroll administration",
-  "HR operations",
-  "Compliance support",
-  "Onboarding support",
+  "HR operations & benefits",
+  "Compliance management",
+  "Onboarding & setup",
   "Performance support",
-  "Replacement guarantee",
+  "90-day replacement guarantee",
 ];
 
 const howItWorks = [
   {
     step: "01",
-    title: "Discovery & Role Definition",
-    description: "We learn about your needs, team dynamics, and define the ideal candidate profile.",
+    title: "One Call to Define the Role",
+    description: "We get on a call, learn your business, and map exactly what the right person looks like. No forms, no guesswork.",
   },
   {
     step: "02",
-    title: "Talent Sourcing & Vetting",
-    description: "Our team sources, screens, and carefully vets candidates from our South American talent pool.",
+    title: "We Find the Top 1%",
+    description: "Within 72 hours, we present pre-vetted candidates — background checked, English assessed, skills tested, culture matched.",
   },
   {
     step: "03",
-    title: "Onboarding & Integration",
-    description: "We handle onboarding and make sure new hires fit right in with your existing team.",
+    title: "You Pick. We Handle Everything.",
+    description: "You interview and choose. We handle contracts, office setup, equipment, payroll, onboarding — all of it.",
   },
   {
     step: "04",
-    title: "Ongoing Management & Support",
-    description: "We manage payroll, HR, compliance, and performance, so you can focus on your business.",
+    title: "We Run It After the Hire",
+    description: "Your dedicated account manager handles HR, payroll, compliance, and performance so you never have to think about it.",
   },
 ];
 
@@ -69,14 +69,13 @@ export const ManagedStaffingPage = () => {
               <Users className="w-10 h-10 text-primary" />
             </div>
             <span className="text-primary font-semibold text-sm uppercase tracking-wider">
-              Ongoing Team Management
+              Fully Managed. Fully Yours.
             </span>
             <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mt-4 text-foreground">
               Managed Staffing
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground mt-6 max-w-2xl mx-auto">
-              We don't just find your talent. We manage the team so you can focus on your business.
-              From payroll to performance, we handle the day-to-day.
+              We don't just find your talent. We run everything after the hire — payroll, HR, compliance, office, equipment, and performance support. One flat rate. You manage the work. We handle everything else.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
               <Button variant="hero" size="lg" asChild>
@@ -101,9 +100,7 @@ export const ManagedStaffingPage = () => {
           >
             <h2 className="text-xl sm:text-3xl font-bold text-foreground mb-6">What Is Managed Staffing?</h2>
             <p className="text-lg text-muted-foreground">
-              Managed Staffing is an ongoing partnership where Tandem Bridge Talent provides and manages 
-              your remote team members. We handle payroll, HR operations, compliance, and performance 
-              management, giving you a fully operational team without the administrative burden.
+              Managed Staffing is our flagship service. TBT places your Colombian team member and then manages everything after — office space, equipment, HR, payroll, compliance, and performance support. It's all-inclusive. You pay one flat monthly rate and direct the work. We run the infrastructure. Most clients say it's the best hiring decision they've ever made.
             </p>
           </motion.div>
         </div>
@@ -118,8 +115,8 @@ export const ManagedStaffingPage = () => {
             viewport={{ once: true }}
             className="text-center mb-6 sm:mb-12"
           >
-            <h2 className="text-xl sm:text-3xl font-bold text-foreground">What's Included</h2>
-            <p className="text-muted-foreground mt-4">Everything you need for a hands-off team experience</p>
+            <h2 className="text-xl sm:text-3xl font-bold text-foreground">Everything We Handle for You</h2>
+            <p className="text-muted-foreground mt-4">One flat monthly rate. All of this included. No surprises on the invoice.</p>
           </motion.div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
@@ -150,7 +147,7 @@ export const ManagedStaffingPage = () => {
             className="text-center mb-6 sm:mb-12"
           >
             <h2 className="text-xl sm:text-3xl font-bold text-foreground">How It Works</h2>
-            <p className="text-muted-foreground mt-4">Four simple steps to your managed team</p>
+            <p className="text-muted-foreground mt-4">From your first call to a fully managed team member — in about two weeks</p>
           </motion.div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 max-w-6xl mx-auto">
@@ -182,7 +179,7 @@ export const ManagedStaffingPage = () => {
             className="text-center mb-6 sm:mb-12"
           >
             <h2 className="text-xl sm:text-3xl font-bold text-foreground">Popular Roles</h2>
-            <p className="text-muted-foreground mt-4">Browse roles commonly filled through Managed Staffing</p>
+            <p className="text-muted-foreground mt-4">These are the roles clients most often build through Managed Staffing</p>
           </motion.div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto">
@@ -228,15 +225,14 @@ export const ManagedStaffingPage = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-              Ready to Build Your Managed Team?
+              Stop Running HR. Start Running Your Business.
             </h2>
             <p className="text-base sm:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Book a strategy call to discuss your needs. We'll show you how Managed Staffing 
-              can transform your operations.
+              Book a strategy call and we'll show you the role cost, what the talent looks like, and how quickly we can get started. No pressure. Just the numbers.
             </p>
             <Button variant="hero" size="lg" className="mt-8" asChild>
               <Link to="/book">
-                Book a Strategy Call
+                Get Your First Candidates in 72 hrs
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>

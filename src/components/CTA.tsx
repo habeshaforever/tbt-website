@@ -17,17 +17,16 @@ export const CTA = () => {
           className="text-center max-w-4xl mx-auto"
         >
           <h2 className="text-xl sm:text-2xl md:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6">
-            If You're Still Overpaying for Staff — This Is Your Wake-Up Call.
+            Still Paying U.S. Rates? Every Month You Wait Costs You Real Money.
           </h2>
           <p className="text-sm sm:text-base md:text-xl text-primary-foreground/80 mb-4 sm:mb-6 md:mb-10 max-w-2xl mx-auto">
-            Every month you wait is another month paying U.S. rates for talent we can match —
-            at 70% less — in two weeks. Book a call. Let us show you what's possible.
+            We can match your next hire — at 70% less — in two weeks. One call. We'll show you the role cost, what the talent looks like, and how fast we can get started. No pressure. Just the numbers.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mb-4 sm:mb-6 md:mb-12">
             <Button variant="secondary" size="xl" className="w-full sm:w-auto" asChild>
               <Link to="/book">
-                Book a Strategy Call
+                Get Your First Candidates in 72 hrs
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>

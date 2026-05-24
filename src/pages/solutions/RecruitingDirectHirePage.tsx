@@ -15,33 +15,33 @@ import {
 
 const whatWeDeliver = [
   "Candidate sourcing",
-  "Rigorous vetting",
-  "Curated shortlist",
+  "8-step vetting process",
+  "Curated shortlist of top picks",
   "Interview coordination",
-  "Reference checks",
-  "Optional skills screening",
+  "Reference & background checks",
+  "90-day replacement guarantee",
 ];
 
 const howItWorks = [
   {
     step: "01",
-    title: "Define Your Ideal Candidate",
-    description: "We work with you to understand the role requirements, culture fit, and ideal candidate profile.",
+    title: "One Call. We Learn Everything.",
+    description: "We get on a call, learn your role requirements, your culture, and exactly what you've tried before. The more we know, the better the match.",
   },
   {
     step: "02",
-    title: "We Source & Vet Candidates",
-    description: "Our team identifies, screens, and carefully vets candidates from our South American talent network.",
+    title: "We Find the Top 1%",
+    description: "Within 72 hours, we present pre-vetted candidates from our Colombian talent network — background checked, English assessed, and skills tested.",
   },
   {
     step: "03",
-    title: "Review Shortlist & Interview",
-    description: "You receive a curated shortlist of top candidates. We coordinate interviews at your convenience.",
+    title: "You Interview. We Coordinate.",
+    description: "You get a curated shortlist of top picks. We schedule and coordinate interviews on your timeline.",
   },
   {
     step: "04",
-    title: "Make Your Hire",
-    description: "Select your preferred candidate and bring them onto your team directly. They become your employee.",
+    title: "You Hire. They're Yours.",
+    description: "Pick your person. They join your team directly as your employee. The hire is done — and backed by our 90-day replacement guarantee.",
   },
 ];
 
@@ -69,14 +69,13 @@ export const RecruitingDirectHirePage = () => {
               <Target className="w-10 h-10 text-primary" />
             </div>
             <span className="text-primary font-semibold text-sm uppercase tracking-wider">
-              One-Time Hiring
+              The Best Hire You'll Make This Year
             </span>
             <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mt-4 text-foreground">
               Recruiting & Direct Hire
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground mt-6 max-w-2xl mx-auto">
-              We find the talent, you hire them directly. Get access to pre-vetted South American 
-              professionals without ongoing management fees.
+              We find, vet, and deliver the right candidate. You hire them directly onto your payroll. No ongoing management fees — just a great hire backed by our 90-day replacement guarantee.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
               <Button variant="hero" size="lg" asChild>
@@ -101,9 +100,7 @@ export const RecruitingDirectHirePage = () => {
           >
             <h2 className="text-xl sm:text-3xl font-bold text-foreground mb-6">What Is Recruiting & Direct Hire?</h2>
             <p className="text-lg text-muted-foreground">
-              Recruiting & Direct Hire is a one-time engagement where we source, vet, and deliver 
-              top candidates for your open positions. Once you make your hire, they become your employee 
-              directly. You handle onboarding, payroll, and management from there.
+              Recruiting & Direct Hire is a one-time engagement. We source, vet, and deliver the best candidates from our Colombian talent network. You interview, choose, and hire them directly onto your payroll. You handle the day-to-day from there. Best for companies that have internal HR capacity and want to own the employment relationship — without doing the hard work of finding the right person.
             </p>
           </motion.div>
         </div>
@@ -119,7 +116,7 @@ export const RecruitingDirectHirePage = () => {
             className="text-center mb-6 sm:mb-12"
           >
             <h2 className="text-xl sm:text-3xl font-bold text-foreground">What We Deliver</h2>
-            <p className="text-muted-foreground mt-4">A complete recruiting process from start to hire</p>
+            <p className="text-muted-foreground mt-4">We do the hard work. You show up, interview, and pick the one you want.</p>
           </motion.div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
@@ -150,7 +147,7 @@ export const RecruitingDirectHirePage = () => {
             className="text-center mb-6 sm:mb-12"
           >
             <h2 className="text-xl sm:text-3xl font-bold text-foreground">How It Works</h2>
-            <p className="text-muted-foreground mt-4">Four steps to your next great hire</p>
+            <p className="text-muted-foreground mt-4">From first call to hired candidate — average two weeks</p>
           </motion.div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 max-w-6xl mx-auto">
@@ -182,7 +179,7 @@ export const RecruitingDirectHirePage = () => {
             className="text-center mb-6 sm:mb-12"
           >
             <h2 className="text-xl sm:text-3xl font-bold text-foreground">Roles We Recruit</h2>
-            <p className="text-muted-foreground mt-4">Browse roles we commonly recruit for direct hire</p>
+            <p className="text-muted-foreground mt-4">These are the most commonly requested roles for direct hire — though we recruit across dozens of functions</p>
           </motion.div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto">
@@ -228,15 +225,14 @@ export const RecruitingDirectHirePage = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-              Ready to Find Your Next Hire?
+              Stop Sorting Resumes. We'll Deliver the Best Ones.
             </h2>
             <p className="text-base sm:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Book a strategy call to discuss your hiring needs. We'll deliver a shortlist 
-              of pre-vetted candidates ready to join your team.
+              Book a strategy call and we'll show you what the talent looks like, what it costs, and how fast we can deliver your first shortlist.
             </p>
             <Button variant="hero" size="lg" className="mt-8" asChild>
               <Link to="/book">
-                Book a Strategy Call
+                Get Your First Candidates in 72 hrs
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>

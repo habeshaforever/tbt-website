@@ -75,8 +75,7 @@ const WhyNearshore = () => {
               Why Nearshore?
             </h1>
             <p className="text-base sm:text-xl text-primary-foreground/80">
-              Offshore is cheap until it isn't. Domestic is great until you check the price tag.
-              Nearshore is the model that actually works.
+              Offshore looks cheaper until you add up the time zone hell, the communication breakdowns, and the 18% annual churn. Domestic is great until you see the $80K salary. Nearshore is what you actually want.
             </p>
           </motion.div>
         </div>
@@ -96,8 +95,7 @@ const WhyNearshore = () => {
               The Nearshore Advantage
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-              Here's what most business owners figure out after trying offshore and domestic:
-              the right answer was right next door the whole time.
+              Most business owners discover nearshore after the offshore experiment fails. They learn the same lesson: the cost savings of outsourcing, the collaboration quality of an in-house team.
             </p>
           </motion.div>
 
@@ -137,10 +135,10 @@ const WhyNearshore = () => {
             className="text-center mb-6 sm:mb-12"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Nearshore vs. Offshore vs. Domestic
+              The Side-by-Side That Ends the Debate
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-              See how nearshore staffing compares to other talent sourcing strategies.
+              Every factor that actually matters when you're managing a real team — not just evaluating on paper.
             </p>
           </motion.div>
 
@@ -196,7 +194,7 @@ const WhyNearshore = () => {
               </div>
               <div className="text-2xl sm:text-4xl font-bold text-primary mb-2">500K+</div>
               <p className="text-muted-foreground">
-                Engineering graduates annually in South America
+                University graduates annually in Colombia and the region
               </p>
             </motion.div>
 
@@ -210,9 +208,9 @@ const WhyNearshore = () => {
               <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-primary" />
               </div>
-              <div className="text-2xl sm:text-4xl font-bold text-primary mb-2">1-3 hrs</div>
+              <div className="text-2xl sm:text-4xl font-bold text-primary mb-2">0-2 hrs</div>
               <p className="text-muted-foreground">
-                Time difference from major U.S. cities
+                Max time difference from U.S. time zones
               </p>
             </motion.div>
 
@@ -228,7 +226,7 @@ const WhyNearshore = () => {
               </div>
               <div className="text-2xl sm:text-4xl font-bold text-primary mb-2">70%</div>
               <p className="text-muted-foreground">
-                Average cost savings vs. U.S. hiring
+                Cost savings vs. equivalent U.S. hire
               </p>
             </motion.div>
           </div>
@@ -246,15 +244,14 @@ const WhyNearshore = () => {
             className="bg-gradient-hero rounded-3xl p-6 sm:p-12 md:p-16 text-center"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-              The People Who Can't Believe It Works This Way Are the Ones Who Haven't Tried It Yet.
+              The Skeptics Are Always the Ones Who Haven't Tried It Yet.
             </h2>
             <p className="text-base sm:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              One call. We'll show you what the role costs, what the talent looks like, and
-              what it takes to get started. No pressure. Just the numbers.
+              One call. We'll show you the role cost, what the talent looks like, and how fast we can get started. No pitch deck. Just the numbers.
             </p>
-            <Button 
-              variant="outline" 
-              size="xl" 
+            <Button
+              variant="outline"
+              size="xl"
               className="bg-white text-primary hover:bg-white/90 border-white"
               asChild
             >

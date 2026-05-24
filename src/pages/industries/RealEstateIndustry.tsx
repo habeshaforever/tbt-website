@@ -99,8 +99,7 @@ const RealEstateIndustry = () => {
               Real Estate and <span className="text-primary">Property Management</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Detail oriented Latin American professionals who handle the paperwork, the pipeline,
-              and the admin so your agents can focus on closing deals.
+              Your agents are drowning in admin instead of closing deals. Transaction coordinators, listing managers, and CRM specialists who know U.S. real estate — at 70% less than hiring domestically.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Build My Real Estate Team</Link>
@@ -119,15 +118,10 @@ const RealEstateIndustry = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Real Estate Runs on Details and Deadlines
+              Every Hour Your Agents Spend on Admin Is a Commission Lost
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Real estate agents and brokerages are drowning in administrative work. Transaction
-              coordination, listing management, lead follow up, and client communication eat up hours
-              that should be spent closing deals. TBT places top 1% Latin American real estate
-              support professionals who understand US real estate processes, communicate fluently in
-              English, and integrate into your brokerage or property management operation without
-              missing a deadline or dropping a detail.
+              Transaction coordination, listing updates, lead follow-up, CRM management — it all has to get done, and it shouldn't be your agents doing it. TBT places top 1% Colombian real estate support professionals who understand U.S. transaction timelines, MLS systems, and contract documentation. They work your hours, hit your deadlines, and handle the back office so your agents stay on the phone and in the car.
             </p>
           </motion.div>
         </div>
@@ -252,14 +246,13 @@ const RealEstateIndustry = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-              Ready to Build Your Real Estate Support Team
+              Free Your Agents. Handle the Admin. Close More.
             </h2>
             <p className="text-base sm:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Book a strategy call and we will show you exactly how TBT can handle the admin
-              so your agents can focus on what they do best.
+              One call. We'll show you the role cost, what the talent looks like, and how fast we can get started.
             </p>
             <Button variant="hero" size="lg" className="mt-8" asChild>
-              <Link to="/book">Book a Strategy Call</Link>
+              <Link to="/book">Get Your First Candidates in 72 hrs</Link>
             </Button>
           </motion.div>
         </div>

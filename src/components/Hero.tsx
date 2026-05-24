@@ -6,8 +6,8 @@ import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 const trustPoints = [
   "70% Less Than U.S. Rates",
-  "2% Turnover (Industry Avg: 18%)",
-  "Works Your Exact Hours",
+  "2% Turnover vs. 18% Industry Avg",
+  "Same Hours, Same Time Zone",
 ];
 
 export const Hero = () => {
@@ -35,7 +35,7 @@ export const Hero = () => {
               className="inline-flex items-center gap-2 px-4 py-2 bg-primary/20 rounded-full border border-primary/30 mb-2"
             >
               <span className="text-sm font-semibold text-accent uppercase tracking-wider">
-                Nearshore Staffing That Actually Works
+                Nearshore Staffing. Real Results.
               </span>
             </motion.div>
 
@@ -52,13 +52,11 @@ export const Hero = () => {
 
             {/* Headline */}
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-primary-foreground">
-              Stop Paying U.S. Rates for <span className="text-accent">Talent That Won't Stay</span>
+              Your Next 10 Hires. <span className="text-accent">Half the Cost. Fully Managed.</span>
             </h1>
 
             <p className="text-base md:text-xl text-primary-foreground/70 max-w-xl">
-              Our Colombian professionals are fluent in English, work your exact hours,
-              and cost 70% less than equivalent U.S. hires. We handle the office, HR, payroll,
-              and compliance. You just show up as the client.
+              Bilingual Colombian professionals — vetted from the top 1%, working your exact hours, costing 70% less than a U.S. hire. We own the office, HR, payroll, and compliance. You manage the work. That's it.
             </p>
 
             {/* Trust Points */}
@@ -86,12 +84,12 @@ export const Hero = () => {
             >
               <Button variant="hero" size="lg" className="w-full sm:w-auto" asChild>
                 <Link to="/book">
-                  Book a Strategy Call
+                  Get Your First Candidates in 72 hrs
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>
               <Button variant="secondary" size="lg" className="w-full sm:w-auto" asChild>
-                <a href="#how-it-works">Learn How It Works</a>
+                <a href="#how-it-works">See How It Works</a>
               </Button>
             </motion.div>
           </motion.div>
@@ -112,7 +110,7 @@ export const Hero = () => {
                 <div className="flex items-end gap-2">
                   <AnimatedCounter end={70} suffix="%" className="text-4xl md:text-6xl font-bold" />
                 </div>
-                <p className="text-lg opacity-90 mt-2">Less Than a Comparable U.S. Hire</p>
+                <p className="text-lg opacity-90 mt-2">Less Than the Same Role in the U.S.</p>
               </motion.div>
 
               {/* Secondary Stats */}
@@ -121,7 +119,7 @@ export const Hero = () => {
                 className="bg-primary-foreground/5 p-6 rounded-2xl border border-primary-foreground/10"
               >
                 <AnimatedCounter end={2} suffix="%" className="text-3xl md:text-4xl font-bold text-primary" />
-                <p className="text-muted-foreground mt-1">Annual Turnover (vs. 18% industry avg)</p>
+                <p className="text-muted-foreground mt-1">Annual Turnover Rate (Industry avg: 18%)</p>
               </motion.div>
 
               <motion.div
@@ -129,7 +127,7 @@ export const Hero = () => {
                 className="bg-primary-foreground/5 p-6 rounded-2xl border border-primary-foreground/10"
               >
                 <AnimatedCounter end={98} suffix="%" className="text-3xl md:text-4xl font-bold text-success" />
-                <p className="text-muted-foreground mt-1">Client Retention Rate</p>
+                <p className="text-muted-foreground mt-1">Client Satisfaction Rate</p>
               </motion.div>
 
               {/* Feature Card */}
@@ -142,8 +140,8 @@ export const Hero = () => {
                     <Clock className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <p className="font-semibold text-primary-foreground">Works Your Exact Hours</p>
-                    <p className="text-sm text-primary-foreground/60">Online at 9 AM your time. Available all day.</p>
+                    <p className="font-semibold text-primary-foreground">Your Hours. Your Time Zone.</p>
+                    <p className="text-sm text-primary-foreground/60">Online when you start. Available all day. No async delays.</p>
                   </div>
                 </div>
               </motion.div>

@@ -94,8 +94,7 @@ const HealthcareIndustry = () => {
               Healthcare and <span className="text-primary">Wellness</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              HIPAA trained, detail oriented healthcare professionals who keep your operations running
-              and your revenue cycle healthy.
+              Billing backlogs, claims denials, prior auth delays — your revenue cycle is bleeding. HIPAA-trained professionals who fix it at 70% less than hiring domestically.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Build My Healthcare Team</Link>
@@ -114,14 +113,10 @@ const HealthcareIndustry = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Healthcare Administration Is Falling Behind
+              Every Day Your Admin Team Falls Behind, It Costs You
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Most healthcare organizations are stretched thin on the administrative side. Billing
-              errors, claims backlogs, prior auth delays, and staffing shortages are costing real money
-              every single day. TBT places top 1% Latin American healthcare professionals who are
-              trained in US systems, fluent in English, and ready to bring order to your revenue cycle
-              and back office operations from day one.
+              Billing errors. Claims backlogs. Prior auth delays. Staffing shortages. Every one of those is a real dollar leaving your organization every single day. TBT places top 1% Colombian healthcare professionals who are trained in U.S. systems, HIPAA-compliant, fluent in English, and ready to clean up your revenue cycle and back office from day one.
             </p>
           </motion.div>
         </div>
@@ -246,14 +241,13 @@ const HealthcareIndustry = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-              Ready to Build Your Healthcare Team
+              Stop the Billing Backlog. Build a Team That Stays.
             </h2>
             <p className="text-base sm:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Book a strategy call and we will show you exactly how TBT can support your
-              healthcare organization.
+              One call. We'll show you the role cost, what the talent looks like, and how fast we can get started.
             </p>
             <Button variant="hero" size="lg" className="mt-8" asChild>
-              <Link to="/book">Book a Strategy Call</Link>
+              <Link to="/book">Get Your First Candidates in 72 hrs</Link>
             </Button>
           </motion.div>
         </div>

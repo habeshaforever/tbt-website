@@ -99,8 +99,7 @@ const SaaSIndustry = () => {
               SaaS and <span className="text-primary">Technology</span> Companies
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Scale your customer success, technical, and operations teams without scaling your burn
-              rate.
+              Your U.S. headcount is burning your runway. Build your customer success, support, and ops team in Colombia — same time zone, 70% less cost, 2% turnover.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Build My SaaS Team</Link>
@@ -119,15 +118,10 @@ const SaaSIndustry = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6">
-              SaaS Companies Need Teams That Scale With Them
+              The Fastest SaaS Companies Scale Teams Without Scaling Costs
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              The fastest growing SaaS companies share one thing in common. They figured out how to
-              scale their teams without scaling their costs at the same rate. TBT places top 1% Latin
-              American professionals who are already fluent in the tools, workflows, and pace of
-              modern SaaS companies. From customer success to technical support to data and
-              operations, we build the teams that keep your product growing and your customers
-              staying.
+              Every dollar you spend on a U.S. customer success hire is a dollar not going into product, marketing, or growth. TBT places top 1% Colombian professionals who already know Slack, Notion, Jira, HubSpot, and the exact tools your team uses. From customer success to technical support to ops, we build the teams that keep your product growing — without blowing your runway.
             </p>
           </motion.div>
         </div>
@@ -252,14 +246,13 @@ const SaaSIndustry = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-              Ready to Scale Your SaaS Team
+              Scale Your Team Without Scaling Your Burn Rate
             </h2>
             <p className="text-base sm:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Book a strategy call and we will show you exactly how TBT can help your SaaS
-              company grow without growing your overhead.
+              One call. We'll show you the role cost, what the talent looks like, and how fast we can deliver your first candidates.
             </p>
             <Button variant="hero" size="lg" className="mt-8" asChild>
-              <Link to="/book">Book a Strategy Call</Link>
+              <Link to="/book">Get Your First Candidates in 72 hrs</Link>
             </Button>
           </motion.div>
         </div>

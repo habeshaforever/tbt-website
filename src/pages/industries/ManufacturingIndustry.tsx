@@ -98,8 +98,7 @@ const ManufacturingIndustry = () => {
               Manufacturing and <span className="text-primary">Engineering</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Skilled Latin American engineering and operations professionals who support your
-              production, documentation, and technical teams.
+              Your production floor runs lean, but your back-office engineering and ops support is costing you. Technical professionals who know U.S. manufacturing standards — at 70% less than domestic rates.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Build My Engineering Team</Link>
@@ -118,15 +117,10 @@ const ManufacturingIndustry = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Manufacturing Needs More Than the Factory Floor
+              The Floor Runs Lean. Your Back Office Shouldn't Cost a Fortune.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Behind every production operation is a team of engineers, analysts, coordinators, and
-              administrators keeping everything on track. Finding and retaining that talent
-              domestically is expensive and competitive. TBT places top 1% Latin American
-              manufacturing and engineering professionals who understand US production standards,
-              communicate fluently in English, and integrate into your operation without disrupting
-              your workflow.
+              Production planning, quality analysis, CAD design, technical documentation, safety compliance — these functions need skilled professionals, and finding them domestically is expensive and slow. TBT places top 1% Colombian manufacturing and engineering professionals who understand U.S. production standards, work your hours, and integrate into your existing operation without disruption. You keep the talent. They keep showing up.
             </p>
           </motion.div>
         </div>
@@ -251,14 +245,13 @@ const ManufacturingIndustry = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-              Ready to Build Your Engineering Team
+              Build the Engineering Support Team You Actually Need — at a Cost That Makes Sense
             </h2>
             <p className="text-base sm:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Book a strategy call and we will show you exactly how TBT can support your
-              manufacturing and engineering operations.
+              One call. We'll show you the role cost, what the talent looks like, and how fast we can get started.
             </p>
             <Button variant="hero" size="lg" className="mt-8" asChild>
-              <Link to="/book">Book a Strategy Call</Link>
+              <Link to="/book">Get Your First Candidates in 72 hrs</Link>
             </Button>
           </motion.div>
         </div>

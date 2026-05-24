@@ -98,8 +98,7 @@ const LogisticsIndustry = () => {
               Logistics and <span className="text-primary">Supply Chain</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Detail oriented Latin American logistics professionals who keep your operations moving,
-              your data clean, and your customers informed.
+              One wrong shipment update, one missing vendor response, one data entry error — and it costs you a client. Logistics back-office professionals who never drop the ball, at 70% less than hiring domestically.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Build My Logistics Team</Link>
@@ -118,13 +117,10 @@ const LogisticsIndustry = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Logistics Runs on Precision and People
+              When Your Back Office Falls Behind, Shipments Do Too
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Supply chain and logistics operations depend on accurate data, fast communication, and
-              reliable people behind the scenes. TBT places top 1% Latin American logistics
-              professionals who understand US supply chain standards, communicate fluently in English,
-              and integrate into your systems without slowing anything down.
+              Logistics operations break down when the people behind the data, the vendors, and the tracking can't keep up. Missed updates become missed deliveries. Disorganized freight coordination becomes angry clients. TBT places top 1% Colombian logistics professionals who understand U.S. supply chain systems, communicate fluently in English, and keep your operation clean and on schedule — at 70% less than hiring domestically.
             </p>
           </motion.div>
         </div>
@@ -249,14 +245,13 @@ const LogisticsIndustry = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-              Ready to Build Your Logistics Team
+              Build a Logistics Team That Never Drops the Ball
             </h2>
             <p className="text-base sm:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Book a strategy call and we will show you exactly how TBT can support your
-              logistics and supply chain operations.
+              One call. We'll show you the role cost, what the talent looks like, and how fast we can get started.
             </p>
             <Button variant="hero" size="lg" className="mt-8" asChild>
-              <Link to="/book">Book a Strategy Call</Link>
+              <Link to="/book">Get Your First Candidates in 72 hrs</Link>
             </Button>
           </motion.div>
         </div>

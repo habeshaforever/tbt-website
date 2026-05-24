@@ -10,8 +10,8 @@ const processSteps = [
   {
     icon: Search,
     number: "01",
-    title: "We Listen First",
-    description: "We don't send you a generic intake form. We get on a call, learn your business, understand the team dynamics, and map exactly what the right person looks like.",
+    title: "One Call. We Learn Everything.",
+    description: "No intake forms. No generic questionnaires. We get on a call, learn your business, map your team dynamics, and define exactly what the right person looks like.",
     details: [
       "Detailed role profiling",
       "Culture fit assessment",
@@ -23,7 +23,7 @@ const processSteps = [
     icon: Users,
     number: "02",
     title: "We Find the Top 1%",
-    description: "From hundreds of applicants, our 8-step vetting process filters to the few worth your time. Skills tests, background checks, English fluency, cultural fit — we run it all.",
+    description: "From hundreds of applicants, our 8-step vetting process filters to the few worth your time. Skills tests, background checks, English fluency, cultural fit — we run it all so you don't have to.",
     details: [
       "Skills assessment testing",
       "English proficiency verification",
@@ -35,7 +35,7 @@ const processSteps = [
     icon: FileCheck,
     number: "03",
     title: "You Get the Best, Pre-Screened",
-    description: "We deliver a short list of our top picks — each with video introductions, test scores, verified work history, and salary expectations already aligned. No surprises.",
+    description: "Within 72 hours, we deliver a short list of top picks — each with video introductions, test scores, verified work history, and salary expectations already aligned. No surprises.",
     details: [
       "Video introductions",
       "Skills test results",
@@ -46,8 +46,8 @@ const processSteps = [
   {
     icon: CheckCircle,
     number: "04",
-    title: "You Pick. We Handle the Paperwork.",
-    description: "Interview your top picks on your schedule. When you choose, we take it from there — contracts, compliance, onboarding, all of it.",
+    title: "You Pick. We Handle the Rest.",
+    description: "Interview your top picks on your schedule. When you choose, we take it from there — contracts, compliance, onboarding, all of it. You do nothing except decide.",
     details: [
       "Flexible interview scheduling",
       "Technical interview support",
@@ -58,8 +58,8 @@ const processSteps = [
   {
     icon: Shield,
     number: "05",
-    title: "Everything Legal and Sorted",
-    description: "Employment agreements, compliance filings, benefits setup, equipment provisioning — handled before your new hire's first day.",
+    title: "Setup Done Before Day One",
+    description: "Employment agreements, compliance filings, benefits setup, equipment provisioning — all handled before your new hire walks through the door.",
     details: [
       "Employment contracts",
       "Benefits administration",
@@ -70,8 +70,8 @@ const processSteps = [
   {
     icon: Rocket,
     number: "06",
-    title: "Day One Without the Drama",
-    description: "Tool access, team introductions, process documentation — we prep everything so your new team member can contribute from day one.",
+    title: "Day One. No Drama.",
+    description: "Tool access, team introductions, process documentation — we prep everything so your new team member hits the ground running from day one.",
     details: [
       "Tool & system access setup",
       "Team introductions",
@@ -82,8 +82,8 @@ const processSteps = [
   {
     icon: Headphones,
     number: "07",
-    title: "We Stay In It",
-    description: "Our job isn't done at hire. Your account manager checks in regularly, monitors performance, and handles anything that comes up — so you don't have to.",
+    title: "We Don't Disappear After the Hire",
+    description: "Your dedicated account manager checks in regularly, monitors performance, and handles anything that comes up. The 90-day replacement guarantee backs everything up.",
     details: [
       "Regular check-ins",
       "Performance monitoring",
@@ -114,14 +114,13 @@ const OurProcess = () => {
             className="max-w-4xl mx-auto text-center"
           >
             <span className="text-accent font-semibold text-sm uppercase tracking-wider">
-              Our Process
+              How We Work
             </span>
             <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-4 sm:mb-6">
-              From First Call to <span className="text-accent">Fully Integrated</span> Team Member
+              From First Call to <span className="text-accent">First Day</span> in Two Weeks
             </h1>
             <p className="text-base sm:text-xl text-primary-foreground/80 max-w-2xl mx-auto">
-              We've done this thousands of times. You don't have to figure anything out
-              — just follow the steps.
+              We've done this hundreds of times. You don't have to figure anything out — just tell us what you need and show up to the interviews.
             </p>
           </motion.div>
 
@@ -201,14 +200,13 @@ const OurProcess = () => {
           >
             <Shield className="w-12 h-12 sm:w-16 sm:h-16 text-accent mx-auto mb-4 sm:mb-6" />
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Our Risk-Free Guarantee
+              90-Day Replacement Guarantee
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              If a placement doesn't work out in the first 90 days, we replace them at
-              zero additional cost. No arguments. No excuses. Just a new hire.
+              If a placement doesn't work out in the first 90 days, we replace them at no additional cost. No arguments. No questions. No replacement fee. That's how confident we are.
             </p>
             <Button variant="hero" size="lg" asChild>
-              <Link to="/book">Start Your Risk-Free Search</Link>
+              <Link to="/book">Get Your First Candidates in 72 hrs</Link>
             </Button>
           </motion.div>
         </div>

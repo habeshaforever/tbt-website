@@ -121,10 +121,10 @@ const BPO = () => {
             className="max-w-4xl mx-auto text-center"
           >
             <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
-              Business Process <span className="text-primary">Outsourcing</span>
+              Stop Running Your Back Office <span className="text-primary">at U.S. Cost</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              You are paying too much for roles that do not require a U.S. price tag. Build a dedicated BPO team in Colombia — same time zone, 70% less cost, 2% turnover.
+              Build a dedicated BPO team in Colombia — same time zone, bilingual professionals, 70% less cost, 2% turnover. You hand off the process. We handle the people.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Talk to Us About BPO</Link>
@@ -142,9 +142,9 @@ const BPO = () => {
             viewport={{ once: true }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">Stop Overpaying for Back-Office Work</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">The BPO Model Everyone Gets Wrong — and How We Fixed It</h2>
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-              BPO is simple: instead of hiring full-time U.S. employees for every back-office function, you build a dedicated team that handles those processes at a fraction of the cost. The problem with most BPO providers is quality. Offshore teams bring 8-12 hour time differences, language barriers, and turnover rates that never stop. TBT is different. We build your BPO team from Colombia — same time zone as the U.S., bilingual professionals, 2% annualized turnover, and a vetting process that only passes the top 1% of applicants.
+              The idea behind BPO is right: build a dedicated team to run your back-office functions at a fraction of the cost. The problem is execution. Most BPO providers hand you offshore teams with 8-12 hour time differences, communication barriers, and turnover that never stops. TBT builds your BPO team from Colombia — same time zone as the U.S., bilingual professionals, 2% annualized turnover, and an 8-step vetting process that only passes the top 1%. You get the cost savings without the headaches.
             </p>
           </motion.div>
         </div>

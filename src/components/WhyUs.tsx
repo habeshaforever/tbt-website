@@ -4,18 +4,18 @@ import { Globe, Clock, Users, DollarSign, Award, Building2, TrendingUp, BadgeDol
 const features = [
   {
     icon: DollarSign,
-    title: "70% Less Than U.S. Rates",
-    description: "An equivalent U.S. hire costs $70K–$100K per year in salary alone. Our model delivers the same output for 70% less — office, equipment, and HR included.",
+    title: "Same Role. 70% Less Cost.",
+    description: "That accountant costing you $75K/year in the U.S.? Through TBT, the same caliber professional runs $2,200–$2,800/month — office, equipment, and HR included.",
   },
   {
     icon: Clock,
-    title: "Works Your Hours, On Your Calendar",
-    description: "Colombia runs on Central and Eastern time. Your team is online when you start your day. No overnight waits. No scheduling around 12-hour time differences.",
+    title: "Your Hours. Their Default.",
+    description: "Colombia runs on Central and Eastern time. Your team is at their desk when you open your laptop. No 6 AM calls. No overnight Slack threads.",
   },
   {
     icon: Globe,
-    title: "You Won't Know They're Not Next Door",
-    description: "Our candidates pass rigorous English fluency assessments. They run meetings, take client calls, and write reports — no interpreter needed.",
+    title: "English Good Enough for Client Calls",
+    description: "Every candidate passes a rigorous English fluency assessment. They run meetings, take client calls, and write reports — no interpreter, no misunderstandings.",
   },
   {
     icon: Users,
@@ -24,18 +24,18 @@ const features = [
   },
   {
     icon: TrendingUp,
-    title: "98% of Clients Come Back for More",
-    description: "When something works, you stick with it. Almost every client who hires through us comes back to hire again. That says everything.",
+    title: "98% Client Satisfaction Rate",
+    description: "Almost every client who hires through us comes back to hire again. If we didn't deliver, they wouldn't. It's that simple.",
   },
   {
     icon: Building2,
-    title: "Fully Equipped and Ready to Work",
-    description: "Office space, hardware, internet, equipment — all included. Your team shows up to a professional environment and gets straight to work.",
+    title: "Office, Equipment, Internet — All Included",
+    description: "Your team shows up to a fully equipped professional office every day. No makeshift home setups. No equipment costs on your side.",
   },
   {
     icon: Award,
     title: "Fewer Than 1 in 100 Make It Through",
-    description: "Background checks, skills tests, English assessments, cultural interviews — we run it all. We don't send anyone we wouldn't hire ourselves.",
+    description: "8-step vetting: background checks, skills tests, English assessment, cultural interview. We don't present anyone we wouldn't hire ourselves.",
   },
 ];
 
@@ -54,13 +54,10 @@ export const WhyUs = () => {
               Why TBT Works When Others Don't
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-3 sm:mt-4 text-foreground">
-              Most Staffing Companies Send You a Warm Body. We Send You a Keeper.
+              Most Staffing Agencies Send You a Body. We Send You a Keeper.
             </h2>
             <p className="text-muted-foreground mt-3 sm:mt-4 text-sm sm:text-base md:text-lg">
-              Offshore teams are cheap until you factor in time zones, communication problems,
-              and constant turnover. U.S. hires are great until you see the $80,000 salary.
-              Our model gives you the quality of a full-time U.S. hire at nearshore cost —
-              and the person actually stays.
+              Offshore is cheap until you add up the time zones, the miscommunication, and the 18% annual churn. U.S. hires are great until you see the $80,000 salary. Our model gives you the caliber of a full-time U.S. hire at a fraction of the cost — and the person actually stays.
             </p>
 
             <div className="mt-5 sm:mt-8 space-y-3 sm:space-y-4">
@@ -69,8 +66,8 @@ export const WhyUs = () => {
                   <BadgeDollarSign className="w-5 h-5 text-success" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">We Pay More, So They Stay</p>
-                  <p className="text-sm text-muted-foreground">We pay our team members above-market rates across Colombia. Happy people don't quit. That's why our turnover is 2%.</p>
+                  <p className="font-semibold text-foreground">We Pay More So They Stay</p>
+                  <p className="text-sm text-muted-foreground">We pay above-market rates across Colombia. Happy people don't quit. That's why our turnover is 2% when the industry average is 18–20%.</p>
                 </div>
               </div>
               
@@ -80,7 +77,7 @@ export const WhyUs = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">Same Hours as Your Team</p>
-                  <p className="text-sm text-muted-foreground">Monday through Friday. Your hours. Your time zone. Your TBT team member is there when you are.</p>
+                  <p className="text-sm text-muted-foreground">Monday through Friday. Your hours. Your time zone. They're at their desk when you are — no scheduling gymnastics required.</p>
                 </div>
               </div>
 
@@ -89,8 +86,8 @@ export const WhyUs = () => {
                   <Heart className="w-5 h-5 text-accent" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">They're Not Contractors. They're Your People.</p>
-                  <p className="text-sm text-muted-foreground">We treat every team member like family. That culture is why our placements stay an average of four-plus years.</p>
+                  <p className="font-semibold text-foreground">Not Contractors. Your Team.</p>
+                  <p className="text-sm text-muted-foreground">We treat every placement like a person, not a transaction. That culture is why our team members stay an average of four-plus years with the same client.</p>
                 </div>
               </div>
             </div>

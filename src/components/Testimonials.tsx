@@ -36,10 +36,10 @@ export const Testimonials = () => {
           className="text-center max-w-3xl mx-auto mb-8 sm:mb-16"
         >
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">
-            Client Success Stories
+            Real Clients. Real Results.
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-4 text-foreground">
-            What Happens When You Stop Paying U.S. Rates for U.S. Talent
+            What Companies Say After Their First TBT Hire
           </h2>
         </motion.div>
 

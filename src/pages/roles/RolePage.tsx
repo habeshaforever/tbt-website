@@ -208,35 +208,35 @@ const roleData: Record<string, RoleData> = {
 };
 
 const managedStaffingContent = {
-  description: "Ongoing team support after hire. We manage your team so you can focus on your business.",
+  description: "We place your team member and run everything after — office, equipment, HR, payroll, compliance, and performance support. One flat rate. You manage the work. We handle everything else.",
   whatWeManage: [
     "Payroll administration",
-    "HR operations",
-    "Compliance support",
-    "Onboarding support",
+    "HR operations & benefits",
+    "Compliance management",
+    "Onboarding & equipment setup",
     "Performance support",
-    "Replacement guarantee",
+    "90-day replacement guarantee",
   ],
   bestFor: [
-    "Companies scaling remote teams",
-    "Businesses that want hands-off HR and payroll",
-    "Teams needing ongoing support and accountability",
+    "Companies scaling without growing overhead",
+    "Teams that want hands-off HR and payroll",
+    "Businesses that want to move fast without the admin",
   ],
 };
 
 const recruitingContent = {
-  description: "One-time hiring. We find the talent, you hire them directly.",
+  description: "One-time engagement. We find, vet, and deliver the right candidate. You hire them directly onto your payroll. Backed by our 90-day replacement guarantee.",
   whatWeDeliver: [
     "Candidate sourcing",
-    "Rigorous vetting",
-    "Curated shortlist",
+    "8-step vetting process",
+    "Curated shortlist of top picks",
     "Interview coordination",
-    "Reference checks",
+    "Reference & background checks",
   ],
   bestFor: [
-    "Companies with internal HR capacity",
+    "Companies with existing HR capacity",
     "One-time or project-based hiring needs",
-    "Businesses that prefer direct employment relationships",
+    "Teams that want to own the employment relationship",
   ],
 };
 
@@ -296,8 +296,8 @@ export const RolePage = () => {
           <div className="flex items-center justify-center gap-3 text-center">
             <Info className="w-5 h-5 text-primary flex-shrink-0" />
             <p className="text-sm text-muted-foreground">
-              <span className="font-medium text-foreground">Choose Managed Staffing</span> if you want us to run the team. 
-              <span className="font-medium text-foreground"> Choose Recruiting & Direct Hire</span> if you only need the hire.
+              <span className="font-medium text-foreground">Choose Managed Staffing</span> if you want us to run everything after the hire.
+              <span className="font-medium text-foreground"> Choose Recruiting & Direct Hire</span> if you have internal HR and just need the right candidate.
             </p>
           </div>
         </div>
@@ -328,7 +328,7 @@ export const RolePage = () => {
                 
                 <div className="grid md:grid-cols-2 gap-4 sm:gap-8">
                   <div className="bg-card p-4 sm:p-6 rounded-xl border border-border">
-                    <h3 className="text-lg font-semibold text-foreground mb-4">What We Manage After Hire</h3>
+                    <h3 className="text-lg font-semibold text-foreground mb-4">We Handle All of This</h3>
                     <ul className="space-y-3">
                       {managedStaffingContent.whatWeManage.map((item) => (
                         <li key={item} className="flex items-center gap-3">
@@ -461,8 +461,8 @@ export const RolePage = () => {
             viewport={{ once: true }}
             className="text-center mb-6 sm:mb-12"
           >
-            <h2 className="text-xl sm:text-3xl font-bold text-foreground">Roles We Fill</h2>
-            <p className="text-muted-foreground mt-4">Pre-vetted professionals ready to join your team</p>
+            <h2 className="text-xl sm:text-3xl font-bold text-foreground">Positions We Fill</h2>
+            <p className="text-muted-foreground mt-4">Top 1% candidates — background checked, English assessed, skills tested, ready to start</p>
           </motion.div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
@@ -492,8 +492,8 @@ export const RolePage = () => {
             viewport={{ once: true }}
             className="text-center mb-6 sm:mb-12"
           >
-            <h2 className="text-xl sm:text-3xl font-bold text-foreground">Why Choose Tandem Bridge Talent</h2>
-            <p className="text-muted-foreground mt-4">The nearshore advantage for {data.title.toLowerCase()}</p>
+            <h2 className="text-xl sm:text-3xl font-bold text-foreground">Why TBT Works for {data.title}</h2>
+            <p className="text-muted-foreground mt-4">70% less cost. Same hours. 2% turnover. 90-day guarantee. That's the deal.</p>
           </motion.div>
           
           <div className="grid md:grid-cols-3 gap-4 sm:gap-8 max-w-5xl mx-auto">
@@ -523,10 +523,10 @@ export const RolePage = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-              Ready to Build Your Team?
+              Get Your First {data.title} Candidates in 72 Hours
             </h2>
             <p className="text-base sm:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Book a Strategy Call. We'll help you find the perfect {data.title.toLowerCase()} professionals for your team.
+              One call. We'll show you what the role costs, who's available, and how fast we can get started. No pressure.
             </p>
             <Button variant="hero" size="lg" className="mt-8" asChild>
               <Link to="/book">

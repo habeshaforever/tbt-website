@@ -94,8 +94,7 @@ const LegalServicesIndustry = () => {
               Legal <span className="text-primary">Services</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Experienced legal support professionals who keep your practice running efficiently and
-              your billable hours protected.
+              Every hour your attorneys spend on admin is a billable hour lost. Legal support professionals who know U.S. processes — at 70% less than hiring domestically.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Build My Legal Team</Link>
@@ -114,13 +113,10 @@ const LegalServicesIndustry = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Your Practice Needs More Than Just Attorneys
+              Attorneys Shouldn't Be Doing Admin Work
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Law firms and legal departments run on detail, deadlines, and documentation. When your
-              administrative and support staff can not keep up, your attorneys feel it. TBT places top
-              1% Latin American legal professionals who understand US legal processes, communicate in
-              fluent English, and integrate into your practice without missing a beat.
+              Law firms run on detail, deadlines, and documentation. When your admin and support staff can't keep up, your attorneys feel it — and so does your billing. TBT places top 1% Colombian legal support professionals who understand U.S. legal processes, communicate fluently in English, and plug into your practice without missing a beat.
             </p>
           </motion.div>
         </div>

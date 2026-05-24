@@ -51,7 +51,7 @@ const WhyColombia = () => {
               Why <span className="text-primary">Colombia</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              You want great people at a fair price. This is where they are.
+              Same time zone. Fluent English. Top-tier talent. 70% less than a U.S. hire. This is where your next team member is.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Build Your Team in Colombia</Link>
@@ -70,14 +70,10 @@ const WhyColombia = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
-              The Right Location Changes Everything
+              Colombia Isn't a Compromise. For Our Clients, It's an Upgrade.
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-              Colombia doesn't just offer cheap labor. It offers professionals who went to good
-              universities, learned to work in global businesses, and speak fluent English — at a
-              fraction of what you'd pay in the U.S. For companies looking to build dedicated,
-              office-based teams that actually stay, Colombia isn't a compromise. For our clients,
-              it's an upgrade.
+              This isn't cheap labor. These are professionals who graduated from respected universities, built careers working with U.S. and Canadian companies, and speak fluent English. They work your hours, understand your business culture, and cost 70% less. For companies building dedicated, office-based teams that actually stay, Colombia is the obvious answer.
             </p>
           </motion.div>
         </div>
@@ -117,17 +113,13 @@ const WhyColombia = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
-              Built for Managed Staffing
+              We Don't Just Place the Hire. We Run Everything After.
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-8">
-              Most staffing companies drop off a hire and disappear. We don't. We own the office,
-              manage the HR, run payroll, and handle compliance — all included in one flat fee.
-              You get a world-class team member without the management overhead. No hidden costs.
-              No surprises. That's what makes our Managed Staffing model different from every other
-              option in the market.
+              Most staffing companies drop off a hire and disappear. We don't. We own the office, manage HR, run payroll, and handle all compliance — all included in one flat fee. You get a high-performing team member without any of the management overhead. No hidden costs. No surprises. That's our Managed Staffing model, and there's nothing else like it.
             </p>
             <Button size="lg" variant="hero" asChild>
-              <Link to="/solutions/managed-staffing">Learn About Managed Staffing</Link>
+              <Link to="/solutions/managed-staffing">See How Managed Staffing Works</Link>
             </Button>
           </motion.div>
         </div>
@@ -143,13 +135,10 @@ const WhyColombia = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
-              Visit Your Team
+              Come See It for Yourself
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-8">
-              Dozens of our clients fly to Colombia every year to see the offices and meet their teams
-              face to face. They always say the same thing: "I didn't expect it to be like this."
-              Modern offices. Professional people. A culture that takes pride in the work. Come see it
-              for yourself — our team will coordinate everything.
+              Dozens of our clients fly to Colombia every year to meet their teams face to face. They always say the same thing: "I didn't expect it to be like this." Modern offices. Driven professionals. A culture that takes real pride in the work. Every office is within 30 minutes of an international airport — most clients do it as a day trip. Our team will coordinate everything.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Book a Strategy Call</Link>

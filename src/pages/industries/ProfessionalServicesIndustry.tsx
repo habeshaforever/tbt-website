@@ -98,8 +98,7 @@ const ProfessionalServicesIndustry = () => {
               Professional <span className="text-primary">Services</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Top 1% Latin American professionals who support your consulting, advisory, and business
-              services operations with precision and reliability.
+              When your senior people are stuck doing admin and coordination work, billable hours disappear. Support staff who understand U.S. business culture, communicate professionally, and cost 70% less.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Build My Professional Team</Link>
@@ -118,14 +117,10 @@ const ProfessionalServicesIndustry = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Professional Services Firms Run on People
+              Your Senior People Should Be Doing Senior Work
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Consulting firms, advisory practices, and professional services organizations live and
-              die by the quality of their people. When your support and operational staff are
-              stretched thin your senior team feels it. TBT places top 1% Latin American
-              professionals who understand US business culture, communicate fluently in English, and
-              integrate into your firm without missing a beat.
+              When your principals, directors, and senior consultants are stuck on scheduling, research, proposals, and coordination — you're burning your most expensive resource on low-leverage tasks. TBT places top 1% Colombian professionals who understand U.S. business culture, communicate like a colleague, and handle the work your senior team shouldn't be doing. At 70% less than a domestic hire, with 2% annual turnover.
             </p>
           </motion.div>
         </div>
@@ -250,14 +245,13 @@ const ProfessionalServicesIndustry = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-              Ready to Build Your Professional Team
+              Give Your Senior Team Their Time Back
             </h2>
             <p className="text-base sm:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Book a strategy call and we will show you exactly how TBT can support your
-              professional services firm.
+              One call. We'll show you the role cost, what the talent looks like, and how fast we can get your first hire in place.
             </p>
             <Button variant="hero" size="lg" className="mt-8" asChild>
-              <Link to="/book">Book a Strategy Call</Link>
+              <Link to="/book">Get Your First Candidates in 72 hrs</Link>
             </Button>
           </motion.div>
         </div>

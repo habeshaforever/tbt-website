@@ -86,11 +86,10 @@ export const RolesIndexPage = () => {
               Browse by Role
             </span>
             <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mt-4 text-foreground">
-              All Roles
+              Every Role. Top 1% Talent.
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground mt-6 max-w-2xl mx-auto">
-              Explore our full range of staffing and recruiting services. Each role is available 
-              through Managed Staffing or Recruiting & Direct Hire.
+              We place Colombian professionals across dozens of functions. Every candidate clears our 8-step vetting process — background checked, English assessed, skills tested. Available through Managed Staffing or Recruiting & Direct Hire.
             </p>
           </motion.div>
         </div>
@@ -102,8 +101,8 @@ export const RolesIndexPage = () => {
           <div className="flex items-center justify-center gap-3 text-center">
             <Info className="w-5 h-5 text-primary flex-shrink-0" />
             <p className="text-muted-foreground">
-              <span className="font-medium text-foreground">Choose Managed Staffing</span> if you want us to run the team. 
-              <span className="font-medium text-foreground"> Choose Recruiting & Direct Hire</span> if you only need the hire.
+              <span className="font-medium text-foreground">Choose Managed Staffing</span> if you want us to run everything after the hire.
+              <span className="font-medium text-foreground"> Choose Recruiting & Direct Hire</span> if you have internal HR and just need the right candidate delivered.
             </p>
           </div>
         </div>
@@ -162,10 +161,10 @@ export const RolesIndexPage = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-              Not Sure Which Service Is Right for You?
+              Don't Know Which Service Fits? Let's Figure It Out.
             </h2>
             <p className="text-base sm:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Book a strategy call and we'll help you determine the best approach for your hiring needs.
+              Book a 30-minute strategy call. We'll look at your role, your situation, and tell you exactly which option makes the most sense — and what it costs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
               <Button variant="hero" size="lg" asChild>

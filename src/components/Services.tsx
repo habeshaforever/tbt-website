@@ -20,13 +20,13 @@ const primaryServices = [
   {
     icon: Users,
     title: "Managed Staffing",
-    description: "We place your team and run everything after hire — payroll, HR, compliance, office space, and equipment. All-inclusive. You focus on the work. We handle everything else.",
+    description: "We place your team and run everything after hire — office space, equipment, HR, payroll, compliance, and performance support. All-inclusive flat rate. You direct the work. We handle everything else. This is the model most clients never go back from.",
     href: "/solutions/managed-staffing"
   },
   {
     icon: Target,
     title: "Recruiting & Direct Hire",
-    description: "We find, vet, and deliver the right candidate. You hire them directly onto your payroll. No ongoing fees — just the best hire you'll make this year.",
+    description: "We find, vet, and deliver the right candidate. You hire them directly onto your payroll. No ongoing management fees — just a great hire and a 90-day replacement guarantee if it doesn't stick.",
     href: "/solutions/recruiting-direct-hire"
   },
 ];
@@ -54,13 +54,13 @@ export const Services = () => {
           className="text-center max-w-3xl mx-auto mb-8 md:mb-16"
         >
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">
-            Solutions
+            Two Ways to Work With Us
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-4 text-foreground">
-            Pick How You Want to Work With Us
+            Full Management or Just the Hire. You Pick.
           </h2>
           <p className="text-muted-foreground mt-4 text-lg">
-            Some clients want us to run everything. Others just need the hire. Either way, we handle the hard part.
+            Some clients want us to run everything after hire. Others just need the right candidate. Either way, we do the heavy lifting.
           </p>
         </motion.div>
 
@@ -86,7 +86,7 @@ export const Services = () => {
                 </h3>
                 <p className="text-muted-foreground mb-4">{service.description}</p>
                 <div className="flex items-center gap-2 text-primary font-medium">
-                  <span>Learn more</span>
+                  <span>See this role</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>
@@ -104,7 +104,7 @@ export const Services = () => {
           <Info className="w-5 h-5 text-primary flex-shrink-0" />
           <p className="text-muted-foreground">
             Not sure which fits?{" "}
-            <span className="font-medium text-foreground">Managed Staffing</span> is the most popular choice — clients who use it rarely go back to doing it themselves.
+            <span className="font-medium text-foreground">Managed Staffing</span> is our most popular option — once clients see what it's like to have us run the back end, they never go back.
           </p>
         </motion.div>
 
@@ -117,7 +117,7 @@ export const Services = () => {
         >
           <h3 className="text-2xl font-bold text-foreground">Browse by Role</h3>
           <p className="text-muted-foreground mt-2">
-            Every candidate passes our 8-step vetting process. These aren't job board applicants — they're screened, tested, and ready.
+            Every candidate clears our 8-step vetting process — background check, English assessment, skills test, cultural interview. These aren't job board applicants. They're the top 1%.
           </p>
         </motion.div>
 

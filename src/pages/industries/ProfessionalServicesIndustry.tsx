@@ -60,7 +60,7 @@ const serviceModels = [
   {
     title: "Managed Staffing",
     description:
-      "We build and manage your professional support team from our Colombia offices. HR, payroll, infrastructure, and performance all handled by us.",
+      "We build and manage your professional support team from our nearshore offices. HR, payroll, infrastructure, and performance all handled by us.",
     href: "/solutions/managed-staffing",
     cta: "Learn More",
   },
@@ -120,7 +120,7 @@ const ProfessionalServicesIndustry = () => {
               Your Senior People Should Be Doing Senior Work
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              When your principals, directors, and senior consultants are stuck on scheduling, research, proposals, and coordination — you're burning your most expensive resource on low-leverage tasks. TBT places top 1% Colombian professionals who understand U.S. business culture, communicate like a colleague, and handle the work your senior team shouldn't be doing. At 70% less than a domestic hire, with 2% annual turnover.
+              When your principals, directors, and senior consultants are stuck on scheduling, research, proposals, and coordination, you're burning your most expensive resource on low-leverage tasks. TBT places top 1% nearshore professionals who understand U.S. business culture, communicate like a colleague, and handle the work your senior team shouldn't be doing. At 70% less than a domestic hire, with 2% annual turnover.
             </p>
           </motion.div>
         </div>

@@ -13,7 +13,7 @@ const steps = [
     icon: Users,
     number: "02",
     title: "We Find Your Top Candidates",
-    description: "Within 72 hours, we hand-deliver profiles of pre-vetted, top-1% candidates — screened, tested, and ready to start.",
+    description: "Within 72 hours, we hand-deliver profiles of pre-vetted, top-1% candidates. Screened, tested, and ready to start.",
   },
   {
     icon: CheckCircle,

@@ -61,7 +61,7 @@ const serviceModels = [
   {
     title: "Managed Staffing",
     description:
-      "We build and manage your SaaS support and operations team from our Colombia offices. HR, payroll, infrastructure, and performance all handled by us. You focus on product.",
+      "We build and manage your SaaS support and operations team from our nearshore offices. HR, payroll, infrastructure, and performance all handled by us. You focus on product.",
     href: "/solutions/managed-staffing",
     cta: "Learn More",
   },
@@ -99,7 +99,7 @@ const SaaSIndustry = () => {
               SaaS and <span className="text-primary">Technology</span> Companies
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Your U.S. headcount is burning your runway. Build your customer success, support, and ops team in Colombia — same time zone, 70% less cost, 2% turnover.
+              Your U.S. headcount is burning your runway. Build your customer success, support, and ops team nearshore at 70% less cost. Same time zone, 2% turnover.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Build My SaaS Team</Link>
@@ -121,7 +121,7 @@ const SaaSIndustry = () => {
               The Fastest SaaS Companies Scale Teams Without Scaling Costs
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Every dollar you spend on a U.S. customer success hire is a dollar not going into product, marketing, or growth. TBT places top 1% Colombian professionals who already know Slack, Notion, Jira, HubSpot, and the exact tools your team uses. From customer success to technical support to ops, we build the teams that keep your product growing — without blowing your runway.
+              Every dollar you spend on a U.S. customer success hire is a dollar not going into product, marketing, or growth. TBT places top 1% nearshore professionals who already know Slack, Notion, Jira, HubSpot, and the exact tools your team uses. From customer success to technical support to ops, we build the teams that keep your product growing without blowing your runway.
             </p>
           </motion.div>
         </div>

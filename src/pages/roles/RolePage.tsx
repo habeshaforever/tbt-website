@@ -208,7 +208,7 @@ const roleData: Record<string, RoleData> = {
 };
 
 const managedStaffingContent = {
-  description: "We place your team member and run everything after — office, equipment, HR, payroll, compliance, and performance support. One flat rate. You manage the work. We handle everything else.",
+  description: "We place your team member and run everything after the hire: office, equipment, HR, payroll, compliance, and performance support. One flat rate. You manage the work. We handle everything else.",
   whatWeManage: [
     "Payroll administration",
     "HR operations & benefits",
@@ -462,7 +462,7 @@ export const RolePage = () => {
             className="text-center mb-6 sm:mb-12"
           >
             <h2 className="text-xl sm:text-3xl font-bold text-foreground">Positions We Fill</h2>
-            <p className="text-muted-foreground mt-4">Top 1% candidates — background checked, English assessed, skills tested, ready to start</p>
+            <p className="text-muted-foreground mt-4">Top 1% candidates, background checked, English assessed, skills tested, and ready to start</p>
           </motion.div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">

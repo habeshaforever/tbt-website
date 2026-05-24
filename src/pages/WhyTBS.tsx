@@ -33,17 +33,17 @@ const benefits = [
   {
     icon: Clock,
     title: "Same Time Zone Alignment",
-    description: "No 12-hour delays. No scheduling around time differences. Your team is at their desk when you open your laptop — available for calls, messages, and meetings all day."
+    description: "No 12-hour delays. No scheduling around time differences. Your team is at their desk when you open your laptop, available for calls, messages, and meetings all day."
   },
   {
     icon: Handshake,
     title: "We Handle Everything. You Focus on Growth.",
-    description: "Payroll, compliance, office space, equipment, HR, benefits, management support — all included in one flat fee. No surprises on the invoice."
+    description: "Whether you choose Managed Staffing or Direct Hire, we do the heavy work. Sourcing, vetting, coordination, and for Managed Staffing clients, ongoing payroll, HR, office, and compliance. One relationship. No surprises."
   },
   {
     icon: Target,
     title: "No Warm Bodies. Only Right Fits.",
-    description: "We learn your culture, your tools, your workflow, and your standards before we show you a single resume. Every candidate we present is pre-matched — not just qualified on paper."
+    description: "We learn your culture, your tools, your workflow, and your standards before we show you a single resume. Every candidate we present is pre-matched, not just qualified on paper."
   }
 ];
 
@@ -76,7 +76,7 @@ const WhyTBS = () => {
               Why Tandem Bridge Talent?
             </h1>
             <p className="text-base sm:text-xl text-primary-foreground/80">
-              Built by Americans who hired in Colombia and fixed every mistake themselves. This isn't a staffing agency. It's the model we wished had existed.
+              Built by operators who ran nearshore teams themselves and fixed every problem they hit. This isn't a staffing agency. It's the model we wished had existed.
             </p>
           </motion.div>
         </div>
@@ -93,10 +93,10 @@ const WhyTBS = () => {
             className="text-center mb-8 sm:mb-16"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Every Complaint About Staffing Agencies — We Built the Fix
+              Every Complaint About Staffing Agencies. We Fixed Every One.
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-              High turnover. Bait-and-switch candidates. Offshore headaches. Hidden fees. We heard it all — then built TBT to solve every one.
+              Most staffing agencies give you high turnover, bait-and-switch candidates, and hidden fees. We built TBT after experiencing all of it firsthand, with one goal: fix every one of those problems.
             </p>
           </motion.div>
 

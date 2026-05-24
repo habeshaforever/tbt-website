@@ -94,7 +94,7 @@ const HealthcareIndustry = () => {
               Healthcare and <span className="text-primary">Wellness</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Billing backlogs, claims denials, prior auth delays — your revenue cycle is bleeding. HIPAA-trained professionals who fix it at 70% less than hiring domestically.
+              Billing backlogs, claims denials, prior auth delays. Your revenue cycle is bleeding. HIPAA-trained professionals who fix it at 70% less than hiring domestically.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Build My Healthcare Team</Link>
@@ -116,7 +116,7 @@ const HealthcareIndustry = () => {
               Every Day Your Admin Team Falls Behind, It Costs You
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Billing errors. Claims backlogs. Prior auth delays. Staffing shortages. Every one of those is a real dollar leaving your organization every single day. TBT places top 1% Colombian healthcare professionals who are trained in U.S. systems, HIPAA-compliant, fluent in English, and ready to clean up your revenue cycle and back office from day one.
+              Billing errors. Claims backlogs. Prior auth delays. Staffing shortages. Every one of those is a real dollar leaving your organization every single day. TBT places top 1% nearshore healthcare professionals who are trained in U.S. systems, HIPAA-compliant, fluent in English, and ready to clean up your revenue cycle and back office from day one.
             </p>
           </motion.div>
         </div>

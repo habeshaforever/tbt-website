@@ -61,7 +61,7 @@ const serviceModels = [
   {
     title: "Managed Staffing",
     description:
-      "We build and manage your real estate support team from our Colombia offices. HR, payroll, infrastructure, and performance all handled by us. Your agents focus on deals.",
+      "We build and manage your real estate support team from our nearshore offices. HR, payroll, infrastructure, and performance all handled by us. Your agents focus on deals.",
     href: "/solutions/managed-staffing",
     cta: "Learn More",
   },
@@ -99,7 +99,7 @@ const RealEstateIndustry = () => {
               Real Estate and <span className="text-primary">Property Management</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Your agents are drowning in admin instead of closing deals. Transaction coordinators, listing managers, and CRM specialists who know U.S. real estate — at 70% less than hiring domestically.
+              Your agents are drowning in admin instead of closing deals. Transaction coordinators, listing managers, and CRM specialists who know U.S. real estate, at 70% less than hiring domestically.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Build My Real Estate Team</Link>
@@ -121,7 +121,7 @@ const RealEstateIndustry = () => {
               Every Hour Your Agents Spend on Admin Is a Commission Lost
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Transaction coordination, listing updates, lead follow-up, CRM management — it all has to get done, and it shouldn't be your agents doing it. TBT places top 1% Colombian real estate support professionals who understand U.S. transaction timelines, MLS systems, and contract documentation. They work your hours, hit your deadlines, and handle the back office so your agents stay on the phone and in the car.
+              Transaction coordination, listing updates, lead follow-up, CRM management. It all has to get done, and it shouldn't be your agents doing it. TBT places top 1% nearshore real estate support professionals who understand U.S. transaction timelines, MLS systems, and contract documentation. They work your hours, hit your deadlines, and handle the back office so your agents stay on the phone and in the car.
             </p>
           </motion.div>
         </div>

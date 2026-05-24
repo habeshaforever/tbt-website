@@ -113,7 +113,7 @@ const Contact = () => {
 
                   Stop paying U.S. rates for roles you can fill at 70% less. Tandem Bridge Talent
 
-                  connects you with bilingual Colombian professionals who work your hours, stay long-term, and cost a fraction of what you're paying now.
+                  connects you with bilingual nearshore professionals who work your hours, stay long-term, and cost a fraction of what you're paying now.
 
                 </p>
 

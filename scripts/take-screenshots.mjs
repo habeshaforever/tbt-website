@@ -5,17 +5,19 @@
  * 
  * Takes full-page desktop (1920x1080) and mobile (375x812) screenshots
  * of all local website pages with slow scrolling to load animations.
- * Saves to: ~/Desktop/TandemScreenshots/
+ * Saves to: /design-screenshots/ in the project root
  */
 
 import { chromium } from 'playwright';
 import { existsSync, mkdirSync } from 'fs';
-import { join } from 'path';
-import { homedir } from 'os';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // Configuration
-const BASE_URL = 'http://localhost:5173'; // Vite default dev server
-const OUTPUT_DIR = join(homedir(), 'Desktop', 'TandemScreenshots');
+const BASE_URL = 'http://localhost:8081'; // Vite dev server (auto-detected port)
+const OUTPUT_DIR = join(__dirname, '..', 'design-screenshots');
 
 // Viewport sizes
 const DESKTOP = { width: 1920, height: 1080 };
@@ -102,7 +104,8 @@ async function slowScroll(page) {
  * Take full-page screenshot for a specific viewport
  */
 async function takeScreenshot(page, route, viewportName, viewportSize) {
-  const filename = `${route.replace(/\//g, '_').replace(/^_/, 'home')}_${viewportName}.png`;
+  const slug = route === '/' ? 'home' : route.replace(/^\//, '').replace(/\//g, '_');
+  const filename = `${slug}_${viewportName}.png`;
   const filepath = join(OUTPUT_DIR, filename);
   
   // Set viewport

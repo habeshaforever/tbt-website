@@ -20,7 +20,7 @@ export const CTA = () => {
             Still Paying U.S. Rates? Every Month You Wait Costs You Real Money.
           </h2>
           <p className="text-sm sm:text-base md:text-xl text-primary-foreground/80 mb-4 sm:mb-6 md:mb-10 max-w-2xl mx-auto">
-            We can match your next hire — at 70% less — in two weeks. One call. We'll show you the role cost, what the talent looks like, and how fast we can get started. No pressure. Just the numbers.
+            We can match your next hire at 70% less, in as little as two weeks. One call. We'll show you the role cost, what the talent looks like, and how fast we can get started. No pressure. Just the numbers.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mb-4 sm:mb-6 md:mb-12">

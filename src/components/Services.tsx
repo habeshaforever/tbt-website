@@ -20,13 +20,13 @@ const primaryServices = [
   {
     icon: Users,
     title: "Managed Staffing",
-    description: "We place your team and run everything after hire — office space, equipment, HR, payroll, compliance, and performance support. All-inclusive flat rate. You direct the work. We handle everything else. This is the model most clients never go back from.",
+    description: "We place your team and run everything after hire: office space, equipment, HR, payroll, compliance, and performance support. All-inclusive flat rate. You direct the work. We handle everything else.",
     href: "/solutions/managed-staffing"
   },
   {
     icon: Target,
     title: "Recruiting & Direct Hire",
-    description: "We find, vet, and deliver the right candidate. You hire them directly onto your payroll. No ongoing management fees — just a great hire and a 90-day replacement guarantee if it doesn't stick.",
+    description: "We find, vet, and deliver the right candidate. You hire them directly onto your payroll. No ongoing management fees, just a great hire backed by our 90-day replacement guarantee.",
     href: "/solutions/recruiting-direct-hire"
   },
 ];
@@ -103,8 +103,7 @@ export const Services = () => {
         >
           <Info className="w-5 h-5 text-primary flex-shrink-0" />
           <p className="text-muted-foreground">
-            Not sure which fits?{" "}
-            <span className="font-medium text-foreground">Managed Staffing</span> is our most popular option — once clients see what it's like to have us run the back end, they never go back.
+            Not sure which fits? If you want to own the employment relationship, <span className="font-medium text-foreground">Direct Hire</span> is the move. If you'd rather we run payroll, HR, and compliance too, <span className="font-medium text-foreground">Managed Staffing</span> handles all of it.
           </p>
         </motion.div>
 
@@ -117,7 +116,7 @@ export const Services = () => {
         >
           <h3 className="text-2xl font-bold text-foreground">Browse by Role</h3>
           <p className="text-muted-foreground mt-2">
-            Every candidate clears our 8-step vetting process — background check, English assessment, skills test, cultural interview. These aren't job board applicants. They're the top 1%.
+            Every candidate clears our 8-step vetting process: background check, English assessment, skills test, and cultural interview. These aren't job board applicants. They're the top 1%.
           </p>
         </motion.div>
 

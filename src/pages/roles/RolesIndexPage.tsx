@@ -89,7 +89,7 @@ export const RolesIndexPage = () => {
               Every Role. Top 1% Talent.
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground mt-6 max-w-2xl mx-auto">
-              We place Colombian professionals across dozens of functions. Every candidate clears our 8-step vetting process — background checked, English assessed, skills tested. Available through Managed Staffing or Recruiting & Direct Hire.
+              We place top nearshore professionals across dozens of functions. Every candidate clears our 8-step vetting process: background checked, English assessed, and skills tested. Available through Managed Staffing or Recruiting & Direct Hire.
             </p>
           </motion.div>
         </div>

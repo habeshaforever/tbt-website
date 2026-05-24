@@ -69,7 +69,7 @@ const CustomerServiceIndustry = () => {
               Customer Service and <span className="text-primary">Call Centers</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Every unanswered ticket, long hold time, and frustrated customer is a churn risk. Build the support team your customers deserve — fluent in English, working your hours, at 70% less cost.
+              Every unanswered ticket, long hold time, and frustrated customer is a churn risk. Build the support team your customers deserve: fluent in English, working your hours, at 70% less cost.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Build My Support Team</Link>
@@ -91,7 +91,7 @@ const CustomerServiceIndustry = () => {
               Bad Support Loses Customers. Good Support Is Expensive. We Fixed Both.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Every unresolved ticket, every long hold, every scripted non-answer is a customer one step closer to leaving. The problem isn't that you don't care — it's that building a reliable domestic support team is expensive and the turnover never stops. TBT places top 1% Colombian customer service professionals who are bilingual, professional, and ready to represent your brand the right way from day one — at 70% less than U.S. rates with 2% annual turnover.
+              Every unresolved ticket, every long hold, every scripted non-answer is a customer one step closer to leaving. The problem isn't that you don't care. It's that building a reliable domestic support team is expensive and the turnover never stops. TBT places top 1% nearshore customer service professionals who are bilingual, professional, and ready to represent your brand the right way from day one, at 70% less than U.S. rates with 2% annual turnover.
             </p>
           </motion.div>
         </div>

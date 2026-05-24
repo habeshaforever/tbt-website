@@ -5,17 +5,17 @@ const features = [
   {
     icon: DollarSign,
     title: "Same Role. 70% Less Cost.",
-    description: "That accountant costing you $75K/year in the U.S.? Through TBT, the same caliber professional runs $2,200–$2,800/month — office, equipment, and HR included.",
+    description: "That accountant costing you $75K/year in the U.S.? The same caliber professional through TBT costs 70% less. For Managed Staffing, that includes office space, equipment, and HR in one flat monthly rate.",
   },
   {
     icon: Clock,
     title: "Your Hours. Their Default.",
-    description: "Colombia runs on Central and Eastern time. Your team is at their desk when you open your laptop. No 6 AM calls. No overnight Slack threads.",
+    description: "Your team works on U.S. time zones. They're at their desk when you open your laptop. No 6 AM calls. No overnight Slack threads.",
   },
   {
     icon: Globe,
     title: "English Good Enough for Client Calls",
-    description: "Every candidate passes a rigorous English fluency assessment. They run meetings, take client calls, and write reports — no interpreter, no misunderstandings.",
+    description: "Every candidate passes a rigorous English fluency assessment. They run meetings, take client calls, and write reports. No interpreter needed. No misunderstandings.",
   },
   {
     icon: Users,
@@ -29,7 +29,7 @@ const features = [
   },
   {
     icon: Building2,
-    title: "Office, Equipment, Internet — All Included",
+    title: "Office, Equipment, and Internet Included",
     description: "Your team shows up to a fully equipped professional office every day. No makeshift home setups. No equipment costs on your side.",
   },
   {
@@ -57,7 +57,7 @@ export const WhyUs = () => {
               Most Staffing Agencies Send You a Body. We Send You a Keeper.
             </h2>
             <p className="text-muted-foreground mt-3 sm:mt-4 text-sm sm:text-base md:text-lg">
-              Offshore is cheap until you add up the time zones, the miscommunication, and the 18% annual churn. U.S. hires are great until you see the $80,000 salary. Our model gives you the caliber of a full-time U.S. hire at a fraction of the cost — and the person actually stays.
+              Offshore is cheap until you add up the time zones, the miscommunication, and the 18% annual churn. U.S. hires are great until you see the $80,000 salary. Our model gives you the caliber of a full-time U.S. hire at a fraction of the cost. And the person actually stays.
             </p>
 
             <div className="mt-5 sm:mt-8 space-y-3 sm:space-y-4">
@@ -67,7 +67,7 @@ export const WhyUs = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">We Pay More So They Stay</p>
-                  <p className="text-sm text-muted-foreground">We pay above-market rates across Colombia. Happy people don't quit. That's why our turnover is 2% when the industry average is 18–20%.</p>
+                  <p className="text-sm text-muted-foreground">We pay above-market rates so good people stay. Our 2% annual turnover versus the industry's 18–20% is the proof.</p>
                 </div>
               </div>
               
@@ -77,7 +77,7 @@ export const WhyUs = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">Same Hours as Your Team</p>
-                  <p className="text-sm text-muted-foreground">Monday through Friday. Your hours. Your time zone. They're at their desk when you are — no scheduling gymnastics required.</p>
+                  <p className="text-sm text-muted-foreground">Monday through Friday. Your hours. Your time zone. They're at their desk when you are, ready from the first message of the day.</p>
                 </div>
               </div>
 

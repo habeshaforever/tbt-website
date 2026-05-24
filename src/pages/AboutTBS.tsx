@@ -28,7 +28,7 @@ const values = [
   {
     icon: Globe,
     title: "The Cultural Fit Is Part of the Vetting",
-    description: "Colombian professionals already understand U.S. work culture, communication norms, and business expectations. We vet for that too — not just skills on a resume."
+    description: "The professionals we place already understand U.S. work culture, communication norms, and business expectations. We vet for that too, not just skills on a resume."
   },
   {
     icon: Award,
@@ -38,7 +38,7 @@ const values = [
   {
     icon: Heart,
     title: "2% Turnover. Industry Average Is 18%.",
-    description: "When people are placed right, they stay. Our 2% annualized turnover rate is not luck — it is the result of matching carefully and supporting consistently after the hire."
+    description: "When people are placed right, they stay. Our 2% annualized turnover rate is not luck. It is the result of matching carefully and supporting consistently after the hire."
   },
   {
     icon: Handshake,
@@ -65,7 +65,7 @@ const AboutTBS = () => {
               Built by People Who Lived the <span className="text-primary">Problem</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              One founder could not find reliable talent at a price that made sense. The other was the talent — a top Colombian professional with no direct path to U.S. companies. They built TBT to fix both problems at once.
+              One founder could not find reliable talent at a price that made sense. The other was the talent: a top Latin American professional with no direct path to U.S. companies. They built TBT to fix both problems at once.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Book a Strategy Call</Link>
@@ -109,7 +109,7 @@ const AboutTBS = () => {
               Two Founders. Two Sides of the Same Problem.
             </h2>
             <p className="text-lg text-muted-foreground">
-              Alpha built businesses and kept running into the same wall — great work to be done, no reliable people to do it at a price that made sense. Gianna was on the other side — a top-performing Colombian professional who watched companies struggle to find people like her. TBT is what happens when those two perspectives meet.
+              Alpha built businesses and kept running into the same problem: great work to be done, no reliable people to do it at a price that made sense. Gianna came at it from the other side, a top-performing professional from Colombia who watched companies struggle to find people like her. TBT is what happens when those two perspectives meet.
             </p>
           </motion.div>
 
@@ -188,10 +188,10 @@ const AboutTBS = () => {
             </h2>
             <div className="space-y-4 text-lg text-muted-foreground">
               <p>
-                U.S. businesses are paying too much for talent they can barely keep. Domestic hiring is expensive, slow, and the turnover is brutal — the industry average sits at 18-20% annually. Meanwhile, Colombia has a deep pool of bilingual, highly educated professionals working in Eastern and Central time zones who are never getting the shot they deserve.
+                U.S. businesses are paying too much for talent they can barely keep. Domestic hiring is expensive, slow, and the turnover is brutal. The industry average sits at 18–20% annually. Meanwhile, Latin America has a deep pool of bilingual, highly educated professionals working in U.S. time zones who are never getting the shot they deserve.
               </p>
               <p>
-                TBT exists to close that gap. Not with a job board or a recruiting algorithm — with a real vetting process, real people, and a 90-day replacement guarantee that puts our money where our mouth is.
+                TBT exists to close that gap. Not with a job board or a recruiting algorithm, but with a real vetting process, real people, and a 90-day replacement guarantee that puts our money where our mouth is.
               </p>
             </div>
           </motion.div>

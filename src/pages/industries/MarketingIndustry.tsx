@@ -61,7 +61,7 @@ const serviceModels = [
   {
     title: "Managed Staffing",
     description:
-      "We build and manage your creative team from our Colombia offices. HR, payroll, infrastructure, and performance all handled by us. You focus on strategy.",
+      "We build and manage your creative team from our nearshore offices. HR, payroll, infrastructure, and performance all handled by us. You focus on strategy.",
     href: "/solutions/managed-staffing",
     cta: "Learn More",
   },
@@ -99,7 +99,7 @@ const MarketingIndustry = () => {
               Marketing and <span className="text-primary">Creative Services</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Your content pipeline is stalled, your designers are overloaded, and your in-house team is burning out. Build a full creative and marketing team at 70% less — without starting over every 18 months.
+              Your content pipeline is stalled, your designers are overloaded, and your in-house team is burning out. Build a full creative and marketing team at 70% less, without starting over every 18 months.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Build My Creative Team</Link>
@@ -121,7 +121,7 @@ const MarketingIndustry = () => {
               Great Creative Work Requires People Who Show Up and Stay
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Marketing agencies and in-house teams face the same problem: domestic creative talent is expensive, slow to hire, and gone in 18 months. The cycle never ends. TBT places top 1% Colombian marketing and creative professionals who are fluent in English, understand U.S. brand standards and consumer culture, and produce quality work without the constant turnover. Your brand stays consistent because your team stays.
+              Marketing agencies and in-house teams face the same problem: domestic creative talent is expensive, slow to hire, and gone in 18 months. The cycle never ends. TBT places top 1% nearshore marketing and creative professionals who are fluent in English, understand U.S. brand standards and consumer culture, and produce quality work without the constant turnover. Your brand stays consistent because your team stays.
             </p>
           </motion.div>
         </div>

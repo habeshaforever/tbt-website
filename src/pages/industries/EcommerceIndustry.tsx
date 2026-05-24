@@ -61,7 +61,7 @@ const serviceModels = [
   {
     title: "Managed Staffing",
     description:
-      "We build and manage your e-commerce operations team from our Colombia offices. HR, payroll, infrastructure, and performance all handled by us. You focus on growth.",
+      "We build and manage your e-commerce operations team from our nearshore offices. HR, payroll, infrastructure, and performance all handled by us. You focus on growth.",
     href: "/solutions/managed-staffing",
     cta: "Learn More",
   },

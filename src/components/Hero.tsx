@@ -47,7 +47,7 @@ export const Hero = () => {
               className="inline-flex items-center gap-2 px-4 py-2 bg-success/10 rounded-full border border-success/20"
             >
               <span className="w-2 h-2 bg-success rounded-full animate-pulse" />
-              <span className="text-sm font-medium text-success">2% Turnover — Industry Average Is 18%</span>
+              <span className="text-sm font-medium text-success">2% Turnover. Industry Average Is 18%.</span>
             </motion.div>
 
             {/* Headline */}
@@ -56,7 +56,7 @@ export const Hero = () => {
             </h1>
 
             <p className="text-base md:text-xl text-primary-foreground/70 max-w-xl">
-              Bilingual Colombian professionals — vetted from the top 1%, working your exact hours, costing 70% less than a U.S. hire. We own the office, HR, payroll, and compliance. You manage the work. That's it.
+              Top South American professionals, vetted from the top 1%, working your hours at 70% less than U.S. rates. Hire them directly onto your payroll, or let us handle payroll, HR, office, and compliance. Either way, you manage the work.
             </p>
 
             {/* Trust Points */}

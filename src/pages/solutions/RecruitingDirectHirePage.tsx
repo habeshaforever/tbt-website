@@ -31,7 +31,7 @@ const howItWorks = [
   {
     step: "02",
     title: "We Find the Top 1%",
-    description: "Within 72 hours, we present pre-vetted candidates from our Colombian talent network — background checked, English assessed, and skills tested.",
+    description: "Within 72 hours, we present pre-vetted candidates from our nearshore talent network, background checked, English assessed, and skills tested.",
   },
   {
     step: "03",
@@ -100,7 +100,7 @@ export const RecruitingDirectHirePage = () => {
           >
             <h2 className="text-xl sm:text-3xl font-bold text-foreground mb-6">What Is Recruiting & Direct Hire?</h2>
             <p className="text-lg text-muted-foreground">
-              Recruiting & Direct Hire is a one-time engagement. We source, vet, and deliver the best candidates from our Colombian talent network. You interview, choose, and hire them directly onto your payroll. You handle the day-to-day from there. Best for companies that have internal HR capacity and want to own the employment relationship — without doing the hard work of finding the right person.
+              Recruiting & Direct Hire is a one-time engagement. We source, vet, and deliver the best candidates from our nearshore talent network. You interview, choose, and hire them directly onto your payroll. You handle the day-to-day from there. Best for companies that have internal HR capacity and want to own the employment relationship without doing the hard work of finding the right person.
             </p>
           </motion.div>
         </div>

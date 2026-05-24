@@ -60,7 +60,7 @@ const serviceModels = [
   {
     title: "Managed Staffing",
     description:
-      "We build and manage your tech team entirely from our Colombia offices. Infrastructure, HR, payroll, and performance all handled by us.",
+      "We build and manage your tech team entirely from our nearshore offices. Infrastructure, HR, payroll, and performance all handled by us.",
     href: "/solutions/managed-staffing",
     cta: "Learn More",
   },
@@ -98,7 +98,7 @@ const ITSoftwareIndustry = () => {
               IT and <span className="text-primary">Software Development</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              U.S. tech salaries keep climbing while your hiring timelines stretch. Top 1% Colombian developers, QA engineers, and IT professionals — same tools, same time zone, 70% less cost.
+              U.S. tech salaries keep climbing while your hiring timelines stretch. Top 1% nearshore developers, QA engineers, and IT professionals: same tools, same time zone, 70% less cost.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Build My Tech Team</Link>
@@ -120,7 +120,7 @@ const ITSoftwareIndustry = () => {
               U.S. Tech Salaries Are Eating Your Budget. We Have a Better Way.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              A senior developer in the U.S. costs $130K–$160K a year. In Colombia, the same skill level costs a fraction of that — and our professionals already know React, Node, Python, AWS, and the exact frameworks your team uses. TBT places top 1% Colombian tech professionals who attend your standups, ship on your schedule, and stay. No 18-month turnover. No offshore time zone pain. Just output.
+              A senior developer in the U.S. costs $130K–$160K a year. Through TBT, the same skill level costs a fraction of that, and our professionals already know React, Node, Python, AWS, and the exact frameworks your team uses. TBT places top 1% nearshore tech professionals who attend your standups, ship on your schedule, and stay. No 18-month turnover. No offshore time zone pain. Just output.
             </p>
           </motion.div>
         </div>

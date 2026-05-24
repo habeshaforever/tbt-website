@@ -60,7 +60,7 @@ const serviceModels = [
   {
     title: "Managed Staffing",
     description:
-      "We build and manage your logistics support team from our Colombia offices. HR, payroll, infrastructure, and performance all handled by us.",
+      "We build and manage your logistics support team from our nearshore offices. HR, payroll, infrastructure, and performance all handled by us.",
     href: "/solutions/managed-staffing",
     cta: "Learn More",
   },
@@ -98,7 +98,7 @@ const LogisticsIndustry = () => {
               Logistics and <span className="text-primary">Supply Chain</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              One wrong shipment update, one missing vendor response, one data entry error — and it costs you a client. Logistics back-office professionals who never drop the ball, at 70% less than hiring domestically.
+              One wrong shipment update, one missing vendor response, one data entry error, and it costs you a client. Logistics back-office professionals who never drop the ball, at 70% less than hiring domestically.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Build My Logistics Team</Link>
@@ -120,7 +120,7 @@ const LogisticsIndustry = () => {
               When Your Back Office Falls Behind, Shipments Do Too
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Logistics operations break down when the people behind the data, the vendors, and the tracking can't keep up. Missed updates become missed deliveries. Disorganized freight coordination becomes angry clients. TBT places top 1% Colombian logistics professionals who understand U.S. supply chain systems, communicate fluently in English, and keep your operation clean and on schedule — at 70% less than hiring domestically.
+              Logistics operations break down when the people behind the data, the vendors, and the tracking can't keep up. Missed updates become missed deliveries. Disorganized freight coordination becomes angry clients. TBT places top 1% nearshore logistics professionals who understand U.S. supply chain systems, communicate fluently in English, and keep your operation clean and on schedule at 70% less than hiring domestically.
             </p>
           </motion.div>
         </div>

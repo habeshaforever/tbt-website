@@ -100,7 +100,7 @@ export const ManagedStaffingPage = () => {
           >
             <h2 className="text-xl sm:text-3xl font-bold text-foreground mb-6">What Is Managed Staffing?</h2>
             <p className="text-lg text-muted-foreground">
-              Managed Staffing is our flagship service. TBT places your Colombian team member and then manages everything after — office space, equipment, HR, payroll, compliance, and performance support. It's all-inclusive. You pay one flat monthly rate and direct the work. We run the infrastructure. Most clients say it's the best hiring decision they've ever made.
+              Managed Staffing is our flagship service. TBT places your team member and then manages everything after: office space, equipment, HR, payroll, compliance, and performance support. It's all-inclusive. You pay one flat monthly rate and direct the work. We run the infrastructure. Most clients say it's the best hiring decision they've ever made.
             </p>
           </motion.div>
         </div>

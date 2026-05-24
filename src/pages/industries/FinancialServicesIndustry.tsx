@@ -92,10 +92,10 @@ const FinancialServicesIndustry = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Finance Has No Margin for Error — Neither Do We
+              Finance Has No Margin for Error. Neither Do We.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              One billing error, one missed deadline, one compliance slip — and the cost is real. In financial services, your staff has to know what they are doing. TBT places top 1% Colombian finance professionals who are trained in U.S. GAAP, experienced with American companies, and ready to deliver the accuracy your business depends on — at a fraction of what you'd pay domestically.
+              One billing error, one missed deadline, one compliance slip, and the cost is real. In financial services, your staff has to know what they are doing. TBT places top 1% nearshore finance professionals who are trained in U.S. GAAP, experienced with American companies, and ready to deliver the accuracy your business depends on at a fraction of what you'd pay domestically.
             </p>
           </motion.div>
         </div>

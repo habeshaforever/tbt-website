@@ -63,17 +63,17 @@ const whyCards = [
     icon: DollarSign,
     title: "70% Less Than Hiring Domestically",
     description:
-      "A full BPO team in the U.S. costs a fortune. The same team built through TBT costs 70% less — with the same skill level, the same time zone, and no long-term contracts required.",
+      "A full BPO team in the U.S. costs a fortune. The same team built through TBT costs 70% less, with the same skill level, the same time zone, and no long-term contracts required.",
   },
   {
     icon: Users,
     title: "We Run It or You Own It",
     description:
-      "Need us to manage everything — payroll, HR, compliance, performance? We do that. Prefer to hire them directly and run them yourself? We do that too. Your call.",
+      "Need us to manage everything: payroll, HR, compliance, performance? We do that. Prefer to hire them directly and run them yourself? We do that too. Your call.",
   },
   {
     icon: Award,
-    title: "Top 1% Only — No Exceptions",
+    title: "Top 1% Only. No Exceptions.",
     description:
       "Every person we place has cleared an 8-step vetting process. Language, skills, work ethic, culture fit. The other 99% do not make it. You only meet the ones who do.",
   },
@@ -90,7 +90,7 @@ const steps = [
     icon: Users,
     number: "02",
     title: "We Find Your People",
-    description: "Within 72 hours, we present pre-vetted candidates from our top 1% talent pool — matched to your requirements.",
+    description: "Within 72 hours, we present pre-vetted candidates from our top 1% talent pool, matched to your requirements.",
   },
   {
     icon: CheckCircle,
@@ -124,7 +124,7 @@ const BPO = () => {
               Stop Running Your Back Office <span className="text-primary">at U.S. Cost</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Build a dedicated BPO team in Colombia — same time zone, bilingual professionals, 70% less cost, 2% turnover. You hand off the process. We handle the people.
+              Build a dedicated nearshore BPO team at 70% less than U.S. cost. Same time zone, bilingual professionals, 2% turnover. You hand off the process. We handle the people.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Talk to Us About BPO</Link>
@@ -142,9 +142,9 @@ const BPO = () => {
             viewport={{ once: true }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">The BPO Model Everyone Gets Wrong — and How We Fixed It</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">The BPO Model Everyone Gets Wrong. And How We Fixed It.</h2>
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-              The idea behind BPO is right: build a dedicated team to run your back-office functions at a fraction of the cost. The problem is execution. Most BPO providers hand you offshore teams with 8-12 hour time differences, communication barriers, and turnover that never stops. TBT builds your BPO team from Colombia — same time zone as the U.S., bilingual professionals, 2% annualized turnover, and an 8-step vetting process that only passes the top 1%. You get the cost savings without the headaches.
+              The idea behind BPO is right: build a dedicated team to run your back-office functions at a fraction of the cost. The problem is execution. Most BPO providers hand you offshore teams with 8–12 hour time differences, communication barriers, and turnover that never stops. TBT builds your BPO team with vetted nearshore professionals. Same time zone as the U.S., bilingual, 2% annualized turnover, and an 8-step vetting process that only passes the top 1%. You get the cost savings without the headaches.
             </p>
           </motion.div>
         </div>

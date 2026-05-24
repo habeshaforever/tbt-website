@@ -61,17 +61,17 @@ const nearshoreAdvantages = [
   {
     icon: Clock,
     title: "They Work Your Hours",
-    description: "Colombia sits in Eastern and Central time zones. Your team shows up when you do, joins your calls, and responds in real time. No 10 PM Slack messages.",
+    description: "Your nearshore team works in Eastern and Central time zones. They show up when you do, join your calls, and respond in real time. No 10 PM Slack messages.",
   },
   {
     icon: DollarSign,
     title: "70% Less Than Hiring Domestically",
-    description: "Not 20%. Not 40%. Up to 70% savings — enough to hire two or three people for the cost of one U.S. employee.",
+    description: "Not 20%. Not 40%. Up to 70% savings, enough to hire two or three people for the cost of one U.S. employee.",
   },
   {
     icon: Globe,
     title: "Culturally Closer Than You Think",
-    description: "Colombian professionals are trained in U.S. business norms, understand American communication styles, and work in the same business culture you do.",
+    description: "Nearshore professionals are trained in U.S. business norms, understand American communication styles, and work in the same business culture you do.",
   },
   {
     icon: Users,
@@ -91,7 +91,7 @@ const nearshoreAdvantages = [
 ];
 
 const offshoreRisks = [
-  "8-12 hour time gap means async by default — feedback loops stretch into days",
+  "8–12 hour time gap means async by default. Feedback loops stretch into days.",
   "Cultural differences create miscommunication that compounds over time",
   "Real-time meetings require someone to work at 6 AM or 11 PM",
   "Turnover rates of 18-20%+ mean you are constantly re-hiring and re-training",

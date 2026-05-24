@@ -28,22 +28,22 @@ const advantages = [
   {
     icon: Languages,
     title: "Bilingual Professionals",
-    description: "Strong English proficiency is table stakes in Colombia's professional market. Our candidates write reports, run calls, and communicate with your clients without a translator."
+    description: "Strong English proficiency is a baseline requirement in our vetting process. Our candidates write reports, run calls, and communicate with your clients without a translator."
   },
   {
     icon: GraduationCap,
     title: "Highly Educated Workforce",
-    description: "Colombia produces over 250,000 university graduates per year in fields like engineering, finance, and technology. The talent pool is large. Our job is to find the best of it."
+    description: "South America produces hundreds of thousands of university graduates per year in engineering, finance, and technology. The talent pool is large. Our job is to find the best of it."
   },
   {
     icon: Globe,
     title: "Cultural Alignment",
-    description: "Colombian professionals grew up watching the same shows, working with the same software, and competing in the same global economy. They integrate without friction."
+    description: "Nearshore professionals grew up with the same media, work in the same software, and compete in the same global economy. They integrate without friction."
   },
   {
     icon: Building2,
     title: "World-Class Tech Hubs",
-    description: "Bogotá and Medellín are two of Latin America's fastest-growing tech hubs. Google, Microsoft, and Amazon have offices there. The talent is world-class."
+    description: "Latin American cities are home to some of the fastest-growing tech ecosystems in the world. Google, Microsoft, and Amazon have offices throughout the region. The talent is world-class."
   }
 ];
 
@@ -194,7 +194,7 @@ const WhyNearshore = () => {
               </div>
               <div className="text-2xl sm:text-4xl font-bold text-primary mb-2">500K+</div>
               <p className="text-muted-foreground">
-                University graduates annually in Colombia and the region
+                University graduates annually across South America
               </p>
             </motion.div>
 

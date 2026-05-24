@@ -60,7 +60,7 @@ const serviceModels = [
   {
     title: "Managed Staffing",
     description:
-      "We build and manage your engineering support team from our Colombia offices. HR, payroll, infrastructure, and performance all handled by us.",
+      "We build and manage your engineering support team from our nearshore offices. HR, payroll, infrastructure, and performance all handled by us.",
     href: "/solutions/managed-staffing",
     cta: "Learn More",
   },
@@ -98,7 +98,7 @@ const ManufacturingIndustry = () => {
               Manufacturing and <span className="text-primary">Engineering</span>
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Your production floor runs lean, but your back-office engineering and ops support is costing you. Technical professionals who know U.S. manufacturing standards — at 70% less than domestic rates.
+              Your production floor runs lean, but your back-office engineering and ops support is costing you. Technical professionals who know U.S. manufacturing standards, at 70% less than domestic rates.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Build My Engineering Team</Link>
@@ -120,7 +120,7 @@ const ManufacturingIndustry = () => {
               The Floor Runs Lean. Your Back Office Shouldn't Cost a Fortune.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Production planning, quality analysis, CAD design, technical documentation, safety compliance — these functions need skilled professionals, and finding them domestically is expensive and slow. TBT places top 1% Colombian manufacturing and engineering professionals who understand U.S. production standards, work your hours, and integrate into your existing operation without disruption. You keep the talent. They keep showing up.
+              Production planning, quality analysis, CAD design, technical documentation, safety compliance. These functions need skilled professionals, and finding them domestically is expensive and slow. TBT places top 1% nearshore manufacturing and engineering professionals who understand U.S. production standards, work your hours, and integrate into your existing operation without disruption. You keep the talent. They keep showing up.
             </p>
           </motion.div>
         </div>
@@ -245,7 +245,7 @@ const ManufacturingIndustry = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-              Build the Engineering Support Team You Actually Need — at a Cost That Makes Sense
+              Build the Engineering Support Team You Actually Need, at a Cost That Makes Sense
             </h2>
             <p className="text-base sm:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
               One call. We'll show you the role cost, what the talent looks like, and how fast we can get started.

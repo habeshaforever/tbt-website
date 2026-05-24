@@ -23,7 +23,7 @@ const processSteps = [
     icon: Users,
     number: "02",
     title: "We Find the Top 1%",
-    description: "From hundreds of applicants, our 8-step vetting process filters to the few worth your time. Skills tests, background checks, English fluency, cultural fit — we run it all so you don't have to.",
+    description: "From hundreds of applicants, our 8-step vetting process filters to the few worth your time. Skills tests, background checks, English fluency, and cultural fit. We run it all so you don't have to.",
     details: [
       "Skills assessment testing",
       "English proficiency verification",
@@ -35,7 +35,7 @@ const processSteps = [
     icon: FileCheck,
     number: "03",
     title: "You Get the Best, Pre-Screened",
-    description: "Within 72 hours, we deliver a short list of top picks — each with video introductions, test scores, verified work history, and salary expectations already aligned. No surprises.",
+    description: "Within 72 hours, we deliver a short list of top picks, each with video introductions, test scores, verified work history, and salary expectations already aligned. No surprises.",
     details: [
       "Video introductions",
       "Skills test results",
@@ -47,7 +47,7 @@ const processSteps = [
     icon: CheckCircle,
     number: "04",
     title: "You Pick. We Handle the Rest.",
-    description: "Interview your top picks on your schedule. When you choose, we take it from there — contracts, compliance, onboarding, all of it. You do nothing except decide.",
+    description: "Interview your top picks on your schedule. When you choose, we take it from there: contracts, compliance, onboarding, all of it. Direct Hire clients wrap up here — your new hire joins your payroll directly. Managed Staffing clients continue with full setup.",
     details: [
       "Flexible interview scheduling",
       "Technical interview support",
@@ -59,7 +59,7 @@ const processSteps = [
     icon: Shield,
     number: "05",
     title: "Setup Done Before Day One",
-    description: "Employment agreements, compliance filings, benefits setup, equipment provisioning — all handled before your new hire walks through the door.",
+    description: "For Managed Staffing clients: employment agreements, compliance filings, benefits setup, and equipment provisioning. All handled before your new hire walks through the door.",
     details: [
       "Employment contracts",
       "Benefits administration",
@@ -71,7 +71,7 @@ const processSteps = [
     icon: Rocket,
     number: "06",
     title: "Day One. No Drama.",
-    description: "Tool access, team introductions, process documentation — we prep everything so your new team member hits the ground running from day one.",
+    description: "Tool access, team introductions, process documentation. We prep everything so your new team member hits the ground running from day one.",
     details: [
       "Tool & system access setup",
       "Team introductions",
@@ -120,7 +120,7 @@ const OurProcess = () => {
               From First Call to <span className="text-accent">First Day</span> in Two Weeks
             </h1>
             <p className="text-base sm:text-xl text-primary-foreground/80 max-w-2xl mx-auto">
-              We've done this hundreds of times. You don't have to figure anything out — just tell us what you need and show up to the interviews.
+              We've done this hundreds of times. You don't have to figure anything out. Just tell us what you need and show up to the interviews.
             </p>
           </motion.div>
 

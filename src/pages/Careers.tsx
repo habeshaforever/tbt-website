@@ -316,12 +316,12 @@ export default function Careers() {
             className="max-w-4xl mx-auto text-center"
           >
             <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
-              Connect With <span className="text-primary">US and Canadian</span> Companies
+              Work With <span className="text-primary">US and Canadian Companies</span> From Colombia
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Tandem Bridge Talent helps top Latin American professionals connect with leading
-              companies in the United States and Canada. Join our talent pool and access
-              high-quality remote opportunities.
+              We only place the top 1% of applicants. If you have strong English, proven skills, and a
+              track record of showing up — apply. We match you with serious companies and handle
+              the contracts, payroll, and support so you can focus on the work.
             </p>
           </motion.div>
         </div>

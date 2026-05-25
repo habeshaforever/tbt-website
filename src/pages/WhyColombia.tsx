@@ -17,7 +17,7 @@ const stats = [
     icon: Languages,
     title: "Bilingual Professionals",
     description:
-      "Every candidate we place passes an English fluency assessment. They communicate in writing, on calls, and in meetings — no translation needed, no misunderstandings."
+      "Every candidate we place passes an English fluency assessment. They communicate in writing, on calls, and in meetings. No translation needed, no misunderstandings."
   },
   {
     icon: Plane,
@@ -29,7 +29,7 @@ const stats = [
     icon: Award,
     title: "Top 1% Talent",
     description:
-      "Colombia produces hundreds of thousands of university graduates every year. We take fewer than 1%. The rest were good — just not good enough."
+      "Colombia produces hundreds of thousands of university graduates every year. We take fewer than 1%. The rest were qualified. Just not good enough."
   }
 ];
 
@@ -116,7 +116,7 @@ const WhyColombia = () => {
               We Don't Just Place the Hire. We Run Everything After.
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-8">
-              Most staffing companies drop off a hire and disappear. We don't. We own the office, manage HR, run payroll, and handle all compliance — all included in one flat fee. You get a high-performing team member without any of the management overhead. No hidden costs. No surprises. That's our Managed Staffing model, and there's nothing else like it.
+              Most staffing companies drop off a hire and disappear. We don't. We own the office, manage HR, run payroll, and handle all compliance. All included in one flat fee. You get a high-performing team member without any of the management overhead. No hidden costs. No surprises. That's our Managed Staffing model, and there's nothing else like it.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/solutions/managed-staffing">See How Managed Staffing Works</Link>
@@ -138,7 +138,7 @@ const WhyColombia = () => {
               Come See It for Yourself
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-8">
-              Dozens of our clients fly to Colombia every year to meet their teams face to face. They always say the same thing: "I didn't expect it to be like this." Modern offices. Driven professionals. A culture that takes real pride in the work. Every office is within 30 minutes of an international airport — most clients do it as a day trip. Our team will coordinate everything.
+              Dozens of our clients fly to Colombia every year to meet their teams face to face. They always say the same thing: "I didn't expect it to be like this." Modern offices. Driven professionals. A culture that takes real pride in the work. Every office is within 30 minutes of an international airport. Most clients fly in and out the same day. Our team will coordinate everything.
             </p>
             <Button size="lg" variant="hero" asChild>
               <Link to="/book">Book a Strategy Call</Link>

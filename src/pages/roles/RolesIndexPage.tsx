@@ -164,7 +164,7 @@ export const RolesIndexPage = () => {
               Don't Know Which Service Fits? Let's Figure It Out.
             </h2>
             <p className="text-base sm:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Book a 30-minute strategy call. We'll look at your role, your situation, and tell you exactly which option makes the most sense — and what it costs.
+              Book a 30-minute strategy call. We'll look at your role, your situation, and tell you exactly which option makes the most sense, and what it costs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
               <Button variant="hero" size="lg" asChild>

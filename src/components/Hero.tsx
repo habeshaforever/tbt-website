@@ -6,8 +6,8 @@ import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 const trustPoints = [
   "70% Less Than U.S. Rates",
-  "2% Turnover vs. 18% Industry Avg",
-  "Same Hours, Same Time Zone",
+  "2% Turnover vs. 18% Industry Average",
+  "Top 1% Vetted Talent",
 ];
 
 export const Hero = () => {
@@ -52,11 +52,11 @@ export const Hero = () => {
 
             {/* Headline */}
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-primary-foreground">
-              Your Next 10 Hires. <span className="text-accent">Half the Cost. Fully Managed.</span>
+              Elite South American Talent. <span className="text-accent">70% Less Than U.S. Rates.</span>
             </h1>
 
             <p className="text-base md:text-xl text-primary-foreground/70 max-w-xl">
-              Top South American professionals, vetted from the top 1%, working your hours at 70% less than U.S. rates. Hire them directly onto your payroll, or let us handle payroll, HR, office, and compliance. Either way, you manage the work.
+              The top 1% of South American professionals — bilingual, vetted, working your exact hours. Hire them directly onto your payroll, or let us handle the rest. Either way, you get elite talent at a fraction of U.S. cost.
             </p>
 
             {/* Trust Points */}
@@ -84,7 +84,7 @@ export const Hero = () => {
             >
               <Button variant="hero" size="lg" className="w-full sm:w-auto" asChild>
                 <Link to="/book">
-                  Get Your First Candidates in 72 hrs
+                  Book a Free Strategy Call
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>

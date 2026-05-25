@@ -181,7 +181,7 @@ const WhyTBS = () => {
               </div>
               
               <p className="text-muted-foreground mb-8">
-                If a placement isn't working within 90 days, we replace them at no cost. No arguments. No replacement fee. We've built our process around making sure you get the right person — and we back that up in writing.
+                If a placement isn't working within 90 days, we replace them at no cost. No arguments. No replacement fee. We've built our process around making sure you get the right person, and we back that up in writing.
               </p>
 
               <Button variant="hero" size="lg" className="w-full" asChild>

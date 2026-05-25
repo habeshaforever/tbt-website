@@ -47,7 +47,7 @@ const processSteps = [
     icon: CheckCircle,
     number: "04",
     title: "You Pick. We Handle the Rest.",
-    description: "Interview your top picks on your schedule. When you choose, we take it from there: contracts, compliance, onboarding, all of it. Direct Hire clients wrap up here — your new hire joins your payroll directly. Managed Staffing clients continue with full setup.",
+    description: "Interview your top picks on your schedule. When you choose, we take it from there: contracts, compliance, onboarding, all of it. Direct Hire clients wrap up here: your new hire joins your payroll directly. Managed Staffing clients continue with full setup.",
     details: [
       "Flexible interview scheduling",
       "Technical interview support",

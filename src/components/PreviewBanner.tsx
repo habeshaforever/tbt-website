@@ -17,7 +17,7 @@ export function PreviewBanner() {
     <div className="fixed top-0 left-0 right-0 z-[9999] bg-amber-400 text-amber-950 flex items-center justify-between px-4 py-2 text-sm font-semibold shadow-lg">
       <div className="flex items-center gap-2">
         <Eye className="w-4 h-4" />
-        <span>Draft Preview — content may include unpublished changes</span>
+        <span>Draft Preview: content may include unpublished changes</span>
       </div>
       <a
         href={exitUrl}

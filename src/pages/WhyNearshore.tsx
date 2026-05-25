@@ -138,7 +138,7 @@ const WhyNearshore = () => {
               The Side-by-Side That Ends the Debate
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-              Every factor that actually matters when you're managing a real team — not just evaluating on paper.
+              Every factor that actually matters when you're managing a real team, not just evaluating on paper.
             </p>
           </motion.div>
 

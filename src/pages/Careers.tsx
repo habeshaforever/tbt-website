@@ -320,7 +320,7 @@ export default function Careers() {
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
               We only place the top 1% of applicants. If you have strong English, proven skills, and a
-              track record of showing up — apply. We match you with serious companies and handle
+              track record of showing up, apply. We match you with serious companies and handle
               the contracts, payroll, and support so you can focus on the work.
             </p>
           </motion.div>

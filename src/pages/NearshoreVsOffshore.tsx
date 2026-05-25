@@ -168,7 +168,7 @@ const NearshoreVsOffshore = () => {
               The Honest Side-by-Side
             </h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Every category that matters when you are actually managing a team — not just evaluating on paper.
+              Every category that matters when you are actually managing a team, not just evaluating on paper.
             </p>
           </motion.div>
 

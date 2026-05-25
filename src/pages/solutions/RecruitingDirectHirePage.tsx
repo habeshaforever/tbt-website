@@ -41,7 +41,7 @@ const howItWorks = [
   {
     step: "04",
     title: "You Hire. They're Yours.",
-    description: "Pick your person. They join your team directly as your employee. The hire is done — and backed by our 90-day replacement guarantee.",
+    description: "Pick your person. They join your team directly as your employee. The hire is done, backed by our 90-day replacement guarantee.",
   },
 ];
 
@@ -75,7 +75,7 @@ export const RecruitingDirectHirePage = () => {
               Recruiting & Direct Hire
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground mt-6 max-w-2xl mx-auto">
-              We find, vet, and deliver the right candidate. You hire them directly onto your payroll. No ongoing management fees — just a great hire backed by our 90-day replacement guarantee.
+              We find, vet, and deliver the right candidate. You hire them directly onto your payroll. No ongoing management fees. Just a great hire backed by our 90-day replacement guarantee.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
               <Button variant="hero" size="lg" asChild>
@@ -147,7 +147,7 @@ export const RecruitingDirectHirePage = () => {
             className="text-center mb-6 sm:mb-12"
           >
             <h2 className="text-xl sm:text-3xl font-bold text-foreground">How It Works</h2>
-            <p className="text-muted-foreground mt-4">From first call to hired candidate — average two weeks</p>
+            <p className="text-muted-foreground mt-4">From first call to hired candidate, average two weeks</p>
           </motion.div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 max-w-6xl mx-auto">
@@ -179,7 +179,7 @@ export const RecruitingDirectHirePage = () => {
             className="text-center mb-6 sm:mb-12"
           >
             <h2 className="text-xl sm:text-3xl font-bold text-foreground">Roles We Recruit</h2>
-            <p className="text-muted-foreground mt-4">These are the most commonly requested roles for direct hire — though we recruit across dozens of functions</p>
+            <p className="text-muted-foreground mt-4">These are the most commonly requested roles for direct hire, though we recruit across dozens of functions</p>
           </motion.div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto">

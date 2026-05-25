@@ -31,12 +31,12 @@ const howItWorks = [
   {
     step: "02",
     title: "We Find the Top 1%",
-    description: "Within 72 hours, we present pre-vetted candidates — background checked, English assessed, skills tested, culture matched.",
+    description: "Within 72 hours, we present pre-vetted candidates: background checked, English assessed, skills tested, and culture matched.",
   },
   {
     step: "03",
     title: "You Pick. We Handle Everything.",
-    description: "You interview and choose. We handle contracts, office setup, equipment, payroll, onboarding — all of it.",
+    description: "You interview and choose. We handle contracts, office setup, equipment, payroll, and onboarding. All of it.",
   },
   {
     step: "04",
@@ -75,7 +75,7 @@ export const ManagedStaffingPage = () => {
               Managed Staffing
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground mt-6 max-w-2xl mx-auto">
-              We don't just find your talent. We run everything after the hire — payroll, HR, compliance, office, equipment, and performance support. One flat rate. You manage the work. We handle everything else.
+              We don't just find your talent. We run everything after the hire: payroll, HR, compliance, office, equipment, and performance support. One flat rate. You manage the work. We handle everything else.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
               <Button variant="hero" size="lg" asChild>
@@ -147,7 +147,7 @@ export const ManagedStaffingPage = () => {
             className="text-center mb-6 sm:mb-12"
           >
             <h2 className="text-xl sm:text-3xl font-bold text-foreground">How It Works</h2>
-            <p className="text-muted-foreground mt-4">From your first call to a fully managed team member — in about two weeks</p>
+            <p className="text-muted-foreground mt-4">From your first call to a fully managed team member, in about two weeks</p>
           </motion.div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 max-w-6xl mx-auto">

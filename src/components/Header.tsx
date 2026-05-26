@@ -118,6 +118,7 @@ const navItems: NavItem[] = [
       { label: "Nearshore vs Offshore", href: "/nearshore-vs-offshore" },
     ]
   },
+  { label: "AI Hiring", href: "/ai-hiring" },
   { label: "Our Story", href: "/our-story" },
   { label: "Careers", href: "/careers" },
 ];

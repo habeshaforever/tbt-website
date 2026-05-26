@@ -12,6 +12,7 @@ import OurProcess from "./pages/OurProcess";
 import NearshoreVsOffshore from "./pages/NearshoreVsOffshore";
 import AboutTBS from "./pages/AboutTBS";
 import Careers from "./pages/Careers";
+import AIHiring from "./pages/AIHiring";
 import ManagedStaffingPage from "./pages/solutions/ManagedStaffingPage";
 import RecruitingDirectHirePage from "./pages/solutions/RecruitingDirectHirePage";
 import BPO from "./pages/BPO";
@@ -99,6 +100,7 @@ const App = () => (
           <Route path="/roles/:category" element={<RolePage />} />
           {/* Legacy redirect from old staffing URLs */}
           <Route path="/staffing/:category" element={<StaffingRedirect />} />
+          <Route path="/ai-hiring" element={<AIHiring />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

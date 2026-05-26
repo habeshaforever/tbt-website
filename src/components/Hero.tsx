@@ -3,6 +3,7 @@ import { ArrowRight, CheckCircle2, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
+import { trustLogos } from "@/data/logos";
 
 const trustPoints = [
   "70% Less Than U.S. Rates",
@@ -147,6 +148,26 @@ export const Hero = () => {
               </motion.div>
             </div>
           </motion.div>
+        </div>
+        {/* Logo Trust Bar */}
+        <div className="mt-12 md:mt-16 pt-8 border-t border-primary-foreground/10">
+          <p className="text-center text-xs uppercase tracking-widest text-primary-foreground/40 mb-6">
+            Trusted by teams at
+          </p>
+          <div className="flex flex-nowrap md:flex-wrap overflow-x-auto md:overflow-visible justify-start md:justify-center items-center gap-8 md:gap-10 pb-2 md:pb-0 scrollbar-hide">
+            {trustLogos.map((logo) => (
+              <svg
+                key={logo.slug}
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-label={logo.name}
+                className="h-5 w-auto flex-shrink-0 fill-current text-primary-foreground opacity-35 hover:opacity-60 transition-opacity duration-200"
+              >
+                <path d={logo.path} />
+              </svg>
+            ))}
+          </div>
         </div>
       </div>
     </section>

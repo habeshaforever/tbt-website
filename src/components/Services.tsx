@@ -86,7 +86,7 @@ export const Services = () => {
                 </h3>
                 <p className="text-muted-foreground mb-4">{service.description}</p>
                 <div className="flex items-center gap-2 text-primary font-medium">
-                  <span>See this role</span>
+                  <span>Learn more</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>

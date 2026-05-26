@@ -48,14 +48,14 @@ const steps = [
     icon: Target,
     title: "Client Match",
     description:
-      "We present 2-3 vetted candidates. You interview, you choose. Average time to hire: 2-3 weeks.",
+      "We present two or three vetted candidates. You interview, you choose. Most clients have someone starting within two to three weeks.",
   },
 ];
 
 const stats = [
   { value: "Top 1%", label: "Talent Placed" },
   { value: "70%", label: "Cost Savings vs US" },
-  { value: "2–3 Wks", label: "Average Time to Hire" },
+  { value: "2-3 Wks", label: "Average Time to Hire" },
   { value: "2%", label: "Annualized Turnover" },
 ];
 
@@ -116,7 +116,7 @@ const AIHiring = () => {
               <span className="text-accent">AI</span>
             </h1>
             <p className="text-base md:text-xl text-primary-foreground/70 max-w-2xl mb-8">
-              We combine AI screening with human judgment to surface the top 1% of Colombian remote talent — faster, smarter, and with 70% less cost than domestic hires.
+              We use AI to cut through the noise and surface only the candidates worth your time. Then our senior team interviews every one of them before you see a single profile. The result is top 1% Colombian talent at 70% less than what you would pay domestically.
             </p>
             <Button variant="hero" size="lg" asChild>
               <Link to="/book">
@@ -222,7 +222,7 @@ const AIHiring = () => {
                 AI Finds Them. Humans Validate Them.
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Our AI is a filter, not a hiring manager. Every candidate who clears the model goes through a live panel interview with our senior team — assessing communication, problem-solving, and culture fit. Because the best hire is not just a match on paper.
+                Our AI is a filter, not a hiring manager. Every candidate who passes the screening still sits down with our senior recruiters for a live interview. We are looking at how they communicate, how they think on their feet, and whether they would actually work well on your team. A resume score does not tell you any of that.
               </p>
             </motion.div>
             <motion.div
@@ -260,10 +260,10 @@ const AIHiring = () => {
             className="text-center mb-8 md:mb-12"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-              Every Role. AI-Vetted.
+              Every Role. Every Candidate Screened.
             </h2>
             <p className="text-muted-foreground mt-3 max-w-xl mx-auto">
-              From finance to engineering to customer care, every candidate goes through the same rigorous process before you see a profile.
+              It does not matter what role you are hiring for. Every candidate goes through the same process before we ever put them in front of you.
             </p>
           </motion.div>
 
@@ -326,7 +326,7 @@ const AIHiring = () => {
               Two Ways to Work With Us
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mt-4">
-              Same AI Vetting. You Choose How We Engage.
+              The vetting is the same either way. How we work together is up to you.
             </h2>
           </motion.div>
 
@@ -373,10 +373,10 @@ const AIHiring = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-              Ready to Build Your AI-Vetted Team?
+              Want to See Who We Would Recommend for Your Role?
             </h2>
             <p className="text-base sm:text-xl text-primary-foreground/70 max-w-xl mx-auto mb-8">
-              Book a free strategy call and we will show you exactly who we would recommend for your role.
+              One call. We will walk you through the role cost, show you what the talent looks like, and tell you how quickly we can have candidates ready. No pitch, just the facts.
             </p>
             <Button variant="hero" size="lg" asChild>
               <Link to="/book">

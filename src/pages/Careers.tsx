@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Facebook } from "lucide-react";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import { Header } from "@/components/Header";
@@ -393,6 +394,34 @@ export default function Careers() {
                 ))}
               </div>
             </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Facebook Group Callout */}
+      <section className="py-8 sm:py-12 bg-background">
+        <div className="container mx-auto px-4 sm:px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-5xl mx-auto bg-blue-50 border border-blue-200 rounded-2xl px-6 py-8 flex flex-col sm:flex-row items-start sm:items-center gap-6"
+          >
+            <div className="flex items-start gap-4 flex-1">
+              <Facebook className="w-8 h-8 text-blue-600 flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="text-lg font-semibold text-foreground mb-1">Already know what role you want?</h3>
+                <p className="text-muted-foreground text-sm sm:text-base">Browse live job opportunities and connect with our team directly in our Facebook Group.</p>
+              </div>
+            </div>
+            <a
+              href="https://web.facebook.com/share/g/1H9sX2Hm5u/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0"
+            >
+              <Button variant="default" size="lg">Join Our Facebook Group</Button>
+            </a>
           </motion.div>
         </div>
       </section>

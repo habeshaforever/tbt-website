@@ -35,31 +35,31 @@ const services = [
     icon: Tag,
     title: "Data Labeling & Annotation",
     description:
-      "Dedicated teams that tag, classify, and structure your raw text, image, and audio data. Built for volume, managed for quality, and calibrated to your specific annotation guidelines.",
+      "Dedicated teams that tag, classify, and structure your raw text, image, and audio data. Built for volume and quality, and calibrated to your specific annotation guidelines.",
   },
   {
     icon: MessageSquare,
     title: "RLHF & Human Feedback",
     description:
-      "Specialists who rank model outputs, score responses, and provide the human signal that makes reinforcement learning work. Same timezone as your ML team. Real-time collaboration, not async batches.",
+      "Specialists who rank model outputs, score responses, and provide the human signal that makes reinforcement learning work. They work your hours so your ML team gets real feedback in real time, not overnight batches.",
   },
   {
     icon: Pencil,
     title: "Prompt Engineering",
     description:
-      "Professionals who design, test, and refine the prompts that shape your model's behavior. Whether you're building instruction datasets or adversarial test sets, they know how to write for models.",
+      "Professionals who design, test, and refine the prompts that shape how your model behaves. Whether you need instruction datasets or adversarial test sets, they know how to write for models.",
   },
   {
     icon: ShieldCheck,
     title: "Model Evaluation & Red Teaming",
     description:
-      "QA specialists who stress-test your model outputs for accuracy, bias, safety, and edge cases. Essential before any production deployment and ongoing after it.",
+      "QA specialists who test your model outputs for accuracy, bias, safety, and edge cases. Critical before you ship anything to production, and just as useful after you do.",
   },
   {
     icon: Database,
     title: "Training Data Curation",
     description:
-      "Teams that clean, organize, deduplicate, and structure your datasets so your training pipeline stays unblocked. The unglamorous work that determines whether your model learns anything useful.",
+      "Teams that clean, organize, and structure your datasets so your training pipeline keeps moving. It's not glamorous work, but it's what determines whether your model actually learns anything.",
   },
 ];
 
@@ -68,19 +68,19 @@ const colombiaCards = [
     icon: Clock,
     title: "US Timezone Overlap",
     description:
-      "Colombia runs UTC-5. Your team works your hours, attends your standups, and flags issues in real time.",
+      "Colombia sits at UTC-5. Your team works your hours, joins your standups, and flags issues the same day. Not the next morning.",
   },
   {
     icon: GraduationCap,
     title: "Educated Workforce",
     description:
-      "Colombia produces over 280,000 university graduates per year. Our annotators and evaluators aren't gig workers — they're trained professionals.",
+      "Colombia produces over 280,000 university graduates per year. Our annotators and evaluators aren't gig workers. They're trained professionals who take this work seriously.",
   },
   {
     icon: Shield,
     title: "Managed, Not Freelance",
     description:
-      "We handle HR, payroll, compliance, and quality management. You get a team, not a contractor pool.",
+      "We handle HR, payroll, compliance, and quality oversight. You get a real team with accountability behind it, not a pool of independent contractors.",
   },
 ];
 
@@ -88,22 +88,22 @@ const audience = [
   {
     icon: Cpu,
     title: "AI Startups",
-    description: "Pre-training or fine-tuning your first model and need a labeling team fast.",
+    description: "Training your first model and need a labeling team put together quickly.",
   },
   {
     icon: Building2,
     title: "Enterprise AI Teams",
-    description: "Scaling an existing annotation pipeline without ballooning internal headcount.",
+    description: "Growing your annotation capacity without adding a bunch of internal headcount.",
   },
   {
     icon: Code2,
     title: "AI Labs & Research Teams",
-    description: "Running RLHF, red teaming, or eval studies that require skilled, consistent evaluators.",
+    description: "Running feedback studies, red teaming, or evals that require skilled and consistent evaluators.",
   },
   {
     icon: Layers,
     title: "SaaS Companies Adding AI",
-    description: "Adding intelligent features to your product and need prompt engineers or QA testers.",
+    description: "Adding AI features to your product and need prompt engineers or QA testers who actually know what they're doing.",
   },
 ];
 
@@ -113,28 +113,28 @@ const steps = [
     icon: ClipboardList,
     title: "Define Your Workflow",
     description:
-      "You tell us what tasks look like, what quality means, and how you measure it. We design the team around that.",
+      "Tell us what the tasks look like, what quality means to you, and how you measure it. We build the team around your workflow.",
   },
   {
     number: "02",
     icon: ScanSearch,
     title: "We Source & Screen",
     description:
-      "We pull from our vetted Colombia talent pool and run role-specific assessments for annotation accuracy, language quality, and domain knowledge.",
+      "We pull from our Colombia talent network and run role-specific assessments covering annotation accuracy, language, and domain knowledge.",
   },
   {
     number: "03",
     icon: Users,
     title: "You Approve the Team",
     description:
-      "Review profiles, run sample tasks, and confirm your team before anyone starts. No surprises.",
+      "You review profiles, run sample tasks, and sign off on your team before anyone starts. Nothing moves forward without your approval.",
   },
   {
     number: "04",
     icon: Rocket,
     title: "Team Goes Live",
     description:
-      "Your dedicated team begins work in your tools, on your schedule, hitting your SLAs from day one.",
+      "Your team starts in your tools, on your schedule. They know what's expected from day one and you're not spending weeks onboarding.",
   },
 ];
 
@@ -143,14 +143,14 @@ const engagements = [
     icon: Users,
     title: "Managed AI Team",
     description:
-      "We build and run your annotation or evaluation team from Colombia. HR, payroll, QA management, and performance oversight all included. You direct the work, we handle everything else.",
+      "We build and run your annotation or evaluation team from Colombia. HR, payroll, QA, and performance oversight are all included. You focus on the work itself and we take care of everything behind the scenes.",
     href: "/solutions/managed-staffing",
   },
   {
     icon: Target,
     title: "Recruiting & Direct Hire",
     description:
-      "We source and vet your AI training specialists and you hire them directly. Best for teams that want to own the employment relationship and integrate talent into existing workflows.",
+      "We find and vet your AI training specialists, then you bring them on directly. A good fit for teams that want full ownership of the employment relationship and plan to integrate this talent into their existing setup.",
     href: "/solutions/recruiting-direct-hire",
   },
 ];
@@ -179,7 +179,7 @@ const AITrainingTeams = () => {
               The Human Layer Behind Every Great AI Model
             </h1>
             <p className="text-base md:text-xl text-primary-foreground/70 max-w-2xl mb-8">
-              AI models don't train themselves. Behind every LLM, every chatbot, every recommendation engine is a team of humans labeling data, ranking outputs, and fine-tuning responses. We build those teams for you — vetted, bilingual, Colombia-based, and ready in weeks.
+              AI models don't train themselves. Behind every LLM, every chatbot, every recommendation engine is a team of humans labeling data, ranking outputs, and improving responses. We build those teams for you. Vetted, bilingual, Colombia-based, and ready in weeks.
             </p>
             <Button variant="hero" size="lg" asChild>
               <Link to="/book">
@@ -207,7 +207,7 @@ const AITrainingTeams = () => {
               AI Is Eating the World. Humans Still Feed It.
             </h2>
             <p className="text-muted-foreground mt-4 text-base md:text-lg">
-              Every foundation model, every fine-tuned LLM, every AI product in production needed thousands of hours of human feedback to get there. That demand isn't slowing down.
+              Every AI product that made it to production needed thousands of hours of human feedback along the way. That need isn't going away anytime soon.
             </p>
           </motion.div>
 
@@ -245,7 +245,7 @@ const AITrainingTeams = () => {
               Five Teams That Make AI Models Work
             </h2>
             <p className="text-muted-foreground mt-4 text-base md:text-lg">
-              Whether you're pre-training, fine-tuning, or running evals, we build the team that keeps your pipeline moving.
+              Whether you're in early training, fine-tuning, or running ongoing evals, we staff the team that keeps your work on track.
             </p>
           </motion.div>
 
@@ -296,7 +296,7 @@ const AITrainingTeams = () => {
               viewport={{ once: true }}
             >
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Most annotation work gets pushed to gig workers in Asia with no accountability, no continuity, and no real quality control. Our Colombia-based teams are different. They're full-time, dedicated to your project, and working your hours — not submitting batches at 3am.
+                Most annotation work gets pushed to gig workers with no accountability, no continuity, and no real quality control. Our Colombia-based teams work differently. They're full-time, dedicated to your project, and online when you are. Not submitting batches at 3am and calling it done.
               </p>
             </motion.div>
 

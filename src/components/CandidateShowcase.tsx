@@ -1,17 +1,14 @@
-import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Play, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 interface Candidate {
-  initials: string;
   name: string;
   role: string;
   city: string;
   country: string;
   flag: string;
-  years: string;
   english: string;
   skills: string[];
   gumletId?: string;
@@ -19,55 +16,45 @@ interface Candidate {
 
 const candidates: Candidate[] = [
   {
-    initials: "CJ",
     name: "Chelsea Johnston",
     role: "Customer Success Manager",
     city: "Bogotá",
     country: "Colombia",
     flag: "🇨🇴",
-    years: "Available Now",
-    english: "C2 Fluent",
+    english: "Native-Level English",
     skills: ["Go High Level", "VanillaSoft", "Loom", "Zoom"],
     gumletId: "6a1524508810b357ebce1dc5",
   },
   {
-    initials: "AV",
     name: "Andrés V.",
     role: "Customer Success Manager",
     city: "Medellín",
     country: "Colombia",
     flag: "🇨🇴",
-    years: "5 yrs exp",
-    english: "C2 Fluent",
+    english: "Native-Level English",
     skills: ["Zendesk", "CRM", "Client Retention"],
   },
   {
-    initials: "VR",
     name: "Valentina R.",
     role: "Executive Assistant",
     city: "Cali",
     country: "Colombia",
     flag: "🇨🇴",
-    years: "4 yrs exp",
-    english: "C1 Advanced",
+    english: "Highly Fluent English",
     skills: ["G Suite", "Asana", "Calendar Mgmt"],
   },
   {
-    initials: "SM",
     name: "Santiago M.",
     role: "Software Developer",
     city: "Bogotá",
     country: "Colombia",
     flag: "🇨🇴",
-    years: "6 yrs exp",
-    english: "B2 Professional",
+    english: "Business Fluent English",
     skills: ["React", "Node.js", "PostgreSQL"],
   },
 ];
 
 export const CandidateShowcase = () => {
-  const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
-
   return (
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6">
@@ -86,7 +73,7 @@ export const CandidateShowcase = () => {
             Meet the Caliber of Talent We Place
           </h2>
           <p className="text-muted-foreground mt-4 text-base md:text-lg">
-            Every candidate below cleared our 8-step vetting process — background check, skills test, English assessment, and cultural interview. These are sample profiles. You get people just like this in 72 hours.
+            Every candidate below cleared our 8-step vetting process. Background check, skills test, English assessment, and a live cultural interview. These are real sample profiles. You get people like this within days of starting.
           </p>
         </motion.div>
 
@@ -101,39 +88,42 @@ export const CandidateShowcase = () => {
               transition={{ delay: index * 0.1 }}
               className="bg-card rounded-2xl border border-border shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden flex flex-col"
             >
-              {/* Top accent bar */}
-              <div className="h-1 bg-gradient-hero" />
-
-              {/* Card body */}
-              <div className="p-6 flex flex-col items-center flex-1">
-
-                {/* Avatar with flag */}
-                <div className="relative mb-3">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
-                    <span className="text-primary font-bold text-xl">{candidate.initials}</span>
+              {/* Video or placeholder — top of card */}
+              <div className="relative w-full aspect-video bg-muted">
+                {candidate.gumletId ? (
+                  <iframe
+                    loading="lazy"
+                    title={`${candidate.name} intro video`}
+                    src={`https://play.gumlet.io/embed/${candidate.gumletId}?autoplay=false&loop=false&disable_player_controls=false&preload=true`}
+                    style={{ border: "none", position: "absolute", top: 0, left: 0, height: "100%", width: "100%" }}
+                    referrerPolicy="origin"
+                    allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write"
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-muted">
+                    <Play className="w-8 h-8 text-muted-foreground/40" />
+                    <span className="text-xs text-muted-foreground">Video Coming Soon</span>
                   </div>
-                  <span className="absolute -bottom-1 -right-1 text-lg leading-none">{candidate.flag}</span>
+                )}
+              </div>
+
+              {/* Card info — bottom */}
+              <div className="p-5 flex flex-col flex-1">
+                <div className="flex items-start justify-between gap-2">
+                  <div>
+                    <p className="text-foreground font-semibold text-base">{candidate.name}</p>
+                    <p className="text-primary font-medium text-sm mt-0.5">{candidate.role}</p>
+                    <p className="text-muted-foreground text-xs mt-1">{candidate.city}, {candidate.country} {candidate.flag}</p>
+                  </div>
                 </div>
 
-                {/* Name + Role + Location */}
-                <p className="text-foreground font-semibold text-lg text-center">{candidate.name}</p>
-                <p className="text-primary font-medium text-sm text-center mt-0.5">{candidate.role}</p>
-                <p className="text-muted-foreground text-xs text-center mt-1">{candidate.city}, {candidate.country}</p>
+                <div className="border-t border-border w-full my-3" />
 
-                <div className="border-t border-border w-full my-4" />
+                <span className="text-xs font-medium bg-success/10 text-success rounded-full px-3 py-1 self-start mb-3">
+                  {candidate.english}
+                </span>
 
-                {/* Stats pills */}
-                <div className="flex items-center gap-2 flex-wrap justify-center">
-                  <span className="text-xs font-medium bg-muted text-foreground rounded-full px-3 py-1">
-                    {candidate.years}
-                  </span>
-                  <span className="text-xs font-medium bg-success/10 text-success rounded-full px-3 py-1">
-                    {candidate.english}
-                  </span>
-                </div>
-
-                {/* Skill tags */}
-                <div className="flex flex-wrap gap-2 justify-center mt-3">
+                <div className="flex flex-wrap gap-2">
                   {candidate.skills.map((skill) => (
                     <span
                       key={skill}
@@ -144,25 +134,11 @@ export const CandidateShowcase = () => {
                   ))}
                 </div>
 
-                {/* Availability */}
-                <div className="flex items-center gap-1.5 justify-center mt-4 text-xs text-success font-medium">
+                <div className="flex items-center gap-1.5 mt-4 text-xs text-success font-medium">
                   <span className="w-2 h-2 bg-success rounded-full animate-pulse" />
                   Available Now
                 </div>
               </div>
-
-              <button
-                onClick={() => candidate.gumletId ? setActiveVideoId(candidate.gumletId) : null}
-                className={`w-full border-t border-border py-3 text-sm font-medium transition-colors flex items-center justify-center gap-2 ${
-                  candidate.gumletId
-                    ? "text-primary hover:bg-primary/5 cursor-pointer"
-                    : "text-muted-foreground cursor-not-allowed opacity-50"
-                }`}
-                disabled={!candidate.gumletId}
-              >
-                <Play className="w-3.5 h-3.5" />
-                {candidate.gumletId ? "Watch Intro Video" : "Video Coming Soon"}
-              </button>
             </motion.div>
           ))}
         </div>
@@ -186,33 +162,6 @@ export const CandidateShowcase = () => {
         </motion.div>
 
       </div>
-
-      {activeVideoId && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
-          onClick={() => setActiveVideoId(null)}
-        >
-          <div
-            className="relative w-full max-w-3xl aspect-video"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <iframe
-              loading="lazy"
-              title="Candidate Intro Video"
-              src={`https://play.gumlet.io/embed/${activeVideoId}?autoplay=true&loop=false&disable_player_controls=false`}
-              style={{ border: "none", position: "absolute", top: 0, left: 0, height: "100%", width: "100%" }}
-              referrerPolicy="origin"
-              allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write"
-            />
-            <button
-              onClick={() => setActiveVideoId(null)}
-              className="absolute -top-10 right-0 text-white text-sm font-medium hover:text-accent transition-colors"
-            >
-              ✕ Close
-            </button>
-          </div>
-        </div>
-      )}
     </section>
   );
 };

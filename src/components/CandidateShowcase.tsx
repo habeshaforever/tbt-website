@@ -26,31 +26,34 @@ const candidates: Candidate[] = [
     gumletId: "6a1524508810b357ebce1dc5",
   },
   {
-    name: "Andrés V.",
-    role: "Customer Success Manager",
+    name: "Ashley Garcia",
+    role: "Operations & Admin Support",
+    city: "Manizales",
+    country: "Colombia",
+    flag: "🇨🇴",
+    english: "Native-Level English",
+    skills: ["Onboarding", "Compliance", "CRM", "Remote Operations"],
+    gumletId: "6a1524514e6fd4b445caf623",
+  },
+  {
+    name: "Laura Avila",
+    role: "Operations & Client Support",
     city: "Medellín",
     country: "Colombia",
     flag: "🇨🇴",
     english: "Native-Level English",
-    skills: ["Zendesk", "CRM", "Client Retention"],
+    skills: ["Client Communication", "Case Coordination", "Billing Support", "Healthcare Coordination"],
+    gumletId: "6a152450f790155bb58b48b8",
   },
   {
-    name: "Valentina R.",
-    role: "Executive Assistant",
-    city: "Cali",
-    country: "Colombia",
-    flag: "🇨🇴",
-    english: "Highly Fluent English",
-    skills: ["G Suite", "Asana", "Calendar Mgmt"],
-  },
-  {
-    name: "Santiago M.",
-    role: "Software Developer",
+    name: "Karen Ayala",
+    role: "Sales & Admin Support",
     city: "Bogotá",
     country: "Colombia",
     flag: "🇨🇴",
-    english: "Business Fluent English",
-    skills: ["React", "Node.js", "PostgreSQL"],
+    english: "Native-Level English",
+    skills: ["Cold Calling", "CRM", "Appointment Setting", "Admin Control"],
+    gumletId: "6a1524504e6fd4b445caf5f0",
   },
 ];
 
@@ -78,7 +81,7 @@ export const CandidateShowcase = () => {
         </motion.div>
 
         {/* Candidate Card Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
           {candidates.map((candidate, index) => (
             <motion.div
               key={candidate.name}

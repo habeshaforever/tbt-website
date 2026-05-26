@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Play, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -13,19 +14,21 @@ interface Candidate {
   years: string;
   english: string;
   skills: string[];
+  gumletId?: string;
 }
 
 const candidates: Candidate[] = [
   {
-    initials: "MC",
-    name: "Maria C.",
-    role: "Senior Accountant",
+    initials: "CJ",
+    name: "Chelsea Johnston",
+    role: "Customer Success Manager",
     city: "Bogotá",
     country: "Colombia",
     flag: "🇨🇴",
-    years: "7 yrs exp",
-    english: "C1 Advanced",
-    skills: ["QuickBooks", "GAAP", "Financial Reporting"],
+    years: "Available Now",
+    english: "C2 Fluent",
+    skills: ["Go High Level", "VanillaSoft", "Loom", "Zoom"],
+    gumletId: "6a1524508810b357ebce1dc5",
   },
   {
     initials: "AV",
@@ -63,8 +66,10 @@ const candidates: Candidate[] = [
 ];
 
 export const CandidateShowcase = () => {
+  const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
+
   return (
-    <section className="py-16 md:py-24 bg-muted/30">
+    <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6">
 
         {/* Section Header */}
@@ -146,10 +151,17 @@ export const CandidateShowcase = () => {
                 </div>
               </div>
 
-              {/* Video CTA — pinned to bottom */}
-              <button className="w-full border-t border-border py-3 text-sm font-medium text-primary hover:bg-primary/5 transition-colors flex items-center justify-center gap-2">
+              <button
+                onClick={() => candidate.gumletId ? setActiveVideoId(candidate.gumletId) : null}
+                className={`w-full border-t border-border py-3 text-sm font-medium transition-colors flex items-center justify-center gap-2 ${
+                  candidate.gumletId
+                    ? "text-primary hover:bg-primary/5 cursor-pointer"
+                    : "text-muted-foreground cursor-not-allowed opacity-50"
+                }`}
+                disabled={!candidate.gumletId}
+              >
                 <Play className="w-3.5 h-3.5" />
-                Watch Intro Video
+                {candidate.gumletId ? "Watch Intro Video" : "Video Coming Soon"}
               </button>
             </motion.div>
           ))}
@@ -174,6 +186,33 @@ export const CandidateShowcase = () => {
         </motion.div>
 
       </div>
+
+      {activeVideoId && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+          onClick={() => setActiveVideoId(null)}
+        >
+          <div
+            className="relative w-full max-w-3xl aspect-video"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <iframe
+              loading="lazy"
+              title="Candidate Intro Video"
+              src={`https://play.gumlet.io/embed/${activeVideoId}?autoplay=true&loop=false&disable_player_controls=false`}
+              style={{ border: "none", position: "absolute", top: 0, left: 0, height: "100%", width: "100%" }}
+              referrerPolicy="origin"
+              allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write"
+            />
+            <button
+              onClick={() => setActiveVideoId(null)}
+              className="absolute -top-10 right-0 text-white text-sm font-medium hover:text-accent transition-colors"
+            >
+              ✕ Close
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

@@ -123,14 +123,12 @@ const AboutTBS = () => {
               className="grid lg:grid-cols-2 gap-6 sm:gap-12 items-center py-8 sm:py-12 border-b border-border"
             >
               {/* Photo */}
-              <div className="flex justify-center">
-                <div className="w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden">
-                  <img
-                    src={alphaBayanImg}
-                    alt="Alpha Bayan"
-                    className="w-full h-full object-cover object-top"
-                  />
-                </div>
+              <div className="w-full h-[500px] rounded-2xl overflow-hidden">
+                <img
+                  src={alphaBayanImg}
+                  alt="Alpha Bayan"
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
               {/* Text */}
               <div className="space-y-4">
@@ -159,14 +157,12 @@ const AboutTBS = () => {
                 </p>
               </div>
               {/* Photo */}
-              <div className="flex justify-center lg:order-2 order-1">
-                <div className="w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden">
-                  <img
-                    src={giannaReinaImg}
-                    alt="Gianna Reina"
-                    className="w-full h-full object-cover object-center"
-                  />
-                </div>
+              <div className="w-full h-[500px] rounded-2xl overflow-hidden lg:order-2 order-1">
+                <img
+                  src={giannaReinaImg}
+                  alt="Gianna Reina"
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
             </motion.div>
           </div>

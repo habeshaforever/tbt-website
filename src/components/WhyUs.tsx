@@ -53,7 +53,7 @@ export const WhyUs = () => {
             <span className="text-primary font-semibold text-sm uppercase tracking-wider">
               Why TBT Works When Others Don't
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-3 sm:mt-4 text-foreground">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-3 sm:mt-4 text-foreground text-balance">
               Most Staffing Agencies Send You a Body. We Send You a Keeper.
             </h2>
             <p className="text-muted-foreground mt-3 sm:mt-4 text-sm sm:text-base md:text-lg">

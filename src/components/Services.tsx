@@ -51,12 +51,12 @@ export const Services = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center max-w-3xl mx-auto mb-8 md:mb-16"
+          className="text-center max-w-4xl mx-auto mb-8 md:mb-16"
         >
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">
             Two Ways to Work With Us
           </span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-4 text-foreground">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-4 text-foreground text-balance">
             Full Management or Just the Hire. You Pick.
           </h2>
           <p className="text-muted-foreground mt-4 text-lg">

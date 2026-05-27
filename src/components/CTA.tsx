@@ -16,7 +16,7 @@ export const CTA = () => {
           viewport={{ once: true }}
           className="text-center max-w-4xl mx-auto"
         >
-          <h2 className="text-xl sm:text-2xl md:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6">
+          <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-primary-foreground mb-4 sm:mb-6 text-balance">
             Still Paying U.S. Rates? Every Month You Wait Costs You Real Money.
           </h2>
           <p className="text-sm sm:text-base md:text-xl text-primary-foreground/80 mb-4 sm:mb-6 md:mb-10 max-w-2xl mx-auto">

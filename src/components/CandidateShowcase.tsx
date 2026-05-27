@@ -72,12 +72,12 @@ export const CandidateShowcase = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center max-w-2xl mx-auto mb-12"
+          className="text-center max-w-4xl mx-auto mb-12"
         >
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">
             Real Candidates. Real English. Real Results.
           </span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-4 text-foreground">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-4 text-foreground text-balance">
             Hear Them Speak. Hire With Confidence.
           </h2>
           <p className="text-muted-foreground mt-4 text-base md:text-lg">

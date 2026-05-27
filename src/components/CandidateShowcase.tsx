@@ -8,7 +8,6 @@ interface Candidate {
   role: string;
   city: string;
   country: string;
-  flag: string;
   english: string;
   outcome: string;
   skills: string[];
@@ -21,7 +20,6 @@ const candidates: Candidate[] = [
     role: "Customer Success Manager",
     city: "Bogotá",
     country: "Colombia",
-    flag: "🇨🇴",
     english: "Native-Level English",
     outcome: "Managing CRM pipelines & client success for US-based companies",
     skills: ["Go High Level", "VanillaSoft", "Loom", "Zoom"],
@@ -32,7 +30,6 @@ const candidates: Candidate[] = [
     role: "Operations & Admin Support",
     city: "Manizales",
     country: "Colombia",
-    flag: "🇨🇴",
     english: "Native-Level English",
     outcome: "10+ years running operations & onboarding for US businesses",
     skills: ["Onboarding", "Compliance", "CRM", "Remote Operations"],
@@ -43,7 +40,6 @@ const candidates: Candidate[] = [
     role: "Operations & Client Support",
     city: "Medellín",
     country: "Colombia",
-    flag: "🇨🇴",
     english: "Native-Level English",
     outcome: "Currently supporting a Florida-based company with intake, billing & coordination",
     skills: ["Client Communication", "Case Coordination", "Billing Support", "Healthcare Coordination"],
@@ -54,7 +50,6 @@ const candidates: Candidate[] = [
     role: "Sales & Admin Support",
     city: "Bogotá",
     country: "Colombia",
-    flag: "🇨🇴",
     english: "Native-Level English",
     outcome: "Handled 250+ calls/day & managed CRM admin for US companies in Texas & Arizona",
     skills: ["Cold Calling", "CRM", "Appointment Setting", "Admin Control"],
@@ -123,10 +118,24 @@ export const CandidateShowcase = () => {
                   <div>
                     <p className="text-foreground font-semibold text-base">{candidate.name}</p>
                     <p className="text-primary font-medium text-sm mt-0.5">{candidate.role}</p>
-                    <p className="text-muted-foreground text-xs mt-1">{candidate.city}, {candidate.country} {candidate.flag}</p>
+                    <div className="flex items-center gap-1.5 mt-1">
+                      <img
+                        src="https://flagcdn.com/16x12/co.png"
+                        srcSet="https://flagcdn.com/32x24/co.png 2x"
+                        width="16"
+                        height="12"
+                        alt="Colombia"
+                        className="rounded-sm object-cover"
+                      />
+                      <p className="text-muted-foreground text-xs">{candidate.city}, {candidate.country}</p>
+                    </div>
                   </div>
-                  <span className="text-xs font-medium bg-primary/10 text-primary rounded-full px-2 py-1 whitespace-nowrap shrink-0">
-                    🇺🇸 US Exp.
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white border border-primary/20 text-primary shadow-sm ring-1 ring-primary/10 whitespace-nowrap shrink-0">
+                    <svg className="w-3 h-3 text-primary" viewBox="0 0 12 12" fill="none">
+                      <circle cx="6" cy="6" r="5.5" stroke="currentColor" strokeWidth="1"/>
+                      <path d="M3.5 6L5.5 8L8.5 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    US Verified
                   </span>
                 </div>
 

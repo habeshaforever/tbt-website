@@ -44,10 +44,10 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full border border-primary/20"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-success/10 rounded-full border border-success/20"
             >
-              <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-              <span className="text-sm font-medium text-primary">Profiles in 72 Hours. Placed in 2 Weeks.</span>
+              <span className="w-2 h-2 bg-success rounded-full animate-pulse" />
+              <span className="text-sm font-medium text-success">2% Turnover. Industry Average Is 18%.</span>
             </motion.div>
 
             {/* Headline */}

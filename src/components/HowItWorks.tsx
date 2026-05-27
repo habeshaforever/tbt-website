@@ -19,7 +19,7 @@ const steps = [
     icon: CheckCircle,
     number: "03",
     title: "You Choose. We Handle the Rest.",
-    description: "Interview your top picks. Pick the one you want. We handle everything needed to get them started — fast.",
+    description: "Interview your top picks. Pick the one you want. We handle everything needed to get them started, fast.",
   },
   {
     icon: Rocket,

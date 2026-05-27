@@ -47,7 +47,7 @@ export const Hero = () => {
               className="inline-flex items-center gap-2 px-4 py-2 bg-success/10 rounded-full border border-success/20"
             >
               <span className="w-2 h-2 bg-success rounded-full animate-pulse" />
-              <span className="text-sm font-medium text-success">Profiles in 72 Hours. Placed in 2 Weeks.</span>
+              <span className="text-sm font-semibold text-success uppercase tracking-wider">First Profiles Within 72 Hours</span>
             </motion.div>
 
             {/* Headline */}

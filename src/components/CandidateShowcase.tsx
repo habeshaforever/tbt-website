@@ -10,6 +10,7 @@ interface Candidate {
   country: string;
   flag: string;
   english: string;
+  outcome: string;
   skills: string[];
   gumletId?: string;
 }
@@ -22,6 +23,7 @@ const candidates: Candidate[] = [
     country: "Colombia",
     flag: "🇨🇴",
     english: "Native-Level English",
+    outcome: "Managing CRM pipelines & client success for US-based companies",
     skills: ["Go High Level", "VanillaSoft", "Loom", "Zoom"],
     gumletId: "6a1524508810b357ebce1dc5",
   },
@@ -32,6 +34,7 @@ const candidates: Candidate[] = [
     country: "Colombia",
     flag: "🇨🇴",
     english: "Native-Level English",
+    outcome: "10+ years running operations & onboarding for US businesses",
     skills: ["Onboarding", "Compliance", "CRM", "Remote Operations"],
     gumletId: "6a1524514e6fd4b445caf623",
   },
@@ -42,6 +45,7 @@ const candidates: Candidate[] = [
     country: "Colombia",
     flag: "🇨🇴",
     english: "Native-Level English",
+    outcome: "Currently supporting a Florida-based company with intake, billing & coordination",
     skills: ["Client Communication", "Case Coordination", "Billing Support", "Healthcare Coordination"],
     gumletId: "6a152450f790155bb58b48b8",
   },
@@ -52,6 +56,7 @@ const candidates: Candidate[] = [
     country: "Colombia",
     flag: "🇨🇴",
     english: "Native-Level English",
+    outcome: "Handled 250+ calls/day & managed CRM admin for US companies in Texas & Arizona",
     skills: ["Cold Calling", "CRM", "Appointment Setting", "Admin Control"],
     gumletId: "6a1524504e6fd4b445caf5f0",
   },
@@ -70,13 +75,13 @@ export const CandidateShowcase = () => {
           className="text-center max-w-2xl mx-auto mb-12"
         >
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">
-            The Talent You Get Access To
+            Real Candidates. Real English. Real Results.
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-4 text-foreground">
-            Meet the Caliber of Talent We Place
+            Hear Them Speak. Hire With Confidence.
           </h2>
           <p className="text-muted-foreground mt-4 text-base md:text-lg">
-            Every candidate below cleared our 8-step vetting process. Background check, skills test, English assessment, and a live cultural interview. These are real sample profiles. You get people like this within days of starting.
+            Every candidate below cleared our 8-step vetting process — background check, skills test, English fluency assessment, and cultural interview. Press play and hear for yourself.
           </p>
         </motion.div>
 
@@ -110,36 +115,46 @@ export const CandidateShowcase = () => {
                 )}
               </div>
 
-              {/* Card info — bottom */}
+              {/* Card info */}
               <div className="p-5 flex flex-col flex-1">
-                <div className="flex items-start justify-between gap-2">
+
+                {/* Name, role, location + US badge */}
+                <div className="flex items-start justify-between gap-2 mb-1">
                   <div>
                     <p className="text-foreground font-semibold text-base">{candidate.name}</p>
                     <p className="text-primary font-medium text-sm mt-0.5">{candidate.role}</p>
                     <p className="text-muted-foreground text-xs mt-1">{candidate.city}, {candidate.country} {candidate.flag}</p>
                   </div>
+                  <span className="text-xs font-medium bg-primary/10 text-primary rounded-full px-2 py-1 whitespace-nowrap shrink-0">
+                    🇺🇸 US Exp.
+                  </span>
                 </div>
 
-                <div className="border-t border-border w-full my-3" />
+                {/* Outcome statement */}
+                <p className="text-muted-foreground text-xs leading-relaxed mt-2 mb-3 italic">
+                  "{candidate.outcome}"
+                </p>
 
+                <div className="border-t border-border w-full mb-3" />
+
+                {/* English level */}
                 <span className="text-xs font-medium bg-success/10 text-success rounded-full px-3 py-1 self-start mb-3">
-                  {candidate.english}
+                  ✓ {candidate.english}
                 </span>
 
-                <div className="flex flex-wrap gap-2">
+                {/* Skills */}
+                <div className="flex flex-wrap gap-2 mb-4">
                   {candidate.skills.map((skill) => (
-                    <span
-                      key={skill}
-                      className="text-xs bg-primary/10 text-primary rounded-full px-3 py-1"
-                    >
+                    <span key={skill} className="text-xs bg-primary/10 text-primary rounded-full px-3 py-1">
                       {skill}
                     </span>
                   ))}
                 </div>
 
-                <div className="flex items-center gap-1.5 mt-4 text-xs text-success font-medium">
+                {/* Availability */}
+                <div className="flex items-center gap-1.5 mt-auto text-xs text-success font-medium">
                   <span className="w-2 h-2 bg-success rounded-full animate-pulse" />
-                  Available Now
+                  Available — Placeable Within 72 Hours
                 </div>
               </div>
             </motion.div>
@@ -154,7 +169,7 @@ export const CandidateShowcase = () => {
           className="text-center mt-12"
         >
           <p className="text-muted-foreground text-sm mb-6">
-            These are sample profiles. Real matched candidates are tailored to your exact role.
+            These are real candidates from our active talent pool. Every placement is matched to your exact role and team culture.
           </p>
           <Button variant="hero" size="lg" asChild>
             <Link to="/book">

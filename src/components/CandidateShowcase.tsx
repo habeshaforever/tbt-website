@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { Play, ArrowRight } from "lucide-react";
+import { Play, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -57,9 +58,101 @@ const candidates: Candidate[] = [
   },
 ];
 
+const CandidateCard = ({ candidate, className }: { candidate: Candidate; className?: string }) => (
+  <div className={`bg-card rounded-2xl border border-border shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden flex flex-col ${className}`}>
+
+    {/* Video */}
+    <div className="relative w-full aspect-video bg-muted">
+      {candidate.gumletId ? (
+        <iframe
+          loading="lazy"
+          title={`${candidate.name} intro video`}
+          src={`https://play.gumlet.io/embed/${candidate.gumletId}?autoplay=false&loop=false&disable_player_controls=false&preload=true`}
+          style={{ border: "none", position: "absolute", top: 0, left: 0, height: "100%", width: "100%" }}
+          referrerPolicy="origin"
+          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write"
+        />
+      ) : (
+        <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-muted">
+          <Play className="w-8 h-8 text-muted-foreground/40" />
+          <span className="text-xs text-muted-foreground">Video Coming Soon</span>
+        </div>
+      )}
+    </div>
+
+    {/* Card info */}
+    <div className="p-5 flex flex-col flex-1">
+
+      {/* Name, role, location + badge */}
+      <div className="flex items-start justify-between gap-2 mb-1">
+        <div>
+          <p className="text-foreground font-semibold text-base">{candidate.name}</p>
+          <p className="text-primary font-medium text-sm mt-0.5">{candidate.role}</p>
+          <div className="flex items-center gap-1.5 mt-1">
+            <img
+              src="https://flagcdn.com/16x12/co.png"
+              srcSet="https://flagcdn.com/32x24/co.png 2x"
+              width="16"
+              height="12"
+              alt="Colombia"
+              className="rounded-sm object-cover"
+            />
+            <p className="text-muted-foreground text-xs">{candidate.city}, {candidate.country}</p>
+          </div>
+        </div>
+        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white border border-primary/20 text-primary shadow-sm ring-1 ring-primary/10 whitespace-nowrap shrink-0">
+          <svg className="w-3 h-3 text-primary" viewBox="0 0 12 12" fill="none">
+            <circle cx="6" cy="6" r="5.5" stroke="currentColor" strokeWidth="1"/>
+            <path d="M3.5 6L5.5 8L8.5 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+          US Work Experience
+        </span>
+      </div>
+
+      {/* Outcome */}
+      <p className="text-muted-foreground/80 text-xs leading-relaxed mt-2 mb-3 italic">
+        "{candidate.outcome}"
+      </p>
+
+      <div className="border-t border-border w-full mb-3" />
+
+      {/* English level */}
+      <span className="text-xs font-medium bg-success/10 text-success rounded-full px-3 py-1 self-start mb-3">
+        ✓ {candidate.english}
+      </span>
+
+      {/* Skills */}
+      <div className="flex flex-wrap gap-2 mb-4">
+        {candidate.skills.map((skill) => (
+          <span key={skill} className="text-xs bg-primary/10 text-primary rounded-full px-3 py-1">
+            {skill}
+          </span>
+        ))}
+      </div>
+
+      {/* Availability */}
+      <div className="flex items-center gap-1.5 mt-auto text-xs text-success font-medium">
+        <span className="w-2 h-2 bg-success rounded-full animate-pulse" />
+        Available. Placeable Within 72 Hours
+      </div>
+    </div>
+  </div>
+);
+
 export const CandidateShowcase = () => {
+  const [current, setCurrent] = useState(0);
+  const total = candidates.length;
+
+  const prev = () => setCurrent((c) => (c - 1 + total) % total);
+  const next = () => setCurrent((c) => (c + 1) % total);
+
+  // Visible cards: 1 on mobile, 2 on tablet, 3 on desktop
+  // We render all candidates but slice based on current index with wrapping
+  const getVisible = (count: number) =>
+    Array.from({ length: count }, (_, i) => candidates[(current + i) % total]);
+
   return (
-    <section className="py-16 md:py-24 bg-background">
+    <section className="py-16 md:py-24 bg-background overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6">
 
         {/* Section Header */}
@@ -80,94 +173,59 @@ export const CandidateShowcase = () => {
           </p>
         </motion.div>
 
-        {/* Candidate Card Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-          {candidates.map((candidate, index) => (
-            <motion.div
-              key={candidate.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="bg-card rounded-2xl border border-border shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden flex flex-col"
+        {/* Carousel */}
+        <div className="relative">
+
+          {/* Cards grid — responsive visibility */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Mobile: show 1 */}
+            {getVisible(1).map((candidate, i) => (
+              <CandidateCard key={`mobile-${i}`} candidate={candidate} className="sm:hidden" />
+            ))}
+            {/* Tablet: show 2 */}
+            {getVisible(2).map((candidate, i) => (
+              <CandidateCard key={`tablet-${i}`} candidate={candidate} className="hidden sm:flex lg:hidden" />
+            ))}
+            {/* Desktop: show 3 */}
+            {getVisible(3).map((candidate, i) => (
+              <CandidateCard key={`desktop-${i}`} candidate={candidate} className="hidden lg:flex" />
+            ))}
+          </div>
+
+          {/* Arrow buttons */}
+          <div className="flex items-center justify-center gap-4 mt-8">
+            <button
+              onClick={prev}
+              className="w-10 h-10 rounded-full border border-border bg-background shadow-sm hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-200 flex items-center justify-center"
+              aria-label="Previous candidate"
             >
-              {/* Video or placeholder — top of card */}
-              <div className="relative w-full aspect-video bg-muted">
-                {candidate.gumletId ? (
-                  <iframe
-                    loading="lazy"
-                    title={`${candidate.name} intro video`}
-                    src={`https://play.gumlet.io/embed/${candidate.gumletId}?autoplay=false&loop=false&disable_player_controls=false&preload=true`}
-                    style={{ border: "none", position: "absolute", top: 0, left: 0, height: "100%", width: "100%" }}
-                    referrerPolicy="origin"
-                    allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write"
-                  />
-                ) : (
-                  <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-muted">
-                    <Play className="w-8 h-8 text-muted-foreground/40" />
-                    <span className="text-xs text-muted-foreground">Video Coming Soon</span>
-                  </div>
-                )}
-              </div>
+              <ChevronLeft className="w-5 h-5" />
+            </button>
 
-              {/* Card info */}
-              <div className="p-5 flex flex-col flex-1">
+            {/* Dot indicators */}
+            <div className="flex items-center gap-2">
+              {candidates.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCurrent(i)}
+                  className={`rounded-full transition-all duration-300 ${
+                    i === current
+                      ? "w-6 h-2.5 bg-primary"
+                      : "w-2.5 h-2.5 bg-border hover:bg-primary/40"
+                  }`}
+                  aria-label={`Go to candidate ${i + 1}`}
+                />
+              ))}
+            </div>
 
-                {/* Name, role, location + US badge */}
-                <div className="flex items-start justify-between gap-2 mb-1">
-                  <div>
-                    <p className="text-foreground font-semibold text-base">{candidate.name}</p>
-                    <p className="text-primary font-medium text-sm mt-0.5">{candidate.role}</p>
-                    <div className="flex items-center gap-1.5 mt-1">
-                      <img
-                        src="https://flagcdn.com/16x12/co.png"
-                        srcSet="https://flagcdn.com/32x24/co.png 2x"
-                        width="16"
-                        height="12"
-                        alt="Colombia"
-                        className="rounded-sm object-cover"
-                      />
-                      <p className="text-muted-foreground text-xs">{candidate.city}, {candidate.country}</p>
-                    </div>
-                  </div>
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white border border-primary/20 text-primary shadow-sm ring-1 ring-primary/10 whitespace-nowrap shrink-0">
-                    <svg className="w-3 h-3 text-primary" viewBox="0 0 12 12" fill="none">
-                      <circle cx="6" cy="6" r="5.5" stroke="currentColor" strokeWidth="1"/>
-                      <path d="M3.5 6L5.5 8L8.5 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                    US Verified
-                  </span>
-                </div>
-
-                {/* Outcome statement */}
-                <p className="text-muted-foreground text-xs leading-relaxed mt-2 mb-3 italic">
-                  "{candidate.outcome}"
-                </p>
-
-                <div className="border-t border-border w-full mb-3" />
-
-                {/* English level */}
-                <span className="text-xs font-medium bg-success/10 text-success rounded-full px-3 py-1 self-start mb-3">
-                  ✓ {candidate.english}
-                </span>
-
-                {/* Skills */}
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {candidate.skills.map((skill) => (
-                    <span key={skill} className="text-xs bg-primary/10 text-primary rounded-full px-3 py-1">
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-
-                {/* Availability */}
-                <div className="flex items-center gap-1.5 mt-auto text-xs text-success font-medium">
-                  <span className="w-2 h-2 bg-success rounded-full animate-pulse" />
-                  Available. Placeable Within 72 Hours
-                </div>
-              </div>
-            </motion.div>
-          ))}
+            <button
+              onClick={next}
+              className="w-10 h-10 rounded-full border border-border bg-background shadow-sm hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-200 flex items-center justify-center"
+              aria-label="Next candidate"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
+          </div>
         </div>
 
         {/* Bottom CTA */}

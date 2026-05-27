@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Globe, Clock, Users, DollarSign, Award, Building2, TrendingUp, BadgeDollarSign, CalendarDays, Heart } from "lucide-react";
+import { Globe, Users, DollarSign, Award, TrendingUp, BadgeDollarSign, CalendarDays, Heart } from "lucide-react";
 
 const features = [
   {
@@ -8,14 +8,9 @@ const features = [
     description: "That accountant costing you $75K/year in the U.S.? The same caliber professional through TBT costs 70% less. For Managed Staffing, that includes office space, equipment, and HR in one flat monthly rate.",
   },
   {
-    icon: Clock,
-    title: "Your Hours. Their Default.",
-    description: "Your team works on U.S. time zones. They're at their desk when you open your laptop. No 6 AM calls. No overnight Slack threads.",
-  },
-  {
     icon: Globe,
-    title: "English Good Enough for Client Calls",
-    description: "Every candidate passes a rigorous English fluency assessment. They run meetings, take client calls, and write reports. No interpreter needed. No misunderstandings.",
+    title: "Native-Level English. No Exceptions.",
+    description: "Every candidate passes a rigorous English fluency assessment. They run client calls, write reports, and represent your business. You won't be able to tell the difference.",
   },
   {
     icon: Users,
@@ -26,11 +21,6 @@ const features = [
     icon: TrendingUp,
     title: "98% Client Satisfaction Rate",
     description: "Almost every client who hires through us comes back to hire again. If we didn't deliver, they wouldn't. It's that simple.",
-  },
-  {
-    icon: Building2,
-    title: "Office, Equipment, and Internet Included",
-    description: "Your team shows up to a fully equipped professional office every day. No makeshift home setups. No equipment costs on your side.",
   },
   {
     icon: Award,
@@ -77,7 +67,7 @@ export const WhyUs = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">Same Hours as Your Team</p>
-                  <p className="text-sm text-muted-foreground">Monday through Friday. Your hours. Your time zone. They're at their desk when you are, ready from the first message of the day.</p>
+                  <p className="text-sm text-muted-foreground">Monday through Friday. Your hours. Your time zone. They're at their desk when you open your laptop, no 6 AM calls, no overnight Slack threads, ready from the first message of the day.</p>
                 </div>
               </div>
 
@@ -87,7 +77,7 @@ export const WhyUs = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">Not Contractors. Your Team.</p>
-                  <p className="text-sm text-muted-foreground">We treat every placement like a person, not a transaction. That culture is why our team members stay an average of four-plus years with the same client.</p>
+                  <p className="text-sm text-muted-foreground">We treat every placement like a person, not a transaction. Team members stay an average of 4+ years with the same client. That's not a coincidence, it's the model.</p>
                 </div>
               </div>
             </div>

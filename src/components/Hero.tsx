@@ -56,7 +56,7 @@ export const Hero = () => {
             </h1>
 
             <p className="text-base md:text-xl text-primary-foreground/70 max-w-xl">
-              South American professionals who are bilingual, thoroughly vetted, and working your exact hours. Hire them directly onto your payroll, or let us handle the rest. Either way, you get great talent at a fraction of what you'd pay in the U.S.
+              South American professionals who are native English and Spanish speakers, thoroughly vetted, and working your exact hours. Hire them directly onto your payroll, or let us handle the rest. Either way, you get great talent at a fraction of what you'd pay in the U.S.
             </p>
 
             {/* Trust Points */}

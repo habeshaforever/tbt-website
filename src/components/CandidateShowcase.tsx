@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Play, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -141,15 +141,22 @@ const CandidateCard = ({ candidate, className }: { candidate: Candidate; classNa
 
 export const CandidateShowcase = () => {
   const [current, setCurrent] = useState(0);
+  const [cardWidth, setCardWidth] = useState("85vw");
   const total = candidates.length;
 
   const prev = () => setCurrent((c) => (c - 1 + total) % total);
   const next = () => setCurrent((c) => (c + 1) % total);
 
-  // Visible cards: 1 on mobile, 2 on tablet, 3 on desktop
-  // We render all candidates but slice based on current index with wrapping
-  const getVisible = (count: number) =>
-    Array.from({ length: count }, (_, i) => candidates[(current + i) % total]);
+  useEffect(() => {
+    const update = () => {
+      if (window.innerWidth >= 1024) setCardWidth("calc(100% / 3.3)");       // desktop: 3 cards + peek
+      else if (window.innerWidth >= 640) setCardWidth("calc(100% / 2.2)");   // tablet: 2 cards + peek
+      else setCardWidth("85vw");                                               // mobile: 1 card + peek
+    };
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
 
   return (
     <section className="py-16 md:py-24 bg-background overflow-hidden">
@@ -175,21 +182,22 @@ export const CandidateShowcase = () => {
 
         {/* Carousel */}
         <div className="relative">
-
-          {/* Cards grid — responsive visibility */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Mobile: show 1 */}
-            {getVisible(1).map((candidate, i) => (
-              <CandidateCard key={`mobile-${i}`} candidate={candidate} className="sm:hidden" />
-            ))}
-            {/* Tablet: show 2 */}
-            {getVisible(2).map((candidate, i) => (
-              <CandidateCard key={`tablet-${i}`} candidate={candidate} className="hidden sm:flex lg:hidden" />
-            ))}
-            {/* Desktop: show 3 */}
-            {getVisible(3).map((candidate, i) => (
-              <CandidateCard key={`desktop-${i}`} candidate={candidate} className="hidden lg:flex" />
-            ))}
+          {/* Track wrapper — overflow hidden but padded right so next card peeks */}
+          <div className="overflow-hidden">
+            <div
+              className="flex gap-6 transition-transform duration-500 ease-in-out"
+              style={{ transform: `translateX(calc(-${current} * (${cardWidth} + 24px)))` }}
+            >
+              {candidates.map((candidate) => (
+                <div
+                  key={candidate.name}
+                  className="flex-shrink-0"
+                  style={{ width: cardWidth }}
+                >
+                  <CandidateCard candidate={candidate} className="flex" />
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Arrow buttons */}
@@ -202,7 +210,7 @@ export const CandidateShowcase = () => {
               <ChevronLeft className="w-5 h-5" />
             </button>
 
-            {/* Dot indicators */}
+            {/* Dots */}
             <div className="flex items-center gap-2">
               {candidates.map((_, i) => (
                 <button

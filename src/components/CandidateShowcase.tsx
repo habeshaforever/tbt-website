@@ -81,7 +81,7 @@ export const CandidateShowcase = () => {
             Hear Them Speak. Hire With Confidence.
           </h2>
           <p className="text-muted-foreground mt-4 text-base md:text-lg">
-            Every candidate below cleared our 8-step vetting process — background check, skills test, English fluency assessment, and cultural interview. Press play and hear for yourself.
+            Every candidate below cleared our 8-step vetting process: background check, skills test, English fluency assessment, and cultural interview. Press play and hear for yourself.
           </p>
         </motion.div>
 
@@ -154,7 +154,7 @@ export const CandidateShowcase = () => {
                 {/* Availability */}
                 <div className="flex items-center gap-1.5 mt-auto text-xs text-success font-medium">
                   <span className="w-2 h-2 bg-success rounded-full animate-pulse" />
-                  Available — Placeable Within 72 Hours
+                  Available. Placeable Within 72 Hours
                 </div>
               </div>
             </motion.div>

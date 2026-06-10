@@ -68,7 +68,7 @@ Slack to-do: when a task is completed, update it in the To-Do TBT Slack list (fi
 ## SESSION HANDOFF LOG
 > This is how the two accounts hand off work. **At the end of a working session — especially before hitting the usage limit — update this section** with what changed and what's next, so the other account picks up cleanly. Keep it short; the git history holds the detail. Read this at the start of every session.
 
-**Last updated:** _(date / which account)_
-**Done this session:** _(brief)_
-**In progress / next:** _(brief)_
-**Watch out for:** _(anything fragile left mid-change)_
+**Last updated:** June 10, 2026 (main account)
+**Done this session:** Settled the agent-stack decision: Claude Code is the core (skills + subagents + scheduled tasks on the existing subscription); Hermes deferred (revisit only for a phone-first always-on need; testable free via WSL2); Paperclip skipped. Cleaned the Notion Alpha Tasks DB: 7 built skill-tasks marked Done, 2 empty rows deleted, Hermes task downgraded to Low with decision note, 5 new roadmap tasks added with briefs. Built two repo skills: `.claude/skills/social-content/` and `.claude/skills/video-script/` (untested, refine on first use).
+**In progress / next:** CRITICAL PATH: run competitive pricing research (TBT has no pricing yet) → finalize pricing → unpause Netlify and launch. Then: generate brand voice guidelines, run first weekly content batch, then set up the weekly/monthly schedules. All five steps are tasks in the Notion Alpha > Tasks DB with next actions in their Notes.
+**Watch out for:** The two new content skills have never been run; expect to correct and refine them on first use (tell Claude "update the skill" when it gets something wrong). Site is still paused on Netlify, pre-launch, no customers: content must never imply existing clients.

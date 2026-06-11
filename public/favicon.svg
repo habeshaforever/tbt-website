@@ -1,0 +1,22 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tandem Bridge Talent">
+  <defs>
+    <linearGradient id="tbtBg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0061B8"/>
+      <stop offset="0.55" stop-color="#0A78E0"/>
+      <stop offset="1" stop-color="#00A3FF"/>
+    </linearGradient>
+  </defs>
+  <!-- Circle-safe background so it works as a round avatar/favicon -->
+  <rect width="64" height="64" rx="16" fill="url(#tbtBg)"/>
+  <!-- Bridge span: the crossbar of the T arcs like a bridge deck, anchored on two towers -->
+  <g fill="#FFFFFF">
+    <!-- Left tower / anchor -->
+    <rect x="12.5" y="17" width="6" height="9" rx="3"/>
+    <!-- Right tower / anchor -->
+    <rect x="45.5" y="17" width="6" height="9" rx="3"/>
+    <!-- Arched span connecting the two (the bridge) forming the T crossbar -->
+    <path d="M12 22c6.5-7 33.5-7 40 0v6.4C45.6 22.6 18.4 22.6 12 28.4V22Z"/>
+    <!-- Central pillar / stem of the T -->
+    <rect x="28.5" y="24" width="7" height="27" rx="3.5"/>
+  </g>
+</svg>

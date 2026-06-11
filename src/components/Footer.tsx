@@ -1,5 +1,6 @@
 import { Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Logo } from "@/components/Logo";
 
 const footerLinks = {
   industries: [
@@ -57,14 +58,7 @@ export const Footer = () => {
 
           {/* Brand Row - full width on mobile, fits in grid on desktop */}
           <div className="mb-8 md:mb-0 md:hidden">
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">TB</span>
-              </div>
-              <span className="font-bold text-xl">
-                Tandem<span className="text-accent">Bridge</span> Talent
-              </span>
-            </Link>
+            <Logo className="mb-4" textClassName="text-xl" accentClassName="text-accent" />
             <p className="text-primary-foreground/60 mb-4 text-sm">
               U.S. operated. Nearshore teams that perform. South American talent, American standards.
             </p>
@@ -82,14 +76,7 @@ export const Footer = () => {
           <div className="hidden md:grid md:grid-cols-6 gap-8 lg:gap-12">
             {/* Brand */}
             <div className="md:col-span-2">
-              <Link to="/" className="flex items-center gap-2 mb-6">
-                <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
-                  <span className="text-primary-foreground font-bold text-xl">TB</span>
-                </div>
-                <span className="font-bold text-xl">
-                  Tandem<span className="text-accent">Bridge</span> Talent
-                </span>
-              </Link>
+              <Logo className="mb-6" textClassName="text-xl" accentClassName="text-accent" />
               <p className="text-primary-foreground/60 mb-6 text-sm">
                 U.S. operated. Nearshore teams that perform. South American talent, American standards.
               </p>

@@ -6,17 +6,12 @@
       <stop offset="1" stop-color="#00A3FF"/>
     </linearGradient>
   </defs>
-  <!-- Circle-safe background so it works as a round avatar/favicon -->
   <rect width="64" height="64" rx="16" fill="url(#tbtBg)"/>
-  <!-- Bridge span: the crossbar of the T arcs like a bridge deck, anchored on two towers -->
   <g fill="#FFFFFF">
-    <!-- Left tower / anchor -->
-    <rect x="12.5" y="17" width="6" height="9" rx="3"/>
-    <!-- Right tower / anchor -->
-    <rect x="45.5" y="17" width="6" height="9" rx="3"/>
-    <!-- Arched span connecting the two (the bridge) forming the T crossbar -->
-    <path d="M12 22c6.5-7 33.5-7 40 0v6.4C45.6 22.6 18.4 22.6 12 28.4V22Z"/>
+    <!-- Crossbar: top edge arches up at the center like a bridge span, flat underside -->
+    <path d="M11 25.2C20 18.8 44 18.8 53 25.2V25.6H11V25.2Z"/>
+    <rect x="11" y="19.6" width="42" height="6" rx="3"/>
     <!-- Central pillar / stem of the T -->
-    <rect x="28.5" y="24" width="7" height="27" rx="3.5"/>
+    <rect x="28.5" y="25" width="7" height="26" rx="3.5"/>
   </g>
 </svg>

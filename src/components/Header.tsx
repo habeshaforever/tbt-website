@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { BrandLogo } from "@/components/BrandLogo";
 
 interface NestedDropdownItem {
   label: string;
@@ -148,7 +147,14 @@ export const Header = () => {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
-        <BrandLogo accent="primary" />
+        <Link to="/" className="flex items-center gap-2">
+          <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
+            <span className="text-primary-foreground font-bold text-xl">TB</span>
+          </div>
+          <span className="font-bold text-base md:text-xl text-foreground whitespace-nowrap">
+            Tandem<span className="text-primary">Bridge</span> Talent
+          </span>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-2 lg:gap-6">

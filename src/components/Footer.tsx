@@ -1,6 +1,5 @@
 import { Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
-import { BrandLogoMark } from "@/components/BrandLogo";
 
 const footerLinks = {
   industries: [
@@ -59,7 +58,9 @@ export const Footer = () => {
           {/* Brand Row - full width on mobile, fits in grid on desktop */}
           <div className="mb-8 md:mb-0 md:hidden">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <BrandLogoMark className="w-10 h-10" />
+              <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
+                <span className="text-primary-foreground font-bold text-xl">TB</span>
+              </div>
               <span className="font-bold text-xl">
                 Tandem<span className="text-accent">Bridge</span> Talent
               </span>
@@ -82,7 +83,9 @@ export const Footer = () => {
             {/* Brand */}
             <div className="md:col-span-2">
               <Link to="/" className="flex items-center gap-2 mb-6">
-                <BrandLogoMark className="w-10 h-10" />
+                <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
+                  <span className="text-primary-foreground font-bold text-xl">TB</span>
+                </div>
                 <span className="font-bold text-xl">
                   Tandem<span className="text-accent">Bridge</span> Talent
                 </span>

@@ -23,37 +23,21 @@ export const BrandLogoMark = ({ className }: BrandLogoMarkProps) => (
       fill="none"
       role="img"
       aria-label="Tandem Bridge Talent"
-      className="w-3/5 h-3/5 text-primary-foreground"
+      className="w-[62%] h-[62%] text-primary-foreground"
     >
-      {/* Left and right piers */}
+      {/* Suspension cables sweeping over the two towers */}
       <path
-        d="M7 24V14"
+        d="M4 17L11 6L16 14.5L21 6L28 17"
         stroke="currentColor"
-        strokeWidth="2.6"
+        strokeWidth="2.4"
+        strokeLinejoin="round"
         strokeLinecap="round"
       />
-      <path
-        d="M25 24V14"
-        stroke="currentColor"
-        strokeWidth="2.6"
-        strokeLinecap="round"
-      />
-      {/* The bridge arch connecting the two piers */}
-      <path
-        d="M7 14C7 9.58 11.03 7 16 7C20.97 7 25 9.58 25 14"
-        stroke="currentColor"
-        strokeWidth="2.6"
-        strokeLinecap="round"
-      />
-      {/* Central keystone / connection point */}
-      <circle cx="16" cy="7" r="2.6" fill="currentColor" />
-      {/* Deck line */}
-      <path
-        d="M5 24H27"
-        stroke="currentColor"
-        strokeWidth="2.6"
-        strokeLinecap="round"
-      />
+      {/* Twin towers (the tandem) */}
+      <path d="M11 22V6" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" />
+      <path d="M21 22V6" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" />
+      {/* Bridge deck */}
+      <path d="M4 22H28" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" />
     </svg>
   </div>
 );
